@@ -20,5 +20,5 @@ def extract_text_from_pdf(pdf_path, output_txt_path):
 
 # Example usage
 pdf_path = "AS-001511.pdf"  # Replace with the path to your PDF file
-output_txt_path = "output.txt"  # Replace with the desired output TXT file path
+output_txt_path = "output2.txt"  # Replace with the desired output TXT file path
 extract_text_from_pdf(pdf_path, output_txt_path)
