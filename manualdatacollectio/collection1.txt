@@ -1,32 +1,14 @@
-Nahaakki ming kari kouee? What is your name?
-Eigee ming Sanathoi kouee. My name is Sanatho
-Nahaak kari klaasta
-tammi?
- Which class do you
- Ki klass eit taa tammi. I study in Class VIII.
- Nahaakki ima babagee
-ming kari-kari kouee?
-What are your
-parents’ name?
-Eigi eemagi mingna
-Chaobi aduga babagi
-mingna Tomba kouee.
-My mother’s name
-is Chaobi and my
-father’s name is
-Tomba.
-Nahakki leipham
-kadaidano? Where do you live?
-Ei Imphal dagini. live in Imphal.
-anisuba amadi
-ahumsuba numit
-Eigee skool
-Second & third day
-My School
-Nahakki skoolgi
-maming kari kouee?
-What is the name of
-your school?
+Nahaakki ming kari kouee? ,,, What is your name?
+Eigee ming Sanathoi kouee. ,,, My name is Sanatho
+Nahaak kari klaasta tammi? ,,, Which class do you study in
+Kei klass eit taa tammi. ,,, I study in Class VIII.
+Nahaakki ima babagee ming kari-kari kouee? ,,, What are your parents’ name?
+Eigi eemagi mingna Chaobi aduga babagi mingna Tomba kouee. ,,, My mother’s name is Chaobi and my father’s name is Tomba.
+Nahakki leipham kadaidano? ,,, Where do you live?
+Ei Imphal dagini. ,,, live in Imphal.
+anisuba amadi ahumsuba numit ,,, Second and third day
+Eigee skool ,,, My School
+Nahakki skoolgi maming kari kouee? ,,, What is the name of your school?
 Eigee skoolgi
 maming Paari Imom
 Sindamshang kouee.
