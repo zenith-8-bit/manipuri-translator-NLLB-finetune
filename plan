@@ -87,4 +87,5 @@ https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni
 [not a dataset]https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_test.json :: will be useful for only testing 
 https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/resolve/main/xorqa_mni_train.json :: 100 manipuri in bengali script and english translation data
 
-till now have data of about 344220 english sentences
+till now have data of about  343680
+english sentences
