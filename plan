@@ -3,89 +3,24 @@ first make a type ransaltion to manipuri bott then a manipuri trsnlation bot
 
 plan jee normal text to known words gi manungda leibra yengni leitradi fuzzzy shizinnaraga nearest word theeni based  on that translation the rest gpt based match up thokkani filtering tougani
 
-
-Guide to the dictionary: 
-Every head entry is a verba! root or base immediately 
-followed by Roman transliteration, meaning in English and 
-the verb and its derivatives {adverb, adjectival and nominal) 
-with example sentences and their meanings in English. 
-To find out an entry, say, pam or tak you have to look up 
-page number of p or t letter from the table below: 
-Signs 
-Page 
-i 
-1 
-u 
-8 
-0 
-15 
-aw 
-25 
-P 
-25 
-t 
-58 
-k 
-89 
-ph 
-118 
-th 
-135 
-kh 
-170 
-Thereafter proceed ti 
-Signs 
-Page 
-m 
-195 
-n 
-212 
-ng 
-228 
-ch 
-238 
-s 
-265 
-1 
-297 
-h 
-327 
-w 
-351 
-y 
-355 
-you find the word. 
-A dot (.) mark immediately after a vowel indicates 
-level tone as in the examples below: 
-'water hyacinth' 
-'dry, big, thin, pregnant' 
-'to colour, dye, keep eyes on' 
-'green, free, put pressure' 
-Those words which have same spelling and 
-pronunciation, but have different meanings, are treated as 
-separate entries. Such entries are marked with numerals as in 
-the examples below: 
-Kang 
-ka.ng 
-sang 
-sa.ng 
-
-
-
-Page 9
-m 
-01. ID ka.ngl 
-be dry 
 18k - from translation book
 https://huggingface.co/datasets/carlfeynman/Bharat_NanoFEVER_mni :: 5k bharatnanofever gi ni same keyword ta multiple language translation lei english dataset and manipuri dataset sharaga csv ama shaba yai
-https://huggingface.co/datasets/DayanandaThokchom/meitei-mayek-to-english ::319k direct english translation youba  319k translations but same situation meitei mayek se english ta eebada phonetics shijinnagadaba da covert touba
-https://huggingface.co/datasets/Sourabh2/Manipuri_English_to_mni :: 2k translations same situation
-120 from that book i scraped 
-https://huggingface.co/datasets/google/IndicGenBench_flores_in/raw/main/flores_en_mni_dev.json :: 990 manipuri in bengali script to english
-https://huggingface.co/datasets/google/IndicGenBench_flores_in/raw/main/flores_en_mni_test.json :: 1k manipuri in bengali script to english
-https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_dev.json :: 470 manipuri in bengali script and english
-[not a dataset]https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_test.json :: will be useful for only testing 
-https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/resolve/main/xorqa_mni_train.json :: 100 manipuri in bengali script and english translation data
+done -  https://huggingface.co/datasets/DayanandaThokchom/meitei-mayek-to-english ::319k direct english translation youba  319k translations but same situation meitei mayek se english ta eebada phonetics shijinnagadaba da covert touba
+done - https://huggingface.co/datasets/Sourabh2/Manipuri_English_to_mni :: 2k translations same situation
+done -120 from that book i scraped 
+done-https://huggingface.co/datasets/google/IndicGenBench_flores_in/raw/main/flores_en_mni_dev.json :: 990 manipuri in bengali script to english
+done - https://huggingface.co/datasets/google/IndicGenBench_flores_in/raw/main/flores_en_mni_test.json :: 1k manipuri in bengali script to english
+done -https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_dev.json :: 470 manipuri in bengali script and english
+done - [not a dataset]https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_test.json :: will be useful for only testing 
+done - https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/resolve/main/xorqa_mni_train.json :: 100 manipuri in bengali script and english translation data
 
 till now have data of about  343680
 english sentences
+ apaa araak ‘something thin one’; 51RU paana i pa ‘to trim
+
+thinly’
+
+3IR\ paa. l
+________________________________
+level one cleaned is just proper structuring that is the data can be seperated into manipuri and english section via code 
+level 2 would be meiteilon in english alphabet or meiteilon in bengali script 
