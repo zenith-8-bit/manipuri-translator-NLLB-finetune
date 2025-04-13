@@ -70,7 +70,21 @@ ka.ng
 sang 
 sa.ng 
 
+
+
 Page 9
 m 
 01. ID ka.ngl 
 be dry 
+18k - from translation book
+https://huggingface.co/datasets/carlfeynman/Bharat_NanoFEVER_mni :: 5k bharatnanofever gi ni same keyword ta multiple language translation lei english dataset and manipuri dataset sharaga csv ama shaba yai
+https://huggingface.co/datasets/DayanandaThokchom/meitei-mayek-to-english ::319k direct english translation youba  319k translations but same situation meitei mayek se english ta eebada phonetics shijinnagadaba da covert touba
+https://huggingface.co/datasets/Sourabh2/Manipuri_English_to_mni :: 2k translations same situation
+120 from that book i scraped 
+https://huggingface.co/datasets/google/IndicGenBench_flores_in/raw/main/flores_en_mni_dev.json :: 990 manipuri in bengali script to english
+https://huggingface.co/datasets/google/IndicGenBench_flores_in/raw/main/flores_en_mni_test.json :: 1k manipuri in bengali script to english
+https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_dev.json :: 470 manipuri in bengali script and english
+[not a dataset]https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/raw/main/xorqa_mni_test.json :: will be useful for only testing 
+https://huggingface.co/datasets/google/IndicGenBench_xorqa_in/resolve/main/xorqa_mni_train.json :: 100 manipuri in bengali script and english translation data
+
+till now have data of about 344220 english sentences
