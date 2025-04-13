@@ -1,0 +1,2001 @@
+en,mni-Mtei
+Bag of n-grams model is used here to represents,ꯃꯐꯝ ꯑꯁꯤꯗꯥ ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯁꯤꯡꯒꯤ ꯃꯣꯗꯦꯂꯒꯤ ꯕꯦꯒ ꯑꯁꯤ ꯔꯤꯞꯔꯖꯦꯟꯇ ꯇꯧꯔꯤ
+linguistic features of users based on n-gram mod-,ꯑꯦꯟ-ꯒ꯭ꯔꯥꯝ ꯃꯣꯗ-ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯌꯨꯖꯔꯁꯤꯡꯒꯤ ꯂꯤꯉ꯭ꯒꯨꯏꯁ꯭ꯇꯤꯛ ꯐꯤꯆꯔꯁꯤꯡ
+"els. By combining all the tweets for each user, we",ꯑꯦꯜ.ꯑꯦꯁ.
+count number of occurrence for each frequent un-,ꯆꯥꯡ ꯅꯥꯏꯅꯥ ꯑꯟ- ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯑꯣꯏꯅꯥ ꯊꯣꯀꯄꯒꯤ ꯃꯁꯤꯡ ꯀꯥꯎꯟꯇ ꯇꯧꯕꯥ꯫
+"igrams, bigrams, and trigrams and normalize by","ꯑꯥꯏꯒ꯭ꯔꯥꯝ, ꯕꯤꯒ꯭ꯔꯥꯝ, ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯥꯏꯒ꯭ꯔꯥꯃꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯅꯣꯔꯃꯦꯂꯥꯏꯖ ꯇꯧꯕꯥ"
+"the number of unigrams, bigrams, and trigrams","ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ, ꯕꯤꯒ꯭ꯔꯥꯝ ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯥꯏꯒ꯭ꯔꯥꯃꯒꯤ ꯃꯁꯤꯡ ꯑꯁꯤ ."
+"for each users. In this way, we construct a vec-",ꯌꯨꯖꯔ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯑꯣꯏꯅꯥ꯫
+"tor representation (1000 dimensions for unigram,","ꯇꯤ.ꯑꯣ.ꯑꯥꯔ.ꯒꯤ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯟ (ꯌꯨꯅꯤꯒ꯭ꯔꯥꯃꯒꯤꯗꯃꯛꯇꯥ ꯗꯥꯏꯃꯦꯟꯁꯟ ꯱꯰꯰꯰, ."
+"bigram, and trigram respectively) for each user us-","Bigram, ꯑꯃꯁꯨꯡ Trigram ꯃꯊꯪꯁꯤꯠꯅꯥ ꯌꯨꯖꯔ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯑꯣꯏꯅꯥ ꯌꯨ.ꯑꯦꯁ.-"
+ing language model,ing ꯂꯦꯉ꯭ꯒꯨꯌꯦꯖ ꯃꯣꯗꯦꯜ .
+The bag of n-grams vector representations can,ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯁꯤꯡꯒꯤ ꯚꯦꯛꯇꯔ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡꯒꯤ ꯕꯦꯒ ꯑꯁꯤꯅꯥ .
+be used to measure the correlations between n-,ꯑꯦꯟ-ꯒꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯔꯤꯕꯥ ꯀꯣꯔꯤꯑꯦꯂꯁꯤꯡ ꯑꯗꯨ ꯂꯦꯄꯊꯣꯛꯅꯕꯥ ꯁꯤꯖꯤꯟꯅꯒꯗꯕꯅꯤ꯫
+"gram words and phrases, and the personality traits","ꯒ꯭ꯔꯥꯝ ꯋꯥꯍꯩ ꯑꯃꯁꯨꯡ ꯋꯥꯍꯩ ꯄꯔꯦꯡꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧꯁꯤꯡ ."
+"For example, in Figure 1(a) and Figure 1(b), we","ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯐꯤꯒꯔ ꯱(ꯑꯦ) ꯑꯃꯁꯨꯡ ꯐꯤꯒꯔ ꯱(ꯕꯤ)ꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ [...]"
+plot the top related unigram words for Thinking,ꯋꯥꯈꯜ ꯈꯅꯕꯒꯤ ꯃꯊꯛꯇꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ ꯋꯥꯍꯩꯁꯤꯡ ꯄ꯭ꯂꯣꯠ ꯇꯧꯕꯤꯌꯨ
+"and Feeling. Interesting, the most correlated uni-",ꯑꯃꯁꯨꯡ ꯐꯤꯜꯂꯤꯡ ꯇꯧꯕꯥ꯫
+gram for thinking is the question mark (?) while,ꯒ꯭ꯔꯥꯝ ꯐꯣꯔ ꯊꯤꯡꯀꯤꯡ ꯑꯁꯤ ꯋꯥꯍꯪ ꯍꯪꯂꯤ (?) ꯑꯁꯤ .
+"”love”, ”happy”, ”thank”, ”beautiful” are highly","”ꯅꯨꯡꯁꯤꯕꯥ”, ”ꯍꯦꯞꯄꯤ”, ”ꯊꯥꯒꯠꯆꯔꯤ”, ”ꯐꯖꯔꯕꯥ” ꯑꯁꯤ ꯌꯥꯝꯅꯥ ꯋꯥꯡꯏ꯫"
+correlated with Feeling. We have the same plots,ꯐꯤꯜꯂꯤꯡꯒꯥ ꯀꯣꯔꯤꯂꯦꯠ ꯇꯧꯕꯥ꯫
+"for bigram phrases, and introversion or extrover-","ꯕꯤꯒꯔꯥꯝ ꯐ꯭ꯔꯦꯖꯁꯤꯡꯒꯤꯗꯃꯛ, ꯑꯃꯁꯨꯡ ꯏꯟꯠꯔꯣꯕꯔꯁꯟ ꯅꯠꯔꯒꯥ ꯑꯦꯛꯁꯠꯔꯣꯚꯥꯔ-"
+"sion. From these bigrams, we can see introverts",sion ꯑꯣꯏꯕꯥ꯫
+"tend to complaint (”my god”, ”holy shit”) and","ꯀꯃꯞꯂꯦꯟꯇ ꯇꯧꯕꯥ ꯌꯥꯕꯥ (“ꯑꯩꯒꯤ ꯏꯁ꯭ꯕꯔ”, ”ꯍꯣꯂꯤ ꯁꯤꯠ”) ꯑꯃꯁꯨꯡ"
+"refuse (”I don’t”, ”I can’t”), while extroverts are","ꯔꯤꯐ꯭ꯌꯨꯖ (“ꯑꯩꯅꯥ ꯇꯧꯗꯦ”, ”ꯑꯩꯅꯥ ꯇꯧꯕꯥ ꯉꯃꯗꯦ”), ꯑꯗꯨꯒꯥ ꯑꯦꯛꯁꯠꯔꯣꯕꯔꯇꯁꯤꯡꯅꯥ ."
+"more energetic (”so proud”, ”can’t wait”, ”so ex-","ꯍꯦꯟꯅꯥ ꯏꯅꯔꯖꯤ ꯂꯩꯕꯥ (”ꯁꯣ ꯄ꯭ꯔꯣꯎꯗ”, ”ꯀꯦꯟ ꯋꯥꯏꯠ”, ”ꯁꯣ ex-"
+cited”),ꯁꯤꯈꯤꯕꯥ”)꯫
+These results prove our assumption that lan-,ꯃꯁꯤꯒꯤ ꯐꯂꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯑꯩꯈꯣꯌꯒꯤ ꯋꯥꯈꯜꯂꯣꯟ ꯑꯗꯨ ꯄ꯭ꯔꯃꯥꯟ ꯇꯧꯏ ꯃꯗꯨꯗꯤ ꯂ꯭ꯌꯥꯟ-
+guage varies for people with different language,ꯇꯣꯉꯥꯟ ꯇꯣꯉꯥꯅꯕꯥ ꯂꯣꯜ ꯂꯩꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯒꯤꯗꯃꯛ ꯒꯨꯌꯦꯖ ꯑꯁꯤ ꯈꯦꯠꯅꯩ .
+Even with simple count of probabilities for uni-,ꯌꯨꯅꯤ-ꯒꯤꯗꯃꯛ ꯄ꯭ꯔꯣꯕꯦꯕꯤꯂꯤꯇꯤꯁꯤꯡꯒꯤ ꯏꯆꯝ ꯆꯝꯕꯥ ꯃꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯐꯥꯑꯣꯕꯥ-
+"grams, bigrams, and trigrams, we can see signals","ꯒ꯭ꯔꯥꯝ, ꯕꯤꯒ꯭ꯔꯥꯝ, ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯥꯏꯒ꯭ꯔꯥꯃꯁꯤꯡ, ꯑꯩꯈꯣꯌꯅꯥ ꯁꯤꯒꯅꯦꯂꯁꯤꯡ ꯎꯕꯥ ꯐꯪꯒꯅꯤ"
+from sequences of words that reﬂect the corre-,ꯀꯣꯔꯦ-ꯕꯨ ꯔꯤꯐ꯭ꯂꯦꯛꯇ ꯇꯧꯔꯤꯕꯥ ꯋꯥꯍꯩꯁꯤꯡꯒꯤ ꯁꯤꯛꯕꯦꯟꯁꯁꯤꯡꯗꯒꯤ
+sponding personalty traits,ꯁ꯭ꯄꯣꯟꯗꯤꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ .
+5,꯵ ꯑꯃꯁꯨꯡ ꯵.
+Part-of-speech tag,ꯄꯥꯔꯠ-ꯑꯣꯐ-ꯁ꯭ꯄꯤꯆ ꯇꯦꯒ .
+One of the most fundamental tasks in linguistic,ꯂꯤꯉ꯭ꯒꯨꯏꯁ꯭ꯇꯤꯀꯇꯥ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯊꯕꯀꯁꯤꯡꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯑꯃꯅꯤ
+analysis and natural language processing is part-,ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯑꯃꯁꯨꯡ ꯅꯦꯆꯔꯦꯜ ꯂꯦꯉ꯭ꯒꯨꯌꯦꯖ ꯄ꯭ꯔꯣꯁꯦꯁꯤꯡ ꯑꯁꯤ ꯁꯔꯨꯛ ꯑꯃꯅꯤ-
+"of-speech (POS) tagging, a basic form of syn-","ꯑꯣꯐ-ꯁ꯭ꯄꯤꯆ (ꯄꯤ.ꯑꯣ.ꯑꯦꯁ.) ꯇꯦꯒ ꯇꯧꯕꯥ, ꯁꯤꯟ-ꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯃꯑꯣꯡ ꯑꯃꯥ"
+tactic analysis which has countless applications,ꯃꯁꯤꯡ ꯊꯤꯉꯃꯗ꯭ꯔꯕꯥ ꯑꯦꯞꯂꯤꯀꯦꯁꯅꯁꯤꯡ ꯂꯩꯕꯥ ꯇꯥꯀꯄꯤ ꯇꯝꯕꯤꯕꯒꯤ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ
+Most POS taggers are trained from treebanks in,ꯑꯌꯥꯝꯕꯥ ꯄꯣꯁ ꯇꯦꯒꯔꯁꯤꯡ ꯑꯁꯤ ꯇ꯭ꯔꯤꯕꯦꯉ꯭ꯀꯁꯤꯡꯗꯒꯤ ꯲꯰꯲꯰ꯗꯥ ꯇ꯭ꯔꯦꯟ ꯇꯧꯏ꯫
+"the newswire domain, such as the Wall Street Jour-","ꯗꯤ ꯅꯤꯎꯖꯋꯥꯏꯔ ꯗꯣꯃꯦꯟ, ꯍꯥꯌꯕꯗꯤ ꯋꯥꯜ ꯁ꯭ꯠꯔꯤꯠ ꯖꯧꯔ-"
+nal corpus of the Penn Treebank. Tagging perfor-,ꯄꯦꯟ ꯇ꯭ꯔꯤꯕꯦꯉ꯭ꯀꯀꯤ ꯅꯦꯜ ꯀꯣꯔꯄꯁ꯫
+"mance degrades on out-of-domain data, and Twit-","ꯃꯥꯟꯁꯅꯥ ꯑꯥꯎꯠ-ꯑꯣꯐ-ꯗꯣꯃꯦꯅꯒꯤ ꯗꯦꯇꯥꯗꯥ ꯁꯣꯀꯍꯜꯂꯤ, ꯑꯃꯁꯨꯡ ꯇ꯭ꯕꯤꯠ-"
+ter poses additional challenges due to the conver-,ꯇꯦꯔ ꯑꯁꯤꯅꯥ ꯀꯅꯚꯔꯅꯥ ꯃꯔꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯑꯍꯦꯅꯕꯥ ꯁꯤꯡꯅꯕꯥ ꯀꯌꯥ ꯄꯤꯔꯤ-
+"sational nature of the text, the lack of conventional","ꯇꯦꯛꯁꯀꯤ ꯁꯦꯁꯅꯦꯜ ꯅꯦꯆꯔ, ꯀꯟꯚꯦꯟꯁꯅꯦꯜ ꯂꯩꯇꯕꯥ"
+"orthography, and 140- character limit of each mes-","ꯑꯣꯔꯊꯣꯒ꯭ꯔꯥꯐꯤ, ꯑꯃꯁꯨꯡ ꯱꯴꯰- ꯃꯦꯁ-ꯒꯤ ꯆꯔꯤꯠꯔꯒꯤ ꯂꯤꯃꯤꯠ-"
+sage (tweet),ꯁꯦꯖ (ꯇ꯭ꯕꯤꯠ) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+Here we adopt a POS tagger which has over,ꯃꯐꯝ ꯑꯁꯤꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ ꯄꯣꯁ ꯇꯦꯒꯔ ꯑꯃꯥ ꯑꯦꯗꯣꯞꯇ ꯇꯧꯏ ꯃꯗꯨꯗꯥ ꯑꯣꯚꯥꯔ .
+"90% accuracy from (Gimpel et al., 2011). Unlike,","꯹꯰%ꯒꯤ ꯑꯆꯨꯝꯕꯥ (ꯖꯤꯝꯄꯦꯜ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯱)꯫"
+"traditional POS tagger based on Penn Treebank,","ꯄꯦꯟ ꯇ꯭ꯔꯤꯕꯦꯉ꯭ꯀꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯇ꯭ꯔꯦꯗꯤꯁ꯭ꯅꯦꯜ ꯄꯣꯁ ꯇꯦꯒꯔ,"
+this Twitter POS tagger has 25 types of distinc-,ꯃꯁꯤꯒꯤ ꯇꯨꯏꯇꯥꯔ POS TAGGER ꯑꯁꯤ Distinc ꯃꯈꯜ ꯲꯵ ꯂꯩ-
+tive tags with some Twitter-speciﬁc tags such as,ꯇꯤꯕ ꯇꯦꯒꯁꯤꯡ ꯑꯁꯤ ꯇꯨꯏꯇꯥꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯇꯦꯒ ꯈꯔꯒꯥ ꯂꯣꯌꯅꯅꯥ .
+"hashtag, at-mention, discourse marker, URL, and","ꯍꯦꯁꯇꯦꯒ, ꯑꯦꯠ-ꯃꯦꯟꯁꯟ, ꯗꯤꯁꯀꯣꯔꯁ ꯃꯥꯔꯀꯔ, URL, ꯑꯃꯁꯨꯡ ."
+emoticon. The description of tags is shown in Ta-,ꯏꯃꯣꯇꯤꯀꯣꯟ ꯍꯥꯌꯅꯥ ꯀꯧꯏ꯫
+ble 4,ꯕꯤ.ꯑꯦꯜ.
+"Similar with bag of n-gram feature, we compute","ꯑꯦꯟ-ꯒ꯭ꯔꯥꯝ ꯐꯤꯆꯔꯒꯤ ꯕꯦꯒ ꯑꯁꯤꯒꯥ ꯃꯥꯟꯅꯕꯥ, ꯑꯩꯈꯣꯌꯅꯥ ꯀꯝꯞꯌꯨꯇꯔꯥꯏꯖ ꯇꯧꯕꯥ"
+the distribution of each POS tag for users in our,ꯑꯩꯈꯣꯌꯒꯤ ꯲꯰꯲꯰ꯗꯥ ꯌꯨꯖꯔꯁꯤꯡꯒꯤꯗꯃꯛ ꯄꯤ.ꯑꯣ.ꯑꯦꯁ.
+"dataset. Then, we compute the Pearson correla-",ꯗꯦꯇꯥꯁꯦꯠ ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+tions between each POS tag and each personality,ꯇꯤ.ꯑꯣ.ꯄꯤ.ꯑꯦꯁ.ꯀꯤ ꯇꯦꯒ ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯃꯔꯛꯇꯥ ꯇꯤꯅꯁꯤꯡ .
+trait as in Table 4. There are many interesting in-,ꯇꯦꯕꯜ ꯴ꯗꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯇ꯭ꯔꯦꯠ ꯑꯁꯤ ꯏꯟꯇꯔꯦꯁ꯭ꯇꯤꯡ ꯑꯣꯏꯕꯥ ꯏꯟ- ꯀꯌꯥ ꯑꯃꯥ ꯂꯩꯔꯤ꯫
+"sights in Table 4. For example, in nominal and","ꯇꯦꯕꯜ ꯴ꯗꯥ ꯌꯦꯡꯕꯥ ꯌꯥꯕꯥ ꯃꯐꯃꯁꯤꯡ ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯅꯣꯃꯤꯅꯦꯜ ꯑꯃꯁꯨꯡ ."
+"nominal+verbal category, common noun is a good","ꯅꯣꯃꯤꯅꯦꯜ+ꯚꯥꯔꯕꯦꯜ ꯀꯦꯇꯦꯒꯣꯔꯤ, ꯀꯃꯟ ꯅ꯭ꯌꯨꯟ ꯑꯁꯤ ꯑꯐꯕꯥ ꯑꯃꯅꯤ"
+indicator for personality. People who use com-,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤꯗꯃꯛꯇꯥ ꯏꯟꯗꯤꯀꯦꯇꯔ꯫
+mon nouns more often in their language tend to,ꯃꯟ ꯅꯧꯅꯁꯤꯡ ꯑꯁꯤ ꯃꯈꯣꯌꯒꯤ ꯂꯣꯟꯗꯥ ꯍꯦꯟꯅꯥ ꯌꯥꯝꯅꯥ ꯊꯦꯡꯅꯩ꯫
+"be in Extroversion, Intuition, Thinking, or Judg-","ꯑꯦꯛꯁꯠꯔꯣꯕꯔꯁꯟ, ꯏꯟꯠꯌꯨꯏꯇꯤ, ꯋꯥꯈꯜ ꯈꯅꯕꯥ, ꯅꯠꯔꯒꯥ ꯖꯨꯗꯖꯤꯗꯥ ꯂꯩꯕꯥ-"
+ing type. Introverted people use more pronouns,ing ꯃꯈꯜ꯫
+but less common nouns,ꯑꯗꯨꯕꯨ ꯍꯦꯟꯅꯥ ꯀꯃꯟ ꯑꯣꯏꯕꯥ ꯅꯣꯡꯃꯒꯤ ꯑꯣꯏꯕꯥ ꯋꯥꯍꯩꯁꯤꯡ .
+"Interjection,","ꯏꯟꯇꯔꯖꯦꯛꯁꯟ ꯇꯧꯕꯥ, ."
+"which includes ”lol”,","ꯃꯁꯤꯗꯥ ”ꯂꯣꯜ”,, ꯌꯥꯑꯣꯔꯤ꯫"
+"”haha”,","”ꯍꯥꯍꯥ”, ꯑꯃꯁꯨꯡ ."
+"”FTW”, ”yea”, is more likely to be used by people","”ftw”, ”yea”, ꯑꯁꯤ ꯃꯤꯑꯣꯏꯕꯅꯥ ꯍꯦꯟꯅꯥ ꯁꯤꯖꯤꯟꯅꯕꯥ ꯌꯥꯏ꯫"
+who are in Sensing and Perceiving type. Emoti-,ꯁꯦꯟꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯄꯥꯔꯁꯤꯕ ꯑꯣꯏꯕꯥ ꯃꯈꯂꯒꯤ ꯃꯤꯑꯣꯏꯁꯤꯡ꯫
+con is more likely to be used by people who are in,ꯀꯟ ꯑꯁꯤ ꯲꯰꯲꯰ꯗꯥ ꯂꯩꯔꯤꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯅꯥ ꯍꯦꯟꯅꯥ ꯁꯤꯖꯤꯟꯅꯕꯥ ꯌꯥꯏ꯫
+Sensing and Feeling type while numbers are more,ꯁꯦꯟꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯐꯤꯜꯂꯤꯡ ꯃꯈꯜ ꯑꯗꯨꯒꯥ ꯃꯁꯤꯡ ꯍꯦꯟꯅꯥ ꯂꯩꯕꯥ
+likely to be used by people who are in Sensing and,ꯁꯦꯟꯁꯤꯡꯗꯥ ꯂꯩꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯅꯥ ꯁꯤꯖꯤꯟꯅꯕꯥ ꯌꯥꯕꯥ ꯑꯃꯁꯨꯡ .
+"Thinking type. Also, extroverted people are more",ꯋꯥꯈꯜ ꯈꯅꯕꯒꯤ ꯃꯈꯜ꯫
+likely to use hashtags. Those seemingly random,ꯍꯦꯁꯇꯦꯒꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯕꯒꯤ ꯑꯣꯏꯊꯣꯀꯄꯥ ꯂꯩ꯫
+"online behaviors, such as use of hashtags, emoti-","ꯑꯣꯅꯂꯥꯏꯅꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡ, ꯍꯥꯌꯕꯗꯤ ꯍꯦꯁꯇꯦꯒꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯕꯥ, ꯏꯃꯣꯇꯤ-"
+"cons, and nouns can be somehow explained by the","ꯀꯟꯁ, ꯑꯃꯁꯨꯡ ꯅ꯭ꯌꯨꯅꯁ ꯑꯁꯤ ꯀꯔꯤꯒꯨꯝꯕꯥ ꯃꯑꯣꯡ ꯑꯃꯗꯥ ꯐꯣꯡꯗꯣꯀꯄꯥ ꯌꯥꯏ ."
+psychological traits of the users,ꯌꯨꯖꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯦꯠꯁꯤꯡ .
+6,꯶ ꯑꯃꯁꯨꯡ ꯶.
+Word Vector,ꯋꯥꯍꯩ ꯚꯦꯛꯇꯔ
+Distributed representations of words in a vector,ꯚꯦꯛꯇꯔ ꯑꯃꯗꯥ ꯋꯥꯍꯩꯁꯤꯡꯒꯤ ꯗꯤꯁ꯭ꯠꯔꯤꯕ꯭ꯌꯨꯠ ꯇꯧꯔꯕꯥ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡ .
+space help learning algorithms to achieve bet-,ꯁ꯭ꯄꯦꯁ ꯑꯁꯤꯅꯥ ꯕꯦꯠ- ꯐꯪꯅꯕꯥ ꯑꯦꯂꯒꯣꯔꯤꯊꯃꯁꯤꯡ ꯇꯝꯕꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯏ-
+ter performance in natural language processing,ꯅꯦꯆꯔꯦꯜ ꯂꯦꯉ꯭ꯒꯨꯌꯦꯖ ꯄ꯭ꯔꯣꯁꯦꯁꯤꯡꯗꯥ ꯇꯤ.ꯏ.ꯑꯥꯔ.
+tasks by grouping similar words. The word rep-,ꯃꯥꯟꯅꯕꯥ ꯋꯥꯍꯩꯁꯤꯡ ꯒ꯭ꯔꯨꯞ ꯇꯧꯗꯨꯅꯥ ꯊꯕꯀꯁꯤꯡ꯫
+resentation idea has since been applied to statis-,ꯔꯦꯁꯦꯟꯇꯦꯁꯟ ꯑꯥꯏꯗꯤꯌꯥ ꯑꯁꯤ ꯃꯇꯝ ꯑꯗꯨꯗꯒꯤ ꯍꯧꯅꯥ ꯁ꯭ꯇꯦꯇꯤꯁ-
+tical language modeling with considerable suc-,ꯌꯥꯝꯅꯥ ꯆꯥꯎꯅꯥ SUC-ꯒꯥ ꯂꯣꯌꯅꯅꯥ TICAL LANGUAGE ꯃꯣꯗꯦꯂꯤꯡ ꯇꯧꯕꯥ
+"cess (Bengio et al., 2003)","ꯁꯦꯁ (ꯕꯦꯟꯖꯤꯑꯣ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯰꯳) ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"Recently, Mikolov",ꯍꯟꯗꯛꯇꯥ ꯃꯤꯀꯣꯂꯣꯚ .
+"et al. introduced the Skip-gram model, an efﬁ-",ꯏ.ꯇꯤ.ꯑꯦꯜ.
+cient method for learning dense vector representa-,ꯗꯦꯟꯁ ꯚꯦꯛꯁꯤꯟ ꯔꯤꯞꯔꯦꯖꯦꯟꯇꯦꯇꯤꯕ ꯇꯝꯅꯕꯒꯤꯗꯃꯛ ꯁꯤꯑꯦꯟꯇ ꯃꯦꯊꯗ-
+tions of words from large amounts of unstructured,ꯑꯅꯁ꯭ꯠꯔꯀꯆꯔꯒꯤ ꯑꯆꯧꯕꯥ ꯃꯁꯤꯡꯗꯒꯤ ꯋꯥꯍꯩꯁꯤꯡꯒꯤ ꯇꯤꯅꯁꯤꯡ .
+"text data (Mikolov et al., 2013). The application","ꯇꯦꯛꯁꯠ ꯗꯦꯇꯥ (ꯃꯤꯀꯣꯂꯣꯚ ꯑꯦꯠ ꯑꯦꯜ., 2013)꯫"
+of word representation includes automatic speech,ꯋꯥꯍꯩ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯟ ꯑꯁꯤꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯑꯣꯇꯣꯃꯦꯇꯤꯛ ꯁ꯭ꯄꯤꯆ ꯌꯥꯑꯣꯔꯤ .
+"recognition and machine translation, and a wide","ꯔꯤꯀꯣꯒꯅꯤꯁꯟ ꯑꯃꯁꯨꯡ ꯃꯦꯁꯤꯟ ꯇ꯭ꯔꯥꯟꯁꯂꯦꯁꯟ, ꯑꯃꯁꯨꯡ ꯄꯥꯛ ꯆꯥꯎꯕꯥ"
+range of NLP tasks,ꯑꯦꯟ.ꯑꯦꯜ.ꯄꯤ.ꯒꯤ ꯊꯕꯀꯁꯤꯡꯒꯤ ꯔꯦꯟꯖ
+"In this paper, we want to explore the relation-",ꯄꯦꯄꯔ ꯑꯁꯤꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ ꯃꯔꯤ ꯑꯁꯤ ꯊꯤꯖꯤꯅꯕꯥ ꯄꯥꯝꯃꯤ-
+ship between vector representations of words in,ꯒꯤ ꯋꯥꯍꯩꯁꯤꯡꯒꯤ ꯚꯦꯛꯇꯔ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯁꯤꯞ .
+tweets and the personality traits. In order to im-,ꯇ꯭ꯕꯤꯠꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ꯫
+prove the generalization of the word vectors we,Vectors ꯍꯥꯌꯕꯥ ꯋꯥꯍꯩ ꯑꯁꯤꯒꯤ ꯖꯦꯅꯔꯦꯂꯥꯏꯖꯦꯁꯟ ꯑꯗꯨ ꯄ꯭ꯔꯃꯥꯟ ꯇꯧꯕꯤꯌꯨ ꯑꯩꯈꯣꯌꯅꯥ .
+"use, we trained the model based on an external","ꯁꯤꯖꯤꯟꯅꯕꯤꯌꯨ, ꯑꯩꯈꯣꯌꯅꯥ ꯃꯣꯗꯦꯜ ꯑꯁꯤ ꯃꯄꯥꯅꯒꯤ ꯑꯃꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯇ꯭ꯔꯦꯟ ꯇꯧꯈꯤ ."
+Twitter dataset which has hundreds of millions of,ꯇꯨꯏꯇꯥꯔ ꯗꯥꯇꯥꯁꯦꯠ ꯑꯁꯤꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯥꯈ ꯀꯌꯥ ꯂꯥꯈ ꯀꯌꯥ ꯂꯩꯔꯤ꯫
+"tweets. This gave us word vectors of 2,334,564",ꯇ꯭ꯕꯤꯠꯁꯤꯡ꯫
+words and each word has a 500 dimension dis-,ꯋꯥꯍꯩꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯋꯥꯍꯩ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯵꯰꯰ꯒꯤ ꯗꯥꯏꯃꯦꯟꯁꯟ ꯂꯩ-
+tributed representation of its semantic meanings,ꯃꯁꯤꯒꯤ ꯁꯦꯃꯦꯟꯇꯤꯛ ꯃꯤꯅꯤꯡꯁꯤꯡꯒꯤ ꯇ꯭ꯔꯥꯏꯕ꯭ꯌꯨꯠ ꯇꯧꯔꯕꯥ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯟ
+"Aiming to predict the personalty traits, we need",ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯒꯨꯅꯁꯤꯡ ꯑꯗꯨ ꯂꯥꯎꯊꯣꯛꯅꯕꯥ ꯄꯥꯟꯗꯝ ꯊꯝꯂꯤꯕꯥ ꯑꯁꯤ ꯑꯩꯈꯣꯌꯅꯥ ꯃꯊꯧ ꯇꯥꯏ
+to compute a general representations of all tweets,ꯇ꯭ꯕꯤꯠ ꯄꯨꯝꯅꯃꯛꯀꯤ ꯖꯦꯅꯔꯦꯜ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯟ ꯑꯃꯥ ꯀꯝꯞꯌꯨꯠ ꯇꯧꯅꯕꯥ .
+from a user based the word vectors. After remov-,ꯌꯨꯖꯔ ꯑꯃꯗꯒꯤ ꯋꯥꯍꯩ ꯚꯦꯛꯁꯤꯅꯁꯤꯡꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ꯫
+"ing stop words in all the tweets, we use two ap-","ing stop words in all the tweets, ꯑꯩꯈꯣꯌꯅꯥ ꯑꯅꯤ ap-"
+proaches to compute the textual representations of,ꯒꯤ ꯇꯦꯛꯁꯇꯥꯏꯜ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡ ꯀꯝꯞꯌꯨꯠ ꯇꯧꯅꯕꯥ ꯄ꯭ꯔꯣꯆꯁꯤꯡ .
+users listed as below,ꯃꯈꯥꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯑꯁꯤꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯂꯤꯁ꯭ꯠ ꯇꯧꯔꯕꯥ ꯌꯨꯖꯔꯁꯤꯡ
+• Average word vectors. We average all the,• ꯆꯥꯡꯆꯠꯇꯥ ꯋꯥꯍꯩꯒꯤ ꯚꯦꯛꯇꯔꯁꯤꯡ꯫
+vectors of all the word that is available in the,ꯋꯥꯍꯩ ꯄꯨꯝꯅꯃꯛꯀꯤ ꯚꯦꯛꯇꯔꯁꯤꯡ ꯑꯗꯨ .
+tweets of a user to represent the vector repre-,ꯚꯦꯛꯇꯔ ꯔꯤꯞꯔꯦ- ꯔꯤꯞꯔꯖꯦꯟꯇ ꯇꯧꯅꯕꯥ ꯌꯨꯖꯔ ꯑꯃꯒꯤ ꯇ꯭ꯕꯤꯠꯁꯤꯡ
+sentations of that user,ꯌꯨꯖꯔ ꯑꯗꯨꯒꯤ ꯁꯦꯟꯇꯦꯁꯟ ꯑꯗꯨ .
+• Weighted average word vectors. Instead of,• ꯋꯦꯏꯇꯦꯗ ꯑꯦꯚꯥꯔꯦꯖ ꯋꯥꯔꯗ ꯚꯦꯛꯇꯔꯁꯤꯡ꯫
+"average all the vectors of all the word equally,","ꯋꯥꯍꯩ ꯄꯨꯝꯅꯃꯛꯀꯤ ꯚꯦꯛꯇꯔ ꯄꯨꯝꯅꯃꯛ ꯆꯞ ꯃꯥꯟꯅꯅꯥ,"
+we weighted average the vectors of the words,ꯑꯩꯈꯣꯌꯅꯥ ꯋꯥꯍꯩꯁꯤꯡ ꯑꯁꯤꯒꯤ ꯚꯦꯛꯇꯔꯁꯤꯡ ꯑꯁꯤ ꯆꯥꯡꯆꯠꯇꯥ ꯋꯦꯠ ꯇꯧꯈꯤ .
+Table 4: The description of POS tags and their correlations with each personality trait (*** p < 0.001),ꯇꯦꯕꯜ 4: POS ꯇꯦꯒꯁꯤꯡꯒꯤ ꯃꯁꯛ ꯈꯪꯗꯣꯀꯄꯥ ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠ ꯈꯨꯗꯤꯡꯃꯛꯀꯥ ꯃꯈꯣꯌꯒꯤ ꯀꯣꯔꯤꯑꯦꯂꯦꯁꯅꯁꯤꯡ (*** P < 0.001)꯫
+"Negative values mean that POS tags are positively correlated with I, S, T, or J, while positive values mean","ꯅꯦꯒꯦꯇꯤꯕ ꯚꯦꯜꯌꯨꯁꯤꯡ ꯑꯁꯤꯅꯥ POS ꯇꯦꯒꯁꯤꯡ ꯑꯁꯤ I, S, T, ꯅꯠꯠꯔꯒꯥ Jꯒꯥ ꯄꯣꯖꯤꯇꯤꯕ ꯑꯣꯏꯅꯥ ꯀꯣꯔꯤꯂꯦꯠ ꯇꯧꯏ ꯍꯥꯌꯕꯅꯤ, ꯑꯗꯨꯒꯥ ꯄꯣꯖꯤꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯚꯦꯜꯌꯨꯁꯤꯡꯅꯥ ꯍꯥꯌꯔꯤ"
+"that POS tags are positively correlated with E, N, F or P. The top 3 positively correlated and negatively","POS ꯇꯦꯒꯁꯤꯡ ꯑꯁꯤ E, N, F ꯅꯠꯠꯔꯒꯥ P.ꯒꯥ ꯄꯣꯖꯤꯇꯤꯕ ꯑꯣꯏꯅꯥ ꯀꯣꯔꯤꯂꯦꯠ ꯇꯧꯏ ꯍꯥꯌꯕꯥ ."
+correlated POS tags are bold for each personality trait,ꯀꯣꯔꯤꯂꯦꯇꯦꯗ POS ꯇꯦꯒꯁꯤꯡ ꯑꯁꯤ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯑꯣꯏꯅꯥ ꯕꯣꯜꯗ ꯑꯣꯏ꯫
+Tag,ꯃꯤꯡ ꯊꯥꯕ
+Description,ꯋꯥꯔꯣꯜ
+I/E,ꯑꯩ/ꯏ .
+S/N,ꯑꯦꯁ/ꯑꯦꯟ .
+T/F,ꯇꯤ/ꯑꯦꯐ .
+J/P,ꯖꯦ/ꯄꯤ.
+"Nominal, Nominal+Verbal","ꯅꯣꯃꯤꯅꯦꯜ, ꯅꯣꯃꯤꯅꯦꯜ+ꯚꯥꯔꯕꯦꯜ"
+N,ꯑꯦꯟ.
+"common noun (NN, NNS)","ꯀꯃꯟ ꯅ꯭ꯌꯨꯟ (ꯑꯦꯟ.ꯑꯦꯟ., ꯑꯦꯟ.ꯑꯦꯟ.ꯑꯦꯁ.)"
+0.0474***,꯰.꯰꯴꯷꯴***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0535***,꯰.꯰꯵꯳꯵*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0509***,-꯰.꯰꯵꯰꯹***
+-0.0586***,-꯰.꯰꯵꯸꯶***
+O,ꯑꯣ .
+pronoun (personal/WH; not possessive),ꯄ꯭ꯔꯣꯅꯣꯅꯣꯝ (ꯄꯔꯁꯣꯅꯦꯜ/ꯗꯕꯜꯌꯨ.ꯑꯩꯆ.; ꯄꯣꯁꯦꯁꯤꯕ ꯑꯣꯏꯗꯕꯥ)
+-0.0715***,-꯰.꯰꯷꯱꯵***
+-0.0191***,-꯰.꯰꯱꯹꯱***
+0.1014***,꯰.꯱꯰꯱꯴*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0350***,꯰.꯰꯳꯵꯰*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"proper noun (NNP, NNPS)","ꯄ꯭ꯔꯣꯄꯔ ꯅ꯭ꯌꯨꯟ (ꯑꯦꯟ.ꯑꯦꯟ.ꯄꯤ., ꯑꯦꯟ.ꯑꯦꯟ.ꯄꯤ.ꯑꯦꯁ.)"
+-0.0014,-꯰.꯰꯰꯱꯴ꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+-0.0193***,-꯰.꯰꯱꯹꯳***
+-0.0788***,-꯰.꯰꯷꯸꯸***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0468***,꯰.꯰꯴꯶꯸*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+S,ꯑꯦꯁ .
+nominal + possessive,ꯅꯣꯃꯤꯅꯦꯜ + ꯄꯣꯁꯦꯁꯤꯕ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+0.0179***,꯰.꯰꯱꯷꯹*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0205***,꯰.꯰꯲꯰꯵***
+0.0064,꯰.꯰꯰꯶꯴ꯗꯥ ꯂꯩꯈꯤ꯫
+-0.0406***,-꯰.꯰꯴꯰꯶***
+Z,ꯖꯤ.
+proper noun + possessive,ꯄ꯭ꯔꯣꯄꯔ ꯅꯧꯟ + ꯄꯣꯁꯦꯁꯤꯕ .
+0.0260***,꯰.꯰꯲꯶꯰*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0202***,꯰.꯰꯲꯰꯲*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0156***,-꯰.꯰꯱꯵꯶***
+-0.0357***,-꯰.꯰꯳꯵꯷***
+Other open-class words,ꯑꯇꯣꯞꯄꯥ ꯑꯣꯄꯟ-ꯀ꯭ꯂꯥꯁ ꯋꯥꯍꯩꯁꯤꯡ .
+V,ꯚꯤ .
+"verb incl. copula, auxiliaries (V*, MD)",ꯕꯔꯕ ꯌꯥꯑꯣꯕꯥ꯫
+-0.0299***,-꯰.꯰꯲꯹꯹***
+0.0081,꯰.꯰꯰꯸꯱ꯗꯥ ꯂꯩꯈꯤ꯫
+0.0534***,꯰.꯰꯵꯳꯴*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0142***,-꯰.꯰꯱꯴꯲***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+A,ꯑꯃ
+adjective (J*),ꯑꯦꯖꯦꯛꯇꯤꯚ ꯑꯣꯏꯕꯥ (J*)꯫
+0.0037,꯰.꯰꯰꯳꯷ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0440***,꯰.꯰꯴꯴꯰***
+0.0340***,꯰.꯰꯳꯴꯰*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0388***,-꯰.꯰꯳꯸꯸**** ꯇꯧꯕꯥ ꯌꯥꯏ꯫
+R,ꯑꯥꯔ.
+"adverb (R*, WRB)","ꯑꯦꯗꯚꯥꯔꯕ (ꯑꯥꯔ*, ꯋꯥ.ꯑꯥꯔ.ꯕꯤ.)꯫"
+-0.0767***,-꯰.꯰꯷꯶꯷***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0121***,-꯰.꯰꯱꯲꯱***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0702***,꯰.꯰꯷꯰꯲*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0145***,꯰.꯰꯱꯴꯵***
+interjection (UH),ꯏꯟꯇꯔꯖꯦꯛꯁꯟ (ꯌꯨ.ꯑꯩꯆ.) .
+-0.0458***,-꯰.꯰꯴꯵꯸***
+-0.0592***,-꯰.꯰꯵꯹꯲***
+0.0274***,꯰.꯰꯲꯷꯴***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0639***,꯰.꯰꯶꯳꯹*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Other closed-class words,ꯑꯇꯣꯞꯄꯥ ꯀ꯭ꯂꯣꯖꯗ ꯀ꯭ꯂꯥꯁꯀꯤ ꯋꯥꯍꯩꯁꯤꯡ
+D,ꯗꯤ .
+"determiner (WDT, DT, WP$, PRP$)","ꯗꯤꯇꯥꯔꯃꯤꯅꯔ (ꯗꯕꯜꯌꯨ.ꯗꯤ.ꯇꯤ., ꯗꯤ.ꯇꯤ., ꯋꯥ.ꯄꯤ.$, ꯄꯤ.ꯑꯥꯔ.ꯄꯤ.$) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫"
+0.0204***,꯰.꯰꯲꯰꯴*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0416***,꯰.꯰꯴꯱꯶***
+0.0401***,꯰.꯰꯴꯰꯱***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0519***,-꯰.꯰꯵꯱꯹***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+P,ꯄꯤ .
+"pre- or postposition, or subordinating conjunction (IN,","ꯄ꯭ꯔꯤ- ꯅꯠꯠꯔꯒꯥ ꯄꯣꯁ꯭ꯇꯄꯣꯖꯤꯁꯟ, ꯅꯠꯠꯔꯒꯥ ꯁꯕꯑꯣꯔꯗꯤꯅꯦꯇꯤꯡ ꯀꯟꯖꯅꯛꯁꯟ (in,"
+TO),to) ꯑꯃꯁꯨꯡ .
+0.0541***,꯰.꯰꯵꯴꯱*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0492***,꯰.꯰꯴꯹꯲***
+0.0128,꯰.꯰꯱꯲꯸ꯗꯥ ꯂꯩꯈꯤ꯫
+-0.0761***,-꯰.꯰꯷꯶꯱***
+&,ꯑꯃꯁꯨꯡ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+coordinating conjunction (CC),ꯀꯣꯑꯣꯔꯗꯤꯅꯦꯇꯤꯡ ꯀꯟꯖꯅꯛꯁꯟ (ꯁꯤ.ꯁꯤ.)
+-0.0381***,-꯰.꯰꯳꯸꯱***
+0.0146***,꯰.꯰꯱꯴꯶*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0763***,꯰.꯰꯷꯶꯳*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0090,-꯰.꯰꯰꯹꯰ꯗꯥ ꯂꯩꯕꯥ ꯌꯥꯏ꯫
+T,ꯇꯤ.
+verb particle (RP),ꯕꯔꯕ ꯄꯥꯔꯇꯤꯀꯦꯜ (ꯑꯥꯔ.ꯄꯤ.) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+0.0197***,꯰.꯰꯱꯹꯷***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0168***,-꯰.꯰꯱꯶꯸***
+0.0306***,꯰.꯰꯳꯰꯶*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0204***,-꯰.꯰꯲꯰꯴***
+X,x ꯒꯤ ꯑꯣꯏꯕꯥ꯫
+"existential there, predeterminers (EX, PDT)","ꯃꯐꯝ ꯑꯗꯨꯗꯥ ꯂꯩꯔꯤꯕꯥ ꯑꯦꯒꯖꯤꯕꯤꯁꯅꯦꯜ, ꯄ꯭ꯔꯤꯗꯤꯇꯔꯃꯤꯅꯔꯁꯤꯡ (ꯑꯦꯛꯁ, ꯄꯤ.ꯗꯤ.ꯇꯤ.)"
+-0.0208***,-꯰.꯰꯲꯰꯸***
+0.0228***,꯰.꯰꯲꯲꯸*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0243***,꯰.꯰꯲꯴꯳***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0108,-꯰.꯰꯱꯰꯸ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Twitter/online-speciﬁc,ꯇ꯭ꯕꯤꯇꯔ/ꯑꯣꯅꯂꯥꯏꯟ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+hashtag (indicates topic/category for tweet),ꯍꯦꯁꯇꯦꯒ (ꯇꯨꯏꯠꯀꯤꯗꯃꯛ ꯇꯣꯄꯤꯛ/ꯀꯦꯇꯦꯒꯣꯔꯤ ꯏꯟꯗꯤꯀꯦꯇꯦꯗ)
+0.0912***,꯰.꯰꯹꯱꯲*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0305***,-꯰.꯰꯳꯰꯵***
+0.0225***,꯰.꯰꯲꯲꯵***
+-0.0252***,-꯰.꯰꯲꯵꯲***
+at-mention (indicates another user as a recipient of a,ꯑꯦꯠ-ꯃꯦꯟꯁꯟ (ꯑꯇꯣꯞꯄꯥ ꯌꯨꯖꯔ ꯑꯃꯕꯨ ꯔꯤꯁꯤꯞꯇꯔ ꯑꯃꯥ ꯑꯣꯏꯅꯥ ꯈꯪꯍꯜꯂꯤ
+tweet),ꯇ꯭ꯕꯤꯠ ꯇꯧꯕꯥ)꯫
+0.0082,꯰.꯰꯰꯸꯲ ꯑꯣꯏꯈꯤ꯫
+-0.0080,-꯰.꯰꯰꯸꯰ꯗꯥ ꯂꯩꯕꯥ ꯌꯥꯏ꯫
+-0.0143***,-꯰.꯰꯱꯴꯳***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0092,꯰.꯰꯰꯹꯲ꯗꯥ ꯂꯩꯈꯤ꯫
+"discourse marker, indications of continuation of a mes-","ꯗꯤꯁꯀꯣꯔꯁ ꯃꯥꯔꯀꯔ, ꯃꯦꯁ-ꯒꯤ ꯃꯈꯥ ꯆꯠꯊꯕꯒꯤ ꯏꯟꯗꯤꯀꯦꯁꯅꯁꯤꯡ-"
+sage across multiple tweets,ꯃꯁꯤꯡ ꯌꯥꯝꯂꯕꯥ ꯇ꯭ꯕꯤꯠꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯁꯦꯖ .
+-0.0324***,-꯰.꯰꯳꯲꯴***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0034,꯰.꯰꯰꯳꯴ꯗꯥ ꯂꯩꯈꯤ꯫
+0.0130***,꯰.꯰꯱꯳꯰*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0276***,꯰.꯰꯲꯷꯶*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+U,ꯌꯨ .
+URL or email address,URL ꯅꯠꯠꯔꯒꯥ ꯏꯃꯦꯏꯜ ꯑꯦꯗ꯭ꯔꯦꯁ
+0.0432***,꯰.꯰꯴꯳꯲*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0005,꯰.꯰꯰꯰꯵ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0038,-꯰.꯰꯰꯳꯸ꯗꯥ ꯂꯩꯈꯤ꯫
+0.0036,꯰.꯰꯰꯳꯶ ꯑꯣꯏꯈꯤ꯫
+E,ꯏ .
+emoticon,ꯏꯃꯣꯇꯤꯀꯣꯟ ꯴.
+-0.0139***,-꯰.꯰꯱꯳꯹***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0546***,-꯰.꯰꯵꯴꯶***
+0.0744***,꯰.꯰꯷꯴꯴***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0025,꯰.꯰꯰꯲꯵ꯗꯥ ꯂꯩꯈꯤ꯫
+Miscellaneous,ꯑꯇꯩ ꯑꯇꯩ
+$,$ ꯒꯤ ꯂꯨꯄꯥ ꯂꯥꯈ ꯴.
+numeral (CD),ꯅꯝꯕꯔ (ꯁꯤ.ꯗꯤ.) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+0.0283***,꯰.꯰꯲꯸꯳*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0502***,-꯰.꯰꯵꯰꯲***
+-0.0461***,-꯰.꯰꯴꯶꯱***
+-0.0031,-꯰.꯰꯰꯳꯱ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+",",", ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+punctuation,ꯄꯉ꯭ꯀꯆ꯭ꯌꯨꯑꯦꯜ ꯑꯣꯏꯕꯥ .
+0.0455***,꯰.꯰꯴꯵꯵***
+0.0365***,꯰.꯰꯳꯶꯵*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+-0.0377***,-꯰.꯰꯳꯷꯷***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0741***,-꯰.꯰꯷꯴꯱***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+G,ꯖꯤ .
+"other abbreviations, foreign words, possessive endings,","ꯑꯇꯣꯞꯄꯥ ꯑꯦꯕꯕ꯭ꯔꯤꯕꯤꯌꯦꯁꯅꯁꯤꯡ, ꯃꯄꯥꯟ ꯂꯩꯕꯥꯛꯀꯤ ꯋꯥꯍꯩꯁꯤꯡ, ꯄꯣꯁꯦꯁꯤꯕ ꯑꯦꯟꯗꯤꯡꯁꯤꯡ,"
+"symbols, garbage (FW, POS, SYM, LS)","ꯁꯤꯝꯕꯣꯂꯁꯤꯡ, ꯑꯃꯣꯠꯄꯥ (ꯑꯦꯐ.ꯗꯕ꯭ꯜꯌꯨ., ꯄꯤ.ꯑꯣ.ꯑꯦꯁ., ꯁꯤꯝ, ꯑꯦꯜ.ꯑꯦꯁ.)"
+-0.0423***,-꯰.꯰꯴꯲꯳***
+-0.0197***,-꯰.꯰꯱꯹꯷***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+-0.0297***,-꯰.꯰꯲꯹꯷***
+0.0518***,꯰.꯰꯵꯱꯸***
+Other Compounds,ꯑꯇꯣꯞꯄꯥ ꯀꯝꯄꯥꯎꯟꯗꯁꯤꯡ .
+L,ꯑꯦꯜ .
+nominal + verbal; verbal + nominal,ꯅꯣꯃꯤꯅꯦꯜ + ꯋꯥꯍꯩꯅꯥ ꯄꯤꯕꯥ;
+-0.0808***,-꯰.꯰꯸꯰꯸***
+-0.0268***,-꯰.꯰꯲꯶꯸***
+0.0632***,꯰.꯰꯶꯳꯲***ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩ꯫
+0.0417***,꯰.꯰꯴꯱꯷*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+M,ꯑꯦꯝ .
+proper noun + verbal,ꯄ꯭ꯔꯣꯄꯔ ꯅꯧꯟ + ꯕꯔꯕꯜ .
+0.0042,꯰.꯰꯰꯴꯲ꯗꯥ ꯂꯩꯈꯤ꯫
+-0.0064,-꯰.꯰꯰꯶꯴ꯗꯥ ꯂꯩꯕꯥ ꯌꯥꯏ꯫
+0.0028,꯰.꯰꯰꯲꯸ꯗꯥ ꯂꯩꯈꯤ꯫
+0.0035,꯰.꯰꯰꯳꯵ꯗꯥ ꯂꯩꯈꯤ꯫
+Y,ꯋꯥꯏ .
+X + verbal,X + ꯋꯥꯍꯩꯅꯥ ꯄꯤꯕꯥ
+-0.0256***,-꯰.꯰꯲꯵꯶***
+0.0002,꯰.꯰꯰꯰꯲ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.0046,꯰.꯰꯰꯴꯶ ꯑꯣꯏꯈꯤ꯫
+0.0172***,꯰.꯰꯱꯷꯲*** ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+(a) Top correlated unigram words for Thinking,(ꯀ) ꯋꯥꯈꯜ ꯈꯅꯕꯒꯤ ꯃꯊꯛꯇꯥ ꯀꯣꯔꯤꯂꯦꯇꯦꯗ ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ ꯋꯥꯍꯩꯁꯤꯡ
+(b) Top correlated unigram words for Feeling,(ꯈ) ꯐꯤꯜꯂꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯃꯀꯣꯛ ꯊꯣꯡꯕꯥ ꯀꯣꯔꯤꯂꯦꯇꯦꯗ ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ ꯋꯥꯍꯩꯁꯤꯡ
+(c) Top correlated bigram phrases for Introversion,(ꯒ) ꯏꯟꯠꯔꯣꯕꯔꯁꯅꯒꯤꯗꯃꯛꯇꯥ ꯃꯀꯣꯛ ꯊꯣꯡꯕꯥ ꯀꯣꯔꯤꯂꯦꯇꯦꯗ ꯕꯤꯒ꯭ꯔꯥꯝ ꯐ꯭ꯔꯦꯖꯁꯤꯡ
+(d) Top correlated bigram phrases for Extroversion,(d) ꯑꯦꯛꯁꯠꯔꯣꯚꯥꯔꯁꯅꯒꯤꯗꯃꯛꯇꯥ ꯃꯀꯣꯛ ꯊꯣꯡꯕꯥ ꯀꯣꯔꯤꯂꯦꯇꯦꯗ ꯕꯤꯒ꯭ꯔꯥꯝ ꯐ꯭ꯔꯦꯖꯁꯤꯡ
+"Figure 1: Correlations between n-gram words and phrases, and the personality traits","ꯐꯤꯒꯔ 1: ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯒꯤ ꯋꯥꯍꯩꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯋꯥꯍꯩ ꯄꯔꯦꯡꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯕꯥ ꯀꯣꯔꯤꯑꯦꯂꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯇꯁꯤꯡ"
+that is available in the tweets of a user ac-,ꯃꯗꯨ ꯌꯨꯖꯔ ꯑꯃꯒꯤ ꯇ꯭ꯕꯤꯠꯁꯤꯡꯗꯥ ꯐꯪꯒꯅꯤ ac-
+cording to the TF-IDF values. The weighted,ꯇꯤ.ꯑꯦꯐ.-ꯑꯥꯏ.ꯗꯤ.ꯑꯦꯐ.ꯀꯤ ꯚꯦꯜꯌꯨꯁꯤꯡꯗꯥ ꯀꯣꯔꯗꯤꯡ ꯇꯧꯕꯥ꯫
+vector representation is then used to represent,ꯃꯗꯨꯒꯤ ꯃꯇꯨꯡꯗꯥ ꯚꯦꯛꯁꯤꯟ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯟ ꯑꯗꯨ ꯔꯤꯞꯔꯖꯦꯟꯇ ꯇꯧꯅꯕꯥ ꯁꯤꯖꯤꯟꯅꯩ .
+the vector representations of that user,ꯌꯨꯖꯔ ꯑꯗꯨꯒꯤ ꯚꯦꯛꯇꯔ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡ ꯑꯗꯨ .
+7,꯷ ꯑꯃꯁꯨꯡ ꯷.
+Predicting Personality,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯄ꯭ꯔꯤꯗꯤꯛꯇ ꯇꯧꯕꯥ
+In this section we discuss our models aimed at pre-,ꯀꯥꯈꯜ ꯑꯁꯤꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ ꯄ꯭ꯔꯤ-ꯗꯥ ꯄꯥꯟꯗꯝ ꯊꯝꯂꯤꯕꯥ ꯑꯩꯈꯣꯌꯒꯤ ꯃꯣꯗꯦꯂꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯈꯟꯅꯔꯤ꯫
+dicting MBTI personality traits based on the fea-,ꯐꯤ-ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯑꯦꯝ.ꯕꯤ.ꯇꯤ.ꯑꯥꯏ.ꯒꯤ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ ꯗꯤꯛꯇꯤꯡ ꯇꯧꯕꯥ
+tures discussed in the previous sections. We de-,ꯃꯃꯥꯡꯒꯤ ꯁꯦꯛꯁꯅꯁꯤꯡꯗꯥ ꯈꯟꯅꯈꯤꯕꯥ ꯇꯤ.ꯑꯥꯔ.ꯏ.ꯁꯤꯡ꯫
+velop different prediction models using both indi-,ꯏꯟꯗꯤ- ꯑꯅꯤꯃꯛ ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯇꯣꯉꯥꯟ ꯇꯣꯉꯥꯅꯕꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯁꯟ ꯃꯣꯗꯦꯂꯁꯤꯡ ꯚꯦꯜꯌꯨ ꯇꯧꯕꯥ
+vidual features and combined features. For com-,ꯚꯤꯖꯨꯑꯦꯜ ꯐꯤꯆꯔꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯀꯝꯕꯤꯅꯦꯠ ꯐꯤꯆꯔꯁꯤꯡ꯫
+"bined features, we concatenate features within or","ꯕꯥꯏꯟ ꯇꯧꯔꯕꯥ ꯐꯤꯆꯔꯁꯤꯡ, ꯑꯩꯈꯣꯌꯅꯥ ꯐꯤꯆꯔꯁꯤꯡ ꯀꯟꯀꯦꯇꯦꯅꯦꯠ ꯇꯧꯏ ꯅꯠꯔꯒꯥ ."
+across categories to test the predictive power of,ꯀꯦꯇꯦꯒꯣꯔꯤꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯲꯰꯲꯰ꯒꯤ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯚ ꯄꯥꯋꯔ ꯑꯗꯨ ꯇꯦꯁ꯭ꯠ ꯇꯧꯅꯕꯥ꯫
+our models,ꯑꯩꯈꯣꯌꯒꯤ ꯃꯣꯗꯦꯂꯁꯤꯡꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+"Also, results presented here were","ꯑꯃꯗꯤ, ꯃꯐꯝ ꯑꯁꯤꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯔꯤꯖꯜꯇꯁꯤꯡ ꯑꯁꯤ ."
+obtained using a Logistic Regression model with,ꯂꯣꯖꯤꯁ꯭ꯇꯤꯛ ꯔꯤꯒ꯭ꯔꯦꯁꯟ ꯃꯣꯗꯦꯜ ꯑꯃꯥ ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯐꯪꯈꯤꯕꯥ
+10-fold cross-validation; other machine learning,꯱꯰-ꯐꯣꯜꯗ ꯀ꯭ꯔꯣꯁ-ꯚꯦꯂꯤꯗꯦꯁꯟ;
+"models, such as Random Forest and SVM, pro-","ꯃꯣꯗꯦꯂꯁꯤꯡ, ꯍꯥꯌꯕꯗꯤ ꯔꯦꯟꯗꯝ ꯐꯣꯔꯦꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯑꯦꯁ.ꯚꯤ.ꯑꯦꯝ., ꯄ꯭ꯔꯣ-"
+duced similar results,DUCED ꯃꯥꯟꯅꯕꯥ ꯐꯂꯁꯤꯡ .
+Since the distribution of,ꯌꯦꯟꯊꯣꯛꯂꯕꯥ ꯃꯇꯨꯡꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+"people with different personalities is skewed, as","ꯇꯣꯉꯥꯟ ꯇꯣꯉꯥꯅꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯁꯤꯡ ꯂꯩꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯅꯥ ꯁ꯭ꯛꯌꯨꯏꯗ ꯇꯧꯏ, ꯃꯗꯨꯗꯤ ."
+"shown in Table 3, the prediction performance is",ꯇꯦꯕꯜ 3ꯗꯥ ꯎꯠꯂꯤꯕꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯁꯟ ꯄꯔꯐꯣꯃꯦꯟꯁ ꯑꯁꯤ .
+reported in terms of area under the receiver op-,ꯔꯤꯁꯤꯚꯥꯔ ꯑꯣꯞ-ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩꯕꯥ ꯑꯦꯔꯤꯌꯥꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯈꯤ꯫
+erating characteristic curve (AUC) which reﬂects,ꯔꯤꯐ꯭ꯂꯦꯛꯇ ꯇꯧꯔꯤꯕꯥ ꯏꯔꯦꯇꯤꯡ ꯀꯦꯔꯦꯛꯇꯦꯔꯤꯁ꯭ꯇꯤꯛ ꯀꯔꯕ (ꯑꯦ.ꯌꯨ.ꯁꯤ.)
+the probability of correctly classifying two ran-,ꯔꯟ ꯑꯅꯤꯕꯨ ꯃꯌꯦꯛ ꯁꯦꯡꯅꯥ ꯀ꯭ꯂꯥꯁꯤꯐꯥꯏ ꯇꯧꯕꯒꯤ ꯄ꯭ꯔꯣꯕꯤꯕꯤꯂꯤꯇꯤ-
+domly selected users from the two classes of di-,ꯗꯤ-ꯀ꯭ꯂꯥꯁ ꯑꯅꯤ ꯑꯁꯤꯗꯒꯤ ꯗꯣꯃꯂꯤ ꯈꯅꯒꯠꯂꯕꯥ ꯌꯨꯖꯔꯁꯤꯡ
+chotomous variables (i.e. extrovert and introvert),ꯆꯣꯇꯣꯃꯣꯁ ꯚꯦꯔꯤꯑꯦꯕꯂꯁꯤꯡ (ꯑꯔꯕꯥꯟ ꯑꯦꯛꯁꯠꯔꯣꯕꯔꯠ ꯑꯃꯁꯨꯡ ꯏꯟꯠꯔꯣꯚꯥꯔꯠ)
+The two approaches we proposed to learn the,ꯑꯩꯈꯣꯌꯅꯥ ꯇꯝꯅꯕꯒꯤꯗꯃꯛ ꯄ꯭ꯔꯄꯣꯖ ꯇꯧꯈꯤꯕꯥ ꯑꯦꯞꯔꯣꯆ ꯑꯅꯤ ꯑꯗꯨ .
+vector representation of users based on word vec-,ꯋꯥꯔꯗ ꯚꯤ.ꯏ.ꯁꯤ.ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯌꯨꯖꯔꯁꯤꯡꯒꯤ ꯚꯦꯛꯇꯔ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯟ-
+tors turn out to have similar performance in pre-,ꯇꯣꯔꯁꯅꯥ ꯄ꯭ꯔꯤ-ꯗꯥ ꯃꯥꯟꯅꯕꯥ ꯄꯔꯐꯣꯃꯦꯟꯁ ꯂꯩꯕꯥ ꯑꯣꯏꯅꯥ ꯊꯣꯛꯂꯀꯏ꯫
+"dicting personalities traits. Therefore, in the fol-",ꯗꯤꯛꯇꯤꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ꯫
+"lowing experiment, we use average word vectors","ꯂꯣꯌꯤꯡ ꯑꯦꯛꯁꯄꯔꯤꯃꯦꯟꯇ, ꯑꯩꯈꯣꯌꯅꯥ ꯆꯥꯡꯆꯠꯇꯥ ꯋꯥꯍꯩ ꯚꯦꯛꯇꯔꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯩ"
+as word-vector based feature,ꯋꯥꯔꯗ-ꯚꯦꯛꯇꯔꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯐꯤꯆꯔ ꯑꯃꯥ ꯑꯣꯏꯅꯥ .
+7.1,꯷.꯱ ꯑꯣꯏꯈꯤ꯫
+Prediction Accuracy,ꯄ꯭ꯔꯤꯗꯤꯛꯁꯟ ꯑꯦꯛꯌꯨꯔꯦꯁꯤ .
+7.1.1,꯷.꯱.꯱ ꯑꯣꯏꯈꯤ꯫
+Performance of Individual Features,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯐꯤꯆꯔꯁꯤꯡꯒꯤ ꯄꯔꯐꯣꯃꯦꯟꯁ
+and Feature Sets,ꯑꯃꯁꯨꯡ ꯐꯤꯆꯔ ꯁꯦꯠꯁꯤꯡ .
+Prediction accuracies achieved using both individ-,ꯄ꯭ꯔꯤꯗꯤꯛꯁꯟ ꯑꯦꯛꯌꯨꯔꯦꯁꯤꯁꯤꯡ ꯑꯁꯤ ꯃꯤꯑꯣꯏ ꯑꯅꯤꯃꯛ ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯐꯪꯕꯥ-
+ual features and combined feature sets are pre-,ꯌꯨ.ꯑꯦ.ꯑꯦꯜ.ꯒꯤ ꯐꯤꯆꯔꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯀꯝꯕꯤꯅꯦꯠ ꯐꯤꯆꯔ ꯁꯦꯠꯁꯤꯡ ꯑꯁꯤ ꯄ꯭ꯔꯤ-
+sented in Table 5,ꯇꯦꯕꯜ ꯵ꯗꯥ ꯊꯥꯈꯤꯕꯥ꯫
+The highest accuracy among individual fea-,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯐꯤ-ꯔꯣꯂꯒꯤ ꯃꯔꯛꯇꯥ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯋꯥꯡꯕꯥ ꯑꯆꯨꯝꯕꯥ
+tures (AUC=0.651) was achieved for 500 dimen-,ꯇꯤ.ꯌꯨ.ꯑꯥꯔ.ꯁꯤꯡ (ꯑꯦ.ꯌꯨ.ꯁꯤ.=꯰.꯶꯵꯱) ꯑꯁꯤ ꯵꯰꯰ ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯝ.ꯑꯦꯟ.
+sion vector representations of users based on the,ꯁꯤꯌꯣꯟ ꯚꯦꯛꯇꯔ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡ ꯑꯁꯤ ꯌꯨ.ꯑꯦꯁ.
+word vector. This is a remarkable performance,ꯋꯥꯍꯩ ꯚꯦꯛꯇꯔ꯫
+given that those word vectors were unsupervis-,ꯍꯥꯌꯔꯤꯕꯥ ꯋꯥꯍꯩ ꯚꯦꯛꯇꯔꯁꯤꯡ ꯑꯁꯤ ꯑꯅꯁꯄꯥꯔꯚꯤꯁ ꯑꯣꯏꯈꯤ ꯍꯥꯌꯕꯥ ꯌꯦꯡꯂꯒꯥ-
+edly trained on a external Twitter dataset Likes,ꯃꯄꯥꯅꯒꯤ ꯇ꯭ꯕꯤꯇꯔ ꯗꯦꯇꯥꯁꯦꯠ ꯂꯥꯏꯀꯁꯤꯡꯗꯥ ꯑꯦꯗꯂꯤ ꯇ꯭ꯔꯦꯟ ꯇꯧꯔꯕꯥ
+and most of words are only weakly correlated with,ꯑꯃꯁꯨꯡ ꯋꯥꯍꯩ ꯑꯌꯥꯝꯕꯗꯤ ꯌꯥꯝꯅꯥ ꯂꯨꯅꯥ ꯀꯣꯔꯤꯂꯦꯠ ꯇꯧꯏ .
+the personality traits. This result nicely illustrates,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯒꯨꯅꯁꯤꯡ꯫
+the potential of predictions based on social media,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯁꯅꯁꯤꯡꯒꯤ ꯄꯣꯇꯦꯟꯁꯤꯌꯦꯜ ꯑꯗꯨ .
+in general and languages in. Even the relatively,ꯏꯟ ꯖꯦꯅꯦꯔꯦꯜ ꯑꯃꯁꯨꯡ ꯂꯦꯉ꯭ꯒꯨꯌꯦꯖ ꯏꯟ.
+weak signal aggregated over many observations,ꯑꯣꯕꯖꯥꯔꯕꯦꯁꯟ ꯀꯌꯥꯒꯤ ꯃꯊꯛꯇꯥ ꯋꯥꯏꯛ ꯁꯤꯒꯅꯦꯜ ꯑꯦꯒ꯭ꯔꯤꯒꯦꯠ ꯇꯧꯕꯥ
+(e.g. many words) results in a good prediction per-,(ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ ꯋꯥꯍꯩ ꯀꯌꯥ) ꯑꯁꯤꯅꯥ ꯑꯐꯕꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯁꯟ ꯑꯃꯥ ꯄꯤꯔꯤ-
+formance,ꯐꯣꯔꯃꯥꯟꯁ ꯇꯧꯕꯥ ꯌꯥꯏ꯫
+"Unigram (AUC=0.597), bigram (AUC=0.590),","ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ (ꯑꯦ.ꯌꯨ.ꯁꯤ.=꯰.꯵꯹꯷), ꯕꯤ.ꯑꯥꯏ.ꯖꯤ.ꯑꯥꯔ.ꯑꯦꯝ.(ꯑꯦ.ꯌꯨ.ꯁꯤ.=꯰.꯵꯹꯰), ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+and trigram (AUC=0.586) were also reasonably,ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯥꯏꯒ꯭ꯔꯥꯝ (ꯑꯦ.ꯌꯨ.ꯁꯤ.=꯰.꯵꯸꯶)ꯁꯨ ꯃꯔꯝ ꯆꯥꯅꯥ .
+predictive of the personality traits,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡꯒꯤ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯚ .
+Combining,ꯀꯝꯕꯤꯅꯤꯡ ꯇꯧꯕꯥ
+those n-gram features boosts the AUC to 0.607,ꯍꯥꯌꯔꯤꯕꯥ ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯒꯤ ꯐꯤꯆꯔꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯑꯦ.ꯌꯨ.ꯁꯤ.ꯕꯨ ꯰.꯶꯰꯷ꯗꯥ ꯍꯦꯅꯒꯠꯍꯜꯂꯤ꯫
+"Beside, it is worth noting that the length of the n-","ꯃꯁꯤꯒꯤ ꯃꯊꯛꯇꯥ, ꯃꯁꯤ ꯄꯅꯕꯗꯥ ꯋꯥꯕꯥ ꯋꯥꯐꯝ ꯑꯃꯅꯤ ꯃꯗꯨꯗꯤ ꯑꯦꯟ-"
+gram feature also affect the prediction results. As,ꯒ꯭ꯔꯥꯝ ꯐꯤꯆꯔ ꯑꯁꯤꯅꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯁꯅꯒꯤ ꯔꯤꯖꯜꯇꯁꯤꯡꯗꯁꯨ ꯑꯀꯥꯌꯕꯥ ꯄꯤꯔꯤ꯫
+"trigram contains a sequences of three words, it in-","ꯇ꯭ꯔꯥꯏꯒ꯭ꯔꯥꯃꯗꯥ ꯋꯥꯍꯩ ꯑꯍꯨꯃꯒꯤ ꯁꯤꯛꯕꯦꯟꯁ ꯑꯃꯥ ꯌꯥꯑꯣꯏ, ꯃꯁꯤꯗꯥ ꯏꯟ-"
+troduces more noise into the feature and therefore,ꯐꯤꯆꯔ ꯑꯁꯤꯗꯥ ꯍꯦꯟꯅꯥ ꯅꯣꯡꯂꯩ-ꯅꯨꯡꯁꯤꯠ ꯇ꯭ꯔꯣꯗ ꯇꯧꯏ ꯑꯃꯁꯨꯡ ꯃꯔꯝ ꯑꯁꯤꯅꯥ .
+Table 5: Accuracy of predicting personality traits in terms of AUC,ꯇꯦꯕꯜ ꯵: ꯑꯦ.ꯌꯨ.ꯁꯤ.ꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ ꯄ꯭ꯔꯤꯗꯤꯛꯇ ꯇꯧꯕꯒꯤ ꯑꯆꯨꯝꯕꯥ
+Individual Features & Feature Sets,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯐꯤꯆꯔꯁꯤꯡ & ꯐꯤꯆꯔ ꯁꯦꯠꯁꯤꯡ
+Feature,ꯃꯑꯣꯡ ꯃꯇꯧ
+I/E,ꯑꯩ/ꯏ .
+S/N,ꯑꯦꯁ/ꯑꯦꯟ .
+T/F,ꯇꯤ/ꯑꯦꯐ .
+J/P,ꯖꯦ/ꯄꯤ.
+Average AUC,ꯆꯥꯡꯆꯠꯇꯥ ꯑꯣꯏꯕꯥ ꯑꯦ.ꯌꯨ.ꯁꯤ.
+Word vector,ꯋꯥꯍꯩ ꯚꯦꯛꯇꯔ
+0.679,꯰.꯶꯷꯹ ꯑꯣꯏꯈꯤ꯫
+0.643,꯰.꯶꯴꯳ ꯑꯣꯏꯈꯤ꯫
+0.673,꯰.꯶꯷꯳ ꯑꯣꯏꯈꯤ꯫
+0.608,꯰.꯶꯰꯸ ꯑꯣꯏꯈꯤ꯫
+0.651,꯰.꯶꯵꯱ ꯑꯣꯏꯈꯤ꯫
+Bag of n-grams,ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯁꯤꯡꯒꯤ ꯕꯦꯒ ꯑꯃꯥ .
+0.631,꯰.꯶꯳꯱ ꯑꯣꯏꯈꯤ꯫
+0.588,꯰.꯵꯸꯸ ꯑꯣꯏꯈꯤ꯫
+0.621,꯰.꯶꯲꯱ ꯑꯣꯏꯈꯤ꯫
+0.588,꯰.꯵꯸꯸ ꯑꯣꯏꯈꯤ꯫
+0.607,꯰.꯶꯰꯷ꯗꯥ ꯂꯩꯈꯤ꯫
+Unigram,ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ ꯴.
+0.617,꯰.꯶꯱꯷ꯗꯥ ꯂꯩꯈꯤ꯫
+0.581,꯰.꯵꯸꯱ ꯑꯣꯏꯈꯤ꯫
+0.609,꯰.꯶꯰꯹ ꯑꯣꯏꯈꯤ꯫
+0.582,꯰.꯵꯸꯲ ꯑꯣꯏꯈꯤ꯫
+0.597,꯰.꯵꯹꯷ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Bigram,ꯕꯤꯔꯥꯝ
+0.609,꯰.꯶꯰꯹ ꯑꯣꯏꯈꯤ꯫
+0.569,꯰.꯵꯶꯹ ꯑꯣꯏꯈꯤ꯫
+0.607,꯰.꯶꯰꯷ꯗꯥ ꯂꯩꯈꯤ꯫
+0.573,꯰.꯵꯷꯳ ꯑꯣꯏꯈꯤ꯫
+0.590,꯰.꯵꯹꯰ ꯑꯣꯏꯈꯤ꯫
+Trigram,ꯇ꯭ꯔꯥꯏꯒ꯭ꯔꯥꯃꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+0.613,꯰.꯶꯱꯳ ꯑꯣꯏꯈꯤ꯫
+0.567,꯰.꯵꯶꯷ꯗꯥ ꯂꯩꯈꯤ꯫
+0.593,꯰.꯵꯹꯳ ꯑꯣꯏꯈꯤ꯫
+0.570,꯰.꯵꯷꯰ ꯑꯣꯏꯈꯤ꯫
+0.586,꯰.꯵꯸꯶ ꯑꯣꯏꯈꯤ꯫
+POS tag,ꯄꯣꯁ ꯇꯦꯒ
+0.593,꯰.꯵꯹꯳ ꯑꯣꯏꯈꯤ꯫
+0.575,꯰.꯵꯷꯵ ꯑꯣꯏꯈꯤ꯫
+0.603,꯰.꯶꯰꯳ ꯑꯣꯏꯈꯤ꯫
+0.569,꯰.꯵꯶꯹ ꯑꯣꯏꯈꯤ꯫
+0.585,꯰.꯵꯸꯵ ꯑꯣꯏꯈꯤ꯫
+Combined Features,ꯑꯄꯨꯅꯕꯥ ꯐꯤꯆꯔꯁꯤꯡ .
+Feature,ꯃꯑꯣꯡ ꯃꯇꯧ
+I/E,ꯑꯩ/ꯏ .
+S/N,ꯑꯦꯁ/ꯑꯦꯟ .
+T/F,ꯇꯤ/ꯑꯦꯐ .
+J/P,ꯖꯦ/ꯄꯤ.
+Average AUC,ꯆꯥꯡꯆꯠꯇꯥ ꯑꯣꯏꯕꯥ ꯑꯦ.ꯌꯨ.ꯁꯤ.
+POS + n-grams,ꯄꯣ.ꯑꯣ.ꯑꯦꯁ.+ꯑꯦꯟ.-ꯒ꯭ꯔꯥꯃꯁꯤꯡ .
+0.628,꯰.꯶꯲꯸ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+0.607,꯰.꯶꯰꯷ꯗꯥ ꯂꯩꯈꯤ꯫
+0.633,꯰.꯶꯳꯳ ꯑꯣꯏꯈꯤ꯫
+0.596,꯰.꯵꯹꯶ ꯑꯣꯏꯈꯤ꯫
+0.616,꯰.꯶꯱꯶ ꯑꯣꯏꯈꯤ꯫
+POS + n-grams + word vector,ꯄꯣꯁ + ꯑꯦꯟ-ꯒ꯭ꯔꯥꯝ + ꯋꯥꯔꯗ ꯚꯦꯛꯇꯔ
+0.691,꯰.꯶꯹꯱ ꯑꯣꯏꯈꯤ꯫
+0.653,꯰.꯶꯵꯳ꯗꯥ ꯂꯩꯈꯤ꯫
+0.680,꯰.꯶꯸꯰ ꯑꯣꯏꯈꯤ꯫
+0.619,꯰.꯶꯱꯹ꯗꯥ ꯂꯩꯈꯤ꯫
+0.661,꯰.꯶꯶꯱ ꯑꯣꯏꯈꯤ꯫
+preforms worse in the prediction comparing to bi-,ꯄ꯭ꯔꯤꯐꯔꯃꯁꯤꯡ ꯑꯁꯤ ꯕꯥꯏ-ꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯁꯅꯗꯥ ꯍꯦꯟꯅꯥ ꯐꯠꯇꯕꯥ ꯑꯣꯏ꯫
+gram and unigram,ꯒ꯭ꯔꯥꯝ ꯑꯃꯁꯨꯡ ꯌꯨꯅꯤꯒ꯭ꯔꯥꯝ .
+POS tags give the lowest predictive accuracy,POS ꯇꯦꯒꯁꯤꯡꯅꯥ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯅꯦꯝꯕꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯚ ꯑꯦꯛꯌꯨꯔꯦꯁꯤ ꯄꯤꯔꯤ
+(AUC=0.585) among the three feature categories,(ꯑꯦ.ꯌꯨ.ꯁꯤ.=꯰.꯵꯸꯵) ꯐꯤꯆꯔ ꯀꯦꯇꯦꯒꯣꯔꯤ ꯑꯍꯨꯝ ꯑꯁꯤꯒꯤ ꯃꯅꯨꯡꯗꯥ
+POS tags convert all the tweets of a users into a,POS ꯇꯦꯒꯁꯤꯡꯅꯥ ꯌꯨꯖꯔ ꯑꯃꯒꯤ ꯇ꯭ꯕꯤꯠ ꯄꯨꯝꯅꯃꯛ ꯑꯁꯤ ꯑꯃꯗꯥ ꯑꯣꯟꯊꯣꯀꯏ .
+"distribution of 25 tags, much useful information","ꯇꯦꯒ ꯲꯵ ꯌꯦꯟꯊꯣꯀꯄꯥ, ꯌꯥꯝꯅꯥ ꯀꯥꯟꯅꯕꯥ ꯏꯅꯐꯣꯔꯃꯦꯁꯟ"
+might be lost during this process which leads to,ꯃꯁꯤꯒꯤ ꯊꯧꯑꯣꯡ ꯑꯁꯤꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯃꯥꯡꯈꯤꯕꯥ ꯌꯥꯏ ꯃꯗꯨꯅꯥ ꯃꯔꯝ ꯑꯣꯏꯗꯨꯅꯥ .
+lowest but moderate performance given the ran-,ꯔꯟ-ꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯅꯦꯝꯕꯥ ꯑꯗꯨꯕꯨ ꯃꯌꯥꯌ ꯑꯣꯏꯕꯥ ꯄꯔꯐꯣꯃꯦꯟꯁ꯫
+dom baseline is AUC=0.5,ꯗꯣꯝ ꯕꯦꯖ ꯂꯥꯏꯟ ꯑꯁꯤ ꯑꯦ.ꯌꯨ.ꯁꯤ.=꯰.꯵ꯅꯤ꯫
+Another interesting observation is that language,ꯑꯇꯣꯞꯄꯥ ꯄꯨꯛꯅꯤꯡ ꯆꯤꯡꯁꯤꯟꯅꯤꯡꯉꯥꯏ ꯑꯣꯏꯕꯥ ꯑꯣꯕꯖꯥꯔꯕꯦꯁꯟ ꯑꯃꯅꯥ ꯂꯣꯜ ꯑꯗꯨ .
+is good at predicting I/E and T/F than S/N and J/P,ꯑꯁꯤ S/N ꯑꯃꯁꯨꯡ J/Pꯗꯒꯤ I/E ꯑꯃꯁꯨꯡ T/Fꯒꯤ ꯄ꯭ꯔꯤꯗꯤꯛꯇ ꯇꯧꯕꯗꯥ ꯑꯐꯕꯥ ꯑꯣꯏ꯫
+This result is also showed in our previous analysis,ꯃꯁꯤꯒꯤ ꯐꯜ ꯑꯁꯤ ꯑꯩꯈꯣꯌꯒꯤ ꯃꯃꯥꯡꯒꯤ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯇꯥꯁꯨ ꯎꯠꯂꯤ
+"(Table 4, Figure 1)","(ꯇꯦꯕꯜ ꯴, ꯐꯤꯒꯔ ꯱)꯫"
+7.1.2,꯷.꯱.꯲ ꯑꯣꯏꯈꯤ꯫
+Performance of Combined Features,ꯑꯄꯨꯅꯕꯥ ꯐꯤꯆꯔꯁꯤꯡꯒꯤ ꯄꯔꯐꯣꯃꯦꯟꯁ
+"In practice, features belonging to separate cate-","ꯆꯠꯅꯕꯤꯗꯥ, ꯇꯣꯉꯥꯅꯕꯥ ꯀꯦꯇꯦꯒꯣꯔꯤꯒꯤ ꯃꯅꯨꯡ ꯆꯅꯕꯥ ꯐꯤꯆꯔꯁꯤꯡ"
+gories are often combined to maximize the model,ꯒꯣꯔꯤꯁꯤꯡ ꯑꯁꯤ ꯑꯌꯥꯝꯕꯅꯥ ꯃꯣꯗꯦꯜ ꯑꯁꯤ ꯃꯦꯛꯁꯤꯃꯥꯏꯖ ꯇꯧꯅꯕꯥ ꯄꯨꯟꯅꯥ .
+performance,ꯄꯥꯡꯊꯣꯛꯇꯨꯅ ꯎꯌꯄ
+The beneﬁts of combining multi-,ꯃꯜꯇꯤ-ꯒꯥ ꯄꯨꯟꯅꯥ ꯆꯠꯃꯤꯟꯅꯕꯒꯤ ꯀꯥꯟꯅꯕꯁꯤꯡ꯫
+ple features can be clearly seen in the results in-,ꯄ꯭ꯂꯦ ꯐꯤꯆꯔꯁꯤꯡ ꯑꯁꯤ ꯔꯤꯖꯜꯇꯁꯤꯡꯗꯥ ꯃꯌꯦꯛ ꯁꯦꯡꯅꯥ ꯎꯕꯥ ꯐꯪꯒꯅꯤ-
+cluded at the bottom of Table 5. The model com-,ꯇꯦꯕꯜ ꯵ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩꯕꯥ ꯃꯣꯗꯦꯜ ꯀꯝ-
+"bining POS tag, Bag of n-grams, and word vec-","ꯕꯤꯅꯤꯡ ꯄꯣꯁ ꯇꯦꯒ, ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯒꯤ ꯕꯦꯒ, ꯑꯃꯁꯨꯡ ꯋꯥꯍꯩ ꯚꯦꯛ-"
+tor turns out to be very predictive of the partici-,ꯇꯣꯔ ꯑꯁꯤ ꯄꯥꯔꯇꯤꯁꯤꯌꯅꯒꯤ ꯌꯥꯝꯅꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯚ ꯑꯣꯏꯅꯥ ꯊꯣꯛꯂꯀꯏ-
+pation (AUC = 0.661). Removing word vector,ꯄꯦꯁꯟ (ꯑꯦ.ꯌꯨ.ꯁꯤ. = ꯰.꯶꯶꯱)꯫
+from the feature set signiﬁcantly decreases the pre-,ꯐꯤꯆꯔ ꯁꯦꯠ ꯑꯁꯤꯗꯒꯤ ꯃꯁꯛ ꯊꯣꯛꯅꯥ ꯄ꯭ꯔꯤ-
+dictive power (AUC=0.616) proving that the word,ꯗꯤꯛꯇꯤꯚ ꯄꯥꯋꯔ (AUC=0.616) ꯍꯥꯌꯕꯥ ꯋꯥꯍꯩ ꯑꯁꯤ ꯄ꯭ꯔꯃꯥꯟ ꯇꯧꯕꯥ
+vector is a very import feature that contains richer,ꯚꯦꯛꯇꯔ ꯑꯁꯤ ꯌꯥꯝꯅꯥ ꯏꯝꯄꯣꯔꯠ ꯇꯧꯕꯥ ꯐꯤꯆꯔ ꯑꯃꯅꯤ ꯃꯗꯨꯗꯥ ꯍꯦꯟꯅꯥ ꯔꯤꯆ .
+information about the personality traits than other,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯇꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯏꯅꯐꯣꯔꯃꯦꯁꯟ ꯑꯁꯤ ꯑꯇꯩꯗꯒꯤ ꯍꯦꯟꯅꯥ ꯋꯥꯡꯏ꯫
+two features (as shown in performance of individ-,ꯐꯤꯆꯔ ꯑꯅꯤ (ꯏꯟꯗꯤꯕꯤꯗ-ꯒꯤ ꯄꯔꯐꯣꯃꯦꯟꯁꯇꯥ ꯎꯠꯂꯤꯕꯥ ꯃꯇꯨꯡ ꯏꯟꯅꯥ-
+ual features),ꯌꯨ.ꯑꯦ.ꯑꯦꯜ.ꯒꯤ ꯃꯑꯣꯡꯁꯤꯡ)꯫
+8,꯸ ꯑꯃꯁꯨꯡ ꯸.
+Related Work,ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯊꯕꯀꯁꯤꯡ
+Social media sites are now the most popular des-,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥ ꯁꯥꯏꯠꯁꯤꯡ ꯑꯁꯤ ꯍꯧꯖꯤꯛꯇꯤ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯃꯃꯤꯡ ꯆꯠꯄꯥ ꯗꯦꯁ-
+"tination for Internet users, providing social scien-","ꯏꯟꯇꯔꯅꯦꯠ ꯁꯤꯖꯤꯟꯅꯔꯤꯕꯁꯤꯡꯒꯤꯗꯃꯛ ꯇꯤꯅꯁꯤꯅꯍꯅꯕꯥ, ꯁꯣꯁꯤꯑꯦꯜ ꯁꯥꯏꯟꯁ ꯄꯤꯕꯥ-"
+tists with a great opportunity to understand online,ꯇꯤꯁ꯭ꯇꯁꯤꯡꯅꯥ ꯑꯣꯅꯂꯥꯏꯟꯗꯥ ꯈꯉꯅꯕꯒꯤ ꯑꯆꯧꯕꯥ ꯈꯨꯗꯣꯡꯆꯥꯕꯥ ꯑꯃꯥ ꯂꯩꯕꯥ .
+behavior. There are a growing number of research,ꯂꯤꯆꯠ ꯁꯥꯖꯠ.
+"papers related to social media, a small number","ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯄꯦꯄꯔꯁꯤꯡ, ꯑꯄꯤꯀꯄꯥ ꯃꯁꯤꯡ ꯑꯃꯥ"
+of which focus on Analyzing and predicting per-,ꯃꯁꯤꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯇꯧꯕꯥ ꯑꯃꯁꯨꯡ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯡꯗꯥ ꯃꯤꯠꯌꯦꯡ ꯊꯝꯕꯥ ꯄꯥꯔ-
+sonality that has recently attracted more and more,ꯍꯟꯗꯛꯇꯥ ꯍꯦꯟꯅꯥ ꯄꯨꯛꯅꯤꯡ ꯆꯤꯡꯁꯤꯜꯂꯀꯈꯤꯕꯥ ꯁꯣꯅꯥꯂꯤꯇꯤ
+attention in research community. Golbeck et al,ꯔꯤꯁꯔꯆ ꯀꯝꯝꯌꯨꯅꯤꯇꯤꯗꯥ ꯄꯨꯛꯅꯤꯡ ꯆꯪꯕꯥ꯫
+used tweets on Twitter to extract Linguistic In-,ꯂꯤꯉ꯭ꯒꯨꯏꯁ꯭ꯇꯤꯛ ꯏꯟ- ꯂꯧꯊꯣꯛꯅꯕꯥ ꯇ꯭ꯕꯤꯇꯔꯗꯥ ꯁꯤꯖꯤꯟꯅꯔꯕꯥ ꯇ꯭ꯕꯤꯠꯁꯤꯡ
+"quiry and Word Count (LIWC) features, MRC lan-","ꯀꯨꯏꯔꯤ ꯑꯃꯁꯨꯡ ꯋꯥꯔꯗ ꯀꯥꯎꯟꯇ (ꯑꯦꯜ.ꯑꯥꯏ.ꯗꯕ꯭ꯜꯌꯨ.ꯁꯤ.)ꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧꯁꯤꯡ, ꯑꯦꯝ.ꯑꯥꯔ.ꯁꯤ."
+"guage features, Twitter use, structural, and senti-","ꯒꯨꯌꯦꯖꯒꯤ ꯐꯤꯆꯔꯁꯤꯡ, ꯇ꯭ꯕꯤꯇꯔ ꯁꯤꯖꯤꯟꯅꯕꯥ, ꯁ꯭ꯠꯔꯀꯆꯔꯦꯜ, ꯑꯃꯁꯨꯡ ꯁꯦꯟꯇꯤ-"
+ment features to predict the personality traits (Gol-,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ (ꯒꯣꯜ- .
+"beck et al., 2011). Sumner et al. explored the ex-","ꯕꯦꯛ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯱)꯫"
+tent to which it is possible to determine antisocial,ꯑꯦꯟꯇꯤꯁꯣꯁꯤꯑꯦꯜ ꯂꯦꯄꯊꯣꯀꯄꯥ ꯌꯥꯕꯥ ꯇꯦꯟꯇ .
+personality traits based on Twitter use (Sumner et,ꯇꯨꯏꯇꯥꯔ ꯁꯤꯖꯤꯟꯅꯕꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯇꯁꯤꯡ (Sumner et
+"al., 2012). Quercia et al. studied the relationship","ꯑꯜ., ꯲꯰꯱꯲) ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+between personality traits and ﬁve types of Twit-,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠ ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯤꯠ ꯃꯈꯜ ꯃꯉꯥꯒꯤ ꯃꯔꯛꯇꯥ-
+"ter users: listeners, popular, highly-read, and two","ꯇꯦꯔ ꯌꯨꯖꯔꯁꯤꯡ: ꯇꯥꯔꯤꯕꯥ, ꯃꯤꯌꯥꯝꯅꯥ ꯄꯥꯝꯅꯕꯥ, ꯌꯥꯝꯅꯥ ꯄꯥꯕꯥ, ꯑꯃꯁꯨꯡ ꯑꯅꯤ"
+"types of inﬂuentials (Quercia et al., 2011). These","ꯏꯅꯐ꯭ꯂꯨꯑꯦꯟꯖꯥꯒꯤ ꯃꯈꯂꯁꯤꯡ (Quercia et al., 2011)꯫"
+"studies, however, were mostly based a small sam-",ꯑꯗꯨꯕꯨ ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯑꯁꯤ ꯑꯌꯥꯝꯕꯅꯥ ꯑꯄꯤꯀꯄꯥ ꯁꯦꯝ-
+ples of hundreds or thousands of users that could,ꯌꯨꯖꯔ ꯂꯤꯁꯤꯡ ꯀꯌꯥ ꯅꯠꯔꯒꯥ ꯂꯥꯈ ꯀꯌꯥꯒꯤ ꯄ꯭ꯂꯦꯁꯁꯤꯡ .
+be prone to bias in the dataset,ꯗꯦꯇꯥꯁꯦꯇꯇꯥ ꯕꯥꯏꯁ ꯇꯧꯕꯥ ꯌꯥꯕꯥ ꯑꯣꯏꯌꯨ
+"Schwartz et al. analyzed words, phrases, and",ꯁ꯭ꯕꯥꯔꯇꯖ ꯑꯦꯠ.ꯑꯦꯜ.
+topic instances collected from the Facebook mes-,ꯐꯦꯁꯕꯨꯛ ꯃꯦꯁ-ꯗꯒꯤ ꯈꯣꯃꯖꯤꯜꯂꯀꯄꯥ ꯇꯣꯄꯤꯛ ꯏꯟꯁꯇꯦꯟꯁꯁꯤꯡ
+"sages of 75,000 volunteers, who also took stan-","ꯚꯣꯂꯨꯟꯇꯤꯌꯔ ꯷꯵,꯰꯰꯰ꯒꯤ ꯔ꯭ꯏꯁꯤꯁꯤꯡꯁꯨ ꯁ꯭ꯇꯥꯟ-"
+"dard personality tests, and found striking varia-","ꯗꯥꯔꯗ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇꯦꯁ꯭ꯇꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯁ꯭ꯠꯔꯥꯏꯛ ꯇꯧꯕꯥ ꯚꯦꯔꯤꯑꯦ-"
+"tions in language with personality, gender, and","ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ, ꯖꯦꯟꯗꯔ, ꯑꯃꯁꯨꯡ ."
+"age (Schwartz et al., 2013). However, this work","ꯆꯍꯤ (Schwartz et al., 2013)꯫"
+only looked at the general language use instead of,ꯁꯨꯞꯅꯒꯤ ꯖꯦꯅꯔꯦꯜ ꯂꯦꯉ꯭ꯒꯨꯌꯦꯖ ꯌꯨꯖ ꯑꯗꯨ ꯈꯛꯇꯃꯛ ꯌꯦꯡꯈꯤ
+online-speciﬁc language use which ignores an im-,ꯑꯣꯅꯂꯥꯏꯟ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯂꯦꯉ꯭ꯒꯨꯌꯦꯖ ꯌꯨꯖ ꯑꯁꯤꯅꯥ ꯑꯥꯏ.ꯑꯦꯝ.
+"portant part of online behaviors. Also, this work",ꯑꯣꯅꯂꯥꯏꯅꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯄꯣꯔꯇꯦꯟꯇ ꯁꯔꯨꯛ꯫
+has not investigate the relationship between word,ꯋꯥꯍꯩꯒꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯔꯤꯕꯥ ꯃꯔꯤ ꯑꯗꯨ ꯊꯤꯖꯤꯟꯅꯕꯥ .
+vector features and personalities which are proved,ꯚꯦꯛꯇꯔ ꯐꯤꯆꯔꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯁꯤꯡ ꯑꯗꯨ ꯄ꯭ꯔꯃꯥꯟ ꯇꯧꯔꯕꯥ .
+to be the best predictive feature in our analysis,ꯑꯩꯈꯣꯌꯒꯤ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯇꯥ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯐꯕꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯚ ꯐꯤꯆꯔ ꯑꯣꯏꯅꯕꯥ .
+9,꯹ ꯑꯃꯁꯨꯡ ꯹.
+Conclusion & Discussion,ꯂꯣꯏꯁꯤꯅꯕꯥ & ꯈꯟꯅ-ꯅꯩꯅꯕꯥ
+"In this paper, we study the relationship between",ꯄꯦꯄꯔ ꯑꯁꯤꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯃꯔꯤ ꯑꯗꯨ ꯊꯤꯖꯤꯜꯂꯤ ꯫
+human language on Twitter and personality traits,ꯇ꯭ꯕꯤꯇꯔꯗꯥ ꯃꯤꯑꯣꯏꯕꯒꯤ ꯂꯣꯜ ꯑꯃꯁꯨꯡ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧꯁꯤꯡ
+"Speciﬁcally, we want to know how linguistic fea-","ꯃꯔꯨ ꯑꯣꯏꯅꯥ, ꯑꯩꯈꯣꯌꯅꯥ ꯃꯇꯧ ꯀꯔꯝꯅꯥ ꯂꯤꯉ꯭ꯒꯨꯏꯁ꯭ꯇꯤꯛ ꯐꯦ-"
+tures correlate with each personality trait and to,ꯇꯨꯔꯦꯂꯁꯤꯡꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠ ꯈꯨꯗꯤꯡꯃꯛꯀꯥ ꯀꯣꯔꯤꯂꯦꯠ ꯇꯧꯏ ꯑꯃꯁꯨꯡ ꯇꯨ .
+what extent can we predict personality traits from,ꯑꯩꯈꯣꯌꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ ꯑꯁꯤ ꯀꯔꯝꯕꯥ ꯃꯑꯣꯡꯗꯥ ꯄ꯭ꯔꯤꯗꯤꯛꯇ ꯇꯧꯕꯥ ꯉꯃꯒꯅꯤ .
+language. We gather personality data from Myers-,ꯂꯣꯜ.
+"Briggs personality test which contains thinking,","ꯕ꯭ꯔꯤꯒꯁ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇꯦꯁ꯭ꯠ ꯑꯁꯤꯅꯥ ꯋꯥꯈꯜ ꯈꯅꯕꯥ, ."
+"feeling, sensation, intuition, introversion, extro-","ꯐꯤꯜꯂꯤꯡ, ꯁꯦꯟꯁꯁ, ꯏꯟꯠꯌꯨꯏꯇꯤꯖꯝ, ꯏꯟꯠꯔꯣꯕꯔꯁꯟ, ꯑꯦꯛꯁꯠꯔꯣ-"
+"version, judging and perceiving. Also, we collect","ꯚꯔꯖꯟ, ꯖꯖꯇꯤꯡ ꯑꯃꯁꯨꯡ ꯄꯥꯔꯁꯤꯕ ꯇꯧꯕꯥ꯫"
+200 most recent tweets from users with person-,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯌꯨꯖꯔꯁꯤꯡꯗꯒꯤ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯅꯧꯕꯥ ꯇ꯭ꯕꯤꯠ ꯲꯰꯰-
+ality values. We design three categories of fea-,ꯑꯦꯂꯤꯇꯤ ꯚꯦꯜꯌꯨꯁꯤꯡ꯫
+"ture, namely bag of n-grams, Twitter POS tags,","TURE, ꯍꯥꯌꯕꯗꯤ ꯑꯦꯟ-ꯒ꯭ꯔꯥꯃꯁꯤꯡꯒꯤ ꯕꯦꯒ, ꯇꯨꯏꯇꯥꯔ POS TAGS,"
+and word vectors. Analysis of these features pro-,ꯑꯃꯁꯨꯡ ꯋꯥꯔꯗ ꯚꯦꯛꯇꯔꯁꯤꯡ꯫
+vide insights of language use for different person-,ꯇꯣꯉꯥꯟ ꯇꯣꯉꯥꯅꯕꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤꯗꯃꯛ ꯂꯣꯜ ꯁꯤꯖꯤꯟꯅꯕꯒꯤ ꯚꯤꯗꯦ ꯏꯅꯁꯥꯏꯠꯁꯤꯡ-
+"alities. For instances, extroverts tend to use hash-",ꯑꯦꯂꯤꯇꯤꯁꯤꯡ꯫
+"tag and phrases like ”so proud”, ”so excited”, and","ꯇꯦꯒ ꯑꯃꯁꯨꯡ ”ꯁꯣ ꯄ꯭ꯔꯣꯎꯗ”, ”ꯁꯣ ꯑꯦꯛꯁꯥꯏꯇꯦꯗ”, ꯑꯃꯁꯨꯡ"
+"”can’t wait”. Moreover, we investigate the pre-",”ꯀꯦꯟ’ꯇ ꯋꯥꯏꯠ”꯫
+dictive power of individual features and combined,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯐꯤꯆꯔꯁꯤꯡꯒꯤ ꯗꯤꯛꯇꯤꯚ ꯄꯥꯋꯔ ꯑꯃꯁꯨꯡ ꯀꯝꯕꯤꯅꯦꯠ .
+features in our analysis. With the concatenation,ꯑꯩꯈꯣꯌꯒꯤ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯇꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯐꯤꯆꯔꯁꯤꯡ꯫
+"of all the features we extracted, we can predict the",ꯑꯩꯈꯣꯌꯅꯥ ꯂꯧꯊꯣꯀꯈꯤꯕꯥ ꯐꯤꯆꯔ ꯄꯨꯝꯅꯃꯛꯀꯤ ꯃꯅꯨꯡꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ .
+personality traits with an average AUC of 0.661,ꯆꯥꯡꯆꯠꯇꯥ AUC 0.661 ꯂꯩꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯇꯁꯤꯡ꯫
+Social media is one of the most frequent desti-,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥ ꯑꯁꯤ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯌꯥꯝꯅꯥ ꯊꯦꯡꯅꯕꯥ ꯗꯦꯁ꯭ꯇꯤꯁ ꯑꯃꯅꯤ-
+nation for internet users. Inferring the personality,ꯏꯟꯇꯔꯅꯦꯠ ꯁꯤꯖꯤꯟꯅꯔꯤꯕꯁꯤꯡꯒꯤꯗꯃꯛ ꯂꯩꯕꯥꯛ꯫
+traits of users in social media not only helps us un-,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥꯗꯥ ꯌꯨꯖꯔꯁꯤꯡꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯅꯥ ꯑꯩꯈꯣꯌꯕꯨ ꯑꯟ-
+"derstand their online behaviors, but also gives us","ꯃꯈꯣꯌꯒꯤ ꯑꯣꯅꯂꯥꯏꯅꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡ ꯑꯗꯨ ꯗꯥꯔꯁ꯭ꯇꯦꯟꯗ ꯇꯧꯕꯥ, ꯑꯗꯨꯕꯨ ꯑꯩꯈꯣꯌꯗꯥ ꯄꯤꯔꯤꯕꯥ ."
+the information to provide better personalized ser-,ꯍꯦꯟꯅꯥ ꯐꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯥꯏꯖ ꯇꯧꯔꯕꯥ ꯁꯦꯔ-
+"vices and improve the product. However, predict-",ꯋꯥꯏꯁ ꯑꯃꯁꯨꯡ ꯄꯣꯠꯊꯣꯛ ꯑꯗꯨ ꯐꯒꯠꯍꯅꯕꯥ꯫
+ing personality can also lead to privacy issue that,ing ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯑꯁꯤꯅꯥ ꯄ꯭ꯔꯥꯏꯚꯦꯁꯤ ꯏꯁꯨ ꯑꯁꯤꯁꯨ ꯊꯣꯀꯍꯅꯕꯥ ꯌꯥꯏ ꯃꯗꯨꯗꯤ .
+expose the psychological details of online users to,ꯑꯣꯅꯂꯥꯏꯟ ꯌꯨꯖꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯂꯒꯤ ꯑꯣꯏꯕꯥ ꯑꯀꯨꯞꯄꯥ ꯃꯔꯣꯂꯁꯤꯡ ꯑꯗꯨ .
+the public. These reasons make this study more,ꯃꯤꯌꯥꯝ ꯑꯁꯤꯅꯥ ꯌꯨ.ꯑꯦꯁ.
+important that it tries to understand personality,ꯃꯁꯤꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯕꯨ ꯂꯧꯁꯤꯟꯅꯕꯥ ꯍꯣꯠꯅꯕꯥ ꯑꯁꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯑꯃꯅꯤ .
+traits from social media and explores the degree,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥꯗꯒꯤ ꯂꯥꯀꯄꯥ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯗꯤꯒ꯭ꯔꯤ ꯑꯗꯨ ꯊꯤꯖꯤꯜꯂꯤ .
+to which we can predict personality traits simply,ꯃꯁꯤꯗꯥ ꯑꯩꯈꯣꯌꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ ꯑꯁꯤ ꯁꯨꯞꯅꯇꯒꯤ ꯂꯥꯎꯊꯣꯀꯄꯥ ꯉꯃꯒꯅꯤ
+using language on social media,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥꯗꯥ ꯂꯣꯜ ꯁꯤꯖꯤꯟꯅꯕꯥ
+Acknowledgments,ꯑꯦꯀꯅꯣꯂꯦꯖꯃꯦꯟꯇꯁꯤꯡ .
+This project is a joint work with Dr. David Jur-,ꯃꯁꯤꯒꯤ ꯄ꯭ꯔꯣꯖꯦꯛꯇ ꯑꯁꯤ ꯗꯥꯛꯇꯔ ꯗꯦꯕꯤꯗ ꯖꯨꯔ-ꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯄꯨꯟꯅꯥ ꯊꯕꯛ ꯇꯧꯃꯤꯟꯅꯕꯒꯤ ꯊꯕꯛ ꯑꯃꯅꯤ꯫
+gens. The author would like to thank Dr. David,ꯖꯦꯟꯁ ꯑꯣꯏꯕꯥ꯫
+Jurgens and TAs for valuable comments and dis-,ꯃꯃꯜ ꯌꯥꯝꯂꯕꯥ ꯀꯃꯦꯟꯇꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯗꯤꯁ-ꯒꯤꯗꯃꯛ ꯖꯨꯔꯒꯦꯟꯁ ꯑꯃꯁꯨꯡ ꯇꯤ.ꯑꯦ.ꯑꯦꯁ.
+cussions,ꯀꯁꯁꯅꯁꯤꯡ .
+References,ꯔꯤꯐꯔꯦꯟꯁꯁꯤꯡ .
+"Yoshua Bengio, R´ejean Ducharme, Pascal Vincent, and","ꯌꯣꯁꯨꯌꯥ ꯕꯦꯉ꯭ꯒꯤꯑꯣ, ꯑꯥꯔ ́ꯏꯖꯦꯟ ꯗꯨꯆꯥꯔꯃꯦ, ꯄꯥꯁ꯭ꯀꯦꯜ ꯚꯤꯟꯁꯦꯟꯇ, ꯑꯃꯁꯨꯡ"
+Christian Janvin. 2003. A neural probabilistic lan-,ꯀ꯭ꯔꯤꯁ꯭ꯇꯤꯌꯥꯟ ꯖꯥꯅꯚꯤꯟ꯫
+guage model. The Journal of Machine Learning Re-,ꯒꯨꯌꯦꯖ ꯃꯣꯗꯦꯜ ꯇꯧꯕꯥ꯫
+"search, 3:1137–1155","ꯊꯤꯖꯤꯅꯕꯥ, ꯳:꯱꯱꯳꯷–꯱꯱꯵꯵꯫"
+"Ryan L Boyd, Steven R Wilson, James W Pennebaker,","ꯔꯥꯌꯟ ꯑꯦꯜ ꯕꯣꯏꯗ, ꯁ꯭ꯇꯤꯚꯦꯟ ꯑꯥꯔ ꯋꯤꯂꯁꯟ, ꯖꯦꯃꯁ ꯗꯕ꯭ꯂꯤꯎ ꯄꯦꯅꯦꯕꯦꯀꯔ,"
+"Michal Kosinski, David J Stillwell, and Rada Mi-","ꯃꯤꯆꯥꯜ ꯀꯣꯁꯤꯅꯁ꯭ꯀꯤ, ꯗꯦꯕꯤꯗ ꯖꯦ ꯁ꯭ꯇꯤꯂꯋꯦꯜ ꯑꯃꯁꯨꯡ ꯔꯥꯗꯥ ꯃꯤ-"
+halcea. 2015. Values in words: Using language to,ꯍꯥꯂꯁꯦꯌꯥꯗꯥ ꯂꯩꯕꯥ꯫
+evaluate and understand personal values. In Ninth,ꯄꯔꯁꯣꯅꯦꯜ ꯚꯦꯜꯌꯨꯁꯤꯡ ꯏꯚꯥꯂꯨꯑꯦꯠ ꯇꯧꯕꯥ ꯑꯃꯁꯨꯡ ꯂꯧꯁꯤꯅꯕꯥ꯫
+International AAAI Conference on Web and Social,ꯋꯦꯕ ꯑꯃꯁꯨꯡ ꯁꯣꯁꯤꯌꯦꯂꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯏꯟꯇꯔꯅꯦꯁ꯭ꯅꯦꯜ ꯑꯦ.ꯑꯦ.ꯑꯦ.ꯑꯥꯏ.
+Media,ꯃꯤꯗꯤꯌꯥꯗꯥ ꯑꯦꯝ.
+"Kevin Gimpel, Nathan Schneider, Brendan O’Connor,","ꯀꯦꯚꯤꯟ ꯒꯤꯝꯄꯦꯜ, ꯅꯥꯊꯟ ꯁ꯭ꯕꯥꯏꯗꯥꯔ, ꯕ꯭ꯔꯦꯟꯗꯟ ꯑꯣ’ꯀꯅꯔ,"
+"Dipanjan Das,","ꯗꯤꯄꯥꯟꯖꯥꯟ ꯗꯥꯁ, ꯴."
+"Daniel Mills,","ꯗꯥꯅꯤꯌꯦꯜ ꯃꯤꯂꯁ, ꯳."
+"Jacob Eisenstein,","ꯖꯦꯀꯣꯕ ꯏꯁꯦꯅꯁ꯭ꯇꯤꯟ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"Michael Heilman, Dani Yogatama, Jeffrey Flani-","ꯃꯥꯏꯀꯦꯜ ꯍꯦꯂꯝꯌꯥꯟ, ꯗꯥꯅꯤ ꯌꯣꯒꯥꯇꯥꯃꯥ, ꯖꯦꯐ꯭ꯔꯤ ꯐ꯭ꯂꯥꯅꯤ-"
+"gan, and Noah A Smith. 2011. Part-of-speech tag-","ꯒ꯭ꯌꯥꯟ, ꯑꯃꯁꯨꯡ ꯅꯣꯍꯥ ꯑꯦ ꯁ꯭ꯃꯤꯊ꯫"
+"ging for twitter: Annotation, features, and experi-","ꯖꯤꯡ ꯇꯨꯏꯇꯔꯒꯤꯗꯃꯛ: ꯑꯦꯅꯣꯇꯦꯁꯟ, ꯐꯤꯆꯔꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯑꯦꯛꯁꯄꯤꯔꯤ-"
+ments,ꯃꯦꯟꯇꯁꯤꯡ
+In Proceedings of the 49th Annual Meet-,꯴꯹ꯁꯨꯕꯥ ꯆꯍꯤꯒꯤ ꯃꯤꯐꯃꯒꯤ ꯄ꯭ꯔꯣꯁꯤꯗꯤꯡꯁꯇꯥ-
+ing of the Association for Computational Linguis-,ꯀꯝꯞꯌꯨꯇꯦꯁ꯭ꯅꯦꯜ ꯂꯤꯉ꯭ꯒꯨꯏꯁꯀꯤꯗꯃꯛ ꯑꯦꯁꯣꯁꯤꯑꯦꯁꯟ ꯑꯁꯤ ꯑꯥꯏ.ꯑꯦꯟ.ꯖꯤ.
+tics: Human Language Technologies: short papers-,ꯇꯤ.ꯑꯥꯏ.ꯁꯤ.ꯁꯤꯡ: ꯃꯤꯑꯣꯏꯕꯒꯤ ꯂꯣꯂꯒꯤ ꯇꯦꯛꯅꯣꯂꯣꯖꯤꯁꯤꯡ: ꯁꯣꯔꯠ ꯄꯦꯄꯔꯁꯤꯡ-
+"Volume 2, pages 42–47. Association for Computa-","ꯚꯣꯜꯌꯨꯝ ꯲, ꯄ꯭ꯔ꯭ꯏꯁ꯭ꯊꯥ ꯴꯲–꯴꯷ꯇꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+tional Linguistics,TIONAL ꯂꯤꯉ꯭ꯒꯨꯏꯁ꯭ꯇꯤꯛ ꯑꯣꯏꯕꯥ .
+"Jennifer Golbeck, Cristina Robles, Michon Edmond-","ꯖꯦꯅꯤꯐꯥꯔ ꯒꯣꯂꯕꯦꯛ, ꯀ꯭ꯔꯤꯁ꯭ꯇꯤꯅꯥ ꯔꯣꯕꯂꯁ, ꯃꯤꯆꯣꯟ ꯑꯦꯗꯃꯟꯗ-"
+"son, and Karen Turner","ꯃꯆꯥꯅꯨꯄꯥ, ꯑꯃꯁꯨꯡ ꯀꯦꯔꯦꯟ ꯇꯔꯅꯥꯔ"
+2011,꯲꯰꯱꯱ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+Predicting per-,ꯄ꯭ꯔꯤꯗꯤꯛꯇꯤꯡ ꯄꯥꯔ-
+sonality from twitter,ꯇꯨꯏꯇꯔꯗꯒꯤ ꯁꯣꯅꯥꯂꯤꯇꯤ
+"In Privacy, Security, Risk","ꯄ꯭ꯔꯥꯏꯚꯦꯁꯤ, ꯁꯦꯛꯌꯨꯔꯤꯇꯤ, ꯔꯤꯁ꯭ꯀꯇꯥ ."
+and Trust (PASSAT) and 2011 IEEE Third Iner-,ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯁ꯭ꯠ (ꯄꯥꯁꯠ) ꯑꯃꯁꯨꯡ ꯲꯰꯱꯱ꯒꯤ ꯑꯥꯏ.ꯏ.ꯏ.ꯏ.
+national Conference on Social Computing (Social-,ꯁꯣꯁꯤꯑꯦꯜ ꯀꯝꯞꯌꯨꯇꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯅꯦꯁ꯭ꯅꯦꯜ ꯀꯅꯐꯔꯦꯟꯁ (ꯁꯣꯁꯤꯑꯦꯜ-
+"Com), 2011 IEEE Third International Conference","com), ꯲꯰꯱꯱ ꯑꯥꯏ.ꯏ.ꯏ.ꯏ.ꯒꯤ ꯊꯥꯔꯗ ꯏꯟꯇꯔꯅꯦꯁ꯭ꯅꯦꯜ ꯀꯅꯐꯔꯦꯟꯁ"
+"on, pages 149–156. IEEE","ꯑꯣꯟ, ꯄ꯭ꯔ꯭ꯏꯁ꯭ꯊꯥ ꯱꯴꯹–꯱꯵꯶ꯇꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+"Michal Kosinski, David Stillwell, and Thore Grae-","ꯃꯤꯆꯥꯜ ꯀꯣꯁꯤꯅꯁ꯭ꯀꯤ, ꯗꯦꯕꯤꯗ ꯁ꯭ꯇꯤꯂꯋꯦꯜ ꯑꯃꯁꯨꯡ ꯊꯣꯔꯦ ꯒ꯭ꯔꯦ-"
+pel,ꯄꯦꯜ ꯑꯁꯤ ꯑꯦꯟ.
+2013,꯲꯰꯱꯳ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+Private traits and attributes are pre-,ꯄ꯭ꯔꯥꯏꯚꯦꯠ ꯇ꯭ꯔꯦꯠ ꯑꯃꯁꯨꯡ ꯑꯦꯠꯔꯤꯕꯤꯎꯇꯁꯤꯡ ꯑꯁꯤ ꯄ꯭ꯔꯤ-
+dictable from digital records of human behavior,ꯃꯤꯑꯣꯏꯕꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯗꯤꯖꯤꯇꯦꯜ ꯔꯦꯀꯣꯔꯗꯁꯤꯡꯗꯒꯤ ꯗꯤꯛꯇꯦꯕꯜ ꯑꯣꯏꯕꯥ .
+"Proceedings of the National Academy of Sciences,","ꯅꯦꯁ꯭ꯅꯦꯜ ꯑꯦꯀꯥꯗꯦꯃꯤ ꯑꯣꯐ ꯁꯥꯏꯟꯁꯦꯁꯀꯤ ꯄ꯭ꯔꯣꯁꯤꯗꯤꯡꯁ, ."
+110(15):5802–5805,꯱꯱꯰(꯱꯵):꯵꯸꯰꯲–꯵꯸꯰꯵ ꯂꯩ꯫
+"Tomas Mikolov, Kai Chen, Greg Corrado, and Jef-","ꯇꯣꯃꯥꯁ ꯃꯤꯀꯣꯂꯣꯚ, ꯀꯥꯏ ꯆꯦꯟ, ꯒ꯭ꯔꯦꯒ ꯀꯣꯔꯥꯗꯣ ꯑꯃꯁꯨꯡ ꯖꯦꯐ-"
+frey Dean,ꯐ꯭ꯔꯦ ꯗꯤꯟ .
+2013,꯲꯰꯱꯳ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+Efﬁcient estimation of word,ꯋꯥꯍꯩꯒꯤ ꯏꯐꯤꯁꯤꯌꯦꯟꯇ ꯑꯦꯁ꯭ꯇꯤꯃꯦꯁꯟ .
+representations in vector space,ꯚꯦꯛꯇꯔ ꯁ꯭ꯄꯦꯁꯇꯥ ꯔꯤꯞꯔꯖꯦꯟꯇꯦꯁꯅꯁꯤꯡ .
+arXiv preprint,ꯑꯥꯔꯛꯁꯤꯚ ꯄ꯭ꯔꯤꯞꯔꯤꯟꯇ .
+arXiv:1301.3781,ꯑꯦ.ꯑꯥꯔ.ꯑꯦꯛꯁ.ꯑꯥꯏ.ꯚꯤ.:꯱꯳꯰꯱.꯳꯷꯸꯱ ꯂꯩ꯫
+Isabel Briggs Myers,ꯏꯁꯥꯕꯦꯜ ꯕ꯭ꯔꯤꯒꯁ ꯃꯥꯏꯌꯔꯁ
+1962,꯱꯹꯶꯲ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+The myers-briggs type,ꯃꯥꯏꯌꯔꯁ-ꯕ꯭ꯔꯤꯒꯁ ꯃꯈꯜ ꯑꯁꯤ .
+indicator: Manual (1962),ꯏꯟꯗꯤꯀꯦꯇꯔ: ꯃꯦꯅꯨꯑꯦꯜ (꯱꯹꯶꯲)
+"Daniele Quercia, Michal Kosinski, David Stillwell, and","ꯗꯥꯅꯤꯌꯦꯜ ꯀ꯭ꯌꯨꯔꯁꯤꯌꯥ, ꯃꯤꯆꯥꯜ ꯀꯣꯁꯤꯅꯁ꯭ꯀꯤ, ꯗꯦꯕꯤꯗ ꯁ꯭ꯇꯤꯂꯋꯦꯜ ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+Jon Crowcroft,ꯖꯣꯟ ꯀ꯭ꯔꯥꯎꯛꯔꯣꯐ꯭ꯠ
+2011,꯲꯰꯱꯱ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+"Our twitter proﬁles, our","ꯑꯩꯈꯣꯌꯒꯤ ꯇꯨꯏꯇꯥꯔ ꯄ꯭ꯔꯣꯐꯥꯏꯂꯁꯤꯡ, ꯑꯩꯈꯣꯌꯒꯤ"
+selves: Predicting personality with twitter. In Pri-,ꯁꯦꯜꯐꯁ: ꯇ꯭ꯕꯤꯇꯔꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯄ꯭ꯔꯤꯗꯤꯛꯇ ꯇꯧꯕꯥ꯫
+"vacy, Security, Risk and Trust (PASSAT) and 2011","ꯚꯦꯁꯤ, ꯁꯦꯛꯌꯨꯔꯤꯇꯤ, ꯔꯤꯁ꯭ꯛ ꯑꯃꯁꯨꯡ ꯇ꯭ꯔꯁ꯭ꯠ (ꯄꯥꯁꯠ) ꯑꯃꯁꯨꯡ ꯲꯰꯱꯱"
+IEEE Third Inernational Conference on Social Com-,ꯑꯥꯏ.ꯏ.ꯏ.ꯏ.ꯒꯤ ꯇꯔꯦꯠꯁꯨꯕꯥ ꯏꯅꯔꯖꯤꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯁꯣꯁꯤꯌꯦꯜ ꯀꯝ-
+"puting (SocialCom), 2011 IEEE Third International","ꯄꯨꯇꯤꯡ (ꯁꯣꯁꯤꯑꯦꯂꯀꯣꯝ), ꯲꯰꯱꯱ ꯑꯥꯏ.ꯏ.ꯏ.ꯏ."
+"Conference on, pages 180–185. IEEE","ꯀꯅꯐꯔꯦꯟꯁ ꯑꯣꯟ, ꯄ꯭ꯔ꯭ꯏꯁ꯭ꯊꯥ ꯱꯸꯰–꯱꯸꯵ꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+David Rawlings and Vera Ciancarelli. 1997. Music,ꯗꯦꯕꯤꯗ ꯔꯧꯂꯤꯡꯁ ꯑꯃꯁꯨꯡ ꯚꯦꯔꯥ ꯁꯤꯌꯥꯅꯀꯥꯔꯦꯂꯤ꯫
+preference and the ﬁve-factor model of the neo per-,ꯄꯔꯐꯦꯔꯦꯟꯁ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.ꯏ.ꯑꯣ.ꯄꯤ.ꯑꯥꯔ.-ꯒꯤ ꯃꯉꯥ-ꯃꯉꯥꯒꯤ ꯃꯣꯗꯦꯜ
+"sonality inventory. Psychology of Music, 25(2):120–",ꯁꯣꯅꯥꯂꯤꯇꯤ ꯏꯅꯚꯦꯟꯇꯔꯤ ꯇꯧꯕꯥ꯫
+132,꯱꯳꯲ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"H Andrew Schwartz, Johannes C Eichstaedt, Mar-","ꯑꯩꯆ ꯑꯦꯟꯗ꯭ꯔꯦꯁ ꯁꯣꯔꯇꯖ, ꯖꯣꯍꯥꯟꯁ ꯁꯤ ꯏꯆꯁ꯭ꯇꯦꯗ, ꯃꯥꯔ-"
+"garet L Kern, Lukasz Dziurzynski, Stephanie M Ra-","ꯒ꯭ꯌꯥꯔꯦꯠ ꯑꯦꯜ ꯀꯦꯔꯟ, ꯂꯨꯀꯥꯁ ꯖꯤꯌꯨꯔꯖꯤꯅꯁ꯭ꯀꯤ, ꯁ꯭ꯇꯦꯐꯦꯅꯤ ꯑꯦꯝ ꯔꯥ-"
+"mones, Megha Agrawal, Achal Shah, Michal Kosin-","ꯃꯣꯅꯦꯁ, ꯃꯦꯘꯥ ꯑꯒ꯭ꯔꯋꯥꯜ, ꯑꯆꯜ ꯁꯥꯍ, ꯃꯤꯆꯥꯜ ꯀꯣꯁꯤꯟ-"
+"ski, David Stillwell, Martin EP Seligman, et al","ꯁ꯭ꯀꯤ, ꯗꯦꯕꯤꯗ ꯁ꯭ꯇꯤꯂꯋꯦꯜ, ꯃꯥꯔꯇꯤꯟ ꯏ.ꯄꯤ."
+"2013. Personality, gender, and age in the language","꯲꯰꯱꯳.ꯂꯣꯂꯗꯥ ꯂꯩꯔꯤꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ, ꯖꯦꯟꯗꯔ, ꯑꯃꯁꯨꯡ ꯆꯍꯤ"
+of social media: The open-vocabulary approach,ꯁꯣꯁꯤꯌꯦꯜ ꯃꯤꯗꯤꯌꯥꯒꯤ: ꯑꯣꯄꯟ-ꯚꯣꯀꯦꯕꯨꯂꯥꯔꯤ ꯑꯦꯞꯔꯣꯆ
+"PloS one, 8(9):e73791","ꯄꯤ.ꯑꯦꯜ.ꯑꯣ.ꯑꯦꯁ.ꯋꯥꯟ, ꯸(꯹):ꯏ꯷꯳꯷꯹꯱"
+"Maarten Selfhout, William Burk, Susan Branje, Jaap","ꯃꯥꯔꯇꯦꯟ ꯁꯦꯂꯐꯍꯧꯠ, ꯎꯏꯂꯤꯌꯥꯝ ꯕꯔꯛ, ꯁꯨꯁꯥꯟ ꯕ꯭ꯔꯌꯥꯟꯖꯦ, ꯖꯥꯞ"
+"Denissen, Marcel Van Aken, and Wim Meeus. 2010","ꯗꯦꯅꯤꯁꯦꯟ, ꯃꯥꯔꯁꯦꯜ ꯚꯦꯟ ꯑꯦꯀꯦꯟ ꯑꯃꯁꯨꯡ ꯋꯤꯝ ꯃꯤꯁ꯫"
+Emerging late adolescent friendship networks and,ꯊꯣꯔꯛꯂꯤꯕꯥ ꯂꯦꯠ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯐ꯭ꯔꯦꯟꯗꯁꯤꯞ ꯅꯦꯇꯋꯥꯔꯀꯁꯤꯡ ꯑꯃꯁꯨꯡ
+big ﬁve personality traits: A social network ap-,ꯑꯆꯧꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯠ ꯃꯉꯥ: ꯁꯣꯁꯤꯌꯦꯜ ꯅꯦꯇꯋꯥꯔꯛ ꯑꯦ.ꯄꯤ.-
+"proach. Journal of personality, 78(2):509–538",ꯄ꯭ꯔꯣꯆ ꯇꯧꯕꯥ꯫
+"Chris Sumner, Alison Byers, Rachel Boochever, and","ꯀ꯭ꯔꯤꯁ ꯁꯨꯃꯅꯦ, ꯑꯦꯂꯤꯁꯟ ꯕꯥꯏꯌꯔꯁ, ꯔꯦꯆꯦꯜ ꯕꯨꯆꯦꯚꯔ ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+Gregory J Park. 2012. Predicting dark triad person-,ꯒ꯭ꯔꯦꯒꯔꯤ ꯖꯦ ꯄꯥꯔꯀꯇꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+ality traits from twitter usage and a linguistic anal-,ꯇꯨꯏꯇꯥꯔ ꯁꯤꯖꯤꯟꯅꯕꯗꯒꯤ ꯑꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯇꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯂꯤꯉ꯭ꯒꯨꯏꯁ꯭ꯇꯤꯛ ꯑꯦꯅꯥꯜ-
+ysis of tweets. In Machine Learning and Applica-,ꯇ꯭ꯕꯤꯠꯁꯤꯡꯒꯤ ꯋꯥꯏ.ꯑꯦꯁ.ꯑꯥꯏ.ꯑꯦꯁ.
+"tions (ICMLA), 2012 11th International Conference","ꯇꯤꯅꯁꯤꯡ (ꯑꯥꯏ.ꯁꯤ.ꯑꯦꯝ.ꯑꯦꯜ.ꯑꯦ.), ꯲꯰꯱꯲ꯒꯤ ꯱꯱ꯁꯨꯕꯥ ꯏꯟꯇꯔꯅꯦꯁ꯭ꯅꯦꯜ ꯀꯅꯐꯔꯦꯟꯁ"
+"on, volume 2, pages 386–393. IEEE","ꯑꯣꯟ, ꯚꯣꯜꯌꯨꯝ ꯲, ꯄ꯭ꯔ꯭ꯏꯁ꯭ꯊꯥ ꯳꯸꯶–꯳꯹꯳ꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+"--- 12. Effectiveness of psychological interventions for child and adolescent specific anxiety disorders Author Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés.pdf ---","--- 12. ꯑꯉꯥꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯥ ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯣꯊꯣꯔꯤꯇꯤ ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯦꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ.ꯄꯤ.ꯗꯤ.ꯑꯦꯐ."
+Revista de Psicología Clínica con Niños y Adolescentes,ꯔꯦꯚꯤꯁ꯭ꯇꯥ ꯗꯦ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯌꯥ ꯀ꯭ꯂꯤꯅꯤꯀꯥ ꯀꯟ ꯅꯤꯅꯣꯁ ꯋꯥꯏ ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁ
+Copyright© 2023 RPCNA,ꯀꯥꯄꯤꯔꯥꯏꯠ© ꯲꯰꯲꯳ ꯑꯥꯔ.ꯄꯤ.ꯁꯤ.ꯑꯦꯟ.ꯑꯦ.
+www.revistapcna.com - ISSN 2340-8340,www.revistapcna.com - ꯑꯥꯏ.ꯑꯦꯁ.ꯑꯦꯁ.ꯑꯦꯟ.꯲꯳꯴꯰-꯸꯳꯴꯰
+Revista de Psicología Clínica con Niños y Adolescentes,ꯔꯦꯚꯤꯁ꯭ꯇꯥ ꯗꯦ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯌꯥ ꯀ꯭ꯂꯤꯅꯤꯀꯥ ꯀꯟ ꯅꯤꯅꯣꯁ ꯋꯥꯏ ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁ
+Vol. 10 nº. 1- Enero 2023 - pp 31-41,ꯚꯣꯜꯌꯨ.
+doi: 10.21134/rpcna.2023.10.1.3,ꯗꯣꯏ: ꯱꯰.꯲꯱꯱꯳꯴/ꯑꯥꯔ.ꯄꯤ.ꯁꯤ.ꯑꯦꯟ.ꯑꯦ..꯲꯰꯲꯳.꯱꯰.꯱.꯳.
+Effectiveness of Psychological Interventions for Child and Adolescent Specific Anxiety Disorders: A Systematic Review of Systematic Reviews and Meta-Analyses,ꯑꯉꯥꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤ ꯑꯀꯛꯅꯕꯥ ꯋꯥꯈꯜ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯚ ꯑꯣꯏꯕꯥ ꯃꯑꯣꯡ-ꯃꯇꯧ: ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡꯒꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯥ꯫
+Effectiveness of psychological interventions,ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ .
+for child and adolescent specific anxiety,ꯑꯉꯥꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤ ꯑꯀꯛꯅꯕꯥ ꯋꯥꯈꯜ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ
+disorders: A systematic review of systematic,ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ: ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯥ
+reviews and meta-analyses,ꯔꯤꯚꯤꯌꯨ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ .
+"Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés","ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ"
+AITANA Research Group. Miguel Hernández University,ꯑꯩꯇꯥꯅꯥ ꯔꯤꯁꯔꯆ ꯒ꯭ꯔꯨꯞ ꯑꯃꯥ ꯑꯣꯏꯅꯥ ꯊꯕꯛ ꯇꯧꯈꯤ꯫
+Abstract,ꯁꯝꯂꯞꯄ ꯋꯥꯔꯣꯜ
+Anxiety disorders are highly prevalent in children and adolescents. The associated functional limitations and the negative psychological consequen-,ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ ꯑꯁꯤ ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯌꯥꯝꯅꯥ ꯌꯥꯎꯏ꯫
+"ces have led to increased research into effective psychological interventions. What is missing, however, is a comprehensive review of the literature",ꯁꯤ.ꯏ.ꯑꯦꯁ.ꯅꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯔꯤꯁꯔꯆ ꯇꯧꯕꯥ ꯍꯦꯅꯒꯠꯍꯜꯂꯦ꯫
+addressing the effectiveness of these treatments for specific disorders. A systematic review of systematic reviews and meta-analyses evaluating the,ꯑꯀꯛꯅꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯂꯥꯌꯦꯡꯁꯤꯡ ꯑꯁꯤꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯊꯦꯡꯅꯕꯥ꯫
+effectiveness of psychological treatments for specific anxiety disorders in children and adolescents was performed. The study followed PRISMA,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯚꯅꯦꯁ ꯄꯥꯡꯊꯣꯀꯈꯤ꯫
+"guidelines. Four bibliographic databases were searched: MEDLINE (PubMed), PsycINFO, Web of Science (Core Collection), and The Cochrane",ꯒꯥꯏꯗꯂꯥꯏꯅꯁꯤꯡ꯫
+"Library. Two authors independently screened the articles by title, abstract, and full-text, according to established inclusion and exclusion criteria",ꯂꯥꯏꯔꯤꯛ ꯊꯝꯐꯝ.
+Two independent authors evaluated the methodological quality of the included reviews using AMSTAR-2. Five records were included in this syste-,ꯃꯅꯤꯡꯇꯝꯕꯥ ꯑꯣꯊꯣꯔꯤꯇꯤ ꯑꯅꯤꯅꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯇꯤ.ꯑꯥꯔ.-꯲ ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡꯒꯤ ꯃꯦꯊꯣꯗꯣꯂꯣꯖꯤꯀꯦꯜ ꯀ꯭ꯕꯥꯂꯤꯇꯤ ꯑꯁꯤ ꯏꯚꯥꯂꯨꯑꯦꯠ ꯇꯧꯈꯤ꯫
+"matic review. Four studies included children and adolescents with specific phobias, generalized anxiety disorder, and separation anxiety disorder",ꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨ ꯇꯧꯕꯥ꯫
+and one focused solely on nocturnal fears. Cognitive behavioral therapy-based interventions have been shown to be effective for the treatment of,ꯑꯃꯁꯨꯡ ꯑꯃꯅꯥ ꯅꯣꯡꯃꯒꯤ ꯑꯀꯤꯕꯥ ꯈꯛꯇꯗꯥ ꯃꯤꯠꯌꯦꯡ ꯊꯃꯈꯤ꯫
+these diagnoses in both short and long term. The methodological quality of the included studies was classified as critically low. Cognitive behavioral,ꯍꯥꯌꯔꯤꯕꯥ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁ ꯑꯁꯤ ꯁꯣꯔꯠ ꯑꯃꯁꯨꯡ ꯂꯣꯡ ꯇꯔꯝ ꯑꯅꯤꯃꯛꯇꯥ ꯂꯩ꯫
+"interventions are effective in treating specific phobias, generalized anxiety disorder, and separation anxiety disorder and nighttime fears in children","ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯁꯤ ꯑꯀꯛꯅꯕꯥ ꯐꯣꯕꯤꯌꯥꯁꯤꯡ, ꯖꯦꯅꯦꯔꯦꯂꯥꯏꯖ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ, ꯑꯃꯁꯨꯡ ꯁꯦꯄꯥꯔꯦꯁꯟ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ ꯑꯃꯁꯨꯡ ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ ꯄꯣꯀꯍꯅꯕꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯏ꯫"
+and adolescents. The improvement of the methodological quality and the need for further studies focusing on the effectiveness of treatments for,ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ꯫
+specific disorders are discussed,ꯑꯀꯛꯅꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯈꯟꯅ-ꯅꯩꯅꯕꯥ
+Keywords: children; adolescents; anxiety disorders; psychological treatment; systematic review,ꯃꯔꯨꯑꯣꯏꯕꯥ ꯋꯥꯍꯩꯁꯤꯡ: ꯑꯉꯥꯡꯁꯤꯡ;
+Resumen,ꯔꯤꯖ꯭ꯌꯨꯃꯦꯟ ꯴.
+Eficacia de las intervenciones psicológicas para el tratamiento de los trastornos específicos de ansiedad en niños y adolescentes: una revisión de,ꯑꯦꯐꯤꯀꯦꯁꯤꯌꯥ ꯗꯦ ꯂꯥꯁ ꯏꯟꯇꯔꯚꯦꯟꯁꯤꯑꯣꯅꯁ ꯄꯤꯁꯤꯀꯣꯂꯣꯖꯤꯀꯥꯁ ꯄꯥꯔꯥ ꯑꯦꯜ ꯇ꯭ꯔꯥꯇꯥꯃꯤꯑꯣꯏꯇꯣ ꯗꯦ ꯂꯣꯁ ꯇ꯭ꯔꯥꯁ꯭ꯇꯣꯔꯅꯣꯁ ꯑꯦꯁ꯭ꯄꯦꯁꯤꯐꯤꯀꯣꯁ ꯗꯦ ꯑꯦꯟꯁꯤꯗꯥꯗ ꯑꯦꯟ ꯅꯤꯅꯣꯁ ꯋꯥꯏ ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁ: ꯎꯅꯥ ꯔꯦꯚꯤꯁꯤꯌꯟ ꯗꯦ
+revisiones sistemáticas y meta-análisis. Los trastornos de ansiedad son muy comunes en la infancia y adolescencia y repercuten negativamente en,ꯔꯤꯚꯤꯖꯅꯁ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯀꯥꯁ ꯋꯥꯏ ꯃꯦꯇꯥ-ꯑꯅꯥꯂꯤꯁꯤꯁ꯫
+"la vida del niño y la familia. Pese al aumento en el número de investigaciones centradas en estudiar la eficacia de las intervenciones psicológicas,",ꯂꯥ ꯚꯤꯗꯥ ꯗꯦꯜ ꯅꯤꯅꯣ ꯋꯥꯏ ꯂꯥ ꯐꯥꯃꯤꯂꯤꯌꯥ꯫
+hasta la fecha no se ha llevado a cabo una síntesis que haya dado cuenta de la eficacia de estas intervenciones para cada uno de los trastornos,ꯍꯥꯁ꯭ꯇꯥ ꯂꯥ ꯐꯦꯆꯥ ꯅꯣ ꯁꯦ ꯍꯥ ꯂꯦꯚꯦꯗꯣ ꯑꯦ ꯀꯦꯕꯣ ꯎꯅꯥ ꯁꯤꯟꯇꯦꯁꯤꯁ ꯀ꯭ꯌꯨ ꯍꯥꯌꯥ ꯗꯥꯗꯣ ꯀ꯭ꯌꯨꯌꯦꯟꯇꯥ ꯗꯦ ꯂꯥ ꯑꯦꯐꯤꯀꯦꯁꯤꯌꯥ ꯗꯦ ꯑꯦꯁ꯭ꯇꯥꯁ ꯏꯟꯇꯔꯚꯦꯟꯁꯤꯑꯣꯅꯁ ꯄꯥꯔꯥ ꯀꯥꯗꯥ ꯎꯅꯣ ꯗꯦ ꯂꯣꯁ ꯇ꯭ꯔꯥꯁ꯭ꯇꯣꯔꯅꯣꯁ
+de ansiedad de manera específica. Se realizó una revisión sistemática de revisiones sistemáticas y metaanálisis. Se realizaron búsquedas en cuatro,ꯗꯦ ꯑꯟꯁꯤꯗꯥꯗ ꯗꯦ ꯃꯥꯅꯦꯔꯥ ꯑꯦꯁ꯭ꯄꯦꯁꯤꯐꯤꯀꯥ꯫
+"bases de datos: MEDLINE (PubMed), PsycINFO, Web of Science (colección principal) y The Cochrane Library. Dos autores examinaron de forma","ꯕꯦꯖꯁꯤꯡ ꯗꯦ ꯗꯥꯇꯣꯁ: ꯃꯦꯗꯂꯥꯏꯟ (ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗ), ꯁꯥꯏꯁꯤꯅꯐꯣ, ꯋꯦꯕ ꯑꯣꯐ ꯁꯥꯏꯟꯁ (ꯀꯣꯂꯦꯛꯁꯤꯑꯣꯟ ꯄ꯭ꯔꯤꯟꯁꯤꯄꯥꯜ) ꯋꯥꯏ ꯗꯤ ꯀꯣꯛꯔꯦꯟ ꯂꯥꯏꯕ꯭ꯔꯦꯔꯤ꯫"
+"independiente los artículos por título, resumen y texto completo, según unos criterios de inclusión y exclusión previamente establecidos. Dos autores","ꯏꯟꯗꯦꯄꯦꯟꯗꯤꯌꯦꯟꯇ ꯂꯣꯁ ꯑꯥꯔꯇꯤꯀꯨꯂꯣꯁ ꯄꯣꯔ ꯇꯤꯇꯨꯂꯣ, ꯔꯤꯖꯃꯦꯟ ꯋꯥꯏ ꯇꯦꯛꯁꯇꯣ ꯀꯝꯂꯦꯇꯣ, ꯁꯦꯒꯨꯟ ꯎꯅꯣꯁ ꯀ꯭ꯔꯤꯇꯦꯔꯤꯌꯁ ꯗꯦ ꯏꯅꯛꯂꯨꯁꯤꯑꯣꯟ ꯋꯥꯏ ꯑꯦꯛꯁꯛꯂꯨꯁꯤꯑꯣꯟ ꯄ꯭ꯔꯤꯚꯤꯌꯥꯃꯦꯟꯇ ꯑꯦꯁ꯭ꯇꯦꯕꯂꯁꯤꯗꯣꯁ꯫"
+evaluaron de forma independiente la calidad metodológica de las revisiones incluidas mediante AMSTAR-2. Se incluyeron cinco estudios. Cuatro,ꯏꯚꯥꯂꯨꯑꯦꯔꯣꯟ ꯗꯦ ꯐꯣꯔꯃꯥ ꯏꯟꯗꯦꯄꯦꯟꯗꯤꯌꯦꯟꯇ ꯂꯥ ꯀꯦꯂꯤꯗꯥꯗ ꯃꯦꯇꯣꯗꯣꯂꯣꯖꯤꯀꯥ ꯗꯦ ꯂꯥꯁ ꯔꯤꯚꯤꯖꯅꯁ ꯏꯅꯛꯂꯨꯏꯗꯥꯁ ꯃꯦꯗꯤꯌꯝ ꯑꯦꯝꯁ꯭ꯇꯥꯔ-꯲.
+"incluyeron participantes con fobias específicas, ansiedad generalizada y ansiedad por separación y uno se centró en miedos nocturnos. Las inter-","ꯏꯅꯛꯂꯨꯌꯦꯔꯟ ꯄꯥꯔꯇꯤꯁꯤꯄꯦꯟꯇꯁꯤꯡ ꯀꯟ ꯐꯣꯕꯤꯌꯥꯁ ꯑꯦꯁ꯭ꯄꯦꯁꯤꯐꯤꯀꯥꯁ, ꯑꯦꯟꯁꯤꯗꯥꯗ ꯖꯦꯅꯦꯔꯦꯂꯤꯖꯝ ꯋꯥꯏ ꯑꯦꯟꯁꯤꯗꯥꯗ ꯄꯣꯔ ꯁꯦꯄꯥꯔꯥꯁꯤꯌꯟ ꯋꯥꯏ ꯎꯅꯣ ꯑꯦꯁ.ꯏ.ꯁꯦꯟꯇꯔꯣ ꯑꯦꯟ ꯃꯤꯗꯣꯁ ꯅꯣꯛꯇꯨꯔꯅꯣꯁ꯫"
+venciones basadas en la terapia cognitivo conductual demostraron ser efectivas para el tratamiento de estos trastornos a corto y a largo plazo. La,ꯚꯦꯅꯁꯤꯑꯣꯅꯁ ꯕꯥꯁꯥꯗꯥꯁ ꯑꯦꯟ ꯂꯥ ꯇꯦꯔꯥꯄꯤꯌꯥ ꯀꯣꯒꯅꯤꯇꯤꯚꯣ ꯀꯟꯗꯥꯛꯆꯨꯑꯦꯜ ꯗꯦꯃꯣꯁ꯭ꯠꯔꯥꯔꯣꯟ ꯁꯦꯔ ꯑꯦꯐꯦꯐꯦꯇꯤꯚꯁ ꯄꯥꯔꯥ ꯑꯦꯜ ꯇ꯭ꯔꯥꯇꯥꯃꯤꯑꯣꯟꯇꯣ ꯗꯦ ꯑꯦꯁ꯭ꯇꯣꯁ ꯇ꯭ꯔꯥꯁ꯭ꯇꯣꯔꯅꯣꯁ ꯑꯦ ꯀꯣꯔꯇꯣ ꯋꯥꯏ ꯑꯦ ꯂꯥꯔꯒꯣ ꯄ꯭ꯂꯥꯖꯣ꯫
+calidad metodológica de los estudios incluidos se clasificó como críticamente baja. Las intervenciones basadas en la terapia cognitivo conductual,ꯀꯦꯂꯤꯗꯥꯗ ꯃꯦꯇꯣꯗꯣꯂꯣꯖꯤꯀꯥ ꯗꯦ ꯂꯣꯁ ꯑꯦꯁ꯭ꯇꯨꯗꯤꯑꯣꯁ ꯏꯅꯛꯂꯨꯏꯗꯣꯁ ꯑꯦꯁ.ꯏ.ꯀ꯭ꯂꯥꯁꯤꯐꯤꯀꯣ ꯀꯣꯃꯣ ꯀ꯭ꯔꯤꯇꯤꯀꯦꯃꯦꯟꯇ ꯕꯥꯖꯥ꯫
+son eficaces para los trastornos de ansiedad en niños y adolescentes. Se discute la necesidad de mejorar la calidad metodológica y de aumentar,ꯃꯆꯥ ꯑꯦꯐꯤꯀꯦꯁ ꯄꯥꯔꯥ ꯂꯣꯁ ꯇ꯭ꯔꯥꯁ꯭ꯇꯣꯔꯅꯣꯁ ꯗꯦ ꯑꯦꯟꯁꯤꯗꯥꯗ ꯑꯦꯟ ꯅꯤꯅꯣꯁ ꯋꯥꯏ ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯦꯁ꯫
+los estudios centrados en la eficacia de los tratamientos para trastornos específicos,ꯂꯣꯁ ꯑꯦꯁ꯭ꯇꯨꯗꯤꯑꯣꯁ ꯁꯦꯟꯠꯔꯥꯗꯣꯁ ꯑꯦꯟ ꯂꯥ ꯑꯦꯐꯤꯀꯦꯁꯤꯌꯥ ꯗꯦ ꯂꯣꯁ ꯇ꯭ꯔꯥꯇꯥꯃꯤꯑꯣꯇꯣꯁ ꯄꯥꯔꯥ ꯇ꯭ꯔꯥꯁ꯭ꯇꯣꯔꯅꯣꯁ ꯑꯦꯁ꯭ꯄꯦꯁꯤꯐꯤꯀꯣꯁ
+Palabras clave: infancia; adolescencia; trastornos de ansiedad; tratamientos psicológicos; revisión sistemática,ꯄꯥꯂꯥꯕ꯭ꯔꯥꯁ ꯀ꯭ꯂꯦꯚ: ꯏꯅꯐꯦꯟꯁꯤꯌꯥ;
+Correspondence concerning this article should be addressed to:,ꯑꯥꯔꯇꯤꯀꯜ ꯑꯁꯤꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯀꯣꯔꯁꯁꯤꯡ ꯑꯁꯤ ꯃꯈꯥꯗꯥ ꯄꯤꯔꯤꯕꯁꯤꯡ ꯑꯁꯤꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯌꯦꯡꯁꯤꯅꯒꯗꯕꯅꯤ:
+Teresa Galán-Luque,ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ
+"AITANA research group, Department of Health Psychology","ꯑꯩꯇꯥꯅꯥ ꯔꯤꯁꯔꯆ ꯒ꯭ꯔꯨꯞ, ꯗꯤꯄꯥꯔꯇꯃꯦꯟꯇ ꯑꯣꯐ ꯍꯦꯜꯊ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ"
+"Miguel Hernández University, Avenida de la Universidad, s/n. 03202, Elche, Alicante, Spain","ꯃꯤꯒꯜ ꯍꯔꯅꯥꯟꯗꯦꯖ ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤ, ꯑꯦꯚꯦꯅꯤꯗꯥ ꯗꯦ ꯂꯥ ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤ, ꯑꯦꯁ/ꯑꯦꯟ."
+E.mail: tgalan@umh.es,ꯏ.ꯃꯦꯏꯜ: tgalan@umh.es
+32,꯳꯲ ꯑꯃꯁꯨꯡ ꯑꯥꯏ.
+Psychological treatment for specific anxiety disorders,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ
+Anxiety disorders (ADs) are among the most common psy-,ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ (ADS) ꯑꯁꯤ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯀꯃꯟ ꯑꯣꯏꯕꯥ ꯁꯥꯏ-
+"chological difficulties in childhood and adolescence, with lifetime","ꯑꯉꯥꯡ ꯑꯣꯏꯔꯤꯉꯩ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯀꯄꯥ ꯃꯇꯃꯗꯥ ꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ ꯑꯋꯥꯕꯁꯤꯡ, ꯄꯨꯟꯁꯤ ꯆꯨꯞꯄꯥ"
+"prevalence of up to 10% and 20%, respectively (Essau & Gabbidon,","ꯃꯊꯪꯁꯤꯠꯅꯥ 10% ꯑꯃꯁꯨꯡ 20% ꯐꯥꯎꯕꯒꯤ ꯄ꯭ꯔꯤꯚꯦꯂꯦꯟꯁ (ꯑꯦꯁꯥꯎ & ꯒ꯭ꯌꯥꯕꯤꯗꯣꯟ,"
+2012). ADs are characterized by excessive fear and anxiety and are,꯲꯰꯱꯲ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+"associated with disturbances in physiology, emotion, cognition, and","ꯐꯤꯖꯤꯑꯣꯂꯣꯖꯤ, ꯏꯃꯣꯁꯟ, ꯀꯣꯒꯅꯤꯁꯟ ꯑꯃꯁꯨꯡ ."
+"behavior (American Psychiatric Association [APA], 2013; Ollen-","ꯂꯃꯆꯠ-ꯁꯥꯖꯠ (ꯑꯃꯦꯔꯤꯀꯥꯟ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤꯛ ꯑꯦꯁꯣꯁꯤꯑꯦꯁꯟ [ꯑꯦ.ꯄꯤ.ꯑꯦ.], ꯲꯰꯱꯳; ꯑꯣꯂꯦꯟ-"
+"dick & Byrd, 2001). The Diagnostic and Statistical Manual for Men-","ꯗꯤꯛ ꯑꯃꯁꯨꯡ ꯕꯥꯏꯔꯗ, ꯲꯰꯰꯱)꯫"
+"tal Disorders (DSM-5; APA, 2013) lists several specific ADs: sep-","TAL ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ (DSM-5; APA, 2013) ꯑꯁꯤꯅꯥ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗ ꯀꯌꯥ ꯑꯃꯥ ꯄꯤꯔꯤ: ꯁꯦꯄ-"
+"aration anxiety disorder (SAD), selective mutism, specific phobia","ꯑꯦꯔꯦꯁꯟ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ (ꯑꯦꯁ.ꯑꯦ.ꯗꯤ.), ꯁꯦꯂꯦꯛꯇꯤꯕ ꯃ꯭ꯌꯨꯇꯤꯖꯝ, ꯑꯀꯛꯅꯕꯥ ꯐꯣꯕꯤꯌꯥ"
+"(SP), social anxiety disorder or social phobia (SOP), panic disorder","(ꯑꯦꯁ.ꯄꯤ.), ꯁꯣꯁꯤꯑꯦꯜ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ ꯅꯠꯠꯔꯒꯥ ꯁꯣꯁꯤꯑꯦꯜ ꯐꯣꯕꯤꯌꯥ (ꯑꯦꯁ.ꯑꯣ.ꯄꯤ.), ꯄꯦꯅꯤꯛ ꯗꯤꯁꯑꯣꯔꯗꯔ"
+"(PD), agoraphobia (AG), generalized anxiety disorder (GAD), sub-","(ꯄꯤ.ꯗꯤ.), ꯑꯦꯒꯣꯔꯥꯐꯣꯕꯤꯌꯥ (ꯑꯦ.ꯖꯤ.), ꯖꯦꯅꯦꯔꯦꯂꯥꯏꯖ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ (ꯖꯤ.ꯑꯦ.ꯗꯤ.), ꯁꯕ-"
+"stance/medication-induced AD, AD due to another medical con-","ꯁ꯭ꯇꯦꯟꯁ/ꯃꯦꯗꯤꯀꯦꯁꯟ-ꯏꯟꯗꯨꯁ ꯇꯧꯔꯕꯥ ꯑꯦ.ꯗꯤ., ꯑꯇꯣꯞꯄꯥ ꯃꯦꯗꯤꯀꯦꯜ ꯀꯟ-"
+"dition, other specified AD, and unspecified AD. Besides, there are","ꯗꯤꯁꯟ, ꯑꯇꯩ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗ, ꯑꯃꯁꯨꯡ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗ."
+"other anxiety-based problems, such as nighttime fears that can be","ꯑꯇꯣꯞꯄꯥ ꯑꯦꯟꯁꯤꯇꯤꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯄ꯭ꯔꯣꯕ꯭ꯂꯦꯃꯁꯤꯡ, ꯍꯥꯌꯕꯗꯤ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ ꯄꯣꯀꯍꯅꯕꯥ ꯌꯥꯕꯥ ꯄ꯭ꯔꯣꯕ꯭ꯂꯦꯃꯁꯤꯡ"
+so impairing that children meet criteria for SAD of SPs,ꯑꯗꯨꯅꯥ ꯑꯉꯥꯡꯁꯤꯡꯅꯥ ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ.ꯀꯤ ꯑꯦꯁ.ꯑꯦ.ꯗꯤ.
+According to a recent study conducted with Spanish school,ꯁ꯭ꯄꯦꯅꯒꯤ ꯁ꯭ꯀꯨꯂꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯍꯟꯗꯛꯇꯥ ꯄꯥꯡꯊꯣꯀꯈꯤꯕꯥ ꯁ꯭ꯇꯗꯤ ꯑꯃꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ
+"children, the weighted prevalence of any AD was 11.8%, with the","ꯑꯉꯥꯡꯁꯤꯡ, ꯑꯦꯗ ꯑꯃꯍꯦꯛꯇꯒꯤ ꯋꯦꯏꯇꯦꯗ ꯄ꯭ꯔꯤꯚꯦꯂꯦꯟꯁ ꯑꯁꯤ 11.8% ꯑꯣꯏꯈꯤ, ꯑꯃꯁꯨꯡ ꯃꯁꯤꯅꯥ 11.8% ꯑꯣꯏꯈꯤ꯫"
+most common subtypes being SPs (16.2%) and GAD (6.9%) (Canals,ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯀꯃꯟ ꯑꯣꯏꯕꯥ ꯁꯕ-ꯇꯥꯏꯄꯁꯤꯡ ꯑꯁꯤ ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ.(꯱꯶.꯲%) ꯑꯃꯁꯨꯡ ꯖꯤ.ꯑꯦ.ꯗꯤ.(꯶.꯹%) (ꯀꯦꯅꯥꯂꯁꯤꯡ)ꯅꯤ꯫
+"et al., 2019). Other studies have reported prevalence rates of anx-","ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯹) ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+iety symptoms ranging from 26.41% to 47% in Spanish children,ꯁ꯭ꯄꯦꯅꯒꯤ ꯑꯉꯥꯡꯁꯤꯡꯗꯥ 26.41%ꯗꯒꯤ 47% ꯐꯥꯎꯕꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ ꯑꯥꯏꯇꯤ ꯁꯤꯝꯄꯇꯃꯁꯤꯡ
+"and adolescents from the general population (Orgilés et al., 2012;","ꯑꯃꯁꯨꯡ ꯖꯦꯅꯦꯔꯦꯜ ꯄꯣꯄꯨꯂꯦꯁꯅꯗꯒꯤ ꯂꯥꯀꯄꯥ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ (orgilés et al., 2012;"
+"Romero Acosta et al., 2010). Generally, the age of onset for ADs is","ꯔꯣꯃꯦꯔꯣ ꯑꯦꯀꯣꯁ꯭ꯇꯥ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯰)꯫"
+"11 years (Kessler et al., 2005). However, SPs and SAD usually begin","ꯆꯍꯤ ꯱꯱ (ꯀꯦꯁꯂꯔ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯰꯵)꯫"
+"earlier, at around age 7, followed by SOP, AG without panic attacks","ꯃꯃꯥꯡꯗꯥ, ꯆꯥꯎꯔꯥꯛꯅꯥ ꯆꯍꯤ ꯷ꯇꯥ, ꯃꯊꯪꯗꯥ ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯑꯦ.ꯖꯤ."
+"and PD (Bandelow & Michaelis, 2015)","ꯑꯃꯁꯨꯡ ꯄꯤ.ꯗꯤ.(ꯕꯥꯟꯗꯦꯂꯣ ꯑꯃꯁꯨꯡ ꯃꯥꯏꯀꯦꯂꯁ, ꯲꯰꯱꯵)"
+There is current general consensus on the fact that if ADs are,ꯀꯔꯤꯒꯨꯝꯕꯥ ꯑꯦꯗꯁꯤꯡ ꯑꯁꯤ ꯑꯣꯏꯔꯕꯗꯤ ꯍꯧꯖꯤꯛ ꯂꯩꯔꯤꯕꯥ ꯖꯦꯅꯔꯦꯜ ꯀꯟꯁꯦꯟꯁꯁ ꯑꯁꯤ ꯂꯩꯔꯤ ꯃꯗꯨꯗꯤ .
+"not identified and correctly treated, they tend to become chronic","ꯃꯁꯛ ꯈꯪꯗꯣꯛꯂꯕꯥ ꯑꯃꯁꯨꯡ ꯃꯌꯦꯛ ꯁꯦꯡꯅꯥ ꯂꯥꯌꯦꯡꯗꯕꯥ, ꯃꯈꯣꯌ ꯑꯁꯤ ꯀ꯭ꯔꯣꯅꯤꯛ ꯑꯣꯏꯕꯥ ꯌꯥꯏ ."
+"and have widespread negative effects on social, familiar and aca-","ꯑꯃꯁꯨꯡ ꯁꯣꯁꯤꯑꯦꯜ, ꯐꯦꯃꯤꯂꯤꯌꯔ ꯑꯃꯁꯨꯡ ꯑꯦ.ꯁꯤ.ꯑꯦ.-ꯗꯥ ꯄꯥꯛ ꯁꯟꯅꯥ ​​ꯅꯦꯒꯦꯇꯤꯕ ꯏꯐꯦꯛꯇꯁꯤꯡ ꯂꯩ꯫"
+"demic performance (Essau et al., 2004; Lundy et al., 2010; Mal-","ꯗꯦꯃꯤꯛ ꯄꯔꯐꯣꯃꯦꯟꯁ (ꯑꯦꯁꯥꯎ ꯑꯦꯠ ꯑꯦꯜ., 2004; ꯂꯨꯟꯗꯤ ꯑꯃꯁꯨꯡ ꯑꯇꯩ, 2010; ꯃꯥꯜ-"
+"donado et al., 2013). Besides, children and adolescents usually","ꯗꯣꯅꯥꯗꯣ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯳)꯫"
+show lower self-esteem compared to healthy groups and it has,ꯍꯀꯆꯥꯡ ꯐꯕꯥ ꯀꯥꯡꯂꯨꯄꯁꯤꯡꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯁꯦꯜꯐ-ꯏꯁ꯭ꯇꯤꯝ ꯍꯟꯊꯕꯥ ꯎꯠꯄꯥ ꯑꯃꯁꯨꯡ ꯃꯁꯤꯗꯥ [...]
+been demonstrated that more than 8% of adolescents will suffer,ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤ ꯸% ꯍꯦꯅꯕꯅꯥ ꯑꯋꯥꯕꯥ ꯃꯥꯌꯣꯛꯅꯒꯅꯤ ꯍꯥꯌꯕꯥ ꯎꯠꯈ꯭ꯔꯦ
+"from an AD with severe levels of impairment (Hammerness et al.,","ꯌꯥꯝꯅꯥ ꯁꯥꯊꯤꯕꯥ ꯑꯁꯣꯛ-ꯑꯄꯟ ꯊꯣꯀꯍꯅꯕꯥ ꯑꯦꯗ ꯑꯃꯗꯒꯤ (Hammerness et al.,"
+2008). Children and adolescents with ADs are at a higher risk of,꯲꯰꯰꯸) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"experiencing subsequent anxiety, mood and substance use disor-","ꯃꯇꯨꯡ ꯇꯥꯔꯀꯄꯥ ꯋꯥꯈꯜ ꯋꯥꯕꯥ, ꯋꯥꯈꯜ ꯑꯃꯁꯨꯡ ꯁꯕ꯭ꯁꯁ ꯌꯨꯖ ꯗꯤꯁꯑꯣꯔꯗꯔ-"
+"ders, suicidal behaviors, educational underachievement, and early","ꯗꯤ.ꯏ.ꯑꯥꯔ.ꯑꯦꯁ., ꯁꯨꯏꯁꯥꯏꯗꯜ ꯕꯤꯍꯦꯕꯤꯌꯔꯁꯤꯡ, ꯑꯦꯖꯨꯀꯦꯁꯅꯦꯜ ꯑꯟꯗꯔꯑꯦꯆꯤꯚꯃꯦꯟꯇ, ꯑꯃꯁꯨꯡ ꯇꯣꯏꯅꯥ ꯉꯟꯅꯥ"
+parenthood when they reach young adulthood (Woodward & Fer-,ꯃꯃꯥ-ꯃꯄꯥꯁꯤꯡꯅꯥ ꯅꯍꯥ ꯑꯣꯏꯔꯤꯕꯥ ꯑꯍꯜ ꯑꯣꯏꯔꯀꯄꯒꯤ ꯃꯑꯣꯡ (Woodward & Fer-
+"gusson, 2001)","ꯒꯨꯁꯟ, ꯲꯰꯰꯱) ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+Due to the high prevalence of ADs among children and ado-,ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯑꯦꯗꯁꯤꯡ ꯌꯥꯝꯅꯥ ꯌꯥꯑꯣꯕꯅꯥ ꯃꯔꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣ-
+"lescents, their associated impairments in functioning, and their","ꯂꯦꯁꯦꯟꯇꯁꯤꯡ, ꯃꯈꯣꯌꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯑꯁꯣꯛ-ꯑꯄꯅꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯃꯈꯣꯌꯒꯤ ."
+"negative psychological consequences (Higa-McMillan et al., 2016),","ꯅꯦꯒꯦꯇꯤꯕ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯀꯟꯁꯤꯀꯤꯎꯟꯁ (ꯍꯤꯒꯥ-ꯃꯦꯀꯃꯤꯂꯟ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯶),"
+effective interventions for treating children and adolescents with,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯕꯨ ꯂꯥꯏꯌꯦꯡꯅꯕꯒꯤꯗꯃꯛ ꯏꯐꯦꯛꯇꯤꯚ ꯑꯣꯏꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ
+ADs have been developed. The Society of Clinical Child & Ado-,ꯑꯦꯗꯁꯤꯡ ꯁꯦꯃꯒꯠꯂꯦ꯫
+lescent Psychology (Division 53 of the American Psychological,ꯂꯦꯁꯦꯟꯇ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ (ꯑꯃꯦꯔꯤꯀꯥꯟ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯂꯒꯤ ꯗꯤꯚꯤꯖꯟ ꯵꯳ .
+Association) recommends as evidence-based child and adolescent,ꯑꯦꯁꯣꯁꯤꯑꯦꯁꯟ)ꯅꯥ ꯏꯚꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯑꯉꯥꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯥ ꯃꯤꯑꯣꯏ ꯑꯣꯏꯅꯥ ꯔꯤꯀꯃꯦꯟꯗ ꯇꯧꯏ꯫
+"therapies for anxiety, the Cognitive-Behavioral Therapy (CBT),","ꯋꯥꯈꯜ ꯋꯥꯕꯥ, ꯀꯣꯒꯅꯤꯇꯤꯕ-ꯕꯤꯍꯦꯕꯤꯌꯔꯜ ꯊꯦꯔꯥꯄꯤ (ꯁꯤ.ꯕꯤ.ꯇꯤ.), ꯗꯤ.ꯏ.ꯑꯦ."
+"the CBT with parents, and the CBT with medication (Society of","ꯃꯃꯥ-ꯃꯄꯥꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯑꯃꯁꯨꯡ ꯍꯤꯗꯥꯛ ꯂꯥꯡꯊꯛ ꯌꯥꯑꯣꯕꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ."
+"Clinical Child & Adolescent Psychology, 2020). Also, they present","ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯆꯥꯏꯜꯗ ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ, 2020)꯫"
+"as therapies with a level one of evidence (therapies that work well),","ꯏꯚꯤꯗꯦꯟꯁꯀꯤ ꯂꯦꯚꯦꯜ ꯑꯃꯥ ꯂꯩꯕꯥ ꯊꯦꯔꯥꯄꯤꯁꯤꯡ (ꯃꯁꯥꯅꯥ ꯐꯖꯅꯥ ꯊꯕꯛ ꯇꯧꯕꯥ ꯊꯦꯔꯥꯄꯤꯁꯤꯡ) ꯑꯣꯏꯅꯥ,"
+exposure interventions (a core component of the CBT interven-,ꯑꯦꯛꯁꯄꯣꯖꯔ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ (ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯀꯝꯄꯣꯅꯦꯟꯇ ꯑꯃꯥ-
+"tions), modelling, and educational interventions (Society of Clini-","ꯇꯤꯅꯁꯤꯡ), ꯃꯣꯗꯦꯂꯤꯡ, ꯑꯃꯁꯨꯡ ꯑꯦꯖꯨꯀꯦꯁꯅꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ (ꯁꯣꯁꯥꯏꯇꯤ ꯑꯣꯐ ꯀ꯭ꯂꯤꯅꯤ-"
+"cal Child & Adolescent Psychology, 2020). In England, the Coping","ꯀꯦꯜ ꯆꯥꯏꯜꯗ ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ, 2020)꯫"
+"Cat (CC) program, a generic CBT treatment for ADs in children","ꯀꯦꯠ (ꯁꯤ.ꯁꯤ.) ꯄ꯭ꯔꯣꯒ꯭ꯔꯥꯝ, ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯖꯦꯅꯦꯔꯦꯜ ꯁꯤ.ꯕꯤ.ꯇꯤ."
+"and adolescents, is recommended for the treatment of GAD, SAD,","ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁꯤꯡ, ꯖꯤ.ꯑꯦ.ꯗꯤ.ꯒꯤ ꯂꯥꯌꯦꯡꯅꯕꯥ ꯄꯥꯎꯇꯥꯛ ꯄꯤꯔꯤ, ꯑꯦꯁ.ꯑꯦ.ꯗꯤ.,"
+"SOP, and SPs (Children and Young People’s Improving Access to","ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯑꯃꯁꯨꯡ ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ.(ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯅꯍꯥꯁꯤꯡꯅꯥ ꯐꯒꯠꯂꯀꯄꯒꯤ ꯈꯨꯗꯣꯡꯆꯥꯕꯥ ꯐꯒꯠꯍꯅꯕꯥ"
+"Psychological Therapies Program [CYP IAPT], 2013). In sum,","ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯊꯦꯔꯥꯄꯤꯁꯤꯡ ꯄ꯭ꯔꯣꯒ꯭ꯔꯥꯝ [ꯁꯤ.ꯋꯥꯏ.ꯄꯤ.ꯑꯥꯏ.ꯑꯦ.ꯄꯤ.ꯇꯤ.], ꯲꯰꯱꯳)꯫"
+extensive data shows that cognitive-behavioral approaches are the,ꯄꯥꯛ ꯆꯥꯎꯔꯕꯥ ꯗꯦꯇꯥꯅꯥ ꯇꯥꯛꯂꯤ ꯃꯗꯨꯗꯤ ꯀꯣꯒꯅꯤꯇꯤꯕ-ꯕꯤꯍꯦꯕꯤꯌꯔ ꯑꯦꯞꯔꯣꯆꯁꯤꯡ ꯑꯁꯤ .
+most effective for treating ADs in children and adolescents (for a,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯗꯁꯤꯡ ꯂꯥꯌꯦꯡꯕꯗꯥ ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯍꯦꯟꯅꯥ ꯏꯐꯦꯛꯇꯤꯚ ꯑꯣꯏꯕꯥ (Aꯒꯤꯗꯃꯛꯇꯥ ꯑꯦ.
+"comprehensive review and meta-analysis of RCTs see, for exam-","ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡꯒꯤ ꯃꯄꯨꯡ ꯐꯥꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯌꯦꯡꯕꯤꯌꯨ, ꯄꯔꯤꯈꯥꯒꯤꯗꯃꯛ-"
+"ple, the study by James et al., 2013). However, internationally well-","ꯄꯤ.ꯑꯦꯜ.ꯏ., ꯗꯤ ꯁ꯭ꯇꯗꯤ ꯕꯥꯏ ꯖꯦꯃꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯳)꯫"
+known practice guidelines (such as NICE guidelines in the UK or,ꯈꯪꯂꯕꯥ ꯄ꯭ꯔꯦꯛꯇꯤꯁ ꯒꯥꯏꯗꯂꯥꯏꯅꯁꯤꯡ (ꯌꯨ.ꯀꯦ.ꯗꯥ ꯅꯠꯠꯔꯒꯥ ꯌꯨ.ꯀꯦ.ꯗꯥ ꯅꯨꯡꯉꯥꯏꯕꯥ ꯒꯥꯏꯗꯂꯥꯏꯅꯁꯤꯡ ꯅꯠꯠꯔꯒꯥ
+guidelines by the APA) recommend evidence-based interventions,ꯑꯦ.ꯄꯤ.ꯑꯦ.ꯅꯥ ꯄꯤꯔꯤꯕꯥ ꯒꯥꯏꯗꯂꯥꯏꯅꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯏꯕꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯔꯤꯀꯃꯦꯟꯗ ꯇꯧꯔꯤ
+"for ADs in general, but they do not offer specific interventions for","ꯃꯍꯧꯁꯥꯅꯥ ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛ, ꯑꯗꯨꯕꯨ ꯃꯈꯣꯌꯅꯥ ꯑꯀꯛꯅꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯑꯀꯛꯅꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯄꯤꯗꯦ꯫"
+"each AD. Furthermore, as far as we know, there are no previous",ꯑꯦꯗ ꯈꯨꯗꯤꯡꯃꯛ ꯑꯦꯗ.
+systematic reviews of systematic reviews and meta-analyses aimed,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡꯒꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯦꯝꯕꯦꯁꯦꯗꯔ
+at summarizing the available literature addressing the effective-,ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ-ꯑꯗꯨꯕꯨ ꯌꯦꯡꯁꯤꯜꯂꯤꯕꯥ ꯂꯤꯇꯔꯦꯆꯔꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯁꯃꯖꯤꯟꯅꯐꯝ ꯑꯣꯏꯅꯥ .
+ness of psychological interventions for specific ADs in children,ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯅꯦꯁ
+and adolescents,ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+"Accordingly, the main objective of this work is to synthesize the","ꯃꯁꯤꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ, ꯊꯕꯛ ꯑꯁꯤꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯄꯥꯟꯗꯃꯗꯤ ꯁꯤꯟꯊꯦꯁꯤꯁ ꯇꯧꯕꯥ ꯑꯁꯤꯅꯤ ꯫"
+evidence concerning the available treatments for treating specific ADs,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗꯁꯤꯡ ꯂꯥꯌꯦꯡꯅꯕꯥ ꯐꯪꯂꯤꯕꯥ ꯂꯥꯏꯌꯦꯡꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯄ꯭ꯔꯃꯥꯅꯁꯤꯡ꯫
+in this population along with their effectiveness. The specific objec-,ꯃꯤꯁꯤꯡ ꯑꯁꯤꯗꯥ ꯃꯈꯣꯌꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯥ ꯂꯣꯌꯅꯅꯥ꯫
+tive of this study is to provide with a guidance on the evidence-based,ꯁ꯭ꯇꯗꯤ ꯑꯁꯤꯒꯤ ꯇꯤꯚ ꯑꯁꯤ ꯏꯚꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯂꯃꯖꯤꯡ-ꯂꯃꯇꯥꯛ ꯑꯃꯥ ꯄꯤꯕꯅꯤ꯫
+treatments for each specific AD included in this systematic review,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯁꯤꯗꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯂꯥꯌꯦꯡꯁꯤꯡ
+"(i.e., SPs, GAD, SAD, and nighttime fears)","(ꯏ.ꯏ., ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ., ꯒꯥꯗ, ꯁꯦꯗ, ꯑꯃꯁꯨꯡ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯑꯀꯤꯕꯥ)"
+Method,ꯊꯧꯑꯪꯡ
+Search Procedure and Eligibility Criteria,ꯁꯥꯔꯆ ꯄ꯭ꯔꯣꯁꯤꯖꯔ ꯑꯃꯁꯨꯡ ꯏꯂꯤꯖꯤꯕꯤꯂꯤꯇꯤꯒꯤ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥ
+This systematic review followed the Preferred Reporting Items,ꯃꯁꯤꯒꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯁꯤꯅꯥ ꯄꯁꯟꯗꯒꯤ ꯔꯤꯄꯣꯔꯇꯤꯡ ꯑꯥꯏꯇꯦꯃꯁꯤꯡꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯆꯠꯈꯤ
+for Systematic Reviews and Meta-analysis (PRISMA) statement,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ (ꯄꯤ.ꯑꯥꯔ.ꯑꯥꯏ.ꯑꯦꯁ.ꯑꯦꯝ.ꯑꯦ.) ꯁ꯭ꯇꯦꯇꯃꯦꯟꯇꯀꯤꯗꯃꯛ
+"(Moher et al., 2009; Page et al., 2021). A systematic review of sys-","(ꯃꯣꯍꯦꯔ ꯑꯦꯠ ꯑꯦꯜ., 2009; ꯄꯦꯖ ꯑꯦꯠ ꯑꯦꯜ., 2021)꯫"
+tematic reviews and meta-analyses published between 2000 and,꯲꯰꯰꯰ ꯑꯃꯁꯨꯡ ꯲꯰꯰꯰ꯒꯤ ꯃꯔꯛꯇꯥ ꯐꯣꯡꯈꯤꯕꯥ ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ
+"2022, written in both English and Spanish, evaluating psychologi-","꯲꯰꯲꯲, ꯏꯪꯂꯤꯁ ꯑꯃꯁꯨꯡ ꯁ꯭ꯄꯦꯅꯤꯁ ꯑꯅꯤꯃꯛꯇꯥ ꯏꯕꯥ, ꯁꯥꯏꯀꯣꯂꯣꯖꯤ- ꯏꯚꯥꯂꯨꯑꯦꯠ ꯇꯧꯕꯥ-"
+cal interventions for the treatment of ADs in children and adoles-,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯀꯄꯥ ꯃꯇꯃꯗꯥ ꯑꯦꯗꯁꯤꯡ ꯂꯥꯌꯦꯡꯅꯕꯥ ꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ-
+cents was conducted. Author TGL performed the database search,ꯁꯦꯟꯇꯔꯁꯤꯡ ꯄꯥꯡꯊꯣꯀꯈꯤ꯫
+in May 2022,꯲꯰꯲꯲ꯒꯤ ꯃꯦ ꯊꯥꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+"To identify relevant documents, four bibliographic databases","ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯗꯣꯀꯨꯃꯦꯟꯇꯁꯤꯡ ꯈꯉꯗꯣꯛꯅꯕꯥ, ꯕꯥꯏꯕꯂꯣꯒ꯭ꯔꯥꯐꯤꯛ ꯗꯦꯇꯥꯕꯦꯖ ꯃꯔꯤ"
+"were searched: MEDLINE (PubMed), PsycINFO, Web of Science","ꯊꯤꯖꯤꯅꯈꯤ: ꯃꯦꯗꯂꯥꯏꯟ (ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗ), ꯁꯥꯏꯁꯤꯅꯐꯣ, ꯋꯦꯕ ꯑꯣꯐ ꯁꯥꯏꯟꯁ"
+"(Core Collection), and The Cochrane Library. The following key-","(ꯀꯣꯔ ꯀꯂꯦꯛꯁꯟ), ꯑꯃꯁꯨꯡ ꯀꯣꯛꯔꯦꯟ ꯂꯥꯏꯕ꯭ꯔꯦꯔꯤ꯫"
+words were combined: (“children” OR “adolescents”) AND (“psy-,ꯋꯥꯍꯩꯁꯤꯡ ꯑꯁꯤ ꯄꯨꯟꯅꯥ ꯊꯃꯈꯤ: (“ꯑꯉꯥꯡꯁꯤꯡ” ꯅꯠꯔꯒꯥ “ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁꯤꯡ”) ꯑꯃꯁꯨꯡ (“ꯁꯥꯏꯠ-
+chological treatment”) AND (“anxiety disorders”). See Appendix 1,ꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ”) ꯑꯃꯁꯨꯡ (“ꯑꯦꯅꯖꯥꯏꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ”)꯫ꯑꯦꯄꯦꯟꯗꯤꯛꯁ 1 ꯌꯦꯡꯕꯤꯌꯨ꯫
+for a detailed description of searches (https://osf.io/3pxdn/). The,ꯁꯥꯔꯆꯁꯤꯡꯒꯤ ꯑꯀꯨꯞꯄꯥ ꯃꯔꯣꯂꯒꯤꯗꯃꯛ (https://osf.io/3pxdn/)꯫
+reference lists of retrieved records were examined to identify addi-,ꯔꯤꯐꯔꯦꯟꯁ ꯇꯧꯔꯕꯥ ꯔꯦꯀꯣꯔꯗꯁꯤꯡꯒꯤ ꯔꯦꯐꯥꯔꯦꯟꯁ ꯂꯤꯁ꯭ꯇꯁꯤꯡ ꯑꯁꯤ ꯑꯦꯗꯤ-
+"tional relevant articles. To be included in the review, published arti-",ꯑꯃꯁꯨꯡ ꯑꯃꯁꯨꯡ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯑꯥꯔꯇꯤꯀꯂꯁꯤꯡ꯫
+cles had to meet the following inclusion criteria:,ꯁꯤ.ꯑꯦꯜ.ꯏ.ꯑꯦꯁ.ꯅꯥ ꯃꯈꯥꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯏꯅꯛꯂꯨꯖꯅꯒꯤ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥꯁꯤꯡ ꯑꯁꯤ ꯉꯥꯛꯀꯗꯕꯅꯤ:
+1.	Population: children and adolescents under 18 (included) years,1. ꯃꯤꯁꯤꯡ: ꯆꯍꯤ 18ꯒꯤ ꯃꯈꯥꯗꯥ ꯂꯩꯕꯥ ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ (ꯌꯥꯑꯣꯕꯥ)
+of age diagnosed with any specific AD,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗ ꯑꯃꯍꯦꯛꯇꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁ ꯇꯧꯕꯥ ꯆꯍꯤꯒꯤ ꯑꯣꯏꯕꯥ꯫
+2.	Intervention: psychological treatments targeting anxiety dis-,2. ꯏꯟꯇꯔꯚꯦꯟꯁꯟ: ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁ-ꯗꯥ ꯄꯥꯟꯗꯝ ꯊꯝꯂꯤꯕꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇꯁꯤꯡ-
+orders symptoms. Interventions were not limited to individual,ꯁꯤꯝꯄꯇꯃꯁꯤꯡ ꯑꯣꯔꯗꯔ ꯇꯧꯏ꯫
+format in clinical settings. They could include group formats,ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯁꯦꯇꯤꯡꯁꯤꯡꯗꯥ ꯐꯣꯔꯃꯦꯠ ꯇꯧꯕꯥ꯫
+"in clinical and non-clinical settings, and other settings such as","ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯑꯃꯁꯨꯡ ꯅꯟ-ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯁꯦꯇꯤꯡꯁꯤꯡꯗꯥ, ꯑꯃꯁꯨꯡ ꯑꯇꯣꯞꯄꯥ ꯁꯦꯇꯤꯡꯁꯤꯡ ꯍꯥꯌꯕꯗꯤ ."
+schools or community services,ꯁ꯭ꯀꯨꯂꯁꯤꯡ ꯅꯠꯠꯔꯒꯥ ꯀꯝꯌꯨꯅꯤꯇꯤꯒꯤ ꯁꯔꯚꯤꯁꯁꯤꯡ .
+3.	Outcomes: anxiety symptoms measured using structured clini-,3. ꯑꯥꯎꯇꯀꯃꯁꯤꯡ: ꯁ꯭ꯠꯔꯀꯆꯔꯦꯜ ꯀ꯭ꯂꯤꯅꯤ- ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯃꯥꯄꯂꯕꯥ ꯑꯦꯟꯁꯤꯇꯤꯒꯤ ꯂꯥꯏꯑꯣꯡꯁꯤꯡ꯫
+"cal interviews or validated instruments (e.g., Spence Children’s","CAL ꯏꯟꯇꯔꯚꯤꯎꯁꯤꯡ ꯅꯠꯠꯔꯒꯥ ꯚꯦꯂꯤꯗꯦꯠ ꯇꯧꯔꯕꯥ ꯏꯅꯁ꯭ꯠꯔꯨꯃꯦꯟꯇꯁꯤꯡ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯁ꯭ꯄꯦꯟꯁ ꯆꯥꯏꯜꯗ’ꯁ"
+Anxiety Scale),ꯑꯦꯟꯁꯤꯇꯤ ꯁ꯭ꯀꯦꯜ)
+4.	Study design: systematic reviews or meta-analyses aimed at,꯴.ꯁ꯭ꯇꯗꯤ ꯗꯤꯖꯥꯏꯟ: ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯅꯠꯔꯒꯥ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡ ꯄꯥꯟꯗꯝ ꯊꯝꯂꯤ
+"examining the effectiveness (e.g., reduction of anxiety symp-","ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯌꯦꯡꯁꯤꯅꯕꯥ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯑꯦꯟꯁꯤꯇꯤ ꯁꯤꯝꯄ-ꯑꯦꯖ ꯍꯟꯊꯍꯅꯕꯥ-"
+tomatology) of psychological interventions,ꯇꯣꯃꯦꯇꯣꯂꯣꯖꯤ)ꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ
+Studies were excluded if they were not written in English or,ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯑꯁꯤ ꯏꯪꯂꯤꯁꯇꯥ ꯏꯔꯝꯕꯥ ꯑꯣꯏꯔꯕꯗꯤ ꯌꯥꯑꯣꯔꯃꯗꯦ ꯅꯠꯔꯒꯥ .
+"Spanish, did not aim to assess the effectiveness of a psychological","ꯁ꯭ꯄꯦꯅꯤꯁ, ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯑꯃꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯑꯦꯁꯦꯁ ꯇꯧꯅꯕꯥ ꯄꯥꯟꯗꯝ ꯊꯃꯈꯤꯗꯦ꯫"
+"intervention, focused on pharmacological treatments, or did not","ꯏꯟꯇꯔꯚꯦꯟꯁꯟ, ꯐꯥꯔꯃꯥꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯠꯃꯦꯟꯇꯁꯤꯡꯗꯥ ꯃꯤꯠꯌꯦꯡ ꯊꯝꯕꯥ, ꯅꯠꯠꯔꯒꯥ ."
+report data on the effectiveness of the psychotherapy for the spe-,ꯑꯦꯁ.ꯄꯤ.ꯏ.ꯒꯤꯗꯃꯛ ꯁꯥꯏꯀꯣꯊꯦꯔꯥꯄꯤꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯤ ꯃꯇꯥꯡꯗꯥ ꯗꯦꯇꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯕꯥ
+cific disorder,ꯁꯤꯐꯤꯛ ꯗꯤꯁꯑꯣꯔꯗꯔ ꯂꯩꯕꯥ꯫
+An Excel file was created to export all the results. Duplicates,ꯔꯤꯖꯜꯇ ꯄꯨꯝꯅꯃꯛ ꯑꯦꯛꯁꯄꯣꯔꯠ ꯇꯧꯅꯕꯥ ꯑꯦꯛꯁꯦꯜ ꯐꯥꯏꯜ ꯑꯃꯥ ꯁꯦꯃꯈꯤ꯫
+were removed. Two authors (TGL and MSO) independently,ꯂꯧꯊꯣꯀꯈꯤ꯫
+"screened titles and abstracts for eligibility. Then, TGL and MSO",ꯏꯂꯤꯖꯤꯕꯤꯂꯤꯇꯤꯒꯤꯗꯃꯛꯇꯥ ꯁ꯭ꯛꯔꯤꯟ ꯇꯧꯔꯕꯥ ꯇꯥꯏꯇꯂꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯑꯦꯕꯁ꯭ꯠꯔꯦꯛꯇꯁꯤꯡ꯫
+screened the full text of the articles to select those were finally,ꯃꯈꯣꯌꯁꯤꯡ ꯑꯗꯨ ꯈꯅꯕꯗꯥ ꯑꯥꯔꯇꯤꯀꯂꯁꯤꯡꯒꯤ ꯃꯄꯨꯡ ꯐꯥꯕꯥ ꯋꯥꯔꯣꯜ ꯑꯗꯨ ꯑꯔꯣꯏꯕꯗꯥ ꯁ꯭ꯛꯔꯤꯟ ꯇꯧꯈꯤ
+included in this study. Disagreements were resolved through dis-,ꯁ꯭ꯇꯗꯤ ꯑꯁꯤꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫
+cussion and consultation of a third independent reviewer (MOA),ꯑꯍꯨꯃꯁꯨꯕꯥ ꯃꯅꯤꯡꯇꯝꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯇꯧꯕꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯀꯁꯁꯟ ꯑꯃꯁꯨꯡ ꯀꯟꯁꯂꯇꯦꯁꯟ (ꯑꯦꯝ.ꯑꯣ.ꯑꯦ.)
+33,꯳꯳ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés","ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ"
+Data Extraction,ꯗꯦꯇꯥ ꯂꯧꯊꯣꯀꯄꯥ .
+Two data collection forms were created to extract relevant infor-,ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯏꯅꯐꯣꯔ-ꯁꯤꯡ ꯂꯧꯊꯣꯛꯅꯕꯥ ꯗꯦꯇꯥ ꯀꯂꯦꯛꯁꯟ ꯐꯣꯔꯝ ꯑꯅꯤ ꯁꯦꯃꯈꯤ-
+mation from the included papers. The first form included the follow-,ꯌꯥꯑꯣꯔꯤꯕꯥ ꯄꯦꯄꯔꯁꯤꯡꯗꯒꯤ ꯃꯦꯁꯟ꯫
+"ing information: authors, year of publication; aims of the study; search","ing ꯏꯅꯐꯣꯔꯃꯦꯁꯟ: ꯑꯣꯊꯣꯔꯤꯇꯤꯁꯤꯡ, ꯐꯣꯉꯕꯥ ꯆꯍꯤ;"
+strategy; type and number of included studies; participants’ charac-,ꯂꯥꯂꯣꯡ;
+"teristics (i.e., diagnoses of children included, total number of partic-","ꯇꯦꯔꯤꯁ꯭ꯇꯤꯛ (i.e., ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁꯁꯤꯡ ꯌꯥꯎꯕꯥ, ꯄꯥꯔꯇꯤꯁꯤꯄꯦꯟꯇꯁꯤꯡꯒꯤ ꯑꯄꯨꯅꯕꯥ ꯃꯁꯤꯡ-"
+"ipants, mean age of the children – and range if it was provided, and","ꯏꯞꯌꯥꯟꯇꯁꯤꯡ, ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯃꯤꯟ ꯑꯦꯖ – ꯑꯃꯁꯨꯡ ꯀꯔꯤꯒꯨꯝꯕꯥ ꯃꯁꯤ ꯄꯤꯔꯕꯗꯤ ꯔꯦꯟꯖ, ꯑꯃꯁꯨꯡ ."
+"country / nationality); intervention characteristics (e.g., delivery for-",ꯂꯩꯕꯥꯛ / ꯖꯥꯇꯤꯒꯤ ꯑꯣꯏꯕꯥ;
+"mat: individual, groups, school-based, etc.); professionals providing","ꯃꯦꯠ: ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ, ꯀꯥꯡꯂꯨꯄꯁꯤꯡ, ꯁ꯭ꯀꯨꯂꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ, ꯑꯁꯤꯅꯆꯤꯡꯕꯥ);"
+the intervention; outcome measures; and funding sources. The second,ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯑꯗꯨ;
+form included the following information: risk of bias; main findings;,ꯐꯣꯔꯝ ꯑꯗꯨꯗꯥ ꯃꯈꯥꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯏꯅꯐꯣꯔꯃꯦꯁꯟ ꯑꯁꯤ ꯌꯥꯎꯈꯤ: ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯛ;
+and effect estimates (if it was a meta-analysis),ꯑꯃꯁꯨꯡ ꯏꯐꯦꯛꯇ ꯑꯦꯁ꯭ꯇꯤꯃꯦꯠꯁꯤꯡ (ꯀꯔꯤꯒꯨꯝꯕꯥ ꯃꯁꯤ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯑꯣꯏꯔꯕꯗꯤ)
+Quality Assessment,ꯀ꯭ꯕꯥꯂꯤꯇꯤ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ ꯇꯧꯕꯥ
+"Two independent authors, MOA and TGL, evaluated the meth-","ꯃꯅꯤꯡꯇꯝꯕꯥ ꯑꯣꯊꯣꯔꯤꯇꯤ ꯑꯅꯤ, ꯑꯦꯝ.ꯑꯣ.ꯑꯦ. ꯑꯃꯁꯨꯡ ꯇꯤ.ꯖꯤ.ꯑꯦꯜ.ꯅꯥ ꯃꯦꯊ-"
+odological quality of the included reviews. The assessment was con-,ꯌꯥꯑꯣꯔꯤꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡꯒꯤ ꯑꯣꯗꯣꯂꯣꯖꯤꯀꯦꯜ ꯀ꯭ꯕꯥꯂꯤꯇꯤ꯫
+"ducted using AMSTAR-2, an evaluation instrument developed to","ꯑꯦꯝ.ꯑꯦꯁ.ꯇꯤ.ꯑꯥꯔ.-꯲ ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯗꯛꯇ ꯇꯧꯕꯥ, ꯏꯚꯥꯂꯨꯑꯦꯁꯟ ꯏꯅꯁ꯭ꯠꯔꯨꯃꯦꯟꯇ ꯑꯃꯥ ꯑꯣꯏꯅꯥ ꯗꯤꯕꯦꯂꯞ ꯇꯧꯕꯥ"
+assess systematic reviews of randomized and non-randomized trials,ꯔꯦꯟꯗꯝ ꯑꯃꯁꯨꯡ ꯅꯟ-ꯔꯦꯟꯗꯝ ꯑꯣꯏꯕꯥ ꯇ꯭ꯔꯥꯏꯑꯦꯂꯁꯤꯡꯒꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯦꯁꯦꯁ ꯇꯧꯕꯥ
+"of healthcare interventions (Shea et al., 2017). In case of disagreement,","ꯍꯦꯜꯊꯀꯦꯌꯔ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ (ꯁꯦꯌꯥ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯷)꯫"
+consensus was reached by discussion,ꯀꯟꯁꯦꯟꯁꯁ ꯑꯁꯤ ꯈꯟꯅ-ꯅꯩꯅꯕꯗꯥ ꯌꯧꯈꯤ ꯫
+Results,ꯃꯍꯩꯁꯤꯡ
+Identification of Articles,ꯑꯥꯔꯇꯤꯀꯦꯂꯁꯤꯡ ꯃꯁꯛ ꯈꯪꯗꯣꯀꯄꯥ
+Search results are synthesized in the PRISMA flowchart (Fig. 1),ꯁꯥꯔꯆ ꯔꯤꯖꯜꯇꯁꯤꯡ ꯑꯁꯤ ꯄ꯭ꯔꯤꯖꯃꯥ ꯐ꯭ꯂꯣꯆꯥꯔꯠꯇꯥ ꯁꯤꯟꯊꯦꯁꯤꯁ ꯇꯧꯏ (ꯆꯤꯠꯔ ꯱)
+"The initial search identified a total of 1,918 records. After removing",ꯑꯍꯥꯅꯕꯥ ꯊꯤꯖꯤꯅꯕꯒꯤ ꯊꯕꯛ ꯑꯁꯤꯅꯥ ꯑꯄꯨꯅꯕꯥ ꯔꯦꯀꯣꯔꯗ ꯱꯹꯱꯸ ꯃꯁꯛ ꯈꯉꯗꯣꯀꯈꯤ꯫
+"duplicates, 1,560 records were screened by title and abstract (initial","ꯗꯨꯞꯂꯤꯀꯦꯠꯁꯤꯡ, ꯔꯦꯀꯣꯔꯗ ꯱꯵꯶꯰ ꯑꯁꯤ ꯇꯥꯏꯇꯜ ꯑꯃꯁꯨꯡ ꯑꯦꯕꯁ꯭ꯠꯔꯦꯛꯇꯀꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯁ꯭ꯛꯔꯤꯟ ꯇꯧꯈꯤ (ꯑꯍꯧꯕꯒꯤ ꯑꯣꯏꯅꯥ"
+"screening). A total of 1,496 studies were excluded and the remain-",ꯁ꯭ꯛꯔꯤꯅꯤꯡ ꯇꯧꯕꯥ)꯫
+ing 64 citations were full-text reviewed (second screening). Follow-,ꯏꯪ ꯶꯴ ꯁꯥꯏꯇꯦꯁꯟ ꯑꯁꯤ ꯃꯄꯨꯡ ꯐꯥꯅꯥ ꯔꯤꯚꯤꯌꯨ ꯇꯧꯈꯤ (ꯑꯅꯤꯁꯨꯕꯥ ꯁ꯭ꯛꯔꯤꯅꯤꯡ)꯫
+"ing the eligibility assessment, 59 studies were excluded “(reasons for","ing ꯏꯂꯤꯖꯤꯕꯤꯂꯤꯇꯤ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ, ꯁ꯭ꯇꯗꯤ ꯵꯹ ꯌꯥꯑꯣꯍꯅꯈꯤ “(ꯃꯔꯃꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯃꯔꯃꯁꯤꯡ"
+"exclusion are listed in Appendix 2, https://osf.io/3pxdn/)”. Finally, five","ꯌꯥꯑꯣꯗꯕꯥ ꯑꯁꯤ ꯑꯦꯄꯦꯟꯗꯤꯛꯁ ꯲, https://osf.io/3pxdn/)ꯗꯥ ꯂꯤꯁ꯭ꯠ ꯇꯧꯔꯤ꯫” ꯑꯔꯣꯏꯕꯗꯥ, ꯃꯉꯥ"
+records were included in this systematic review of systematic reviews,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡꯒꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯁꯤꯗꯥ ꯔꯦꯀꯣꯔꯗꯁꯤꯡ ꯌꯥꯑꯣꯈꯤ
+and meta-analyses,ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡ .
+Study Characteristics,ꯁ꯭ꯇꯗꯤꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧꯁꯤꯡ .
+The characteristics of the included reviews and meta-analyses,ꯌꯥꯑꯣꯔꯤꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡꯒꯤ ꯃꯒꯨꯅꯁꯤꯡ
+are presented in Table 1. The five systematic reviews were published,"ꯑꯁꯤ ꯇꯦꯕꯜ ꯱ꯗꯥ ꯄꯤꯔꯤ, ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯃꯉꯥ ꯑꯁꯤ ꯐꯣꯉꯈ꯭ꯔꯦ"
+"between 2002 and 2021 and report the results from 105 studies, includ-","꯲꯰꯰꯲ ꯑꯃꯁꯨꯡ ꯲꯰꯲꯱ꯒꯤ ꯃꯔꯛꯇꯥ ꯑꯃꯁꯨꯡ ꯁ꯭ꯇꯗꯤ ꯱꯰꯵ꯗꯒꯤ ꯐꯪꯂꯀꯄꯥ ꯔꯤꯖꯜꯇꯁꯤꯡ ꯑꯗꯨ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯤ, ꯃꯁꯤꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+"ing: 77 randomized clinical trials (RCTs), 15 long-term follow-up","ꯑꯥꯏ.ꯑꯦꯟ.ꯖꯤ.: ꯔꯦꯟꯗꯝ ꯑꯣꯏꯕꯥ ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯇ꯭ꯔꯥꯏꯑꯦꯂꯁꯤꯡ (ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡ) ꯷꯷, ꯂꯣꯡ-ꯇꯔꯝ ꯐꯣꯂꯣ-ꯑꯞ ꯱꯵"
+"studies (LTFUs), 3 single-case multiple baseline studies (MBLs), 17","ꯁ꯭ꯇꯗꯤꯁꯤꯡ (ꯑꯦꯜ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.ꯑꯦꯁ.), ꯳ ꯁꯤꯉ꯭ꯒꯜ-ꯀꯦꯁ ꯃꯜꯇꯤꯄꯜ ꯕꯦꯖ ꯁ꯭ꯇꯗꯤ (ꯑꯦꯝ.ꯕꯤ.ꯑꯦꯜ.ꯑꯦꯁ.), ꯱꯷"
+"empirical treatment research studies, and 8 wait-list control studies","ꯑꯦꯝꯄꯤꯔꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ ꯔꯤꯁꯔꯆ ꯁ꯭ꯇꯗꯤꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯋꯦꯠ-ꯂꯤꯁ꯭ꯠ ꯀꯟꯠꯔꯣꯜ ꯁ꯭ꯇꯗꯤ ꯸"
+(WLCs). Only two studies included only RCTs (Oldham-Cooper &,(ꯗꯕꯜꯌꯨ.ꯑꯦꯜ.ꯁꯤ.ꯁꯤꯡ) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+"Loades, 2017; Öst & Ollendick, 2017)","ꯂꯣꯗꯁꯤꯡ, ꯲꯰꯱꯷ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"The total number of participants was 6,120. Four studies included","ꯁꯔꯨꯛ ꯌꯥꯈꯤꯕꯥ ꯑꯄꯨꯅꯕꯥ ꯃꯁꯤꯡ ꯑꯁꯤ ꯶,꯱꯲꯰ ꯑꯣꯏꯈꯤ꯫"
+"a variety of anxiety diagnoses (i.e., OAD, SAD, SOP, AG, GAD, AD,","ꯃꯈꯜ ꯀꯌꯥꯒꯤ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁ (i.e., ꯑꯣꯗ, ꯁꯦꯗ, ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯑꯦ.ꯖꯤ., ꯖꯤ.ꯑꯦ.ꯗꯤ., ꯑꯦ.ꯗꯤ.,"
+"SP, school phobia, OCD and PTSD) and only one focused exclusively","ꯑꯦꯁ.ꯄꯤ., ꯁ꯭ꯀꯨꯜ ꯐꯣꯕꯤꯌꯥ, ꯑꯣ.ꯁꯤ.ꯗꯤ. ꯑꯃꯁꯨꯡ ꯄꯤ.ꯇꯤ.ꯑꯦꯁ.ꯗꯤ.) ꯑꯃꯁꯨꯡ ꯑꯃꯈꯛꯇꯅꯥ ꯃꯤꯠꯌꯦꯡ ꯆꯪꯕꯥ"
+"on nighttime fears (Lewis et al., 2021). The ages of the participants","ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ ꯄꯣꯀꯍꯅꯕꯥ (ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., 2021)꯫"
+ranged from 3 to 17 years,ꯆꯍꯤ ꯳ꯗꯒꯤ ꯱꯷ ꯐꯥꯑꯣꯕꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ .
+Characteristics of Psychological Interventions,ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯃꯁꯀꯁꯤꯡ
+All five studies aimed to examine the effectiveness of psychologi-,ꯁ꯭ꯇꯗꯤ ꯃꯉꯥ ꯈꯨꯗꯤꯡꯃꯛꯅꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯌꯦꯡꯁꯤꯟꯅꯕꯥ ꯄꯥꯟꯗꯝ ꯊꯃꯈꯤ-
+cal interventions for the treatment of anxiety disorders. Four reviews,ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ ꯂꯥꯌꯦꯡꯅꯕꯥ ꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ꯫
+"included CBT interventions (Gibby et al., 2017; Oldham‐Cooper &",ꯌꯥꯑꯣꯈꯤꯕꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"Loades, 2017; Santacruz et al., 2002) or CBT-based techniques (Lewis","ꯂꯣꯗꯁꯤꯡ, ꯲꯰꯱꯷ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"et al., 2021), and one included brief, intensive, or concentrated (BIC)","ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱), ꯑꯃꯁꯨꯡ ꯑꯃꯅꯥ ꯊꯨꯅꯥ, ꯏꯟꯇꯦꯟꯁꯤꯕ, ꯅꯠꯠꯔꯒꯥ ꯀꯟꯁꯦꯟꯠꯔꯦꯇꯦꯗ (ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.) ꯌꯥꯑꯣꯈꯤ꯫"
+"treatments (Öst & Ollendick, 2017). The study of Oldham-Cooper &","ꯂꯥꯌꯦꯡꯁꯤꯡ (ÖST & ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯲꯰꯱꯷)꯫"
+Loades (2017) included CBT along with other therapeutic approaches,ꯂꯣꯗꯁ (꯲꯰꯱꯷)ꯅꯥ ꯑꯇꯣꯞꯄꯥ ꯊꯦꯔꯥꯄꯤꯌꯨꯇꯤꯛ ꯑꯦꯞꯔꯣꯆꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"(e.g., acceptance and commitment therapy, family-based interven-","(ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯑꯦꯛꯁꯦꯞꯇꯦꯟꯁ ꯑꯃꯁꯨꯡ ꯀꯃꯤꯠꯃꯦꯟꯇ ꯊꯦꯔꯥꯄꯤ, ꯏꯃꯨꯡ-ꯃꯅꯨꯡꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ-"
+"tions, or educational support). There was a high variability in the","ꯇꯤꯅꯁꯤꯡ, ꯅꯠꯔꯒꯥ ꯑꯦꯖꯨꯀꯦꯁꯅꯦꯜ ꯁꯄꯣꯔꯠ)꯫"
+delivery format. Psychotherapy was delivered in university and com-,ꯗꯦꯂꯤꯕꯔꯤꯒꯤ ꯐꯣꯔꯃꯦꯠ꯫
+"munity clinics in individual and group formats, involving children","ꯃꯤꯑꯣꯏ ꯑꯃꯃꯃꯒꯤ ꯑꯃꯁꯨꯡ ꯀꯥꯡꯂꯨꯄꯀꯤ ꯐꯣꯔꯃꯦꯠꯇꯥ ꯃꯨꯅꯤꯇꯤ ꯀ꯭ꯂꯤꯅꯤꯀꯁꯤꯡ, ꯑꯉꯥꯡꯁꯤꯡꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ"
+"only, parents only, or both children and parents. Some studies were","ꯈꯛꯇꯃꯛ, ꯃꯃꯥ-ꯃꯄꯥꯁꯤꯡ ꯈꯛꯇꯃꯛ, ꯅꯠꯠꯔꯒꯥ ꯑꯉꯥꯡ ꯑꯃꯁꯨꯡ ꯃꯃꯥ-ꯃꯄꯥ ꯑꯅꯤꯃꯛ꯫"
+also conducted in the school context,ꯁ꯭ꯀꯨꯂꯒꯤ ꯀꯟꯇꯦꯛꯁꯇꯥꯁꯨ ꯄꯥꯡꯊꯣꯀꯈꯤ .
+The psychological interventions reported ranged from 1 (one-ses-,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤꯕꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯁꯤ ꯱ꯗꯒꯤ (ꯁꯤ.ꯏ.ꯑꯦꯁ.-ꯁꯤ.ꯏ.ꯑꯦꯁ.-
+"sion interventions) to 29 sessions, and the duration could last between","sion ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ)ꯗꯒꯤ ꯁꯦꯁꯟ ꯲꯹ ꯐꯥꯑꯣꯕꯥ, ꯑꯃꯁꯨꯡ ꯃꯇꯝ ꯑꯁꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯕꯥ ꯌꯥꯏ"
+1 day and 20 weeks. Three reviews did not report the mean number of,ꯅꯨꯃꯤꯠ ꯱ ꯑꯃꯁꯨꯡ ꯅꯨꯃꯤꯠ ꯲꯰ꯅꯤ꯫
+"sessions and the duration of the treatments (Gibby et al., 2017; Lewis","ꯁꯦꯁꯅꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯂꯥꯌꯦꯡꯁꯤꯡꯒꯤ ꯃꯇꯝ (ꯒꯤꯕꯤ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯷; ꯂꯨꯏꯁꯁ ."
+"et al., 2021; Oldham-Cooper & Loades, 2017). Three studies reported","ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+the professionals providing the interventions: clinical psychologists,ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯁꯤ ꯄꯤꯔꯤꯕꯥ ꯄ꯭ꯔꯣꯐꯦꯁ꯭ꯅꯦꯂꯁꯤꯡ: ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯁ꯭ꯇꯁꯤꯡ
+"with high level of expertise (Santacruz et al., 2002); clinical psycholo-","ꯑꯋꯥꯡꯕꯥ ꯊꯥꯛꯀꯤ ꯑꯦꯛꯁꯄꯔꯇꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ (ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯰꯲);"
+"gists, counselors, and students (Öst & Ollendick, 2017); and all the","ꯖꯤ.ꯑꯥꯏ.ꯑꯦꯁ.ꯇꯤ.ꯁꯤꯡ, ꯀꯥꯎꯟꯁꯦꯂꯔꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯃꯍꯩꯔꯣꯏꯁꯤꯡ (ꯑꯣ.ꯑꯦꯁ.ꯇꯤ. & ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯲꯰꯱꯷);"
+aforementioned along with social workers and family therapists (Old-,ꯁꯣꯁꯤꯑꯦꯜ ꯋꯥꯔꯀꯔꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯃꯨꯡꯒꯤ ꯊꯦꯔꯥꯄꯤꯁ꯭ꯇꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯃꯃꯥꯡꯗꯥ ꯄꯅꯈꯤꯕꯥ (ꯑꯔꯤꯕꯥ-
+"ham-Cooper & Loades, 2017)","ꯍ꯭ꯌꯥꯝ-ꯀꯨꯄꯥꯔ ꯑꯃꯁꯨꯡ ꯂꯣꯗꯁ, ꯲꯰꯱꯷)"
+"To assess anxiety symptoms, the measures most frequently used","ꯑꯦꯟꯁꯤꯇꯤꯒꯤ ꯂꯥꯏꯑꯣꯡꯁꯤꯡ ꯑꯁꯤ ꯌꯦꯡꯁꯤꯟꯅꯕꯥ, ꯈ꯭ꯕꯥꯏꯗꯒꯤ ꯌꯥꯝꯅꯥ ꯁꯤꯖꯤꯟꯅꯕꯥ ꯈꯣꯡꯊꯥꯡꯁꯤꯡ"
+were structured and semi-structured interviews: the Anxiety Disor-,ꯁ꯭ꯠꯔꯀꯆꯔ ꯇꯧꯔꯕꯥ ꯑꯃꯁꯨꯡ ꯁꯦꯃꯤ-ꯁ꯭ꯠꯔꯀꯆꯔꯦꯜ ꯏꯟꯇꯔꯚ꯭ꯌꯨꯁꯤꯡ ꯑꯣꯏꯈꯤ: ꯗꯤ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ-
+ders Interview Schedule for DSM-IV – Child and Parent Versions,ꯗꯤ.ꯑꯦꯁ.ꯑꯦꯝ.-ꯑꯥꯏ.ꯚꯤ.ꯒꯤꯗꯃꯛ ꯗꯤ.ꯏ.ꯑꯥꯔ.ꯑꯦꯁ.ꯀꯤ ꯏꯟꯇꯔꯚ꯭ꯌꯨꯒꯤ ꯃꯇꯝ – ꯑꯉꯥꯡ ꯑꯃꯁꯨꯡ ꯃꯃꯥ-ꯃꯄꯥꯒꯤ ꯚꯔꯖꯅꯁꯤꯡ
+"(ADIS-C/P; Silverman & Albano, 1996) (Gibby et al., 2017; Lewis et","(ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯁꯤ/ꯄꯤ; ꯁꯤꯂꯚꯥꯔꯃꯦꯟ ꯑꯃꯁꯨꯡ ꯑꯂꯕꯥꯅꯣ, ꯱꯹꯹꯶) (ꯒꯤꯕꯤ ꯑꯃꯁꯨꯡ ꯑꯇꯩ, ꯲꯰꯱꯷; ꯂꯨꯏꯁ ꯑꯦꯠ."
+"al., 2021; Oldham-Cooper & Loades, 2017), the Diagnostic Interview","ꯑꯜ., ꯲꯰꯲꯱ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"Schedule for Children (DISC; Shaffer et al., 2000) (Oldham-Cooper","ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯁꯦꯗ꯭ꯌꯨꯜ (Disc; Shaffer et al., 2000) (ꯑꯣꯂꯗꯝ-ꯀꯨꯄꯥꯔ"
+"& Loades, 2017), and the Kiddie-Schedule for Affective Disorders","& ꯂꯣꯗꯁ, ꯲꯰꯱꯷), ꯑꯃꯁꯨꯡ ꯑꯦꯐꯦꯛꯇꯤꯕ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤꯗꯃꯛ ꯀꯤꯗꯅꯤ-ꯁꯦꯗ꯭ꯌꯨꯜ"
+"and Schizophrenia (K-SADS-PL; Kaufman et al., 1997); independ-","ꯑꯃꯁꯨꯡ ꯁ꯭ꯀꯤꯖꯣꯐ꯭ꯔꯦꯅꯤꯌꯥ (ꯀꯦ-ꯁꯥꯗꯁ-ꯄꯤ.ꯑꯦꯜ.; ꯀꯥꯎꯐꯝꯌꯥꯟ ꯑꯦꯠ ꯑꯦꯜ., 1997);"
+"ent assessor ratings, such as the Child Behavior Checklist (CBCL;","ꯏ.ꯑꯦꯟ.ꯇꯤ.ꯒꯤ ꯑꯦꯁꯦꯁꯔ ꯔꯦꯇꯤꯡꯁꯤꯡ, ꯍꯥꯌꯕꯗꯤ ꯆꯥꯏꯜꯗ ꯕꯤꯍꯦꯕꯤꯌꯔ ꯆꯦꯀꯂꯤꯁ꯭ꯠ (ꯁꯤ.ꯕꯤ.ꯁꯤ.ꯑꯦꯜ.;"
+"Achenbach & Edelbrock, 1991) (Lewis et al., 2021; Santacruz et al.,","ꯑꯦꯁꯦꯅꯕꯆ & ꯑꯦꯗꯦꯂꯕ꯭ꯔꯛ, 1991) (Lewis et al., 2021; ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯦꯠ ꯑꯦꯜ.,"
+2002); and self-report measures: the Spence Children’s Anxiety Scale,꯲꯰꯰꯲ꯗꯥ ꯊꯣꯀꯈꯤꯕꯥ;
+"(SCAS; Spence, 1998) (Lewis et al., 2021; Öst & Ollendick, 2017), the","(ꯁ꯭ꯀꯥꯁ; ꯁ꯭ꯄꯦꯟꯁ, ꯱꯹꯹꯸) (ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱; ꯑꯣꯁ꯭ꯠ & ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯲꯰꯱꯷), ꯗꯤ.ꯏ."
+"Multidimensional Anxiety Scale for Children (MASC; March et al.,","ꯑꯉꯥꯡꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯃꯜꯇꯤꯗꯥꯏꯃꯦꯟꯁꯅꯦꯜ ꯑꯦꯟꯁꯤꯇꯤ ꯁ꯭ꯀꯦꯜ (ꯃꯥꯁꯛ; ꯃꯥꯔꯆ ꯑꯦꯠ ꯑꯦꯜ.,"
+"1997) (Lewis et al., 2021), the Revised Children’s Manifest Anxiety","꯱꯹꯹꯷) (ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱), ꯔꯤꯚꯥꯏꯖ ꯇꯧꯔꯕꯥ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯃꯦꯅꯤꯐꯦꯁ꯭ꯠ ꯑꯦꯟꯁꯤꯇꯤ"
+"Scale (RCMAS; Reynolds & Richmond, 1985) (Oldham-Cooper &","ꯁ꯭ꯀꯦꯜ (ꯑꯥꯔ.ꯁꯤ.ꯑꯦꯝ.ꯑꯦ.ꯁꯤꯡ; ꯔꯦꯅꯜꯗꯁ ꯑꯃꯁꯨꯡ ꯔꯤꯆꯃꯟꯗ, ꯱꯹꯸꯵) (ꯑꯣꯂꯗꯝ-ꯀꯣꯄꯥꯔ ꯑꯃꯁꯨꯡ"
+"Loades, 2017; Santacruz et al., 2002), the State-Trait Anxiety Inven-","ꯂꯣꯗꯁꯤꯡ, ꯲꯰꯱꯷ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"tory for Children (STAI-C; Spielberger, 1973) (Santacruz et al., 2002),","ꯑꯉꯥꯡꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯇꯣꯔꯤ (Stai-c; Spielberger, 1973) (ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯦꯠ ꯑꯦꯜ., 2002),"
+the Screen for Child Anxiety Related Emotional Disorders (SCARED;,ꯆꯥꯏꯜꯗ ꯑꯦꯟꯁꯤꯇꯤꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯏꯃꯣꯁꯅꯦꯜ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁ꯭ꯛꯔꯤꯟ (ꯈꯨꯗꯣꯡꯊꯤꯅꯤꯉꯥꯏ ꯑꯣꯏꯕꯥ;
+"Birmaher et al., 1997) (Lewis et al., 2021); and the Fear Survey Sched-","ꯕꯤꯔꯃꯥꯍꯦꯔ ꯑꯦꯠ ꯑꯦꯜ., 1997) (Lewis et al., 2021);"
+"ule for Children-Revised (FSSC-R; Ollendick, 1983) (Lewis et al.,","ꯑꯉꯥꯡꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯌꯨ.ꯑꯦꯜ.ꯏ.ꯅꯥ ꯔꯤꯚꯥꯏꯁ ꯇꯧꯕꯥ (ꯑꯦꯐ.ꯑꯦꯁ.ꯑꯦꯁ.ꯁꯤ.-ꯑꯥꯔ.; ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯱꯹꯸꯳) (ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ.,"
+"2021; Santacruz et al., 2002)",꯲꯰꯲꯱ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+Effectiveness of Psychological Interventions,ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ .
+The summary of the main findings of the systematic reviews and,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯐꯂꯁꯤꯡꯒꯤ ꯁꯃꯖꯤꯟꯅꯐꯝ ꯑꯃꯁꯨꯡ .
+"meta-analyses is presented in Table 2. Of the five studies, all of them","ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯑꯁꯤ ꯇꯦꯕꯜ ꯲ꯗꯥ ꯄꯤꯔꯤ, ꯁ꯭ꯇꯗꯤ ꯃꯉꯥꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯄꯨꯝꯅꯃꯛ ꯑꯁꯤ ꯃꯈꯣꯌ ꯄꯨꯝꯅꯃꯛ"
+reported a narrative synthesis of the main results of the individual,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤ ꯃꯗꯨꯗꯤ ꯃꯤꯑꯣꯏ ꯑꯗꯨꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯔꯤꯖꯜꯇꯁꯤꯡꯒꯤ ꯅꯦꯔꯦꯇꯤꯕ ꯁꯤꯟꯊꯦꯁꯤꯁ ꯑꯃꯥ .
+"studies and two also performed meta-analyses (Öst & Ollendick, 2017;","ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯑꯅꯤꯅꯥ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡꯁꯨ ꯄꯥꯡꯊꯣꯀꯈꯤ (ÖST & ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯲꯰꯱꯷;"
+"Santacruz et al., 2002). Four studies reported data concerning the","ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯰꯲)꯫"
+effectiveness of the psychological interventions in post-treatment and,ꯄꯣꯁ꯭ꯠ-ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ ꯑꯃꯁꯨꯡ 1000ꯗꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯚꯅꯦꯁ꯫
+"follow-up assessments (Lewis et al., 2021; Oldham-Cooper & Loades,","ꯐꯣꯂꯣ-ꯑꯞ ꯑꯦꯁꯦꯁꯃꯦꯟꯇꯁꯤꯡ (Lewis et al., 2021; ꯑꯣꯂꯙꯥꯝ-ꯀꯨꯄꯥꯔ & ꯂꯣꯗꯁ,"
+"2017; Öst & Ollendick, 2017; Santacruz et al., 2002). One study (Gibby",꯲꯰꯱꯷ꯇꯥ ꯌꯨ.ꯑꯦꯁ.
+"et al., 2017) summarized the findings of studies presenting long-term","ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯷)ꯅꯥ ꯂꯣꯡ-ꯇꯔꯝ ꯑꯣꯏꯅꯥ ꯄꯤꯔꯤꯕꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯐꯂꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯀꯨꯞꯅꯥ ꯌꯦꯡꯁꯤꯅꯈꯤ꯫"
+follow-up outcomes (from 2 to 19 years after treatment),ꯐꯣꯂꯣ-ꯑꯞ ꯑꯥꯎꯇꯀꯃꯁꯤꯡ (ꯂꯥꯌꯍꯧꯔꯕꯥ ꯃꯇꯨꯡ ꯆꯍꯤ 2ꯗꯒꯤ 19 ꯐꯥꯎꯕꯥ)꯫
+"For SPs, BIC were found to be as effective as CBT interventions",ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ.ꯀꯤ ꯑꯣꯏꯅꯗꯤ ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.ꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+(the effect sizes for comparison of BIC vs. CBT was not significant,(ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.ꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯆꯥꯡꯗꯝꯅꯕꯒꯤꯗꯃꯛꯇꯥ ꯏꯐꯦꯛꯇ ꯁꯥꯏꯖꯁꯤꯡ ꯑꯁꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯑꯣꯏꯈꯤꯗꯦ
+[0.01]) in both after-treatment and follow-up assessments (Öst &,[0.01]) ꯂꯥꯌꯦꯡꯕꯒꯤ ꯃꯇꯨꯡ ꯑꯃꯁꯨꯡ ꯐꯣꯂꯣ-ꯑꯞ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ ꯑꯅꯤꯃꯛꯇꯥ (ÖST &
+"Ollendick, 2017). Both therapies were effective when compared to","ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯲꯰꯱꯷)꯫"
+"placebo and control conditions (Öst & Ollendick, 2017). However,","ꯄ꯭ꯂꯦꯁꯦꯕꯣ ꯑꯃꯁꯨꯡ ꯀꯟꯠꯔꯣꯜ ꯀꯟꯗꯤꯁꯅꯁꯤꯡ (ÖST & ꯑꯣꯂꯦꯟꯗꯤꯛ, 2017)꯫"
+lower attrition rates were found in BIC interventions (2.3% vs. 6.5%,ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯗꯥ ꯍꯦꯟꯅꯥ ꯅꯦꯝꯕꯥ ꯑꯦꯠꯔꯤꯁꯅꯒꯤ ꯆꯥꯡ ꯐꯪꯈꯤ (꯲.꯳% ꯊꯦꯡꯅꯗꯨꯅꯥ ꯶.꯵%
+"in CBT interventions). For SAD, both disorder-specific CBT inter-",ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯗꯥ)꯫
+ventions and the CC program (a generic CBT intervention commonly,ꯚꯦꯟꯁꯟ ꯑꯃꯁꯨꯡ ꯁꯤ.ꯁꯤ.ꯒꯤ ꯄ꯭ꯔꯣꯒ꯭ꯔꯥꯝ (ꯃꯌꯥꯝꯅꯥ ꯃꯍꯧꯁꯥꯅꯥ ꯖꯦꯅꯦꯔꯦꯜ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+34,꯳꯴ꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+Psychological treatment for specific anxiety disorders,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ
+Table 1. Characteristics of the Included Systematic Reviews and Meta-Analyses,ꯇꯦꯕꯜ 1. ꯌꯥꯑꯣꯔꯤꯕꯥ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡꯒꯤ ꯃꯒꯨꯅꯁꯤꯡ
+"Authors, year of","ꯑꯏꯕꯁꯤꯡ, ꯆꯍꯤ ꯴."
+publication,ꯄꯕ꯭ꯂꯤꯀꯦꯁꯟ ꯇꯧꯕꯥ
+Aims,ꯑꯦꯝ.ꯑꯥꯏ.ꯑꯦꯁ.
+Search strategy,ꯁꯥꯔꯆ ꯇꯧꯕꯒꯤ ꯊꯧꯑꯣꯡ ꯑꯁꯤ .
+Type and no. of,ꯃꯈꯜ ꯑꯃꯁꯨꯡ ꯅꯪ.
+studies,ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯇꯧꯕꯥ
+Participants’,ꯁꯔꯨꯛ ꯌꯥꯔꯤꯕꯁꯤꯡ’꯫
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Intervention’s,ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Professionals,ꯄ꯭ꯔꯣꯐꯦꯁ꯭ꯅꯦꯂꯁꯤꯡꯅꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+providing the,ꯄꯤꯕꯥ ꯑꯁꯤꯅꯥ .
+intervention,ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯇꯧꯕꯥ
+Outcome,ꯃꯍꯩ
+measures,ꯊꯕꯛ ꯄꯥꯏꯈꯠꯂꯤꯕꯁꯤꯡ
+Funding sources,ꯐꯟꯗ ꯄꯤꯕꯒꯤ ꯁꯣꯔꯁꯁꯤꯡ
+"Gibby et al., 2017","ꯒꯤꯕꯕꯤ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯷ꯇꯥ ꯐꯣꯉꯈꯤ꯫"
+(1) To synthesize,(꯱) ꯁꯤꯟꯊꯦꯁꯤꯁ ꯇꯧꯕꯥ .
+data on LTFU,ꯑꯦꯜ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.
+studies on,ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯇꯧꯕꯒꯤ ꯃꯇꯥꯡꯗꯥ .
+treatments for,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯊꯕꯀꯁꯤꯡꯒꯤꯗꯃꯛ .
+"anxiety disorders,","ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ, ."
+(2) to examine,(꯲) ꯌꯦꯡꯁꯤꯟꯅꯕꯥ .
+predictors of LT,ꯑꯦꯜ.ꯇꯤ.ꯒꯤ ꯄ꯭ꯔꯤꯗꯤꯛꯇꯔꯁꯤꯡ .
+"outcomes, and","ꯑꯥꯎꯠꯀꯃꯁꯤꯡ, ꯑꯃꯁꯨꯡ ."
+(3) to discuss the,(꯳) ꯈꯟꯅꯅꯕꯥ .
+studies’ strengths,ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯄꯥꯉ꯭ꯒꯂꯁꯤꯡ .
+and limitations,ꯑꯃꯁꯨꯡ ꯂꯤꯃꯤꯇꯦꯁꯅꯁꯤꯡ .
+to make,ꯁꯦꯝꯅꯕꯥ .
+recommendations,ꯄꯥꯎꯇꯥꯀꯁꯤꯡ .
+for future,ꯇꯨꯡꯒꯤꯗꯃꯛ .
+follow-up studies,ꯐꯣꯂꯣ-ꯑꯞ ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯇꯧꯕꯥ
+Databases,ꯗꯦꯇꯥꯕꯦꯖꯁꯤꯡ ꯑꯁꯤ .
+searched:,ꯊꯤꯕꯥ ꯐꯪꯈꯤꯕꯥ:
+PsycInfo and,ꯁꯥꯏꯁꯤꯅꯐꯣ ꯑꯃꯁꯨꯡ .
+Pubmed. Search,ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗꯤꯌꯥꯗꯥ ꯂꯩꯕꯥ꯫
+terms: (cognitive,ꯋꯥꯍꯩꯁꯤꯡ: (ꯀꯣꯒꯅꯤꯇꯤꯕ .
+OR behavio*,ꯅꯠꯔꯒꯥ ꯕꯤꯍꯥꯚꯤꯑꯣ*
+OR exposure,ꯅꯠꯠꯔꯒꯥ ꯑꯦꯛꯁꯄꯣꯖꯔ ꯇꯧꯕꯥ .
+OR treatment,ꯅꯠꯔꯒꯥ ꯂꯥꯌꯦꯡꯕꯒꯤ ꯊꯕꯛ ꯄꯥꯌꯈꯠꯄꯥ .
+OR treat* OR,ꯅꯠꯔꯒꯥ ꯇ꯭ꯔꯤꯠ* ꯅꯠꯔꯒꯥ .
+program* OR,ꯄ꯭ꯔꯣꯒ꯭ꯔꯥꯝ* ꯅꯠꯔꯒꯥ .
+intervention OR,ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯅꯠꯔꯒꯥ .
+therapy) AND,ꯊꯦꯔꯥꯄꯤ) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+(anxiety OR,(ꯑꯦꯅꯖꯥꯏꯇꯤ ꯅꯠꯔꯒꯥ .
+anxious OR social,ꯋꯥꯈꯜ ꯋꯥꯕꯥ ꯅꯠꯔꯒꯥ ꯈꯨꯟꯅꯥꯏꯒꯤ ꯑꯣꯏꯕꯥ .
+OR separation,ꯅꯠꯔꯒꯥ ꯇꯣꯈꯥꯏꯅꯥ ꯂꯩꯕꯥ .
+OR phobia OR,ꯅꯠꯠꯔꯒꯥ ꯐꯣꯕꯤꯌꯥ ꯅꯠꯠꯔꯒꯥ .
+disorder) AND,ꯗꯤꯁꯑꯣꯔꯗꯔ) ꯑꯃꯁꯨꯡ .
+(child* OR youth,(ꯑꯉꯥꯡ* ꯅꯠꯔꯒꯥ ꯅꯍꯥ ꯑꯣꯏꯔꯤꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡ .
+OR adolescen*,ꯅꯠꯔꯒꯥ ꯑꯦꯗꯣꯂꯁꯦꯟ* .
+OR pediatric),ꯅꯠꯠꯔꯒꯥ ꯄꯦꯗꯤꯑꯦꯠꯔꯤꯛ ꯑꯣꯏꯕꯥ)꯫
+AND (long OR,ꯑꯃꯁꯨꯡ (ꯂꯣꯡ ꯅꯠꯠꯔꯒꯥ .
+long term OR,ꯂꯣꯡ ꯇꯔꯝ ꯅꯠꯔꯒꯥ .
+follow OR follow,ꯐꯣꯂꯣ ꯇꯧꯕꯤꯌꯨ ꯅꯠꯔꯒꯥ ꯐꯣꯂꯣ ꯇꯧꯕꯤꯌꯨ
+up OR year* OR,ꯑꯞ ꯅꯠꯔꯒꯥ ꯆꯍꯤ* ꯅꯠꯔꯒꯥ .
+month* OR after,ꯊꯥ* ꯅꯠꯔꯒꯥ ꯃꯇꯨꯡꯗꯥ .
+OR later) NOT,ꯅꯠꯔꯒꯥ ꯃꯇꯨꯡꯗꯥ) ꯅꯠꯇꯦ
+(autism) NOT,(ꯑꯣꯇꯤꯁꯝ) .
+(post traumatic),(ꯄꯣꯁ꯭ꯠ ꯇ꯭ꯔꯥꯎꯃꯦꯇꯤꯛ)
+NOT (obsess*),ꯅꯠꯇꯦ (ꯑꯣꯕꯁꯦꯁ*)꯫
+N = 21,n = ꯲꯱ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+21 RCTs and 15,꯲꯱ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯱꯵ .
+LTFU cohorts,ꯑꯦꯜ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.
+"a) OAD, SAD,","ꯀ) ꯑꯣꯗ, ꯁꯦꯗ,"
+"SOP, AG, GAD,","ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯑꯦ.ꯖꯤ., ꯒꯥꯗ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+SP; b) N =,ꯑꯦꯁ.ꯄꯤ.ꯗꯥ ꯂꯩꯕꯥ ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+"1,796; mean not","꯱,꯷꯹꯶ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+reported (range,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯄꯥ (ꯔꯦꯟꯖ
+6 to 17); d) % of,꯶ꯇꯒꯤ ꯱꯷ ꯐꯥꯑꯣꯕꯥ;
+Caucasian race,ꯀꯀꯆꯤꯡꯒꯤ ꯔꯦꯁ .
+only reported for,ꯈꯛꯇꯒꯤꯗꯃꯛ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤ꯫
+some samples,ꯁꯦꯝꯄꯜ ꯈꯔꯗꯤ .
+"a) CBT, CBT +","ꯀ) ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯁꯤ.ꯕꯤ.ꯇꯤ."
+"FAM, CBT +","ꯐꯥꯝ, ꯁꯤ.ꯕꯤ.ꯇꯤ."
+"PAM, API CBT,","ꯄꯥꯝ, ꯑꯦ.ꯄꯤ.ꯑꯥꯏ.ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"LPI CBT, group/","ꯑꯦꯜ.ꯄꯤ.ꯑꯥꯏ.ꯒꯤ ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯀꯥꯡꯂꯨꯞ/"
+"family CBT,",ꯏꯃꯨꯡ ꯃꯅꯨꯡꯒꯤ ꯑꯣꯏꯕꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"ICBT, FCBT,","ꯑꯥꯏ.ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯑꯦꯐ.ꯁꯤ.ꯕꯤ.ꯇꯤ."
+"GCBT, FESA,","ꯖꯤ.ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯐꯦꯁꯥ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"parent-only CBT,",ꯃꯃꯥ-ꯃꯄꯥ ꯈꯛꯇꯒꯤ ꯑꯣꯏꯕꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"SET-C, SET-","ꯁꯦꯠ-ꯁꯤ, ꯁꯦꯠ-"
+"Asv, CBGT-A,","ꯑꯦ.ꯑꯦꯁ.ꯚꯤ., ꯁꯤ.ꯕꯤ.ꯖꯤ.ꯇꯤ.-ꯑꯦ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"IAFSG, group/","ꯑꯥꯏ.ꯑꯦ.ꯑꯦꯐ.ꯑꯦꯁ.ꯖꯤ., ꯒ꯭ꯔꯨꯞ/"
+"family ACT, OST,","ꯐꯦꯃꯤꯂꯤ ꯑꯦꯛꯇ, ꯑꯣ.ꯑꯦꯁ.ꯇꯤ.,"
+"EST, CM, SC,","ꯑꯦꯁ꯭ꯠ, ꯁꯤ.ꯑꯦꯝ., ꯑꯦꯁ.ꯁꯤ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"ES, sertraline;","ꯏ.ꯑꯦꯁ., ꯁꯦꯔꯠꯔꯥꯂꯥꯏꯟ ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"b) child-only,","ꯈ) ꯑꯉꯥꯡ ꯈꯛꯇꯒꯤ ꯑꯣꯏꯕꯥ, ."
+"parent-only,","ꯃꯃꯥ-ꯃꯄꯥ ꯈꯛꯇꯒꯤ ꯑꯣꯏꯕꯥ, ."
+"parent and child,","ꯃꯃꯥ-ꯃꯄꯥ ꯑꯃꯁꯨꯡ ꯑꯉꯥꯡ,"
+"family, group; c)","ꯏꯃꯨꯡ ꯃꯅꯨꯡ, ꯀꯥꯡꯂꯨꯞ;"
+1 to 29 sessions;,ꯁꯦꯁꯟ ꯱ꯗꯒꯤ ꯲꯹ ꯐꯥꯑꯣꯕꯥ;
+d) 1 day to 17,ꯘ) ꯅꯨꯃꯤꯠ ꯱ꯗꯒꯤ ꯱꯷ ꯐꯥꯑꯣꯕꯥ꯫
+weeks; e) 2 to,ꯅꯨꯃꯤꯠ ꯀꯌꯥ;
+19 years (with,ꯆꯍꯤ ꯱꯹ (ꯃꯗꯨꯒꯥ ꯂꯣꯌꯅꯅꯥ) .
+a mean of 5.85,ꯃꯤꯟ ꯑꯁꯤ ꯵.꯸꯵ꯅꯤ꯫
+years between,ꯃꯔꯛꯇꯥ ꯆꯍꯤ ꯀꯌꯥ .
+treatment and,ꯂꯥꯌꯦꯡꯕꯥ ꯑꯃꯁꯨꯡ .
+LTFU),ꯂ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.
+Not reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+ADIS-C ADIS-,ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯁꯤ.ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯁꯤꯡ-
+C/P,ꯁꯤ/ꯄꯤ.
+ADIS-IV,ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯑꯥꯏ.ꯚꯤ.
+ADIS-IV-L,ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯑꯥꯏ.ꯚꯤ.-ꯑꯦꯜ.
+CIDI,ꯁꯤ.ꯑꯥꯏ.ꯗꯤ.
+Grant awarded,ꯒ꯭ꯔꯥꯟꯇ ꯄꯤꯕꯥ
+to Dr. Golda,ꯒꯣꯜꯗꯇꯥ ꯗꯥ.
+Ginsburg by the,ꯒꯤꯟꯁꯕꯔꯒꯅꯥ .
+National Institute,ꯅꯦꯁ꯭ꯅꯦꯜ ꯏꯟꯁꯇꯤꯠꯌꯨꯠ ꯑꯃꯥ ꯑꯣꯏꯅꯥ ꯑꯦꯝ.
+of Mental Health,ꯃꯦꯟꯇꯦꯜ ꯍꯦꯜꯊꯀꯤ ꯃꯇꯥꯡꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+(K24MH096760),(ꯀꯦ꯲꯴ꯑꯦꯃꯑꯩꯆ꯰꯹꯶꯷꯶꯰) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Lewis et al., 2021","ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱ꯗꯥ ꯐꯣꯉꯈꯤ꯫"
+To examine,ꯌꯦꯡꯁꯤꯟꯅꯕꯥ .
+empirical,ꯑꯦꯝꯄꯤꯔꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ .
+literature from,ꯗꯒꯤ ꯂꯤꯇꯔꯦꯆꯔ .
+the past 25 years,ꯍꯧꯈꯤꯕꯥ ꯆꯍꯤ ꯲꯵ꯗꯥ ꯌꯨ .
+that investigated,ꯊꯤꯖꯤꯅꯈꯤꯕꯥ ꯑꯗꯨ .
+the assessment of,ꯃꯁꯤꯒꯤ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ ꯑꯁꯤꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+nighttime fears in,ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ ꯄꯣꯀꯄꯥ
+young children,ꯅꯍꯥ ꯑꯣꯏꯔꯤꯕꯥ ꯑꯉꯥꯡꯁꯤꯡ
+and the efficacy,ꯑꯃꯁꯨꯡ ꯏꯐꯤꯁꯤꯑꯦꯟꯁꯤ ꯑꯁꯤ .
+and effectiveness,ꯑꯃꯁꯨꯡ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ .
+of psychosocial,ꯑꯣꯐ ꯁꯥꯏꯀꯣꯁꯣꯁꯤꯑꯦꯜ .
+treatments,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+for children’s,ꯑꯉꯥꯡꯁꯤꯡꯒꯤꯗꯃꯛ .
+nighttime fears,ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ ꯄꯣꯀꯄꯥ
+Databases,ꯗꯦꯇꯥꯕꯦꯖꯁꯤꯡ ꯑꯁꯤ .
+searched:,ꯊꯤꯕꯥ ꯐꯪꯈꯤꯕꯥ:
+PsycINFO,ꯁꯥꯏꯁꯤꯅꯐꯣ
+and PubMed,ꯑꯃꯁꯨꯡ ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗ
+Search terms:,ꯊꯤꯖꯤꯅꯕꯒꯤ ꯋꯥꯔꯣꯂꯁꯤꯡ:
+“nighttime fears”,“ꯅꯨꯃꯤꯠꯀꯤ ꯑꯀꯤꯕꯥ”꯫
+OR “nighttime,ꯅꯠꯔꯒꯥ “ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯝ
+fear” OR “night-,ꯑꯀꯤꯕꯥ” ꯅꯠꯔꯒꯥ “ꯅꯨꯃꯤꯠ-
+time fears” OR,ꯃꯇꯃꯒꯤ ꯑꯀꯤꯕꯥ” ꯅꯠꯔꯒꯥ .
+“co-sleeping” OR,“ꯀꯣ-ꯁ꯭ꯂꯤꯄꯤꯡ” ꯅꯠꯠꯔꯒꯥ .
+“fear of darkness”,“ꯑꯃꯪ-ꯑꯇꯥꯒꯤ ꯑꯀꯤꯕꯥ”꯫
+OR “fear of,ꯅꯠꯔꯒꯥ “ꯐꯤꯌꯥꯔ ꯑꯣꯐ ꯑꯣꯐ .
+the dark” OR,ꯑꯃꯝꯕꯥ” ꯅꯠꯔꯒꯥ .
+“darkness phobia”,“ꯗꯥꯔꯀꯅꯦꯁ ꯐꯣꯕꯤꯌꯥ”
+AND “treatment”,ꯑꯃꯁꯨꯡ “ꯂꯥꯌꯦꯡꯕꯥ” ꯍꯥꯌꯕꯁꯤꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫
+OR “intervention”,ꯅꯠꯠꯔꯒꯥ “ꯏꯟꯇꯔꯚꯦꯟꯁꯟ” ꯍꯥꯌꯅꯥ ꯈꯪꯅꯕꯥ꯫
+OR “therapy,ꯅꯠꯔꯒꯥ “ꯊꯦꯔꯥꯄꯤ .
+N = 12,n = ꯱꯲ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+9 RCTs and 3,꯹ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯳.
+MBLs,ꯑꯦꯝ.ꯕꯤ.ꯑꯦꯜ.ꯑꯦꯁ.
+a) nighttime,ꯀ) ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ .
+fears; b) N =,ꯑꯀꯤꯕꯥ;
+659; c) mean not,꯶꯵꯹ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+reported 21(range,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤꯕꯥ ꯲꯱(ꯔꯦꯟꯖ
+3 to 12 years);,ꯆꯍꯤ ꯳ꯗꯒꯤ ꯱꯲ ꯐꯥꯑꯣꯕꯥ);
+"d) United States,",ꯘ) ꯌꯨ.ꯑꯦꯁ.ꯑꯦ.
+"Australia, Israel,","ꯑꯁ꯭ꯠꯔꯦꯂꯤꯌꯥ, ꯏꯖꯔꯦꯜ, ."
+"Spain, Holland,","ꯁ꯭ꯄꯦꯟ, ꯍꯣꯂꯟꯗ, ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"Hungary, and","ꯍꯉ꯭ꯒꯦꯔꯤ, ꯑꯃꯁꯨꯡ ."
+Brazil,ꯕ꯭ꯔꯥꯖꯤꯂꯒꯤ ꯌꯨ.ꯑꯦꯁ.
+a) graduated,ꯀ) ꯒ꯭ꯔꯦꯖꯨꯑꯦꯠ ꯂꯣꯏꯔꯕꯥ ꯃꯇꯨꯡꯗꯥ .
+"exposure, emotive","ꯑꯦꯛꯁꯄꯣꯖꯔ, ꯏꯃꯣꯇꯤꯕ ꯑꯣꯏꯕꯥ ."
+"imagery, cognitive","ꯏꯃꯦꯖꯔꯤ, ꯀꯣꯒꯅꯤꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫"
+"restructuring,","ꯔꯤꯁ꯭ꯠꯔꯀꯆꯔ ꯇꯧꯕꯥ, ."
+cognitive,ꯂꯧꯁꯤꯡ ꯇꯥꯟꯕꯒꯤ ꯊꯧꯑꯣꯡ
+"defusion,","ꯑꯋꯥꯠꯄꯥ ꯂꯩꯕꯥ, ."
+"bibliotherapy,","ꯕꯤꯕ꯭ꯂꯤꯑꯣꯊꯦꯔꯥꯄꯤ, ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+and parent,ꯑꯃꯁꯨꯡ ꯃꯃꯥ-ꯃꯄꯥ
+intervention; b),ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯇꯧꯕꯥ;
+only reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤꯕꯥ
+for 1 MBL:,꯱ ꯑꯦꯝ.ꯕꯤ.ꯑꯦꯜ.ꯒꯤꯗꯃꯛ:
+home-based;,ꯌꯨꯃꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ;
+c) RCTs: 1 to 6,ꯒ) ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡ: ꯱ꯗꯒꯤ ꯶ ꯐꯥꯑꯣꯕꯥ꯫
+"sessions, MBLs: 5","ꯁꯦꯁꯅꯁꯤꯡ, ꯑꯦꯝ.ꯕꯤ.ꯑꯦꯜ.ꯁꯤꯡ: ꯵."
+to 8 sessions (not,ꯁꯦꯁꯟ ꯸ ꯐꯥꯑꯣꯕꯥ (ꯅꯠꯇꯦ
+reported in one,ꯑꯃꯗꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤ꯫
+study); d) RCTs: 1,ꯅꯩꯅꯕ);
+"to 6 weeks, MBLs:","ꯅꯨꯃꯤꯠ ꯶ꯅꯤꯒꯤ ꯃꯅꯨꯡꯗꯥ, ꯑꯦꯝ.ꯕꯤ.ꯑꯦꯜ.ꯑꯦꯁ."
+1 to 5 weeks;,ꯅꯨꯃꯤꯠ ꯱ꯗꯒꯤ ꯵ ꯐꯥꯑꯣꯕꯥ;
+e) 2 weeks to 6,ꯉ) ꯅꯨꯃꯤꯠ ꯲ꯗꯒꯤ ꯶ ꯐꯥꯑꯣꯕꯥ꯫
+months,ꯊꯥꯁꯤꯡ
+Not reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+ADIS-C/P,ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯁꯤ/ꯄꯤ.
+BATs,ꯕꯥꯠꯁꯤꯡ .
+BCSQ,ꯕꯤ.ꯁꯤ.ꯑꯦꯁ.ꯀ꯭ꯌꯨ.
+CBCL,ꯁꯤ.ꯕꯤ.ꯁꯤ.ꯑꯦꯜ.
+CDPQ,ꯁꯤ.ꯗꯤ.ꯄꯤ.ꯀ꯭ꯌꯨ.
+FSSC-II,ꯑꯦꯐ.ꯑꯦꯁ.ꯑꯦꯁ.ꯁꯤ.-ꯑꯥꯏ.ꯑꯥꯏ.
+FSSC-R,ꯑꯦꯐ.ꯑꯦꯁ.ꯑꯦꯁ.ꯁꯤ.-ꯑꯥꯔ.
+FSSIP,ꯑꯦꯐ.ꯑꯦꯁ.ꯑꯦꯁ.ꯑꯥꯏ.ꯄꯤ.
+KFQ,ꯀꯦ.ꯑꯦꯐ.ꯀ꯭ꯌꯨ.
+MASC,ꯑꯦꯝ.ꯑꯦ.ꯑꯦꯁ.ꯁꯤ.
+PAS,ꯄꯥꯁ ꯇꯧꯕꯥ
+SAAI-P,ꯁꯥꯏ-ꯄꯤ.
+SCARED,ꯑꯀꯤꯕ ꯄꯣꯛꯄ
+SCAS,ꯑꯦꯁ.ꯁꯤ.ꯑꯦ.
+WICDAN,ꯋꯤꯀꯗꯥꯟ .
+Not reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+35,꯳꯵ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés","ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ"
+"Authors, year of","ꯑꯏꯕꯁꯤꯡ, ꯆꯍꯤ ꯴."
+publication,ꯄꯕ꯭ꯂꯤꯀꯦꯁꯟ ꯇꯧꯕꯥ
+Aims,ꯑꯦꯝ.ꯑꯥꯏ.ꯑꯦꯁ.
+Search strategy,ꯁꯥꯔꯆ ꯇꯧꯕꯒꯤ ꯊꯧꯑꯣꯡ ꯑꯁꯤ .
+Type and no. of,ꯃꯈꯜ ꯑꯃꯁꯨꯡ ꯅꯪ.
+studies,ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯇꯧꯕꯥ
+Participants’,ꯁꯔꯨꯛ ꯌꯥꯔꯤꯕꯁꯤꯡ’꯫
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Intervention’s,ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Professionals,ꯄ꯭ꯔꯣꯐꯦꯁ꯭ꯅꯦꯂꯁꯤꯡꯅꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+providing the,ꯄꯤꯕꯥ ꯑꯁꯤꯅꯥ .
+intervention,ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯇꯧꯕꯥ
+Outcome,ꯃꯍꯩ
+measures,ꯊꯕꯛ ꯄꯥꯏꯈꯠꯂꯤꯕꯁꯤꯡ
+Funding sources,ꯐꯟꯗ ꯄꯤꯕꯒꯤ ꯁꯣꯔꯁꯁꯤꯡ
+Oldham-Cooper,ꯑꯣꯂꯗꯝ-ꯀꯨꯄꯥꯔ .
+"& Loades, 2017","& ꯂꯣꯗꯁ, ꯲꯰꯱꯷"
+To undertake a,ꯑꯃꯥ ꯂꯧꯈꯠꯅꯕꯥ .
+"critical, narrative","ꯀ꯭ꯔꯤꯇꯤꯀꯦꯜ, ꯅꯦꯔꯦꯇꯤꯚ ꯑꯣꯏꯕꯥ ."
+review of whether,ꯔꯤꯚꯤꯌꯨ ꯇꯧꯈꯤꯕꯥ ꯑꯗꯨꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯐꯝ ꯀꯌꯥ ꯊꯃꯈꯤ꯫
+disorder-specific,ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯑꯣꯏꯕꯥ꯫
+cognitive-,ꯂꯧꯁꯤꯡ ꯇꯥꯟꯕꯒꯤ ꯊꯧꯑꯣꯡ-
+behavioral,ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯑꯣꯏꯕꯥ .
+"interventions,","ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ, ."
+as favored in,꯲꯰꯲꯰ꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯈꯤꯕꯥ ꯑꯗꯨꯒꯨꯝꯅꯥ .
+the treatment of,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯊꯕꯛ ꯑꯁꯤ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+anxiety disorders,ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ
+"in adults, are","ꯑꯦꯗꯜꯇꯁꯤꯡꯗꯥ, ꯑꯥꯔ."
+more effective,ꯍꯦꯟꯅꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ .
+compared to the,ꯑꯗꯨꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+disorder-generic,ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯖꯦꯅꯦꯔꯦꯜ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+CC treatment,ꯁꯤ.ꯁꯤ.
+approach for,ꯒꯤꯗꯃꯛ ꯑꯦꯞꯔꯣꯆ ꯇꯧꯕꯥ
+"SAD, GAD, SA,","ꯁꯦꯗ, ꯒꯥꯗ, ꯑꯦꯁ.ꯑꯦ.,"
+"or SP, in CYP","ꯅꯠꯠꯔꯒꯥ ꯑꯦꯁ.ꯄꯤ., ꯁꯤ.ꯋꯥꯏ.ꯄꯤ."
+"aged 7–17, based","ꯆꯍꯤ ꯷–꯱꯷ ꯐꯥꯑꯣꯕꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ, ꯌꯨ.ꯑꯦꯁ."
+on treatment,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯃꯇꯥꯡꯗꯥ .
+outcomes,ꯑꯥꯎꯠꯀꯃꯁꯤꯡ .
+assessed using,ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯑꯦꯁꯦꯁ ꯇꯧꯕꯥ .
+validated,ꯚꯦꯂꯤꯗꯦꯠ ꯇꯧꯕꯥ
+measures relating,ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯊꯧꯔꯥꯡꯁꯤꯡ .
+"symptoms,","ꯂꯥꯏꯑꯣꯡ,"
+including,ꯃꯅꯨꯡ ꯆꯟꯅ
+remission rates,ꯔꯤꯃꯤꯁꯅꯒꯤ ꯆꯥꯡ ꯑꯁꯤ .
+Databases,ꯗꯦꯇꯥꯕꯦꯖꯁꯤꯡ ꯑꯁꯤ .
+searched: Science,ꯊꯤꯖꯤꯅꯕꯒꯤ ꯊꯕꯛ: ꯁꯥꯏꯟꯁ
+Direct and,ꯗꯥꯏꯔꯦꯛꯇ ꯑꯃꯁꯨꯡ ꯳.
+APA Psychnet,ꯑꯦ.ꯄꯤ.ꯑꯦ.
+Search terms not,ꯁꯥꯔꯆ ꯇꯧꯕꯥ ꯋꯥꯍꯩꯁꯤꯡ ꯅꯠꯇꯦ
+reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤꯕꯥ
+N = 24,ꯑꯦꯟ = ꯲꯴ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+24 RCTs,꯲꯴ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.
+"a) OAD, SAD,","ꯀ) ꯑꯣꯗ, ꯁꯦꯗ,"
+"SOP, AD, GAD,","ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯑꯦꯗ, ꯒꯥꯗ, ꯴."
+"SP; b) N = 1,478;",ꯑꯦꯁ.ꯄꯤ.ꯗꯥ ꯂꯩꯕꯥ ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+c) mean not,ꯒ) ꯃꯤꯟ ꯅꯠꯇꯦ .
+reported (range,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯄꯥ (ꯔꯦꯟꯖ
+7 to 17 years); d),ꯆꯍꯤ ꯷ꯇꯒꯤ ꯱꯷ ꯐꯥꯑꯣꯕꯥ);
+"North America,",ꯅꯣꯔꯊ ꯑꯥꯃꯦꯔꯤꯀꯥꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+"Sweden, and","ꯁ꯭ꯕꯤꯗꯦꯟ, ꯑꯃꯁꯨꯡ ."
+Switzerland,ꯁꯨꯏꯠꯖꯥꯔꯂꯟꯗꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+"a) CBT, CC,","ꯀ) ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯁꯤ.ꯁꯤ."
+Coping Koala;,ꯀꯣꯄꯤꯡ ꯀꯣꯌꯥꯂꯥ;
+b) university,ꯈ) ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤꯗꯥ ꯌꯨ .
+and community,ꯑꯃꯁꯨꯡ ꯀꯝꯌꯨꯅꯤꯇꯤꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+clinics; c) 1 to,ꯀ꯭ꯂꯤꯅꯤꯀꯁꯤꯡ;
+20 sessions; d) 1,꯲꯰ꯒꯤ ꯁꯦꯁꯟ;
+week to 20 weeks;,ꯅꯨꯃꯤꯠꯇꯒꯤ ꯅꯨꯃꯤꯠ ꯲꯰ ꯐꯥꯑꯣꯕꯥ;
+e) 1 month to 7.4,ꯏ) ꯊꯥ ꯱ꯗꯒꯤ ꯷.꯴ ꯐꯥꯑꯣꯕꯥ꯫
+years,ꯆꯍꯤꯁꯤꯡ
+"PhD candidates,",ꯄꯤ.ꯑꯩꯆ.ꯗꯤ.
+clinical,ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ ꯃꯑꯣꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+"psychologists,","ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯁ꯭ꯇꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+masters level,ꯃꯥꯁ꯭ꯇꯔꯁꯤꯡꯒꯤ ꯊꯥꯛꯇꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+"therapists,","ꯊꯦꯔꯥꯄꯤꯁ꯭ꯇꯁꯤꯡ, ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ."
+"psychotherapists,","ꯁꯥꯏꯀꯣꯊꯦꯔꯥꯄꯤꯁ꯭ꯇꯁꯤꯡ, ."
+"social workers,","ꯁꯣꯁꯤꯌꯦꯜ ꯋꯥꯔꯀꯔꯁꯤꯡ, [...]"
+and family,ꯑꯃꯁꯨꯡ ꯏꯃꯨꯡ ꯃꯅꯨꯡ
+therapists,ꯊꯦꯔꯥꯄꯤꯁ꯭ꯇꯁꯤꯡꯅꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+ADIS-C/P,ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯁꯤ/ꯄꯤ.
+ADIS-C-R,ꯑꯦ.ꯗꯤ.ꯑꯥꯏ.ꯑꯦꯁ.-ꯁꯤ-ꯑꯥꯔ.
+CGI,ꯁꯤ.ꯖꯤ.ꯑꯥꯏ.
+DISC4.0-C/P,ꯗꯤꯁ꯭ꯀ꯴.꯰-ꯁꯤ/ꯄꯤ.
+DSM-IV-TR,ꯗꯤ.ꯑꯦꯁ.ꯑꯦꯝ.-ꯑꯥꯏ.ꯚꯤ.-ꯇꯤ.ꯑꯥꯔ.
+diagnostic,ꯗꯥꯏꯒ꯭ꯅꯣꯁ꯭ꯇꯤꯛ ꯑꯣꯏꯕꯥ .
+interview-P/C,ꯏꯟꯇꯔꯚ꯭ꯌꯨ-ꯄꯤ/ꯁꯤ.
+K-SADS-PL,ꯀꯦ-ꯁꯥꯗꯁ-ꯄꯤ.ꯑꯦꯜ.
+RCMAS t-score,ꯑꯥꯔ.ꯁꯤ.ꯑꯦꯝ.ꯑꯦ.ꯑꯦꯁ.ꯇꯤ.-ꯁ꯭ꯀꯣꯔ
+SPAI-C,ꯑꯦꯁ.ꯄꯤ.ꯑꯦ.ꯑꯥꯏ.-ꯁꯤ.
+National,ꯂꯩꯕꯥꯛꯀꯤ
+Institute for,ꯏꯟꯁꯇꯤꯠꯌꯨꯠ ꯐꯣꯔ ꯒꯤꯗꯃꯛ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+Health Research,ꯍꯀꯁꯦꯂꯒꯤ ꯔꯤꯁꯔꯆ ꯇꯧꯕꯥ
+(Doctoral,(ꯗꯣꯛꯇꯔꯒꯤ ꯊꯕꯛ ꯇꯧꯕꯥ
+Research,ꯊꯤꯒꯠꯄ
+Fellowship: DRF-,ꯐꯦꯂꯣꯁꯤꯞ: ꯗꯤ.ꯑꯥꯔ.ꯑꯦꯐ.-
+2016-09-021),꯲꯰꯱꯶-꯰꯹-꯰꯲꯱)ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+"Öst & Ollendick,","ꯑꯣꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯑꯣꯂꯦꯟꯗꯥꯏꯛ, ."
+2017,꯲꯰꯱꯷ꯇꯥ ꯊꯣꯀꯈꯤ꯫
+To address,ꯑꯦꯗ꯭ꯔꯦꯁ ꯇꯧꯅꯕꯥ .
+the following,ꯃꯈꯥꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯑꯁꯤ .
+questions: (1) are,ꯋꯥꯍꯪꯁꯤꯡ: (꯱) .
+BIC acceptable,ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+to youth,ꯅꯍꯥꯁꯤꯡꯗꯥ .
+with anxiety,ꯋꯥꯈꯜ ꯋꯥꯕꯥ .
+"disorders?,  (2)","ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ?, (꯲)"
+are BIC effective,ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+for youth anxiety,ꯅꯍꯥꯁꯤꯡꯒꯤ ꯋꯥꯈꯜ ꯅꯨꯡꯉꯥꯏꯇꯕꯒꯤꯗꯃꯛ .
+"disorders?, (3)","ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ?, (꯳)"
+"are BIC specific,",ꯑꯁꯤ ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+i.e. better than,ꯑꯥꯏ.ꯏ.ꯗꯒꯤ ꯍꯦꯟꯅꯥ ꯐꯕꯥ .
+a condition,ꯀꯟꯗꯤꯁꯟ ꯑꯃꯥ .
+controlling for,ꯒꯤꯗꯃꯛ ꯀꯟꯠꯔꯣꯜ ꯇꯧꯕꯥ .
+nonspecific,ꯅꯟ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯑꯣꯏꯕꯥ .
+"factors, in","ꯐꯦꯛꯇꯔꯁꯤꯡ, ꯑꯥꯏ.ꯑꯦꯟ."
+youth anxiety,ꯅꯍꯥꯁꯤꯡꯒꯤ ꯋꯥꯈꯜ ꯋꯥꯕꯥ .
+"disorders?, (4)","ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ?, (꯴)"
+are the effects of,ꯒꯤ ꯏꯐꯦꯛꯇꯁꯤꯡ ꯑꯁꯤ .
+BIC maintained,ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+"at follow-up?,","ꯐꯣꯂꯣ-ꯑꯄꯇꯥ?,"
+(5) do BIC lead,(꯵) ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+to remission and,ꯔꯤꯃꯤꯁꯟ ꯇꯧꯕꯥ ꯑꯃꯁꯨꯡ .
+"recovery?, and","ꯔꯤꯀꯣꯚꯔꯤ?, ꯑꯃꯁꯨꯡ ."
+(6) how does BIC,(꯶) ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+compare with,ꯃꯁꯤꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯥ
+standard CBT?,ꯁ꯭ꯠꯌꯥꯟꯗꯥꯔꯗ ꯑꯣꯏꯕꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+Databases,ꯗꯦꯇꯥꯕꯦꯖꯁꯤꯡ ꯑꯁꯤ .
+searched:,ꯊꯤꯕꯥ ꯐꯪꯈꯤꯕꯥ:
+PsycINFO and,ꯁꯥꯏꯁꯤꯅꯐꯣ ꯑꯃꯁꯨꯡ .
+PubMed. Search,ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗꯤꯌꯥꯗꯥ ꯂꯩꯕꯥ꯫
+terms: (anxiety,ꯋꯥꯍꯩꯁꯤꯡ: (ꯑꯦꯅꯖꯥꯏꯇꯤ
+disorder OR OCD,ꯗꯤꯁꯑꯣꯔꯗꯔ ꯅꯠꯠꯔꯒꯥ ꯑꯣ.ꯁꯤ.ꯗꯤ.
+OR PTSD) AND,ꯅꯠꯔꯒꯥ ꯄꯤ.ꯇꯤ.ꯑꯦꯁ.ꯗꯤ.) ꯑꯃꯁꯨꯡ .
+(randomized,(ꯔꯦꯟꯗꯝ ꯑꯣꯏꯅꯥ ꯁꯦꯝꯕꯥ .
+controlled trial,ꯀꯟꯠꯔꯣꯜ ꯇꯧꯔꯕꯥ ꯇ꯭ꯔꯥꯏꯑꯦꯜ
+OR RCT OR,ꯅꯠꯠꯔꯒꯥ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.
+random*) AND,ꯔꯦꯟꯗꯝ*) ꯑꯃꯁꯨꯡ .
+(youth OR child*,(ꯅꯍꯥ ꯅꯠꯔꯒꯥ ꯑꯉꯥꯡ*
+OR adolescent,ꯅꯠꯠꯔꯒꯥ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯤ ꯑꯣꯏꯕꯥ .
+OR pediatric),ꯅꯠꯠꯔꯒꯥ ꯄꯦꯗꯤꯑꯦꯠꯔꯤꯛ ꯑꯣꯏꯕꯥ)꯫
+N = 23,n = ꯲꯳ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+23 RCTs,꯲꯳ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.
+"a) SP, SOP, PD,","ꯀ) ꯑꯦꯁ.ꯄꯤ., ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯄꯤ.ꯗꯤ."
+"OCD, PTSD,","ꯑꯣ.ꯁꯤ.ꯗꯤ., ꯄꯤ.ꯇꯤ.ꯑꯦꯁ.ꯗꯤ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"SAD, mixed","ꯁꯦꯗ, ꯃꯤꯛꯁ ꯇꯧꯕꯥ"
+anxiety; b) N =,ꯆꯔꯥꯡꯅꯕ;
+"1,444; c) M =","꯱,꯴꯴꯴ ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+10.9 (range 4 to,꯱꯰.꯹ (ꯔꯦꯟꯖ ꯴ꯗꯒꯤ ꯴ ꯐꯥꯑꯣꯕꯥ .
+18 years)); d),ꯆꯍꯤ ꯱꯸) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+"Holland, United","ꯍꯣꯂꯟꯗ, ꯌꯨꯅꯥꯏꯇꯦꯗ ꯳."
+"States, Australia,","ꯔꯥꯖ꯭ꯌꯁꯤꯡ, ꯑꯁ꯭ꯠꯔꯦꯂꯤꯌꯥꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ."
+"Sweden, Austria,","ꯁ꯭ꯕꯤꯗꯦꯟ, ꯑꯣꯁ꯭ꯠꯔꯤꯌꯥꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ."
+"England, and","ꯏꯪꯂꯦꯟꯗ, ꯑꯃꯁꯨꯡ ."
+Germany,ꯖꯔꯃꯅꯤꯅꯥ ꯌꯨ.ꯑꯦꯁ.
+a) type of BIC,ꯀ) ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+treatment: brief,ꯂꯥꯌꯦꯡꯕꯥ: ꯊꯨꯅꯥ ꯌꯥꯡꯅꯥ
+"(n = 7), intensive","(n = 7), ꯏꯟꯇꯦꯟꯁꯤꯚ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫"
+(n = 11) and,(n = 11) ꯑꯃꯁꯨꯡ .
+concentrated (n =,ꯀꯟꯁꯦꯟꯠꯔꯦꯠ ꯇꯧꯕꯥ (n = .
+5); b) individual,꯵) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+(n = 19) and,(n = 19) ꯑꯃꯁꯨꯡ .
+grupal (n = 4); c),ꯒ꯭ꯔꯨꯄꯥꯜ (n = 4) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+1 to 12 sessions,꯱ꯗꯒꯤ ꯱꯲ ꯐꯥꯑꯣꯕꯒꯤ ꯁꯦꯁꯅꯁꯤꯡ .
+(mean = 4.2,(ꯃꯤꯟ = ꯴.꯲.
+sessions); d),ꯁꯦꯁꯅꯁꯤꯡ;
+mean = 16.4 days,ꯃꯤꯟ = ꯅꯨꯃꯤꯠ ꯱꯶.꯴
+of duration; e) 1,ꯃꯇꯃꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ;
+month to 1 year,ꯊꯥꯗꯒꯤ ​​ꯆꯍꯤ ꯱ ꯐꯥꯑꯣꯕꯥ
+(9 studies did not,(ꯁ꯭ꯇꯗꯤ ꯹ꯅꯥ ꯇꯧꯈꯤꯗꯦ .
+report follow-up),ꯔꯤꯄꯣꯔꯠ ꯐꯣꯂꯣ-ꯑꯞ)
+Clinical,ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ ꯃꯑꯣꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+"psychologists,","ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯁ꯭ꯇꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"counselors, and","ꯀꯥꯎꯟꯁꯦꯂꯔꯁꯤꯡ, ꯑꯃꯁꯨꯡ ."
+students,ꯃꯍꯩꯔꯣꯏꯁꯤꯡꯅꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+Independent,ꯃꯅꯤꯡ ꯇꯝꯕ
+assessor ratings,ꯑꯦꯁꯦꯁꯔꯒꯤ ꯔꯦꯇꯤꯡꯁꯤꯡ .
+"(e.g., CSR and","(ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯁꯤ.ꯑꯦꯁ.ꯑꯥꯔ."
+"CY-BOCS),",ꯁꯤ.ꯋꯥꯏ.-ꯕꯣꯀꯁꯤꯡ) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+behavioral,ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯑꯣꯏꯕꯥ .
+approach tests,ꯑꯦꯞꯔꯣꯆ ꯇꯦꯁ꯭ꯇꯁꯤꯡ ꯇꯧꯕꯥ
+and self-report,ꯑꯃꯁꯨꯡ ꯁꯦꯜꯐ-ꯔꯤꯄꯣꯔꯠ ꯇꯧꯕꯥ
+"measures (e.g.,","ꯈꯣꯡꯊꯥꯡꯁꯤꯡ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ."
+SCAS and SPAI),ꯑꯦꯁ.ꯁꯤ.ꯑꯦ.ꯑꯦꯁ. ꯑꯃꯁꯨꯡ ꯑꯦꯁ.ꯄꯤ.ꯑꯦ.ꯑꯥꯏ.)
+No external,ꯃꯄꯥꯅꯒꯤ ꯑꯣꯏꯕꯥ .
+funding was,ꯐꯟꯗ ꯄꯤꯕꯥ ꯑꯁꯤ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+obtained,ꯐꯪꯂꯕ
+36,꯳꯶ .
+Psychological treatment for specific anxiety disorders,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ
+used to treat ADs in children and adolescents) were found to be effec-,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯗꯁꯤꯡ ꯂꯥꯌꯦꯡꯅꯕꯥ ꯁꯤꯖꯤꯟꯅꯈꯤꯕꯥ) ꯑꯁꯤ ꯏꯐꯦꯛ-
+"tive (Oldham-Cooper & Loades, 2017). GAD and SAD were found","ꯇꯤꯚ (ꯑꯣꯂꯗꯝ-ꯀꯨꯄꯥꯔ ꯑꯃꯁꯨꯡ ꯂꯣꯗꯁ, ꯲꯰꯱꯷)꯫"
+to respond better to the CC program compared to SOP in follow-up,ꯐꯣꯂꯣ-ꯑꯄꯇꯥ ꯑꯦꯁ.ꯑꯣ.ꯄꯤ.ꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯁꯤ.ꯁꯤ.ꯒꯤ ꯄ꯭ꯔꯣꯒ꯭ꯔꯥꯃꯗꯥ ꯍꯦꯟꯅꯥ ꯐꯕꯥ ꯄꯥꯎꯈꯨꯝ ꯄꯤꯅꯕꯥ
+"assessments. Santacruz and colleagues (2002), reported medium-high",ꯑꯦꯁꯦꯁꯃꯦꯟꯇꯁꯤꯡ ꯇꯧꯕꯥ꯫
+effectiveness in the post-test (d+ = 0.78) and high effectiveness in a,ꯄꯣꯁ꯭ꯠ-ꯇꯦꯁ꯭ꯠ (D+ = 0.78)ꯗꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯑꯃꯁꯨꯡ ꯑꯦ.
+ten-month follow-up assessment (d+ = 1.06) for children and ado-,ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯑꯣꯏꯅꯥ ꯊꯥ ꯇꯔꯨꯛꯀꯤ ꯐꯣꯂꯣ-ꯑꯞ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ (D+ = 1.06) ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣ-
+"lescents with GAD, SAD and school phobia treated with CBT, CBT","ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯂꯥꯌꯦꯡꯂꯤꯕꯥ ꯖꯤ.ꯑꯦ.ꯗꯤ., ꯑꯦꯁ.ꯑꯦ.ꯗꯤ. ꯑꯃꯁꯨꯡ ꯁ꯭ꯀꯨꯂꯒꯤ ꯐꯣꯕꯤꯌꯥꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯂꯦꯁꯦꯟꯇꯁꯤꯡ, ꯁꯤ.ꯕꯤ.ꯇꯤ."
+"+ family intervention, and CBT + imipramine (only one RCTs). For","+ ꯐꯦꯃꯤꯂꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ, ꯑꯃꯁꯨꯡ ꯁꯤ.ꯕꯤ.ꯇꯤ.+ ꯏꯃꯤꯞꯔꯥꯃꯤꯟ (ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡ ꯈꯛꯇꯃꯛ)꯫"
+"nighttime fears, behavioral interventions and CBT were found to be","ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ, ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯁꯤ.ꯕꯤ.ꯇꯤ."
+effective in reducing fears and disruptive nighttime behaviors post-,ꯑꯀꯤꯕꯥ ꯍꯟꯊꯍꯅꯕꯗꯥ ꯑꯃꯁꯨꯡ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡ ꯄꯣꯁ꯭ꯠ ꯇꯧꯔꯕꯥ ꯃꯇꯨꯡꯗꯥ ꯏꯐꯦꯛꯇꯤꯚ ꯑꯣꯏꯕꯥ-
+test and in follow-up when comparing intervention groups to control,ꯇꯦꯁ꯭ꯠ ꯇꯧꯕꯥ ꯑꯃꯁꯨꯡ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯒ꯭ꯔꯨꯄꯁꯤꯡ ꯀꯟꯠꯔꯣꯜ ꯇꯧꯕꯥ ꯃꯇꯃꯗꯥ ꯐꯣꯂꯣ-ꯑꯞ ꯇꯧꯕꯥ ꯃꯇꯃꯗꯥ
+"and WLC groups (Lewis et al., 2021)","ꯑꯃꯁꯨꯡ ꯗꯕ꯭ꯂꯤꯎ.ꯑꯦꯜ.ꯁꯤ.ꯒꯤ ꯀꯥꯡꯂꯨꯄꯁꯤꯡ (ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱)"
+"In general, CBT interventions showed good results for treating","ꯃꯍꯧꯁꯥꯅꯥ, ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯅꯥ ꯂꯥꯌꯦꯡꯕꯗꯥ ꯑꯐꯕꯥ ꯐꯂꯁꯤꯡ ꯎꯠꯈꯤ꯫"
+ADs in children and adolescents and outcomes were maintained at,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯐꯂꯁꯤꯡꯗꯥ ꯄꯤꯔꯤꯕꯥ ꯑꯦꯗꯁꯤꯡ ꯑꯁꯤ .
+"follow-up (Gibby et al., 2017). In the study of Gibby and colleagues,","ꯐꯣꯂꯣ-ꯑꯞ (ꯒꯤꯕꯤ ꯑꯃꯁꯨꯡ ꯑꯦꯜ., ꯲꯰꯱꯷)꯫"
+"they included samples with GAD, SAD, SPs, and also on agorapho-","ꯃꯈꯣꯌꯅꯥ ꯖꯤ.ꯑꯦ.ꯗꯤ.ꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯁꯦꯝꯄꯂꯁꯤꯡ, ꯑꯦꯁ.ꯑꯦ.ꯗꯤ., ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ., ꯑꯃꯁꯨꯡ ꯑꯒꯣꯔꯥꯐꯣ-ꯗꯁꯨ ꯌꯥꯑꯣꯈꯤ꯫"
+"Authors, year of","ꯑꯏꯕꯁꯤꯡ, ꯆꯍꯤ ꯴."
+publication,ꯄꯕ꯭ꯂꯤꯀꯦꯁꯟ ꯇꯧꯕꯥ
+Aims,ꯑꯦꯝ.ꯑꯥꯏ.ꯑꯦꯁ.
+Search strategy,ꯁꯥꯔꯆ ꯇꯧꯕꯒꯤ ꯊꯧꯑꯣꯡ ꯑꯁꯤ .
+Type and no. of,ꯃꯈꯜ ꯑꯃꯁꯨꯡ ꯅꯪ.
+studies,ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯇꯧꯕꯥ
+Participants’,ꯁꯔꯨꯛ ꯌꯥꯔꯤꯕꯁꯤꯡ’꯫
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Intervention’s,ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Professionals,ꯄ꯭ꯔꯣꯐꯦꯁ꯭ꯅꯦꯂꯁꯤꯡꯅꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+providing the,ꯄꯤꯕꯥ ꯑꯁꯤꯅꯥ .
+intervention,ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯇꯧꯕꯥ
+Outcome,ꯃꯍꯩ
+measures,ꯊꯕꯛ ꯄꯥꯏꯈꯠꯂꯤꯕꯁꯤꯡ
+Funding sources,ꯐꯟꯗ ꯄꯤꯕꯒꯤ ꯁꯣꯔꯁꯁꯤꯡ
+"Santacruz et al.,","ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯦꯠ ꯑꯦꯜ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+2002,꯲꯰꯰꯲ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+To study the,ꯁ꯭ꯇꯗꯤ ꯇꯧꯅꯕꯥ .
+effectiveness of,ꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ .
+psychological,ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ .
+treatment in,ꯂꯥꯌꯦꯡꯕꯗꯥ ꯂꯥꯌꯦꯡꯕꯥ .
+various anxiety,ꯇꯣꯉꯥꯟ ꯇꯣꯉꯥꯅꯕꯥ ꯋꯥꯈꯜ ꯋꯥꯕꯥ .
+problems in,2018ꯗꯥ ꯊꯣꯀꯄꯥ ꯁꯃꯁ꯭ꯌꯥꯁꯤꯡ꯫
+childhood and,ꯑꯉꯥꯡ ꯑꯣꯏꯔꯤꯉꯩꯒꯤ ꯑꯃꯁꯨꯡ [...]
+adolescence:,ꯑꯦꯗꯣꯂꯁꯦꯟꯁ:
+"GAD, SAD, and","ꯒꯥꯗ, ꯁꯦꯗ, ꯑꯃꯁꯨꯡ ."
+SOP. The specific,ꯑꯦꯁ.ꯑꯣ.ꯄꯤ.
+objectives are: (1),ꯄꯥꯟꯗꯃꯁꯤꯡꯗꯤ: (꯱)
+to quantitatively,ꯀ꯭ꯕꯥꯟꯇꯤꯇꯦꯇꯤꯕ ꯑꯣꯏꯅꯥ .
+integrate the,ꯏꯟꯇꯤꯒ꯭ꯔꯦꯠ ꯇꯧꯕꯥ .
+results of CBT,ꯁꯤ.ꯕꯤ.ꯇꯤ.
+and family,ꯑꯃꯁꯨꯡ ꯏꯃꯨꯡ ꯃꯅꯨꯡ
+"interventions,","ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ, ."
+(2) to analyze the,(꯲) ꯑꯦꯅꯥꯂꯥꯏꯖ ꯇꯧꯅꯕꯥ .
+characteristics,ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+of the studies,ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯑꯁꯤꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+that influence,ꯑꯗꯨꯒꯨꯝꯕꯥ ꯏꯅꯐ꯭ꯂꯨꯑꯦꯟꯖꯥ ꯑꯗꯨ .
+"the results, and","ꯔꯤꯖꯜꯇꯁꯤꯡ ꯑꯗꯨ, ꯑꯃꯁꯨꯡ ."
+(3) to suggest,(꯳) ꯁꯖꯦꯁꯟ ꯄꯤꯕꯥ
+future actions,ꯇꯨꯡꯒꯤ ꯊꯕꯀꯁꯤꯡ .
+and perspectives,ꯑꯃꯁꯨꯡ ꯄꯔꯁ꯭ꯄꯦꯛꯇꯤꯕꯁꯤꯡ .
+based on the,ꯌꯨ.ꯑꯦꯁ.
+results,ꯃꯍꯩꯁꯤꯡ
+Databases,ꯗꯦꯇꯥꯕꯦꯖꯁꯤꯡ ꯑꯁꯤ .
+searched:,ꯊꯤꯕꯥ ꯐꯪꯈꯤꯕꯥ:
+"CSIC -ISOC-,","ꯁꯤ.ꯑꯦꯁ.ꯑꯥꯏ.ꯁꯤ.-ꯑꯥꯏ.ꯑꯦꯁ.ꯑꯣ.ꯁꯤ.-, ."
+MEDLINE,ꯃꯦꯗꯂꯥꯏꯟ ꯇꯧꯕꯥ
+"y ERIC,","ꯋꯥꯏ ꯑꯦꯔꯤꯛ, ꯴."
+Psychological,ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ .
+Abstract,ꯁꯝꯂꯞꯄ ꯋꯥꯔꯣꯜ
+and Current,ꯑꯃꯁꯨꯡ ꯍꯧꯖꯤꯛ ꯂꯩꯔꯤꯕꯥ [...]
+Contents: Social,ꯃꯆꯥꯀꯁꯤꯡ: ꯁꯣꯁꯤꯑꯦꯜ .
+and Behavioral,ꯑꯃꯁꯨꯡ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯐꯝ ꯀꯌꯥ ꯊꯃꯈꯤ꯫
+Sciences,ꯁꯥꯏꯟꯁꯁꯤꯡ ꯑꯁꯤ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+Reference,ꯆꯥꯡꯗꯝꯅꯕ
+checking. Search,ꯆꯦꯛ ꯇꯧꯕꯥ꯫
+terms: fobia,ꯇꯔꯃꯁꯤꯡ: ꯐꯣꯕꯤꯌꯥ
+"escolar, rechazo","ꯑꯦꯁ꯭ꯀꯣꯂꯥꯔ, ꯔꯦꯆꯥꯖꯣ"
+"escolar, ansiedad","ꯑꯦꯁ꯭ꯀꯣꯂꯥꯔ, ꯑꯟꯁꯤꯗꯥꯗ"
+"generalizada,","ꯖꯦꯅꯦꯔꯦꯂꯤꯖꯗꯥ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+ansiedad por,ꯑꯟꯁꯤꯗꯥꯗ ꯄꯣꯔ
+"separación,","ꯁꯦꯄꯥꯔꯥꯁꯟ, ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"infan*,","ꯏꯅꯐꯦꯟ*, ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"adolescen*,","ꯑꯦꯗꯣꯂꯁꯦꯟ*, ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"tratamiento,","ꯇ꯭ꯔꯥꯇꯥꯃꯤꯌꯟꯇ, ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"terapia, school","ꯇꯦꯔꯥꯄꯤꯌꯥ, ꯁ꯭ꯀꯨꯜ ꯳."
+"phobia,","ꯐꯣꯕꯤꯌꯥ, ꯳."
+"school refusal,","ꯁ꯭ꯀꯨꯜ ꯔꯤꯐ꯭ꯌꯨꯖ ꯇꯧꯕꯥ, ."
+generalized,ꯖꯦꯅꯦꯔꯦꯂꯥꯏꯖ ꯇꯧꯕꯥ
+"anxiety,","ꯆꯔꯥꯡꯅꯕ,"
+separation,ꯇꯣꯈꯥꯏꯅꯥ ꯂꯩꯕꯥ .
+"anxiety,","ꯆꯔꯥꯡꯅꯕ,"
+"infan*, child*,","ꯏꯅꯐꯦꯟ*, ꯑꯉꯥꯡ*,"
+"adolescen*,","ꯑꯦꯗꯣꯂꯁꯦꯟ*, ꯑꯃꯁꯨꯡ ꯑꯦꯟ."
+"treatment,","ꯂꯥꯏꯌꯦꯡꯕ,"
+therapy,ꯊꯦꯔꯥꯄꯤ ꯇꯧꯕꯥ
+N = 25,n = ꯲꯵ ꯑꯣꯏꯕꯥ ꯌꯥꯏ꯫
+8 WLC and 17,꯸ ꯋꯥ.ꯑꯦꯜ.ꯁꯤ. ꯑꯃꯁꯨꯡ ꯱꯷.
+treatment,ꯂꯥꯏꯌꯦꯡꯕ
+"a) GAD, SAD,","ꯀ) ꯒꯥꯗ, ꯁꯥꯗ, ꯳."
+"SOP, and school","ꯑꯦꯁ.ꯑꯣ.ꯄꯤ., ꯑꯃꯁꯨꯡ ꯁ꯭ꯀꯨꯜ ."
+phobia/refusal;,ꯐꯣꯕꯤꯌꯥ/ꯔꯤꯐ꯭ꯌꯨꯖ ꯇꯧꯕꯥ;
+b) N = 743; c) M,ꯈ) n = ꯷꯴꯳;
+= 10.73 (SD =,= ꯱꯰.꯷꯳ (ꯑꯦꯁ.ꯗꯤ. = ꯵.
+1.32) (range 5 to,꯱.꯳꯲) (ꯔꯦꯟꯖ ꯵ꯗꯒꯤ ꯳.
+17 years); d) not,ꯆꯍꯤ ꯱꯷;
+reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤꯕꯥ
+"a) CBT, FI and","ꯀ) ꯁꯤ.ꯕꯤ.ꯇꯤ., ꯑꯦꯐ.ꯑꯥꯏ."
+imipramine;,ꯏꯃꯤꯞꯔꯥꯃꯤꯟ;
+b) university,ꯈ) ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤꯗꯥ ꯌꯨ .
+(n = 10) and,(n = 10) ꯑꯃꯁꯨꯡ .
+community (n =,ꯀꯝꯝꯌꯨꯅꯤꯇꯤ (n = .
+"2) clinics, schools","꯲) ꯀ꯭ꯂꯤꯅꯤꯀꯁꯤꯡ, ꯁ꯭ꯀꯨꯂꯁꯤꯡ"
+(n = 2) and not,(n = 2) ꯑꯃꯁꯨꯡ ꯅꯠꯇꯦ
+reported (n =,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯄꯥ (n = .
+11) / group (n =,꯱꯱) / ꯒ꯭ꯔꯨꯞ (n = .
+"11), individual","꯱꯱), ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯑꯣꯏꯕꯥ ."
+(n = 7) and not,(n = 7) ꯑꯃꯁꯨꯡ ꯅꯠꯇꯦ
+reported (n = 11);,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯄꯥ (n = 11);
+c) 5 to 24 hours of,ꯒ) ꯄꯨꯡ ꯵ꯗꯒꯤ ꯲꯴ ꯐꯥꯑꯣꯕꯥ
+treatment (mean,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯆꯥꯡ (ꯃꯌꯥꯏ ꯑꯣꯏꯕꯥ .
+= 14.58 hours);,= ꯄꯨꯡ ꯱꯴.꯵꯸);
+4 to 18 weeks of,ꯅꯨꯃꯤꯠ ꯴ꯗꯒꯤ ꯱꯸ ꯐꯥꯑꯣꯕꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+treatment (mean,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯆꯥꯡ (ꯃꯌꯥꯏ ꯑꯣꯏꯕꯥ .
+= 10.40); 3 to 12,= ꯱꯰.꯴꯰) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+months (mean =,ꯊꯥꯁꯤꯡ (ꯃꯤꯟ =
+10.20),꯱꯰.꯲꯰) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Clinical,ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯑꯣꯏꯕꯥ ꯃꯑꯣꯡꯗꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+psychologists,ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯁ꯭ꯇꯁꯤꯡꯅꯥ ꯑꯦꯝ.
+with high level of,ꯑꯋꯥꯡꯕꯥ ꯊꯥꯛ ꯑꯗꯨꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+expertise,ꯑꯦꯛꯁꯄꯔꯠ ꯑꯣꯏꯕꯥ .
+CBCL,ꯁꯤ.ꯕꯤ.ꯁꯤ.ꯑꯦꯜ.
+CBCL-TRF,ꯁꯤ.ꯕꯤ.ꯁꯤ.ꯑꯦꯜ.-ꯇꯤ.ꯑꯥꯔ.ꯑꯦꯐ.
+CDI,ꯁꯤ.ꯗꯤ.ꯑꯥꯏ.
+FSSC,ꯑꯦꯐ.ꯑꯦꯁ.ꯑꯦꯁ.ꯁꯤ.
+RCMAS,ꯑꯥꯔ.ꯁꯤ.ꯑꯦꯝ.ꯑꯦ.
+STAIC,ꯁ꯭ꯇꯦꯛ ꯇꯧꯕꯥ
+Spanish Ministry,ꯁ꯭ꯄꯦꯅꯒꯤ ꯃꯟꯠꯔꯥꯂꯌꯗꯥ ꯂꯩꯕꯥ ꯌꯨ.ꯑꯦꯁ.
+of Science and,ꯁꯥꯏꯟꯁꯀꯤ ꯑꯃꯁꯨꯡ ꯑꯦꯝ.ꯑꯦꯁ.ꯑꯦꯝ.ꯏ.
+Technology,ꯃꯁꯤꯟꯂꯣꯟ
+(BSO2001-0491),(ꯕꯤ.ꯑꯦꯁ.ꯑꯣ.꯲꯰꯰꯱-꯰꯴꯹꯱) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+Note. LTFU = Long-Term Follow-Up; LT = Long Term; OAD = Overanxious Anxiety Disorder; SAD = Separation Anxiety Disorder; SOP = Social Anxiety Disor-,ꯈꯪꯖꯤꯟꯒꯗꯕ.
+der / Social Phobia; AG = Agoraphobia; GAD = Generalized Anxiety Disorder; SP = Specific Phobia; CBT = Cognitive Behavioral Therapy; FAM = Family Man-,ꯗꯦꯔ / ꯁꯣꯁꯤꯑꯦꯜ ꯐꯣꯕꯤꯌꯥ;
+agement; PAM = Parental Anxiety Management; API = Active Parental Involvement;  LPI = Limited Parental Involvement; ICBT = Individual (child) Cognitive,ꯑꯦꯖꯦꯃꯦꯟꯇ;
+Behavioral Management; FCBT = Family Cognitive Behavioral Therapy; GCBT = Group Cognitive Behavioral Therapy; FESA = Family Based Education; SET-C,ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯃꯦꯅꯦꯖꯃꯦꯟꯇ;
+= Social effectiveness Training for Children; SET-Asv = Social Effectiveness Training for Adolescents - Spanish Version; CBGT-A = Cognitive Behavioral Group,= ꯑꯉꯥꯡꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯣꯁꯤꯑꯦꯜ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯇ꯭ꯔꯦꯅꯤꯡ;
+Therapy for Adolescents; IAFSG = Therapy for Adolescents with Generalized Social Phobia; ACT = Acceptance and Commitment Therapy; OST = One-Session,ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤ ꯊꯦꯔꯥꯄꯤ;
+Exposure Therapy; EST = Education Support Treatment; CM = Contingence Management (exposure-based); SC = Cognitive Self-Control; ES = Education Sup-,ꯑꯦꯛꯁꯄꯣꯖꯔ ꯊꯦꯔꯥꯄꯤ;
+port; ADIS = Anxiety Disorders Interview Schedule; C = Child version; P = Parent version; ADIS-IV = Anxiety Disorders Interview Schedule for DSM-IV adult;,ꯍꯤꯊꯥꯡꯐꯝ;
+ADIS-IV-L = Anxiety Disorders Interview Schedule for DSM-IV lifetime adult; CIDI = Composite International Diagnostic Interview; RCTs = Randomized,ADIS-IV-L = ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ DSM-IV ꯂꯥꯏꯐꯇꯥꯏꯝ ꯑꯦꯗꯜꯇꯀꯤꯗꯃꯛ ꯏꯟꯇꯔꯚꯤꯎ ꯁꯦꯗ꯭ꯌꯨꯜ;
+Control Trial; MBLs = Multiple Baseline Design Studies; BATs = Behavioral Approach Tasks; FSSC-R = Fear Survey Schedule for Children-Revised; KFQ = Koala,ꯀꯟꯠꯔꯣꯜ ꯇ꯭ꯔꯥꯏꯑꯦꯜ;
+Fear Questionnaire; FSSIP = Fear Survey Schedule for Infants and Preschoolers; FSSC-II = Fear Survey Schedule for Children - II version; SCAS = Spence Child,ꯐꯤꯌꯥꯔ ꯀ꯭ꯕꯦꯁꯅꯔ;
+Anxiety Scale;  PAS = Preschool Anxiety Scale; CDPQ = Child Darkness Phobia Questionnaire; SAAI-P = Separation Anxiety Avoidance Inventory; BCSQ =,ꯑꯦꯟꯁꯤꯇꯤ ꯁ꯭ꯀꯦꯜ;
+Brief Child Sleep Questionnaire; WICDAN = What I Think I Can Do at Night; CBCL = Child Behavior Checklist; SCARED = Childhood Anxiety and Related,ꯑꯉꯥꯡ ꯇꯨꯝꯕꯥ ꯀ꯭ꯕꯦꯁꯅꯔꯤ;
+Disorders; MASC = Multidimensional Anxiety Scale for Children; CC = Coping Cat; CYP = Children and Young People; AD = Avoidant Disorder; RCMAS =,ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ;
+Revised Children’s Manifest Anxiety Scale; DISC4.0 = Diagnostic Interview Schedule for Children; CGI = Clinical Global Impressions Scale; SPAI = Social Phobia,ꯔꯤꯚꯥꯏꯁ ꯇꯧꯔꯕꯥ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯃꯦꯅꯤꯐꯦꯁ꯭ꯠ ꯑꯦꯟꯁꯤꯇꯤ ꯁ꯭ꯀꯦꯜ;
+"and Anxiety Inventory; K-SADS-PL = Kiddie-Schedule for Affective Disorders & Schizophrenia - Present and Lifetime version; BIC = Brief, Intensive, and Con-",ꯑꯃꯁꯨꯡ ꯑꯦꯟꯁꯤꯇꯤ ꯏꯅꯚꯦꯟꯇꯔꯤ;
+centrated; PD = Panic Disorder; OCD = Obsessive Compulsive Disorder; PTSD = Post Traumatic Stress Disorder; CSR = Clinician Severity Rating; CY-BOCS =,ꯁꯦꯟꯇꯔ ꯇꯧꯈꯤꯕꯥ;
+Children’s Yale-Brown Obsessive Compulsive Scale; STAIC = State-Trait Anxiety Inventory for Children; CDI = Children’s Depression Inventory; CBCL-TRF =,ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯌꯦꯜ-ꯕ꯭ꯔꯥꯎꯟ ꯑꯣꯕꯁꯦꯁꯤꯚ ꯀꯝꯄꯂꯁꯤꯚ ꯁ꯭ꯀꯦꯜ;
+Child Behavior Checklist - Teacher’s Report Form,ꯆꯥꯏꯜꯗ ꯕꯤꯍꯦꯕꯤꯌꯔ ꯆꯦꯀꯂꯤꯁ꯭ꯠ - ꯑꯣꯖꯥꯒꯤ ꯔꯤꯄꯣꯔꯠ ꯐꯣꯔꯝ
+37,꯳꯷ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés","ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ"
+Table 2. Summary of Results,ꯇꯦꯕꯜ 2. ꯔꯤꯖꯜꯇꯁꯤꯡꯒꯤ ꯁꯝꯂꯞꯄꯥ ꯋꯥꯔꯣꯜ
+First author (year of,ꯑꯍꯥꯅꯕꯥ ꯑꯏꯕꯥ (ꯆꯍꯤꯒꯤ ꯆꯍꯤ
+publication),ꯄꯕ꯭ꯂꯤꯀꯦꯁꯟ) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+Risk of bias,ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯛ ꯂꯩꯕꯥ .
+Main findings,ꯃꯔꯨꯑꯣꯏꯕꯥ ꯋꯥꯐꯃꯁꯤꯡ .
+Effect estimates,ꯏꯐꯦꯛꯇ ꯑꯦꯁ꯭ꯇꯤꯃꯦꯠꯁꯤꯡ .
+"Gibby et al., 2017","ꯒꯤꯕꯕꯤ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯱꯷ꯇꯥ ꯐꯣꯉꯈꯤ꯫"
+Not reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+"On average, 64.57% of youth were in remission (range 49.17–85.71%), 57.01% were free","ꯆꯥꯡꯆꯠꯇꯥ, ꯅꯍꯥꯁꯤꯡꯒꯤ ꯶꯴.꯵꯷%ꯅꯥ ꯔꯤꯃꯤꯁꯟ ꯇꯧꯈꯤ (ꯔꯦꯟꯖ ꯴꯹.꯱꯷–꯸꯵.꯷꯱%), ꯵꯷.꯰꯱%ꯅꯥ ꯐ꯭ꯔꯤ ꯑꯣꯏꯈꯤ꯫"
+"of all anxiety disorders specified in the RCT inclusion criteria (range 46.52–67.5%),",ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.
+and 76.76% no longer met criteria for their primary disorder (range 47.83–92.5%). 4,ꯑꯃꯁꯨꯡ 76.76%ꯅꯥ ꯃꯈꯣꯌꯒꯤ ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ (ꯔꯦꯟꯖ 47.83–92.5%)ꯒꯤ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥ ꯑꯗꯨ ꯃꯈꯥ ꯇꯥꯅꯥ ꯐꯪꯗ꯭ꯔꯦ꯫
+LTFUs looked at type of primary anxiety diagnosis in relation to anxiety outcomes: 1,ꯑꯦꯜ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.ꯁꯤꯡꯅꯥ ꯑꯦꯟꯁꯤꯇꯤꯒꯤ ꯐꯂꯁꯤꯡꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯥꯏꯒ꯭ꯅꯣꯁꯤꯁꯀꯤ ꯃꯈꯜ ꯑꯗꯨ ꯌꯦꯡꯁꯤꯅꯈꯤ: ꯱꯫
+reported that youth with non-GAD disorders at baseline had higher anxiety severity,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯈꯤ ꯃꯗꯨꯗꯤ ꯕꯦꯖ ꯂꯥꯏꯅꯗꯥ ꯅꯟ-ꯒꯦꯗ ꯗꯤꯁꯑꯣꯔꯗꯔ ꯂꯩꯕꯥ ꯅꯍꯥꯁꯤꯡꯅꯥ ꯍꯦꯟꯅꯥ ꯋꯥꯡꯕꯥ ꯋꯥꯈꯜ ꯋꯥꯕꯥ ꯍꯦꯟꯅꯥ ꯋꯥꯡꯏ꯫
+"based on parent report, 1 reported that the presence of SOP and/ or symptoms was","ꯃꯃꯥ-ꯃꯄꯥꯒꯤ ꯔꯤꯄꯣꯔꯇꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯔꯒꯥ, ꯱ꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤ ꯃꯗꯨꯗꯤ ꯑꯦꯁ.ꯑꯣ.ꯄꯤ. ꯑꯃꯁꯨꯡ/ꯅꯠꯔꯒꯥ ꯁꯤꯝꯄꯇꯃꯁꯤꯡ ꯂꯩꯕꯥ ꯑꯁꯤ ."
+"associated with higher anxiety at follow-up, and 2 found no relation between type of","ꯐꯣꯂꯣ-ꯑꯄꯇꯥ ꯍꯦꯟꯅꯥ ꯋꯥꯡꯕꯥ ꯋꯥꯈꯜ ꯋꯥꯕꯥ ꯊꯣꯀꯄꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ, ꯑꯃꯁꯨꯡ 2ꯅꯥ ꯃꯈꯜ ꯑꯃꯒꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯕꯥ ꯃꯔꯤ ꯑꯃꯠꯇꯥ ꯐꯪꯈꯤꯗꯦ"
+baseline diagnosis and the presence of an anxiety disorder at LTFU,ꯕꯦꯖ ꯂꯥꯏꯟ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁ ꯑꯃꯁꯨꯡ ꯑꯦꯜ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.
+Not performed,ꯄꯥꯡꯊꯣꯀꯄꯥ ꯅꯠꯇꯦ
+"Lewis et al., 2021","ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯲꯱ꯗꯥ ꯐꯣꯉꯈꯤ꯫"
+Not reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+Results demonstrated significant improvements in children’s nighttime fears and,ꯔꯤꯖꯜꯇꯁꯤꯡꯅꯥ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯑꯣꯏꯕꯥ ꯑꯀꯤꯕꯥ ꯑꯃꯁꯨꯡ ꯌꯨ.ꯑꯦꯁ.
+reductions in disruptive nighttime behaviors using behavioral interventions and CBT,ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+RCTs data indicated that an active CBT treatment group is likely to outperform a,ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯑꯦꯁ.ꯀꯤ ꯗꯦꯇꯥꯅꯥ ꯑꯦꯛꯇꯤꯕ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"control or WLC. Evaluated longitudinal treatment effects, with the longest follow-up",ꯀꯟꯠꯔꯣꯜ ꯇꯧꯕꯥ ꯅꯠꯠꯔꯒꯥ ꯋꯥ.ꯑꯦꯜ.ꯁꯤ.
+period being 1 year and all studies reporting maintenance of treatment gains. Results,ꯃꯇꯝ ꯑꯁꯤ ꯆꯍꯤ 1 ꯑꯃꯁꯨꯡ ꯂꯥꯏꯌꯦꯡꯒꯤ ꯒꯦꯏꯅꯁꯤꯡ ꯃꯦꯟꯇꯦꯅꯦꯟꯁ ꯇꯧꯕꯒꯤ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯤꯕꯥ ꯁ꯭ꯇꯗꯤ ꯄꯨꯝꯅꯃꯛ꯫
+from all three MBLs revealed similar positive changes in reported fear and nighttime,ꯑꯦꯝ.ꯕꯤ.ꯑꯦꯜ.ꯁꯤꯡ ꯑꯍꯨꯝ ꯑꯁꯤꯗꯒꯤ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯄꯥ ꯑꯀꯤꯕꯥ ꯑꯃꯁꯨꯡ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯃꯥꯟꯅꯕꯥ ꯄꯣꯖꯤꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯑꯍꯣꯡꯕꯥ ꯀꯌꯥ ꯎꯕꯥ ꯐꯪꯈꯤ
+"behaviors. Emotive performance therapy, a variant of desensitization, significantly",ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡ꯫
+"improved children’s fears of the dark as well as other specific phobias, and the gains","ꯑꯉꯥꯡꯁꯤꯡꯅꯥ ꯑꯃꯝꯕꯒꯤ ꯑꯀꯤꯕꯥ ꯍꯦꯅꯒꯠꯍꯅꯕꯇꯥ ꯅꯠꯇꯅꯥ ꯑꯇꯣꯞꯄꯥ ꯑꯀꯛꯅꯕꯥ ꯐꯣꯕꯤꯌꯥꯁꯤꯡ, ꯑꯃꯁꯨꯡ ꯒꯦꯏꯅꯁꯤꯡ ꯐꯒꯠꯍꯅꯕꯥ"
+"were maintained at 6-month follow-up. Similarly, using a multicomponent manualized",ꯊꯥ ꯶ꯀꯤ ꯐꯣꯂꯣ-ꯑꯄꯇꯥ ꯊꯃꯈꯤ꯫
+"treatment reduced children’s nighttime fear, as evidenced by fewer phobic symptoms,","ꯂꯥꯌꯦꯡꯕꯅꯥ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯑꯀꯤꯕꯥ ꯍꯟꯊꯍꯅꯈꯤ, ꯃꯁꯤ ꯐꯣꯕꯤꯛ ꯂꯥꯏꯑꯣꯡꯁꯤꯡ ꯍꯟꯊꯔꯀꯄꯅꯥ ꯃꯔꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯑꯣꯏꯈꯤ,"
+and improved nighttime behaviors that were maintained one month later,ꯑꯃꯁꯨꯡ ꯊꯥ ꯑꯃꯒꯤ ꯃꯇꯨꯡꯗꯥ ꯉꯥꯛꯇꯨꯅꯥ ꯊꯝꯂꯤꯕꯥ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯁꯤꯡ ꯐꯒꯠꯍꯅꯕꯥ
+Not performed,ꯄꯥꯡꯊꯣꯀꯄꯥ ꯅꯠꯇꯦ
+Oldham-Cooper &,ꯑꯣꯂꯙꯥꯝ-ꯀꯨꯄꯥꯔ ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+"Loades, 2017","ꯂꯣꯗꯁꯤꯡ, ꯲꯰꯱꯷"
+Low risk of bias (n = 16),ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯛ ꯅꯦꯝꯕꯥ (n = 16)꯫
+and medium risk of bias,ꯑꯃꯁꯨꯡ ꯃꯤꯗꯤꯌꯝ ꯔꯤꯁ꯭ꯛ ꯑꯣꯐ ꯕꯥꯏꯁ .
+(n = 9),(n = ꯹) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"When compared with a disorder-specific CBT intervention, there were no significant",ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+differences in terms of the percentage of the sample free of their primary SAD disorder,ꯃꯈꯣꯌꯒꯤ ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯑꯦꯁ.ꯑꯦ.ꯗꯤ.
+diagnosis at either 4 weeks or 1 year posttreatment. 3 studies included a comparison,ꯅꯨꯃꯤꯠ 4ꯅꯤ ꯅꯠꯠꯔꯒꯥ ꯆꯍꯤ 1ꯒꯤ ꯃꯇꯨꯡꯗꯥ ꯄꯣꯁ꯭ꯠ-ꯇ꯭ꯔꯦꯇꯤꯡ ꯑꯃꯗꯥ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁ ꯇꯧꯕꯥ꯫
+"group that received CC plus a family-based intervention, one compared group versus","ꯁꯤ.ꯁꯤ.ꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯏꯃꯨꯡꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯑꯃꯥ ꯐꯪꯈꯤꯕꯥ ꯀꯥꯡꯂꯨꯞ, ꯑꯃꯅꯥ ꯆꯥꯡꯗꯝꯅꯗꯨꯅꯥ ꯌꯦꯡꯗꯨꯅꯥ ꯚꯦꯔꯁꯦꯁ"
+"individual CC, one used a nondirective “child centered therapy,” and one compared","ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯁꯤ.ꯁꯤ., ꯑꯃꯅꯥ ꯅꯟ-ꯗꯥꯏꯔꯦꯛꯇꯣꯔꯤ “ꯆꯥꯏꯜꯗ ꯁꯦꯟꯇꯔ ꯊꯦꯔꯥꯄꯤ” ꯑꯃꯥ ꯁꯤꯖꯤꯟꯅꯈꯤ, ꯑꯃꯁꯨꯡ ꯑꯃꯅꯥ ꯆꯥꯡꯗꯝꯅꯈꯤ꯫"
+CC with “usual care.” Most studies reported no significant differences in outcomes,ꯁꯤ.ꯁꯤ.ꯒꯥ ꯂꯣꯌꯅꯅꯥ “ꯃꯍꯧꯁꯥꯒꯤ ꯀꯦꯌꯔ”ꯒꯥ ꯂꯣꯌꯅꯅꯥ꯫
+"for CC versus the active control based on diagnostic status, although 1 study reported","ꯁꯤ.ꯁꯤ.ꯒꯤ ꯑꯣꯏꯅꯥ ꯗꯥꯏꯒ꯭ꯅꯣꯁ꯭ꯇꯤꯛ ꯁ꯭ꯇꯦꯇꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯑꯦꯛꯇꯤꯕ ꯀꯟꯠꯔꯣꯂꯒꯤ ꯑꯣꯏꯅꯥ, ꯁ꯭ꯇꯗꯤ ꯱ꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯕꯁꯨ"
+"CC + family-based intervention outperformed CC alone. However, 2 studies reported",ꯁꯤ.ꯁꯤ.+ ꯐꯦꯃꯤꯂꯤꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ ꯑꯁꯤꯅꯥ ꯁꯤ.ꯁꯤ.
+significantly poorer remission rates for children with SOP compared to GAD and SAD,ꯖꯤ.ꯑꯦ.ꯗꯤ. ꯑꯃꯁꯨꯡ ꯑꯦꯁ.ꯑꯦ.ꯗꯤ.ꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯑꯦꯁ.ꯑꯣ.ꯄꯤ.ꯅꯥ ꯅꯥꯕꯥ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯔꯤꯃꯤꯁꯅꯒꯤ ꯆꯥꯡ ꯌꯥꯝꯅꯥ ꯐꯠꯇꯕꯥ
+"at 7.4 year and 12-week follow-up, respectively. Across the studies of disorder-specific",ꯆꯍꯤ ꯷.꯴ ꯑꯃꯁꯨꯡ ꯅꯨꯃꯤꯠ ꯱꯲ꯅꯤꯒꯤ ꯐꯣꯂꯣ-ꯑꯄꯇꯥ ꯃꯊꯪꯁꯤꯠꯅꯥ ꯌꯨ.ꯑꯦꯁ.
+"interventions, there was also variability in the percentage of individuals who no longer","ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ, ꯃꯈꯥ ꯇꯥꯅꯥ ꯂꯩꯔꯔꯣꯏꯗꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯒꯤ ꯆꯥꯡꯗꯁꯨ ꯚꯦꯔꯤꯑꯦꯕꯤꯂꯤꯇꯤ ꯂꯩꯈꯤ꯫"
+met criteria for their primary anxiety disorder or were considered “clinically improved”,ꯃꯈꯣꯌꯒꯤ ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯒꯤ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥ ꯑꯗꯨ ꯃꯦꯠ ꯇꯧꯈꯤ ꯅꯠꯠꯔꯒꯥ “ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯑꯣꯏꯅꯥ ꯐꯒꯠꯍꯅꯕꯥ” ꯍꯥꯌꯅꯥ ꯂꯧꯈꯤ꯫
+"There were differences between studies in the way that diagnostic outcomes (e.g., rates","ꯗꯥꯏꯒ꯭ꯅꯣꯁ꯭ꯇꯤꯛ ꯑꯥꯎꯠꯀꯃꯁꯤꯡ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯔꯦꯠꯁꯤꯡ, [...]"
+of remission) were assessed. 3 studies reported stable remission or clinically significant,ꯑꯣꯐ ꯔꯤꯃꯤꯁꯟ) ꯑꯁꯤ ꯑꯦꯁꯦꯁ ꯇꯧꯈꯤ꯫
+"improvement rates from posttreatment to follow-up, and in 1 study the percentage of","ꯄꯣꯁ꯭ꯠ-ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇꯇꯒꯤ ꯍꯧꯔꯒꯥ ꯐꯣꯂꯣ-ꯑꯞ ꯐꯥꯑꯣꯕꯥ ꯐꯒꯠꯂꯀꯄꯒꯤ ꯆꯥꯡ, ꯑꯃꯁꯨꯡ ꯱ꯗꯥ ꯁ꯭ꯇꯗꯤꯒꯤ ꯆꯥꯡ ꯑꯁꯤ ."
+“remitted” patients who received the individual disorder-specific treatment dropped,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ ꯂꯧꯈꯤꯕꯥ “ꯔꯤꯃꯤꯠ ꯇꯧꯔꯕꯥ” ꯄꯦꯁꯦꯟꯇꯁꯤꯡ ꯑꯗꯨ ꯍꯟꯊꯔꯀꯈꯤ
+"between posttreatment and 6-month follow-up. In summary, there does not seem to",ꯄꯣꯁ꯭ꯠ-ꯇ꯭ꯔꯤꯠꯃꯦꯟꯇ ꯑꯃꯁꯨꯡ ꯊꯥ 6ꯀꯤ ꯐꯣꯂꯣ-ꯑꯄꯀꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯕꯥ꯫
+be a clear overall advantage of disorder-specific CBT interventions over the currently,ꯍꯧꯖꯤꯛꯀꯤ ꯑꯣꯏꯅꯥ ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+recommended CC,ꯔꯤꯀꯃꯦꯟꯗ ꯇꯧꯔꯕꯥ ꯁꯤ.ꯁꯤ.
+Not performed,ꯄꯥꯡꯊꯣꯀꯄꯥ ꯅꯠꯇꯦ
+"Öst & Ollendick, 2017","ꯑꯣꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯑꯣꯂꯦꯟꯗꯥꯏꯛ, ꯲꯰꯱꯷"
+Total scores on risk of,ꯔꯤꯁ꯭ꯀꯀꯤ ꯃꯇꯨꯡ ꯏꯟꯅꯥ ꯑꯄꯨꯅꯕꯥ ꯁ꯭ꯀꯣꯔꯁꯤꯡ
+bias were 1.36 (SD = 0.48),ꯕꯥꯏꯁ ꯑꯁꯤ ꯱.꯳꯶ (ꯑꯦꯁ.ꯗꯤ. = ꯰.꯴꯸) ꯑꯣꯏꯈꯤ꯫
+"for brief treatment, 1.09","ꯑꯊꯨꯕꯥ ꯂꯥꯌꯦꯡꯒꯤꯗꯃꯛ, ꯱.꯰꯹."
+(SD = 0.58) for intensive,(ꯑꯦꯁ.ꯗꯤ. = ꯰.꯵꯸) ꯏꯟꯇꯦꯟꯁꯤꯕꯀꯤꯗꯃꯛ
+treatment and 1.50 (SD,ꯂꯥꯌꯦꯡ ꯑꯃꯁꯨꯡ ꯱.꯵꯰ (ꯑꯦꯁ.ꯗꯤ.
+= 0.61) for concentrated,= ꯰.꯶꯱) ꯀꯟꯁꯦꯟꯠꯔꯦꯇꯦꯗꯀꯤꯗꯃꯛ .
+treatment. Scores ranged,ꯂꯥꯏꯌꯦꯡꯕ.
+from 0 to 5 (low to high,꯰ꯗꯒꯤ ꯵ ꯐꯥꯑꯣꯕꯥ (ꯂꯣꯗꯒꯤ ꯑꯋꯥꯡꯕꯥ ꯐꯥꯑꯣꯕꯥ
+risk of bias),ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯛ ꯂꯩꯕꯥ)꯫
+(1) BIC approaches were acceptable to youth and their parents as only about 6%,(꯱) ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+of families declined to enter into RCTs of these interventions and only about 2%,ꯑꯣꯐ ꯐꯦꯃꯤꯂꯤꯁꯤꯡꯅꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯁꯤꯒꯤ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.
+withdrew once the treatment had actually begun. (2) BIC was effective in comparison,ꯂꯥꯌꯦꯡ ꯑꯗꯨ ꯇꯁꯦꯡꯅꯥ ꯍꯧꯔꯀꯄꯥ ꯃꯇꯃꯗꯥ ꯂꯧꯊꯣꯀꯈꯤ꯫
+to wait-list control conditions with an average effect size of 1.47. (2) BIC was,ꯆꯥꯡꯆꯠꯇꯥ ꯏꯐꯦꯛꯇ ꯁꯥꯏꯖ 1.47ꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯋꯦꯠ-ꯂꯤꯁ꯭ꯠ ꯀꯟꯠꯔꯣꯜ ꯀꯟꯗꯤꯁꯅꯁꯤꯡ꯫
+effective when compared to placebo and control conditions such as education/,ꯄ꯭ꯂꯦꯁꯦꯕꯣ ꯑꯃꯁꯨꯡ ꯀꯟꯠꯔꯣꯜ ꯀꯟꯗꯤꯁꯅꯁꯤꯡ ꯍꯥꯌꯕꯗꯤ ꯑꯦꯖꯨꯀꯦꯁꯟ/ꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ꯫
+support and non-directive therapy (average effect size ¼ 0.97). (4) The effects were,ꯁꯄꯣꯔꯠ ꯑꯃꯁꯨꯡ ꯅꯟ-ꯗꯥꯏꯔꯦꯛꯇꯤꯚ ꯊꯦꯔꯥꯄꯤ (ꯑꯦꯚꯥꯔꯦꯖ ꯏꯐꯦꯛꯇ ꯁꯥꯏꯖ 1⁄4 0.97)꯫
+maintained up to 1-year following treatment with within group effect sizes averaging,ꯒ꯭ꯔꯨꯞ ꯏꯐꯦꯛꯇ ꯁꯥꯏꯖꯁꯤꯡꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯑꯦꯚꯥꯔꯦꯖꯤꯡꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ ꯂꯥꯏꯌꯦꯡꯒꯤ ꯃꯇꯨꯡꯗꯥ ꯆꯍꯤ 1 ꯐꯥꯎꯕꯥ ꯊꯝꯕꯥ ꯌꯥꯏ꯫
+1.50 at post-treatment and 1.53 at follow-up. (5) BIC interventions not only led to,ꯄꯣꯁ꯭ꯠ-ꯇ꯭ꯔꯤꯠꯃꯦꯟꯇꯇꯥ ꯱.꯵꯰ ꯑꯃꯁꯨꯡ ꯐꯣꯂꯣ-ꯑꯄꯇꯥ ꯱.꯵꯳.
+treatment response but also to 54% remission rates and 64% recovery rates. (6) BIC,ꯂꯥꯌꯦꯡꯕꯒꯤ ꯔꯦꯁ꯭ꯄꯣꯟꯁ ꯑꯗꯨꯕꯨ ꯵꯴%ꯒꯤ ꯔꯤꯃꯤꯁꯅꯒꯤ ꯆꯥꯡ ꯑꯃꯁꯨꯡ ꯶꯴%ꯒꯤ ꯔꯤꯀꯣꯚꯔꯤ ꯔꯦꯠꯁꯤꯡꯗꯁꯨ ꯌꯥꯑꯣꯔꯤ꯫
+"interventions compared favorably on all of the above indices to standard, full dose CBT","ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯅꯥ ꯃꯊꯛꯇꯥ ꯄꯅꯈ꯭ꯔꯤꯕꯥ ꯏꯟꯗꯦꯛꯁ ꯄꯨꯝꯅꯃꯛꯇꯥ ꯁ꯭ꯇꯦꯟꯗꯔꯗ, ꯐꯨꯜ ꯗꯣꯖ ꯁꯤ.ꯕꯤ.ꯇꯤ."
+interventions,ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ .
+BIC vs. WLC = 1.47; BIC,ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.ꯅꯥ ꯋꯥ.ꯑꯦꯜ.ꯁꯤ.= ꯱.꯴꯷;
+vs. placebo = 0.91; BIC vs,ꯕꯔꯁ ꯄ꯭ꯂꯦꯁꯦꯕꯣ = ꯰.꯹꯱;
+standard CBT = 0.01 (non-,ꯁ꯭ꯠꯌꯥꯟꯗꯥꯔꯗ ꯁꯤ.ꯕꯤ.ꯇꯤ.= ꯰.꯰꯱ (ꯅꯟ-
+significant). Within-group,ꯃꯁꯛ ꯊꯣꯛꯄ).
+post and follow up: 1.50 and,ꯄꯣꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯐꯣꯂꯣ ꯑꯞ: ꯱.꯵꯰ ꯑꯃꯁꯨꯡ .
+"1.53 (BIC), 0.98 and 1.05","꯱.꯵꯳ (ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.), ꯰.꯹꯸ ꯑꯃꯁꯨꯡ ꯱.꯰꯵."
+(CBT),(ꯁꯤ.ꯕꯤ.ꯇꯤ.) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+"Santacruz et al., 2002","ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯦꯠ ꯑꯦꯜ., ꯲꯰꯰꯲ꯗꯥ ꯊꯣꯀꯈꯤꯕꯥ ꯊꯧꯗꯣꯛ ꯑꯃꯅꯤ꯫"
+Not reported,ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+The treatments reached an overall medium-high effectiveness in the post-test and a,ꯂꯥꯌꯦꯡꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯄꯣꯁ꯭ꯠ-ꯇꯦꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯑꯦ.
+"high effectiveness in an average ten-month follow-up. With the exception of 1 study,",ꯆꯥꯡꯆꯠꯇꯥ ꯊꯥ ꯇꯔꯥꯒꯤ ꯐꯣꯂꯣ-ꯑꯞ ꯑꯃꯗꯥ ꯏꯐꯦꯛꯇꯤꯚ ꯑꯣꯏꯕꯥ꯫
+"CBT was applied, either on its own of together with family intervention of imipramine","ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯅꯥ ꯑꯦꯞꯂꯥꯏ ꯇꯧꯈꯤ, ꯃꯁꯥꯒꯤ ꯑꯣꯏꯕꯥ ꯃꯑꯣꯡꯗꯥ ꯏꯃꯤꯞꯔꯥꯃꯥꯏꯅꯒꯤ ꯏꯃꯨꯡꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯒꯥ ꯂꯣꯌꯅꯅꯥ"
+and proved to be highly effective. The components of the program proved to be,ꯑꯃꯁꯨꯡ ꯌꯥꯝꯅꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯄ꯭ꯔꯃꯥꯟ ꯇꯧꯈꯤ꯫
+"highly effective, especially contingency management, relaxation, exposure, and self-","ꯌꯥꯝꯅꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ, ꯃꯔꯨꯑꯣꯏꯅꯥ ꯀꯟꯇꯤꯟꯖꯦꯟꯁꯤ ꯃꯦꯅꯦꯖꯃꯦꯟꯇ, ꯔꯤꯂꯦꯛꯁꯟ, ꯑꯦꯛꯁꯄꯣꯖꯔ, ꯑꯃꯁꯨꯡ ꯁꯦꯜꯐ-"
+instruction,ꯏꯅꯁ꯭ꯠꯔꯛꯁꯟ ꯑꯁꯤ .
+0.73 - 1.22,꯰.꯷꯳ - ꯱.꯲꯲ ꯑꯣꯏꯈꯤ꯫
+Note. RCT = Randomized Controlled Trial; LTFUs = Long Term Follow-Up Studies; GAD = Generalized Anxiety Disorder; SOP = Social Anxiety Disorder;,ꯈꯪꯖꯤꯟꯒꯗꯕ.
+LFTU = Long Term Follow-Up; CBT = Cognitive Behavioral Therapy; WLC = Waiting List Control; MBLs = Multiple Baseline Design Studies; n = number of,LFTU = ꯂꯣꯡ ꯇꯔꯝ ꯐꯣꯂꯣ-ꯑꯞ;
+"studies; SAD = Separation Anxiety Disorder; CC = Coping Cat; SOP = Social Anxiety Disorder / Social Phobia; SD = Standard Deviation; BIC = Brief, Intensive",ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯇꯧꯕꯥ;
+or Concentrated Treatments,ꯅꯠꯠꯔꯒꯥ ꯀꯟꯁꯦꯟꯠꯔꯦꯇꯦꯗ ꯇ꯭ꯔꯤꯠꯃꯦꯟꯇꯁꯤꯡ .
+38,꯳꯸ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Psychological treatment for specific anxiety disorders,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ
+"bia and social phobia. In a range of 2 to 19 years, around 64.57% of",ꯕꯤ.ꯑꯥꯏ.ꯑꯦ. ꯑꯃꯁꯨꯡ ꯁꯣꯁꯤꯑꯦꯜ ꯐꯣꯕꯤꯌꯥ꯫
+"children and adolescents were in remission, 57.01% were free of all","ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ ꯑꯁꯤ ꯔꯤꯃꯤꯁꯅꯗꯥ ꯂꯩꯈꯤ, 57.01%ꯗꯤ ꯄꯨꯝꯅꯃꯛ ꯐ꯭ꯔꯤ ꯑꯣꯏꯈꯤ꯫"
+"anxiety disorders specified in the RCT inclusion criteria, and 76.76%",ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.
+no longer met criteria for their primary disorder. Regarding the dif-,ꯃꯈꯣꯌꯒꯤ ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯒꯤ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥ ꯑꯗꯨ ꯍꯧꯖꯤꯛꯇꯤ ꯁꯣꯌꯗꯅꯥ ꯐꯪꯗ꯭ꯔꯦ꯫
+"ferences among specific diagnoses, one RCT reported that youth with","ꯑꯀꯛꯅꯕꯥ ꯗꯥꯏꯒ꯭ꯅꯣꯁꯤꯁꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯐꯦꯔꯦꯟꯁꯁꯤꯡ, ꯑꯥꯔ.ꯁꯤ.ꯇꯤ."
+non-GAD disorders at baseline had higher anxiety severity based on,ꯕꯦꯖ ꯂꯥꯏꯅꯗꯥ ꯂꯩꯕꯥ ꯅꯟ-ꯒꯦꯗ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯅꯥ ꯃꯈꯥ ꯇꯥꯅꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯍꯦꯟꯅꯥ ꯋꯥꯡꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯁꯦꯚꯤꯔꯤꯇꯤ ꯂꯩꯈꯤ꯫
+parent report and two RCTs found no relation between type of base-,ꯃꯃꯥ-ꯃꯄꯥꯒꯤ ꯔꯤꯄꯣꯔꯠ ꯑꯃꯁꯨꯡ ꯑꯥꯔ.ꯁꯤ.ꯇꯤ.ꯁꯤꯡ ꯑꯅꯤꯅꯥ ꯕꯦꯖ ꯃꯈꯂꯒꯤ ꯃꯔꯛꯇꯥ ꯂꯩꯕꯥ ꯃꯔꯤ ꯑꯃꯠꯇꯥ ꯐꯪꯈꯤꯗꯦ-
+line diagnosis and the presence of an anxiety disorder at LTFU,ꯂꯥꯏꯟ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁ ꯑꯃꯁꯨꯡ ꯑꯦꯜ.ꯇꯤ.ꯑꯦꯐ.ꯌꯨ.
+Risk of Bias,ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯛ ꯂꯩꯕꯥ .
+The results of the assessment of the methodological qual-,ꯃꯦꯊꯣꯗꯣꯂꯣꯖꯤꯀꯦꯜ ꯀ꯭ꯕꯥꯜ-ꯒꯤ ꯑꯦꯁꯦꯁꯃꯦꯟꯇꯀꯤ ꯐꯂꯁꯤꯡ
+ity and the risk of bias of the included systematic reviews and,ꯑꯥꯏꯇꯤ ꯑꯃꯁꯨꯡ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ .
+meta-analyses using AMSTAR-2 are summarized in Table 3. The,ꯑꯦꯝ.ꯑꯦꯁ.ꯇꯤ.ꯑꯥꯔ.-꯲ ꯁꯤꯖꯤꯟꯅꯗꯨꯅꯥ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡ ꯑꯁꯤ ꯇꯦꯕꯜ ꯳ꯗꯥ ꯁꯟꯗꯣꯛꯅꯥ ꯇꯥꯛꯂꯤ꯫
+quality of the five studies was rated critically low because they,ꯁ꯭ꯇꯗꯤ ꯃꯉꯥ ꯑꯁꯤꯒꯤ ꯃꯒꯨꯟ ꯑꯁꯤ ꯌꯥꯝꯅꯥ ꯅꯦꯝꯅꯥ ꯔꯦꯠ ꯇꯧꯈꯤ ꯃꯔꯃꯗꯤ ꯃꯈꯣꯌꯅꯥ .
+had more than one critical flaw. All the studies had the follow-,ꯃꯔꯨꯑꯣꯏꯕꯥ ꯑꯁꯣꯏꯕꯥ ꯑꯃꯗꯒꯤ ꯍꯦꯟꯅꯥ ꯂꯩꯈꯤ꯫
+ing critical flaws: (1) no registered protocol present/reported,ꯑꯥꯏ.ꯑꯦꯟ.ꯖꯤ.ꯒꯤ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯑꯁꯣꯌꯕꯁꯤꯡ: (꯱) ꯔꯦꯖꯤꯁ꯭ꯇꯔ ꯇꯧꯔꯕꯥ ꯄ꯭ꯔꯣꯇꯣꯀꯣꯜ ꯑꯃꯠꯇꯥ ꯂꯩꯇꯕꯥ/ꯔꯤꯄꯣꯔꯠ ꯇꯧꯕꯥ
+Table 3. Assessment of the Risk of Bias of the Included Studies,ꯇꯦꯕꯜ 3. ꯌꯥꯑꯣꯔꯤꯕꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯀꯀꯤ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ ꯇꯧꯕꯥ
+Study,ꯅꯩꯅꯕ
+AMSTAR-2 items,ꯑꯦꯝꯁ꯭ꯇꯥꯔ-꯲ꯒꯤ ꯄꯣꯠꯂꯃꯁꯤꯡ .
+Quality,ꯃꯒꯨꯟ
+rating,ꯔꯦꯇꯤꯡ ꯇꯧꯕꯥ
+Item,ꯄꯣꯠꯂꯝ
+1,꯱.
+Item,ꯄꯣꯠꯂꯝ
+2,꯲ ꯑꯃꯁꯨꯡ ꯲.
+Item,ꯄꯣꯠꯂꯝ
+3,꯳ ꯑꯃꯁꯨꯡ ꯳.
+Item,ꯄꯣꯠꯂꯝ
+4,꯴ ꯑꯃꯁꯨꯡ ꯴.
+Item,ꯄꯣꯠꯂꯝ
+5,꯵ ꯑꯃꯁꯨꯡ ꯵.
+Item,ꯄꯣꯠꯂꯝ
+6,꯶ ꯑꯃꯁꯨꯡ ꯶.
+Item,ꯄꯣꯠꯂꯝ
+7,꯷ ꯑꯃꯁꯨꯡ ꯷.
+Item,ꯄꯣꯠꯂꯝ
+8,꯸ ꯑꯃꯁꯨꯡ ꯸.
+Item,ꯄꯣꯠꯂꯝ
+9,꯹ ꯑꯃꯁꯨꯡ ꯹.
+Item,ꯄꯣꯠꯂꯝ
+10,꯱꯰ ꯑꯃꯁꯨꯡ ꯱꯰.
+Item,ꯄꯣꯠꯂꯝ
+11,꯱꯱ ꯑꯃꯁꯨꯡ ꯱꯱꯫
+Item,ꯄꯣꯠꯂꯝ
+12,꯱꯲ ꯑꯃꯁꯨꯡ ꯱꯲.
+Item,ꯄꯣꯠꯂꯝ
+13,꯱꯳ ꯑꯃꯁꯨꯡ ꯱꯳꯫
+Item,ꯄꯣꯠꯂꯝ
+14,꯱꯴ ꯑꯃꯁꯨꯡ ꯱꯴.
+Item,ꯄꯣꯠꯂꯝ
+15,꯱꯵ ꯑꯃꯁꯨꯡ ꯱꯵.
+Item,ꯄꯣꯠꯂꯝ
+16,꯱꯶ ꯑꯃꯁꯨꯡ ꯱꯶.
+"Gibby et al.,","ꯒꯤꯕꯕꯤ ꯑꯦꯠ ꯑꯦꯜ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+2017,꯲꯰꯱꯷ꯇꯥ ꯊꯣꯀꯈꯤ꯫
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+Critically,ꯃꯔꯨꯑꯣꯏꯅꯥ .
+low,ꯅꯦꯝꯕ
+"Lewis et al.,","ꯂꯨꯏꯁ ꯑꯦꯠ ꯑꯦꯜ., ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+2021,꯲꯰꯲꯱ꯗꯥ ꯊꯣꯀꯈꯤ꯫
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+Critically,ꯃꯔꯨꯑꯣꯏꯅꯥ .
+low,ꯅꯦꯝꯕ
+Oldham-,ꯑꯣꯂꯗꯝ-
+Cooper &,ꯀꯨꯄꯥꯔ ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+"Loades, 2017","ꯂꯣꯗꯁꯤꯡ, ꯲꯰꯱꯷"
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+NM,ꯑꯦꯟ.ꯑꯦꯝ.
+Critically,ꯃꯔꯨꯑꯣꯏꯅꯥ .
+low,ꯅꯦꯝꯕ
+Öst &,ꯑꯣꯁ꯭ꯠ ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+"Ollendick,","ꯑꯣꯂꯦꯟꯗꯥꯏꯛ ꯑꯣꯏꯕꯥ, ꯳."
+2017,꯲꯰꯱꯷ꯇꯥ ꯊꯣꯀꯈꯤ꯫
+Critically,ꯃꯔꯨꯑꯣꯏꯅꯥ .
+low,ꯅꯦꯝꯕ
+Santacruz et,ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯏ.ꯇꯤ.
+"al., 2002","ꯑꯜ., ꯲꯰꯰꯲ꯗꯥ ꯊꯣꯀꯈꯤ꯫"
+Critically,ꯃꯔꯨꯑꯣꯏꯅꯥ .
+low,ꯅꯦꯝꯕ
+Note. Yes: +; Partial Yes: +/-; No: -; Not meta-analysis: NM,ꯈꯪꯖꯤꯟꯒꯗꯕ.
+Figure 1. PRISMA Flowchart,ꯐꯤꯒꯔ ꯱.ꯄ꯭ꯔꯤꯖꯃꯥ ꯐ꯭ꯂꯣꯆꯥꯔꯠ
+"Note. From “The PRISMA 2020 statement: an updated guideline for reporting systematic reviews”, by M. J. Page et al., 2021, BMJ, 372(71), p. 5 (https://doi",ꯈꯪꯖꯤꯟꯒꯗꯕ.
+org/10.1136/bmj.n71). Distributed under the terms of the Creative Commons Attribution License,ꯑꯣ.ꯑꯥꯔ.ꯖꯤ./꯱꯰.꯱꯱꯳꯶/ꯕꯤ.ꯑꯦꯝ.ꯖꯦ.ꯑꯦꯟ.꯷꯱) ꯂꯩ꯫
+"Records identified from APA PsycINFO,","ꯑꯦ.ꯄꯤ.ꯑꯦ.ꯒꯤ ꯁꯥꯏꯁꯤꯅꯐꯣꯗꯒꯤ ꯃꯁꯛ ꯈꯉꯗꯣꯛꯂꯕꯥ ꯔꯦꯀꯣꯔꯗꯁꯤꯡ,"
+"MEDLINE (PubMed), Web of Science (Core","ꯃꯦꯗꯂꯥꯏꯟ (ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗ), ꯋꯦꯕ ꯑꯣꯐ ꯁꯥꯏꯟꯁ (ꯀꯣꯔ"
+"Collection), and Cochrane:","ꯀꯂꯦꯛꯁꯟ), ꯑꯃꯁꯨꯡ ꯀꯣꯛꯔꯦꯟ:"
+APA PsycINFO (n = 421),ꯑꯦ.ꯄꯤ.ꯑꯦ.ꯒꯤ ꯁꯥꯏꯁꯤꯅꯐꯣ (n = ꯴꯲꯱) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+MEDLINE (PubMed) (n = 457),ꯃꯦꯗꯂꯥꯏꯟ (ꯄꯕ꯭ꯂꯤꯛ ꯃꯦꯗ) (n = 457)꯫
+Web of Science (Core Collection) (n = 976),ꯋꯦꯕ ꯑꯣꯐ ꯁꯥꯏꯟꯁ (ꯀꯣꯔ ꯀꯂꯦꯛꯁꯟ) (n = 976)
+Cochrane (n = 83),ꯀꯣꯛꯔꯦꯟ (n = ꯸꯳) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Total (n = 1,937)","ꯑꯄꯨꯅꯕꯥ (n = 1,937)꯫"
+Records removed before screening:,ꯁ꯭ꯛꯔꯤꯅꯤꯡ ꯇꯧꯗ꯭ꯔꯤꯉꯩꯒꯤ ꯃꯃꯥꯡꯗꯥ ꯂꯧꯊꯣꯀꯈꯤꯕꯥ ꯔꯦꯀꯣꯔꯗꯁꯤꯡ:
+Duplicate records removed (n = 358),ꯔꯦꯀꯣꯔꯗ ꯇꯧꯔꯕꯥ ꯔꯦꯀꯣꯔꯗꯁꯤꯡ (n = 358)
+Records screened based on title,ꯇꯥꯏꯇꯂꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯁ꯭ꯛꯔꯤꯟ ꯇꯧꯕꯥ ꯔꯦꯀꯣꯔꯗꯁꯤꯡ .
+and abstract,ꯑꯃꯁꯨꯡ ꯑꯦꯕꯁ꯭ꯠꯔꯦꯛꯇ .
+"(n = 1,579)","(ꯑꯦꯟ = ꯱,꯵꯷꯹) ꯂꯩ꯫"
+Records excluded,ꯔꯦꯀꯣꯔꯗꯁꯤꯡ ꯌꯥꯑꯣꯗꯅꯥ .
+"(n = 1,515)","(ꯑꯦꯟ = ꯱,꯵꯱꯵) ꯂꯩ꯫"
+Reports sought for retrieval,ꯔꯤꯠꯔꯤꯌꯦꯕꯜ ꯇꯧꯅꯕꯥ ꯔꯤꯄꯣꯔꯇꯁꯤꯡ ꯊꯤꯖꯤꯜꯂꯤ
+(n = 64),(ꯑꯦꯟ = ꯶꯴) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Reports not retrieved,ꯔꯤꯄꯣꯔꯇꯁꯤꯡ ꯑꯗꯨ ꯂꯧꯊꯣꯀꯈꯤꯗꯕꯥ .
+(n = 0),(ꯑꯦꯟ = ꯰) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Reports assessed for eligibility,ꯏꯂꯤꯖꯤꯕꯤꯂꯤꯇꯤꯒꯤꯗꯃꯛꯇꯥ ꯑꯦꯁꯦꯁ ꯇꯧꯔꯕꯥ ꯔꯤꯄꯣꯔꯇꯁꯤꯡ
+(n = 64),(ꯑꯦꯟ = ꯶꯴) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Full-text articles excluded (n = 59),ꯃꯄꯨꯡ ꯑꯣꯏꯕꯥ ꯇꯦꯛꯁꯠ ꯑꯥꯔꯇꯤꯀꯦꯂꯁꯤꯡ ꯌꯥꯎꯗꯕꯥ (n = 59)
+Not a systematic review or meta-analysis (n = 9),ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯅꯠꯠꯔꯒꯥ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ (n = 9) ꯑꯃꯥ ꯅꯠꯇꯦ꯫
+Article not in English or Spanish (n = 1),ꯏꯪꯂꯤꯁ ꯅꯠꯔꯒꯥ ꯁ꯭ꯄꯦꯅꯤꯁ ꯂꯣꯟꯗꯥ ꯅꯠꯇꯕꯥ ꯑꯥꯔꯇꯤꯀꯜ (n = 1)
+Not main aim to evaluate the effectiveness of a,ꯑꯦꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯏꯚꯥꯂꯨꯑꯦꯠ ꯇꯧꯅꯕꯥ ꯃꯔꯨ ꯑꯣꯏꯕꯥ ꯄꯥꯟꯗꯝ ꯑꯃꯥ ꯑꯣꯏꯅꯥ ꯑꯦꯟ.ꯗꯤ.ꯑꯦ.
+psychological intervention (n = 2),ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ (n = 2)꯫
+Do not report data for specific anxiety disorders (n = 31),ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯗꯦꯇꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯣꯏꯗꯕꯅꯤ (n = 31)꯫
+Participants > 18 years old (n = 15),ꯁꯔꯨꯛ ꯌꯥꯔꯤꯕꯁꯤꯡ > ꯆꯍꯤ ꯱꯸ ꯁꯨꯔꯕꯥ (n = 15)
+Studies included in review,ꯔꯤꯚꯤꯌꯨꯗꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡ
+(n = 5),(n = ꯵) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Identification of studies via databases and registers,ꯗꯦꯇꯥꯕꯦꯖ ꯑꯃꯁꯨꯡ ꯔꯦꯖꯤꯁ꯭ꯇꯔꯁꯤꯡꯒꯤ ꯈꯨꯠꯊꯥꯡꯗꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯃꯁꯛ ꯈꯉꯗꯣꯀꯄꯥ
+Identification,ꯃꯁꯛ ꯈꯉꯗꯣꯀꯄꯥ .
+Screening,ꯁ꯭ꯛꯔꯤꯅꯤꯡ ꯇꯧꯕꯥ
+Included,ꯌꯥꯑꯣꯔꯤ .
+39,꯳꯹ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés","ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ"
+and (2) not reporting the individual studies excluded along with,ꯑꯃꯁꯨꯡ (꯲) ꯌꯥꯑꯣꯅꯥ ꯌꯥꯑꯣꯗꯕꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯗꯕꯥ
+justifications. Two of the five studies did not report or discuss,ꯖꯁ꯭ꯇꯤꯐꯤꯀꯦꯁꯟ ꯇꯧꯕꯥ꯫
+"the risk of bias of the individual studies (Lewis et al., 2021; Old-","ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯕꯥꯏꯁꯀꯤ ꯔꯤꯁ꯭ꯛ (Lewis et al., 2021; ꯑꯔꯤꯕꯥ-"
+"ham-Cooper & Loades, 2017)","ꯍ꯭ꯌꯥꯝ-ꯀꯨꯄꯥꯔ ꯑꯃꯁꯨꯡ ꯂꯣꯗꯁ, ꯲꯰꯱꯷)"
+Discussion,ꯈꯟꯅ ꯅꯩꯅꯕ
+The present systematic review of systematic reviews and meta-anal-,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯜ-ꯒꯤ ꯍꯧꯖꯤꯛ ꯂꯩꯔꯤꯕꯥ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨ
+yses aimed at summarizing the available scientific literature addressing,ꯋꯥꯏ.ꯑꯦꯁ.ꯏ.ꯑꯦꯁ.ꯅꯥ ꯂꯩꯔꯤꯕꯥ ꯁꯥꯏꯟꯇꯤꯐꯤꯛ ꯂꯤꯇꯔꯦꯆꯔꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯐꯝ ꯊꯝꯂꯤꯕꯥ ꯑꯁꯤꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯐꯝ ꯀꯌꯥ ꯊꯃꯈꯤ ꯫
+the effectiveness of psychological treatments for specific ADs in chil-,ꯆꯤꯜ-ꯗꯥ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ
+dren and adolescents. Systematic reviews of the studies published have,ꯗ꯭ꯔꯦꯟ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ꯫
+"revealed that psychological interventions, particularly CBT, have good","ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ, ꯃꯔꯨꯑꯣꯏꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ."
+results for treating ADs in children and adolescents in post-treatment,ꯄꯣꯁ꯭ꯠ-ꯇ꯭ꯔꯤꯠꯃꯦꯟꯇꯇꯥ ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯗꯁꯤꯡ ꯂꯥꯌꯦꯡꯕꯒꯤ ꯐꯂꯁꯤꯡ
+"and follow-up assessments (e.g., James et al., 2015). However, to our","ꯑꯃꯁꯨꯡ ꯐꯣꯂꯣ-ꯑꯞ ꯑꯦꯁꯦꯁꯃꯦꯟꯇꯁꯤꯡ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯖꯦꯃꯁ ꯑꯦꯠ ꯑꯦꯜ., 2015)꯫"
+"knowledge, no previous systematic efforts have been made to synthe-","ꯅꯣꯂꯦꯖ, ꯃꯃꯥꯡꯗꯥ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯍꯣꯠꯅꯕꯥ ꯑꯃꯠꯇꯥ ꯂꯩꯈꯤꯗꯦ- ꯁꯤꯟꯊꯦ-"
+size available data on the effectiveness of evidence-based treatments for,ꯒꯤꯗꯃꯛꯇꯥ ꯏꯕꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯂꯥꯌꯦꯡꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯤ ꯃꯇꯥꯡꯗꯥ ꯐꯪꯂꯤꯕꯥ ꯁꯥꯏꯖ
+"specific ADs, as most of the works include different types of ADs and","ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗꯁꯤꯡ, ꯃꯔꯃꯗꯤ ꯊꯕꯛ ꯑꯌꯥꯝꯕꯗꯥ ꯇꯣꯉꯥꯟ-ꯇꯣꯉꯥꯅꯕꯥ ꯃꯈꯂꯒꯤ ꯑꯦꯗꯁꯤꯡ ꯑꯃꯁꯨꯡ ."
+do not study the effectiveness of the interventions for each disorder,ꯗꯤꯁꯑꯣꯔꯗꯔ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯊꯤꯖꯤꯅꯒꯅꯨ꯫
+"separately. Thus, the objective of this study was to summarize the exist-",ꯇꯣꯉꯥꯟꯅꯥ ꯂꯩ꯫
+ing literature assessing the effectiveness of evidence-based treatments,ꯏꯚꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯂꯥꯌꯦꯡꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯑꯦꯁꯦꯁ ꯇꯧꯕꯥ ing ꯂꯤꯇꯔꯦꯆꯔ
+"for specific ADs in children and adolescents (i.e., SPs, SAD, GAD, and","ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗꯁꯤꯡ (i.e., SPS, SAD, GAD, ꯑꯃꯁꯨꯡ ."
+nighttime fears). Due to the heterogeneity of the studies and for ease,ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯑꯀꯤꯕꯥ)꯫
+"of understanding, results for each of the anxiety problems included in","ꯂꯧꯁꯤꯅꯕꯥ, ꯲꯰꯲꯰ꯗꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯑꯦꯟꯁꯤꯇꯤꯒꯤ ꯁꯃꯁ꯭ꯌꯥ ꯈꯨꯗꯤꯡꯃꯛꯀꯤ ꯔꯤꯖꯜꯇꯁꯤꯡ꯫"
+this work will be discussed separately,ꯃꯁꯤꯒꯤ ꯊꯕꯛ ꯑꯁꯤ ꯇꯣꯉꯥꯟꯅꯥ ꯈꯟꯅꯒꯅꯤ ꯫
+"Regarding the specific phobias, the review of Öst & Ollendick","ꯑꯀꯛꯅꯕꯥ ꯐꯣꯕꯤꯌꯥꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ, ꯑꯣꯁ꯭ꯠ ꯑꯦꯟꯗ ꯑꯣꯂꯦꯟꯗꯤꯛ ꯔꯤꯚꯤꯌꯨꯒꯤ ꯃꯇꯥꯡꯗꯥ"
+(2017) found a great support for BIC interventions. Most of the studies,(꯲꯰꯱꯷)ꯅꯥ ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯑꯆꯧꯕꯥ ꯁꯄꯣꯔꯠ ꯑꯃꯥ ꯐꯪꯈꯤ꯫
+included in their review focused on studying the effectiveness of these,ꯃꯈꯣꯌꯒꯤ ꯔꯤꯚꯤꯌꯨ ꯑꯁꯤꯗꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯑꯁꯤꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯤ ꯃꯇꯥꯡꯗꯥ ꯊꯤꯖꯤꯅꯕꯗꯥ ꯃꯤꯠꯌꯦꯡ ꯊꯃꯈꯤ
+interventions for specific phobias and concluded that BIC approaches,ꯑꯀꯛꯅꯕꯥ ꯐꯣꯕꯤꯌꯥꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+were effective with them. When they compared BIC interventions,ꯃꯈꯣꯌꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯈꯤ꯫
+"with standard CBT treatments, they found that clinical effectiveness",ꯁ꯭ꯇꯦꯟꯗꯔꯗ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯂꯥꯌꯦꯡꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯃꯈꯣꯌꯅꯥ ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ .
+was similar. They outlined several advantages related to the benefits,ꯃꯥꯟꯅꯕꯥ ꯑꯣꯏꯈꯤ꯫
+"for the families (e.g., shorter duration of the therapy or the money","ꯏꯃꯨꯡꯁꯤꯡꯒꯤ ꯑꯣꯏꯅꯥ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯊꯦꯔꯥꯄꯤ ꯅꯠꯠꯔꯒꯥ ꯁꯦꯅꯐꯝ ꯑꯗꯨ ꯍꯦꯟꯅꯥ ꯀꯨꯞꯄꯥ ꯃꯇꯝ"
+"saving), the cost-effectiveness on a long-term basis for families and","ꯁꯦꯚꯤꯡ ꯇꯧꯕꯥ), ꯏꯃꯨꯡ ꯃꯅꯨꯡꯒꯤ ꯑꯣꯏꯅꯥ ꯃꯇꯝ ꯁꯥꯡꯅꯥ ꯆꯠꯅꯒꯗꯕꯥ ꯃꯃꯜ-ꯃꯊꯨꯝ ꯑꯃꯁꯨꯡ"
+"for those paying for the therapies (e.g., primary health care system),","ꯊꯦꯔꯥꯄꯤꯁꯤꯡ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯍꯦꯜꯊ ꯀꯦꯌꯔ ꯁꯤꯁ꯭ꯇꯦꯝ)ꯒꯤ ꯁꯦꯅꯐꯝ ꯄꯤꯔꯤꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯒꯤꯗꯃꯛ,"
+"the maximizing effects of the therapy due to the massed practice, and","ꯃꯥꯁ ꯇꯧꯔꯕꯥ ꯄ꯭ꯔꯦꯛꯇꯤꯁ ꯑꯁꯤꯅꯥ ꯃꯔꯝ ꯑꯣꯏꯗꯨꯅꯥ ꯊꯦꯔꯥꯄꯤꯒꯤ ꯃꯦꯛꯁꯤꯃꯥꯏꯖ ꯇꯧꯕꯥ ꯏꯐꯦꯛꯇꯁꯤꯡ, ꯑꯃꯁꯨꯡ [...]"
+the dissemination of evidence-based practice by removing economi-,ꯏꯀꯣꯅꯣꯃꯤꯁꯤꯡ ꯂꯧꯊꯣꯛꯇꯨꯅꯥ ꯏꯚꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯄ꯭ꯔꯦꯛꯇꯤꯁꯁꯤꯡ ꯁꯟꯗꯣꯀꯄꯥ-
+cal and structural barriers in outpatient clinics that provide service to,ꯁꯔꯚꯤꯁ ꯄꯤꯔꯤꯕꯥ ꯑꯥꯎꯇꯄꯦꯁꯦꯟꯇ ꯀ꯭ꯂꯤꯅꯤꯀꯁꯤꯡꯗꯥ ꯀꯦꯜ ꯑꯃꯁꯨꯡ ꯁ꯭ꯠꯔꯀꯆꯔꯦꯜ ꯕꯦꯔꯤꯌꯔꯁꯤꯡ
+"many families and children. On the other hand, the review by Old-",ꯏꯃꯨꯡ ꯃꯅꯨꯡ ꯑꯃꯁꯨꯡ ꯑꯉꯥꯡ ꯀꯌꯥ꯫
+ham-Cooper & Loades (2017) reported that there was not enough,ꯍ꯭ꯌꯥꯝ-ꯀꯣꯄꯥꯔ & ꯂꯣꯗꯁ (꯲꯰꯱꯷)ꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯈꯤ ꯃꯗꯨꯗꯤ ꯃꯐꯝ ꯑꯗꯨꯗꯥ ꯃꯇꯤꯛ ꯆꯥꯗꯦ ꯍꯥꯌꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯈꯤ꯫
+data to conclude that the generic cognitive-behavioral intervention,ꯗꯦꯇꯥ ꯑꯁꯤ ꯂꯣꯏꯁꯤꯟꯅꯕꯥ ꯗꯦꯇꯥ ꯑꯁꯤ ꯖꯦꯅꯦꯔꯦꯜ ꯀꯣꯒꯅꯤꯇꯤꯕ-ꯕꯤꯍꯦꯕꯤꯌꯔ ꯏꯟꯇꯔꯚꯦꯟꯁꯟ .
+CC was effective for the treatment of SPs in children and adolescents,ꯁꯤ.ꯁꯤ.ꯅꯥ ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ.
+"What’s more, the limited evidence tends to favor disorder-specific","ꯃꯁꯤꯗꯥ ꯅꯠꯇꯅꯥ, ꯂꯤꯃꯤꯇꯦꯗ ꯏꯚꯤꯗꯦꯟꯁ ꯑꯁꯤꯅꯥ ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯑꯣꯏꯕꯥ ꯃꯑꯣꯡꯗꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯕꯒꯤ ꯊꯧꯑꯣꯡ ꯂꯩ꯫"
+interventions over CC,ꯁꯤ.ꯁꯤ.ꯒꯤ ꯃꯊꯛꯇꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ .
+"Concerning separation anxiety disorder, Oldham-Cooper and","ꯁꯦꯄꯥꯔꯦꯁꯟ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ, ꯑꯣꯂꯗꯝ-ꯀꯨꯄꯥꯔ ꯑꯃꯁꯨꯡ ."
+Loades (2017) found that CC was equally effective as standard CBT,ꯂꯣꯗꯁ (꯲꯰꯱꯷)ꯅꯥ ꯁꯤ.ꯁꯤ.ꯅꯥ ꯁ꯭ꯇꯦꯟꯗꯔꯗ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+for the treatment of its symptoms in children and adolescents. These,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯃꯁꯤꯒꯤ ꯂꯥꯏꯑꯣꯡꯁꯤꯡ ꯑꯁꯤ ꯂꯥꯌꯦꯡꯕꯒꯤꯗꯃꯛ꯫
+results are backed up by the evidence in Santacruz and colleagues,ꯔꯤꯖꯜꯇꯁꯤꯡ ꯑꯁꯤ ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯃꯁꯨꯡ ꯃꯔꯨꯄꯁꯤꯡꯗꯥ ꯂꯩꯔꯤꯕꯥ ꯄ꯭ꯔꯃꯥꯅꯁꯤꯡꯅꯥ ꯃꯇꯦꯡ ꯄꯥꯡꯂꯤ
+"(2002), who reported that 94% of the children included in their sys-","(2002), ꯃꯈꯣꯌꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤ ꯃꯗꯨꯗꯤ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ 94%ꯅꯥ ꯃꯈꯣꯌꯒꯤ ꯁꯤꯁ-"
+"tematic review were treated with CBT interventions, and the effective-","ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨ ꯑꯁꯤ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯂꯥꯌꯦꯡꯈꯤ, ꯑꯃꯁꯨꯡ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯥ-"
+"ness was high in post-treatment and follow-up assessments. Besides,",ꯂꯥꯌꯦꯡꯕꯒꯤ ꯃꯇꯨꯡꯗꯥ ꯑꯃꯁꯨꯡ ꯐꯣꯂꯣ-ꯑꯞ ꯑꯦꯁꯦꯁꯃꯦꯟꯇꯁꯤꯡꯗꯥ ꯅꯦꯁ ꯑꯁꯤ ꯌꯥꯝꯅꯥ ꯋꯥꯡꯈꯤ꯫
+they reported that CC is the most used manualized program for treat-,ꯃꯈꯣꯌꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯈꯤ ꯃꯗꯨꯗꯤ ꯁꯤ.ꯁꯤ.
+ing SAD and GAD. They highlight the three essential components,ꯏꯪ ꯁꯦꯗ ꯑꯃꯁꯨꯡ ꯒꯥꯗ꯫
+"of CBT interventions for treating these disorders: gradual exposure,",ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ ꯑꯁꯤ ꯂꯥꯌꯦꯡꯅꯕꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"contingency management, and cognitive processing learning (espe-","ꯀꯟꯇꯤꯟꯖꯦꯟꯁꯤ ꯃꯦꯅꯦꯖꯃꯦꯟꯇ, ꯑꯃꯁꯨꯡ ꯀꯣꯒꯅꯤꯇꯤꯕ ꯄ꯭ꯔꯣꯁꯦꯁꯤꯡ ꯂꯔꯅꯤꯡ (ꯏꯁ꯭ꯄꯦ-"
+"cially coping strategies, relaxation, and self-instructions training)","ꯁꯤꯂꯤ ꯀꯣꯄꯤꯡ ꯁ꯭ꯠꯔꯦꯇꯦꯖꯤꯁꯤꯡ, ꯔꯤꯂꯥꯛꯁꯦꯁꯟ, ꯑꯃꯁꯨꯡ ꯁꯦꯜꯐ-ꯏꯅꯁ꯭ꯠꯔꯀꯁꯅꯁꯤꯡ ꯇ꯭ꯔꯦꯅꯤꯡ)"
+Even though the study of Santacruz and colleagues did not perform,ꯁꯥꯟꯇꯥꯛꯔꯨꯖ ꯑꯃꯁꯨꯡ ꯃꯔꯨꯄꯁꯤꯡꯒꯤ ꯃꯔꯃꯗꯥ ꯊꯤꯖꯤꯅꯕꯅꯥ ꯊꯕꯛ ꯇꯧꯈꯤꯗ꯭ꯔꯕꯁꯨ .
+"the analyses for the disorders separately, they only included GAD,","ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡ ꯑꯁꯤ ꯇꯣꯉꯥꯟꯅꯥ, ꯃꯈꯣꯌꯗꯥ ꯖꯤ.ꯑꯦ.ꯗꯤ., ꯈꯛꯇꯃꯛ ꯌꯥꯑꯣꯈꯤ,"
+"SAD, and school phobia, as they are closely related during infancy","SAD, ꯑꯃꯁꯨꯡ ꯁ꯭ꯀꯨꯂꯒꯤ ꯐꯣꯕꯤꯌꯥ, ꯃꯈꯣꯌꯅꯥ ꯏꯅꯐꯦꯟꯁꯤꯒꯤ ꯃꯇꯃꯗꯥ ꯌꯥꯝꯅꯥ ꯅꯛꯅꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯒꯨꯝꯅꯥ"
+and allowed us to summarize the effectiveness of the treatments inde-,ꯑꯃꯁꯨꯡ ꯑꯩꯈꯣꯌꯅꯥ ꯂꯥꯌꯦꯡꯁꯤꯡꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯗꯨ ꯏꯅꯗꯦꯜ-
+pendently from the other DSM-5 ADs,ꯑꯇꯣꯞꯄꯥ ꯗꯤ.ꯑꯦꯁ.ꯑꯦꯝ.-꯵ ꯑꯦꯗꯁꯤꯡꯗꯒꯤ ꯄꯦꯟꯗꯦꯟꯇ ꯑꯣꯏꯅꯥ
+"With relation to generalized anxiety disorder, Öst & Ollendick","ꯖꯦꯅꯦꯔꯦꯂꯥꯏꯖ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ, ꯑꯣꯁ꯭ꯠ & ꯑꯣꯂꯦꯟꯗꯤꯛ"
+(2017) reported that it was not possible to conclude how effective,(꯲꯰꯱꯷)ꯅꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯀꯈꯤ ꯃꯗꯨꯗꯤ ꯀꯌꯥ ꯌꯥꯝꯅꯥ ꯏꯐꯦꯛꯇꯤꯕ ꯑꯣꯏꯕꯒꯦ ꯍꯥꯌꯕꯗꯨ ꯂꯣꯏꯁꯤꯅꯕꯥ ꯉꯃꯈꯤꯗꯦ꯫
+was BIC for its treatment. They suggest that this type of intervention,ꯃꯁꯤꯒꯤ ꯂꯥꯌꯦꯡꯕꯒꯤꯗꯃꯛ ꯕꯤ.ꯑꯥꯏ.ꯁꯤ.
+"may be less suitable for GAD, because the exposure component of","ꯖꯤ.ꯑꯦ.ꯗꯤ.ꯒꯤꯗꯃꯛꯇꯥ ꯍꯦꯟꯅꯥ ꯆꯨꯅꯕꯥ ꯑꯣꯏꯕꯥ ꯌꯥꯏ, ꯃꯔꯃꯗꯤ ꯑꯦꯛꯁꯄꯣꯖꯔ ꯀꯝꯄꯣꯅꯦꯟꯇ ꯑꯁꯤ ."
+"the treatment might be extended to various natural situations, thus","ꯂꯥꯌꯦꯡ ꯑꯁꯤ ꯇꯣꯉꯥꯟ ꯇꯣꯉꯥꯅꯕꯥ ꯃꯍꯧꯁꯥꯒꯤ ꯑꯣꯏꯕꯥ ꯐꯤꯚꯃꯁꯤꯡꯗꯥ ꯌꯧꯍꯅꯕꯥ ꯌꯥꯏ, ꯃꯔꯝ ꯑꯁꯤꯅꯥ"
+"requiring longer interventions. As previously mentioned, Santacruz",ꯍꯦꯟꯅꯥ ꯁꯥꯡꯅꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯃꯊꯧ ꯇꯥꯕꯥ꯫
+and colleagues found evidence of the effectiveness of CBT interven-,ꯑꯃꯁꯨꯡ ꯃꯔꯨꯄꯁꯤꯡꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯒꯤ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯤ ꯄ꯭ꯔꯃꯥꯟ ꯐꯪꯈꯤ-
+tions for this disorder,ꯗꯤꯁꯑꯣꯔꯗꯔ ꯑꯁꯤꯒꯤꯗꯃꯛ ꯇꯤꯁꯅꯁꯤꯡ .
+"Finally, with reference to nighttime fears, Lewis and colleagues","ꯑꯔꯣꯏꯕꯗꯥ, ꯅꯥꯏꯇꯣꯝ ꯂꯩꯕꯥ ꯑꯀꯤꯕꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯐꯝ ꯊꯝꯂꯗꯨꯅꯥ ꯂꯨꯏꯁ ꯑꯃꯁꯨꯡ ꯃꯔꯨꯄꯁꯤꯡ"
+(2021) found that CBT techniques were effective to reduce signifi-,(꯲꯰꯲꯱)ꯅꯥ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+cantly nighttime fears in children. They discuss the adaptation of the,ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ ꯌꯥꯝꯅꯥ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ꯫
+"classic CBT-based techniques (i.e., systematic desensitization, relax-","ꯀ꯭ꯂꯥꯁꯤꯛ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯇꯦꯛꯅꯤꯀꯁꯤꯡ (ꯏ.ꯏ., ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯗꯤꯁꯦꯟꯁꯤꯇꯤꯕ, ꯔꯤꯂꯥꯛꯁ-"
+"ation, and self-instructions; also reported by Santacruz et al., 2002)","ation, ꯑꯃꯁꯨꯡ ꯁꯦꯜꯐ-ꯏꯅꯁ꯭ꯠꯔꯀꯁꯅꯁꯤꯡ;"
+"to more age-appropriate ones: emotive imagery, bibliotherapy (e.g.,","ꯍꯦꯟꯅꯥ ꯆꯍꯤ-ꯆꯥꯎ ꯆꯨꯝꯕꯥ ꯌꯥꯕꯁꯤꯡꯗꯥ: ꯏꯃꯣꯇꯤꯕ ꯏꯃꯦꯖꯔꯤ, ꯕꯤꯕ꯭ꯂꯤꯑꯣꯊꯦꯔꯥꯄꯤ (e.g.,"
+"Uncle Lightfoot [Coffman, 2014]), reinforced exposure, modeling,","ꯑꯉ꯭ꯀꯜ ꯂꯥꯏꯇꯐꯨꯠ [ꯀꯣꯐꯃꯦꯟ, ꯲꯰꯱꯴]), ꯔꯤꯏꯅꯐꯣꯔꯁ ꯇꯧꯔꯕꯥ ꯑꯦꯛꯁꯄꯣꯖꯔ, ꯃꯣꯗꯦꯂꯤꯡ,"
+"relaxation and positive self-statements. Besides, the authors point to",ꯔꯤꯂꯥꯛꯁꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯄꯣꯖꯤꯇꯤꯕ ꯑꯣꯏꯕꯥ ꯁꯦꯜꯐ-ꯁ꯭ꯇꯦꯇꯃꯦꯟꯇꯁꯤꯡ꯫
+novel strategies such as ACT for treating nighttime fears and encour-,ꯅꯥꯏꯇꯣꯝ ꯂꯩꯕꯥ ꯑꯀꯤꯕꯥ ꯑꯃꯁꯨꯡ ꯄꯨꯛꯅꯤꯡ ꯊꯧꯒꯠꯄꯒꯤꯗꯃꯛ ꯑꯦ.ꯁꯤ.ꯇꯤ.ꯒꯨꯝꯕꯥ ꯅꯣꯚꯦꯜ ꯁ꯭ꯠꯔꯦꯇꯦꯖꯤꯁꯤꯡ-
+age researchers to explore further the effectiveness of CBT-based,ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯃꯈꯥ ꯇꯥꯅꯥ ꯊꯤꯖꯤꯟꯅꯕꯥ ꯆꯍꯤꯒꯤ ꯔꯤꯁꯔꯆꯔꯁꯤꯡꯅꯥ ꯌꯨ.ꯑꯦꯁ.
+treatments including ACT modules,ꯑꯦ.ꯁꯤ.ꯇꯤ.ꯒꯤ ꯃꯣꯗ꯭ꯌꯨꯂꯁꯤꯡ ꯌꯥꯑꯣꯅꯥ ꯂꯥꯌꯦꯡꯁꯤꯡ .
+To tackle the question on the effectiveness of well-established,ꯅꯤꯡꯊꯤꯅꯥ ꯁꯦꯝ ꯁꯥꯕꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯍꯪ ꯑꯁꯤ ꯊꯦꯡꯅꯅꯕꯥ .
+"CBT treatments for these disorders, we included the review by Gibby",ꯁꯤ.ꯕꯤ.ꯇꯤ.
+and colleagues (2017). They examined diagnostic outcome rates at fol-,ꯑꯃꯁꯨꯡ ꯃꯔꯨꯄꯁꯤꯡ (꯲꯰꯱꯷)꯫
+"low-up on GAD, SAD, SPs, and also on agoraphobia and social pho-","ꯂꯣ-ꯑꯞ ꯑꯣꯟ ꯖꯤ.ꯑꯦ.ꯗꯤ., ꯑꯦꯁ.ꯑꯦ.ꯗꯤ., ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ., ꯑꯃꯁꯨꯡ ꯑꯦꯒꯣꯔꯥꯐꯣꯕꯤꯌꯥ ꯑꯃꯁꯨꯡ ꯁꯣꯁꯤꯑꯦꯜ ꯐꯣ-ꯗꯁꯨ ꯌꯥꯑꯣꯔꯤ꯫"
+"bia. In the overall analysis, which included all disorders, they found",ꯕꯤ.ꯑꯥꯏ.ꯑꯦ.
+that around 2 out of 3 of children and adolescents were in remission,ꯍꯥꯌꯕꯗꯤ ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯆꯥꯎꯔꯥꯛꯅꯥ ꯲ꯅꯥ ꯔꯤꯃꯤꯁꯟꯗꯥ ꯂꯩꯈꯤ .
+"(not having any ADs), 3 out of 5 had none of the ADs specified in the","(ꯑꯦꯗ ꯑꯃꯠꯇꯥ ꯂꯩꯇꯕꯥ), ꯵ꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯳ꯗꯥ ꯌꯥꯑꯣꯔꯤꯕꯥ ꯑꯦꯗꯁꯤꯡ ꯑꯗꯨꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯑꯃꯠꯇꯥ ꯂꯩꯈꯤꯗꯦ꯫"
+"study inclusion criteria, and 4 out of 5 did not meet the criteria for","ꯁ꯭ꯇꯗꯤ ꯏꯅꯛꯂꯨꯖꯟ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥ, ꯑꯃꯁꯨꯡ ꯵ꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯴ꯅꯥ ꯲꯰꯲꯰ꯒꯤ ꯀ꯭ꯔꯥꯏꯇꯦꯔꯤꯌꯥ ꯑꯗꯨ ꯐꯪꯈꯤꯗꯦ꯫"
+their primary AD. After examining the relationship between the type,ꯃꯈꯣꯌꯒꯤ ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯑꯦꯗ꯫
+"of primary AD and long-term outcomes, they found controversy on",ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯑꯦ.ꯗꯤ. ꯑꯃꯁꯨꯡ ꯂꯣꯡ-ꯇꯔꯝ ꯑꯥꯎꯠꯀꯃꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯃꯈꯣꯌꯅꯥ ꯋꯥꯊꯣꯛ ꯀꯌꯥ ꯊꯦꯡꯅꯈꯤ꯫
+the results: one study found that GAD had lower anxiety symptoms at,ꯃꯁꯤꯒꯤ ꯐꯂꯁꯤꯡ: ꯁ꯭ꯇꯗꯤ ꯑꯃꯅꯥ ꯖꯤ.ꯑꯦ.ꯗꯤ.
+"follow-up, while others reported no differences among ADs. Further","ꯐꯣꯂꯣ-ꯑꯞ, ꯑꯗꯨꯒꯥ ꯑꯇꯣꯞꯄꯁꯤꯡꯅꯥ ꯑꯦꯗꯁꯤꯡꯒꯤ ꯃꯔꯛꯇꯥ ꯈꯦꯠꯅꯕꯥ ꯑꯃꯠꯇꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯈꯤꯗꯦ꯫"
+work to clarify this question is proposed,ꯋꯥꯍꯪ ꯑꯁꯤ ꯃꯌꯦꯛ ꯁꯦꯡꯅꯥ ꯇꯥꯛꯅꯕꯥ ꯊꯕꯛ ꯄꯥꯌꯈꯠꯅꯕꯥ ꯊꯧꯔꯥꯡ ꯇꯧꯔꯤ .
+Limitations and Future Studies,ꯂꯤꯃꯤꯇꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯇꯨꯡꯒꯤ ꯁ꯭ꯇꯗꯤꯁꯤꯡ .
+Despite the novel contributions of this work to the growing body,ꯊꯕꯛ ꯑꯁꯤꯒꯤ ꯅꯣꯚꯦꯜ ꯀꯟꯠꯔꯤꯕ꯭ꯌꯨꯁꯅꯁꯤꯡ ꯑꯁꯤ ꯍꯦꯅꯒꯠꯂꯛꯂꯤꯕꯥ ꯍꯀꯆꯥꯡꯗꯥ ꯄꯤꯔꯕꯁꯨ .
+of literature aimed at expanding the knowledge of evidence-based,ꯏꯕꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯂꯧꯁꯤꯡ ꯑꯁꯤ ꯍꯦꯟꯅꯥ ꯄꯥꯀꯊꯣꯛ ꯆꯥꯎꯊꯣꯀꯍꯟꯅꯕꯥ ꯄꯥꯟꯗꯝ ꯊꯝꯂꯤꯕꯥ ꯂꯤꯇꯔꯦꯆꯔꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯋꯥꯐꯝ ꯀꯌꯥ ꯊꯃꯈꯤ꯫
+"treatments for ADs in children and adolescents, the findings have to","ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯗꯁꯤꯡꯒꯤ ꯂꯥꯌꯦꯡꯁꯤꯡ, ꯊꯤꯖꯤꯅꯕꯒꯤ ꯊꯕꯀꯁꯤꯡ ꯑꯁꯤꯅꯥ [...]"
+"be seen in light of some limitations. First, the heterogeneity of the",ꯂꯤꯃꯤꯇꯦꯁꯟ ꯈꯔꯒꯤ ꯃꯉꯥꯂꯗꯥ ꯎꯕꯥ ꯐꯪꯒꯅꯤ꯫
+studies included made it impossible in some cases to provide evidence,ꯌꯥꯑꯣꯔꯤꯕꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡ ꯑꯁꯤꯅꯥ ꯀꯦꯁ ꯈꯔꯗꯥ ꯄ꯭ꯔꯃꯥꯟ ꯄꯤꯕꯥ ꯉꯃꯗꯕꯥ ꯑꯣꯏꯍꯅꯈꯤ
+"for a disorder from more than one systematic review (e.g., nighttime","ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯗꯒꯤ ꯍꯦꯟꯅꯥ ꯂꯩꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔ ꯑꯃꯒꯤꯗꯃꯛ (ꯈꯨꯗꯝ ꯑꯣꯏꯅꯥ, ꯅꯨꯃꯤꯗꯥꯡꯒꯤ ꯃꯇꯃꯗꯥ"
+"fears). Second, this study is limited by the fact that all the systematic",ꯑꯀꯤꯕꯥ ꯄꯣꯀꯍꯅꯕꯥ)꯫
+"reviews and meta-analyses included were rated critically low, which","ꯔꯤꯚꯤꯌꯨ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁꯁꯤꯡ ꯌꯥꯑꯣꯕꯥ ꯑꯁꯤ ꯌꯥꯝꯅꯥ ꯅꯦꯝꯅꯥ ꯔꯦꯠ ꯇꯧꯈꯤ, ꯃꯁꯤꯅꯥ ."
+means that they should not be fully relied on with regards to pro-,ꯍꯥꯌꯕꯗꯤ ꯃꯈꯣꯌꯅꯥ ꯄ꯭ꯔꯣ-ꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯃꯄꯨꯡ ꯐꯥꯅꯥ ꯊꯥꯖꯕꯥ ꯊꯃꯒꯗꯕꯅꯤ ꯍꯥꯌꯕꯁꯤꯅꯤ꯫
+"viding an accurate summary of the available studies. However, this",ꯂꯩꯔꯤꯕꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯑꯆꯨꯝꯕꯥ ꯋꯥꯔꯣꯜ ꯑꯃꯥ ꯚꯤꯗꯤꯡ ꯇꯧꯕꯥ꯫
+work represents a thorough effort to understand what the real pic-,ꯊꯕꯛ ꯑꯁꯤꯅꯥ ꯑꯁꯦꯡꯕꯥ ꯄꯤꯛ-ꯊꯧꯔꯥꯡ ꯑꯗꯨ ꯀꯔꯤꯅꯣ ꯍꯥꯌꯕꯗꯨ ꯈꯉꯅꯕꯥ ꯃꯄꯨꯡ ꯐꯥꯕꯥ ꯍꯣꯠꯅꯕꯥ ꯑꯃꯥ ꯔꯤꯞꯔꯖꯦꯟꯇ ꯇꯧꯔꯤ-
+ture of the evidence-based treatment for specific ADs is. Even though,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯏꯚꯤꯗꯦꯟꯁꯇꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯂꯥꯌꯦꯡꯕꯒꯤ ture ꯑꯁꯤ...
+there is extensive available literature addressing the effectiveness of,꯲꯰꯲꯰ꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁ ꯑꯁꯤ ꯊꯦꯡꯅꯅꯕꯥ ꯄꯥꯛ ꯁꯟꯅꯥ ​​ꯐꯪꯂꯤꯕꯥ ꯂꯤꯇꯔꯦꯆꯔꯁꯤꯡ ꯂꯩꯔꯤ꯫
+"treatments for ADs, there is a clear lack of research that can provide","ꯑꯦꯗꯁꯤꯡꯒꯤ ꯂꯥꯌꯦꯡꯁꯤꯡ, ꯄꯤꯕꯥ ꯉꯝꯕꯥ ꯃꯌꯦꯛ ꯁꯦꯡꯕꯥ ꯔꯤꯁꯔꯆꯀꯤ ꯑꯋꯥꯠꯄꯥ ꯂꯩꯔꯤ"
+guidance on the treatment of specific disorders. Future work should,ꯑꯀꯛꯅꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ ꯂꯥꯌꯦꯡꯕꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯒꯥꯏꯗꯂꯥꯏꯅꯁꯤꯡ꯫
+therefore seek to address this issue,ꯃꯔꯝ ꯑꯗꯨꯅꯥ ꯋꯥꯐꯝ ꯑꯁꯤ ꯊꯦꯡꯅꯅꯕꯥ ꯍꯣꯠꯅꯕꯤꯌꯨ .
+Conclusion,ꯂꯣꯏꯁꯤꯟꯕ
+From the systematic review of systematic reviews and meta-anal-,ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯜ-ꯒꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯗꯒꯤ
+"yses performed, it can be concluded that CBT-based interventions are","ꯋꯥꯏ.ꯑꯦꯁ.ꯏ.ꯁꯤꯡꯅꯥ ꯄꯥꯡꯊꯣꯀꯈꯤ, ꯃꯁꯤ ꯂꯣꯏꯁꯤꯅꯕꯥ ꯌꯥꯏ ꯃꯗꯨꯗꯤ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡ ꯑꯁꯤ ."
+"effective in treating SPs, SAD, GAD, and nighttime fears in children and","ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ., ꯑꯦꯁ.ꯑꯦ.ꯗꯤ., ꯖꯤ.ꯑꯦ.ꯗꯤ."
+"adolescents. Along with the standard CBT-based interventions, BIC",ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁꯤꯡ꯫
+"treatments are recommended for SPs, and certain programs such as CC","ꯂꯥꯌꯦꯡꯁꯤꯡ ꯑꯁꯤ ꯑꯦꯁ.ꯄꯤ.ꯑꯦꯁ.ꯀꯤꯗꯃꯛ ꯔꯦꯀꯃꯦꯟꯗ ꯇꯧꯏ, ꯑꯃꯁꯨꯡ ꯁꯤ.ꯁꯤ."
+are reported to work well in children with SAD and GAD. Regarding,ꯑꯦꯁ.ꯑꯦ.ꯗꯤ. ꯑꯃꯁꯨꯡ ꯖꯤ.ꯑꯦ.ꯗꯤ.ꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯐꯖꯅꯥ ꯊꯕꯛ ꯇꯧꯅꯕꯥ ꯔꯤꯄꯣꯔꯠ ꯇꯧꯔꯤ꯫
+40,꯴꯰ ꯑꯃꯁꯨꯡ ꯴.
+Psychological treatment for specific anxiety disorders,ꯑꯀꯛꯅꯕꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ
+"nighttime fears, authors discuss the adaptation of classic CBT-based","ꯅꯥꯏꯇꯣꯝ ꯂꯩꯕꯥ ꯑꯀꯤꯕꯁꯤꯡ, ꯑꯣꯊꯣꯔꯤꯇꯤꯁꯤꯡꯅꯥ ꯀ꯭ꯂꯥꯁꯤꯛ ꯁꯤ.ꯕꯤ.ꯇꯤ.ꯗꯥ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕꯥ ꯑꯦꯗꯞꯇꯦꯁꯅꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯈꯟꯅꯔꯤ"
+techniques to more age-appropriate ones. Although there are many,ꯍꯦꯟꯅꯥ ꯆꯍꯤꯒꯥ ꯆꯥꯟꯅꯕꯥ ꯇꯦꯛꯅꯤꯀꯁꯤꯡ꯫
+"studies looking at the effectiveness of treatments for ADs, there is a clear","ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯌꯦꯡꯁꯤꯜꯂꯤꯕꯥ ꯁ꯭ꯇꯗꯤꯁꯤꯡꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯃꯌꯦꯛ ꯁꯦꯡꯅꯥ ꯇꯥꯛꯂꯤꯕꯥ ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛ, ꯑꯦꯗꯁꯤꯡꯒꯤꯗꯃꯛ,"
+lack of research that can provide guidance on how to treat specific con-,ꯑꯀꯛꯅꯕꯥ ꯀꯟ-ꯀꯟꯁ-ꯀꯅꯒꯠꯄꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯂꯃꯖꯤꯡ-ꯂꯃꯇꯥꯛ ꯄꯤꯕꯥ ꯉꯝꯕꯥ ꯔꯤꯁꯔꯆ ꯂꯩꯇꯕꯥ-
+ditions. Further studies are suggested in an attempt to address this issue,ꯗꯤꯁꯅꯁꯤꯡ ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+Role of the funding source,ꯐꯟꯗꯤꯡ ꯁꯣꯔꯁꯀꯤ ꯊꯧꯗꯥꯡ
+Grant PSI2017-85493-P funded by MCIN/AEI/10.13039/501100011033,ꯒ꯭ꯔꯥꯟꯇ ꯄꯤ.ꯑꯦꯁ.ꯑꯥꯏ.꯲꯰꯱꯷-꯸꯵꯴꯹꯳-ꯄꯤ.ꯅꯥ ꯑꯦꯝ.ꯁꯤ.ꯑꯥꯏ.ꯑꯦꯟ./ꯑꯦ.ꯏ.ꯑꯥꯏ./꯱꯰.꯱꯳꯰꯳꯹/꯵꯰꯱꯱꯰꯰꯰꯱꯱꯰꯳꯳ꯅꯥ ꯁꯦꯜ ꯊꯥꯗꯕꯥ
+and by “ERDF A way of making Europe”. TGL is supported by a PhD schol-,ꯑꯃꯁꯨꯡ “ꯏ.ꯑꯥꯔ.ꯗꯤ.ꯑꯦꯐ.ꯅꯥ ꯌꯨꯔꯣꯞ ꯁꯦꯝꯕꯒꯤ ꯃꯑꯣꯡ ꯑꯃꯥ”ꯅꯥ ꯄꯤꯈꯤ꯫
+arship from the Ministerio de Universidades of Spain (FPU20/00893),ꯁ꯭ꯄꯦꯅꯒꯤ ꯃꯤꯅꯤꯁ꯭ꯠꯔꯤꯑꯣ ꯗꯦ ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤꯗꯒꯤ ꯂꯥꯀꯄꯥ ꯑꯥꯔꯁꯤꯞ (ꯑꯦꯐ.ꯄꯤ.ꯌꯨ.꯲꯰/꯰꯰꯸꯹꯳)
+Declaration of conflicting interest,ꯀꯅꯐ꯭ꯂꯤꯛꯇꯤꯚ ꯏꯟꯇꯔꯦꯁ꯭ꯇꯀꯤ ꯗꯤꯛꯂꯥꯔꯦꯁꯟ .
+The authors declare that they have no conflict of interest,ꯑꯣꯊꯣꯔꯤꯇꯤꯁꯤꯡꯅꯥ ꯃꯈꯣꯌꯒꯤ ꯏꯟꯇꯔꯦꯁ꯭ꯇꯀꯤ ꯀꯟꯐ꯭ꯂꯤꯛꯇ ꯂꯩꯇꯦ ꯍꯥꯌꯅꯥ ꯂꯥꯑꯣꯊꯣꯀꯏ .
+References,ꯔꯤꯐꯔꯦꯟꯁꯁꯤꯡ .
+"Achenbach, T. M., & Edelbrock, C. (1991). Child behavior checklist. Burlington","ꯑꯦꯆꯦꯅꯕꯆ, ꯇꯤ.ꯑꯦꯝ., ꯑꯃꯁꯨꯡ ꯑꯦꯗꯦꯂꯕ꯭ꯔꯛ, ꯁꯤ.(꯱꯹꯹꯱)꯫"
+"(Vt), 7, 371–392","(ꯚꯤ.ꯇꯤ.), ꯷, ꯳꯷꯱–꯳꯹꯲ ꯂꯩ꯫"
+American Psychiatric Association (2013). Diagnostic and Statistical Manual of,ꯑꯃꯦꯔꯤꯀꯥꯟ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤꯛ ꯑꯦꯁꯣꯁꯤꯑꯦꯁꯟ (꯲꯰꯱꯳)꯫
+Mental Disorders (5th ed.). American Psychiatric Association. https://doi,ꯃꯦꯟꯇꯦꯜ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ (5ꯁꯨꯕꯥ ꯑꯦꯗ.)꯫
+"Bandelow, B., & Michaelis, S. (2015). Epidemiology of anxiety disorders in the","ꯕꯦꯟꯗꯦꯂꯣ, ꯕꯤ., ꯑꯃꯁꯨꯡ ꯃꯥꯏꯀꯦꯂꯁ, ꯑꯦꯁ.(꯲꯰꯱꯵)꯫"
+"21st century. Dialogues in Clinical Neuroscience, 17(3), 327–335. https://",꯲꯱ꯁꯨꯕꯥ ꯆꯍꯤꯆꯥꯗꯥ꯫
+"Birmaher, B., Khetarpal, S., Brent, D., Cully, M., Balach, L., Kaufman, J., &","ꯕꯤꯔꯃꯥꯍꯦꯔ, ꯕꯤ., ꯈꯦꯇꯔꯄꯥꯜ, ꯑꯦꯁ., ꯕ꯭ꯔꯦꯟꯇ, ꯗꯤ., ꯀꯜꯂꯤ, ꯑꯦꯝ., ꯕꯥꯂꯥꯆ, ꯑꯦꯜ., ꯀꯥꯎꯐꯝꯌꯥꯟ, ꯖꯦ., ꯑꯃꯁꯨꯡ"
+"Neer, S. M. (1997). The Screen for Child Anxiety Related Emotional Dis-","ꯅꯤꯔ, ꯑꯦꯁ.ꯑꯦꯝ.(꯱꯹꯹꯷) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+orders (SCARED): Scale construction and psychometric characteristics,ꯑꯣꯔꯗꯔꯁꯤꯡ (ꯁ꯭ꯀꯥꯔ): ꯁ꯭ꯀꯦꯜ ꯀꯟꯁꯠꯔꯛꯁꯟ ꯑꯃꯁꯨꯡ ꯁꯥꯏꯀꯣꯃꯦꯠꯔꯤꯛ ꯃꯑꯣꯡ ꯃꯇꯧ
+"Journal of the American Academy of Child & Adolescent Psychiatry, 36(4),","ꯖꯔꯅꯦꯜ ꯑꯣꯐ ꯗꯤ ꯑꯃꯦꯔꯤꯀꯥꯟ ꯑꯦꯀꯥꯗꯦꯃꯤ ꯑꯣꯐ ꯆꯥꯏꯜꯗ ꯑꯦꯟꯗ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, ꯳꯶(꯴),"
+545–553. https://doi.org/10.1097/00004583-199704000-00018,꯵꯴꯵–꯵꯵꯳ꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫
+"Canals, J., Voltas, N., Hernández-Martínez, C., Cosi, S., & Arija, V. (2019)","ꯀꯦꯅꯥꯂꯁ, ꯖꯦ., ꯚꯣꯂꯇꯥꯁ, ꯑꯦꯟ., ꯍꯔꯅꯥꯟꯗꯦꯖ-ꯃꯥꯔꯇꯤꯅꯦꯖ, ꯁꯤ., ꯀꯣꯁꯤ, ꯑꯦꯁ., ꯑꯃꯁꯨꯡ ꯑꯔꯤꯖꯥ, ꯚꯤ.(꯲꯰꯱꯹)"
+"Prevalence of DSM-5 anxiety disorders, comorbidity, and persistence of","DSM-5 ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ, ꯀꯣꯃꯣꯔꯕꯤꯗꯤꯇꯤ ꯑꯃꯁꯨꯡ ꯂꯦꯡꯗꯅꯥ ꯂꯩꯕꯒꯤ ꯊꯧꯑꯣꯡ ꯂꯩꯕꯥ"
+symptoms in Spanish early adolescents. European Child and Adolescent,ꯁ꯭ꯄꯦꯅꯤꯁꯀꯤ ꯑꯍꯥꯅꯕꯥ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯂꯥꯏꯑꯣꯡꯁꯤꯡ꯫
+"Psychiatry, 28(1), 131–143. https://doi.org/10.1007/s00787-018-1207-z","ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, ꯲꯸(꯱), ꯱꯳꯱–꯱꯴꯳ꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+Children and Young People’s Improving Access to Psychological Therapies,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯅꯍꯥꯁꯤꯡꯅꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯊꯦꯔꯥꯄꯤꯁꯤꯡ ꯐꯪꯍꯅꯕꯗꯥ ꯑꯍꯣꯡꯕꯥ ꯄꯨꯔꯀꯄꯥ
+"Program [CYP IAPT]. (2013). National curriculum for core, cognitive",ꯄ꯭ꯔꯣꯒ꯭ꯔꯥꯝ [ꯁꯤ.ꯋꯥꯏ.ꯄꯤ.ꯑꯥꯏ.ꯑꯦ.ꯄꯤ.ꯇꯤ.]꯫
+"behavioural therapy, parenting training (3-10 year olds), systemic family","ꯕꯤꯍꯦꯕꯤꯌꯔꯜ ꯊꯦꯔꯥꯄꯤ, ꯄꯦꯔꯦꯟꯇꯤꯡ ꯇ꯭ꯔꯦꯅꯤꯡ (ꯆꯍꯤ 3-10), ꯁꯤꯁ꯭ꯇꯦꯃꯤꯛ ꯐꯦꯃꯤꯂꯤ"
+"practice, interpersonal psychotherapy for adolescents, supervision, and","ꯄ꯭ꯔꯦꯛꯇꯤꯁ, ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤꯗꯃꯛ ꯏꯟꯇꯔꯄꯔꯁꯣꯅꯦꯜ ꯁꯥꯏꯀꯣꯊꯦꯔꯥꯄꯤ, ꯁꯨꯄꯔꯚꯤꯖꯟ, ꯑꯃꯁꯨꯡ ."
+transformational service leadership. NHS England,ꯇ꯭ꯔꯥꯟꯁꯐꯣꯔꯃꯦꯁꯅꯦꯜ ꯁꯔꯕꯤꯁ ꯂꯤꯗꯔꯁꯤꯞ꯫
+"Coffman, M. F. (2014). Uncle lightfoot, flip that switch: Overcoming fear of the","ꯀꯣꯐꯝꯌꯥꯟ, ꯑꯦꯝ.ꯑꯦꯐ.(꯲꯰꯱꯴) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+dark (Second Edi). Footpath Press LLC,ꯗꯥꯔꯛ (ꯑꯅꯤꯁꯨꯕꯥ ꯑꯦꯗꯤ)꯫
+"Essau, C. ., Sakano, Y., Ishikawa, S., & Sasagawa, S. (2004). Anxiety symptoms","ꯑꯦꯁꯥꯎ, ꯁꯤ. ., ꯁꯀꯥꯅꯣ, ꯋꯥꯏ., ꯏꯁꯤꯀꯥꯋꯥ, ꯑꯦꯁ., ꯑꯃꯁꯨꯡ ꯁꯥꯁꯥꯒꯥꯋꯥ, ꯑꯦꯁ.(꯲꯰꯰꯴)꯫"
+"in Japanese and in German children. Behaviour Research and Therapy,",ꯖꯄꯥꯅꯤꯖꯁꯤꯡꯗꯥ ꯑꯃꯁꯨꯡ ꯖꯔꯃꯅꯤꯒꯤ ꯑꯉꯥꯡꯁꯤꯡꯗꯥ꯫
+"42(5), 601–612. https://doi.org/10.1016/S0005-7967(03)00164-5","꯴꯲(꯵), ꯶꯰꯱–꯶꯱꯲ ꯂꯩꯈꯤ꯫"
+"Essau, C. A., & Gabbidon, J. (2012). Epidemiology, comorbidity and mental","ꯑꯦꯁꯥꯎ, ꯁꯤ.ꯑꯦ., ꯑꯃꯁꯨꯡ ꯒ꯭ꯌꯥꯕꯤꯗꯣꯟ, ꯖꯦ.(꯲꯰꯱꯲)꯫"
+health services utilization. In The Wiley-Blackwell Handbook of The Treat-,ꯍꯦꯜꯊ ꯁꯔꯕꯤꯁꯁꯤꯡ ꯌꯨꯇꯤꯂꯥꯏꯖꯦꯁꯟ ꯇꯧꯕꯥ꯫
+"ment of Childhood and Adolescent Anxiety (pp. 23–42). John Wiley & Sons,",ꯃꯦꯟꯇ ꯑꯣꯐ ꯆꯥꯏꯜꯗꯍꯨꯗ ꯑꯦꯟꯗ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯥ ꯋꯥꯈꯜ ꯋꯥꯕꯥ (ꯄꯦꯖ 23–42)꯫
+Ltd. https://doi.org/10.1002/9781118315088.ch2,ꯂꯤꯃꯤꯇꯦꯗꯅꯥ https://doi.org/10.1002/9781118315088.CH2.
+"Gibby, B. A., Casline, E. P., & Ginsburg, G. S. (2017). Long-term outcomes","ꯒꯤꯕꯤ, ꯕꯤ.ꯑꯦ., ꯀꯥꯁꯂꯥꯏꯟ, ꯏ.ꯄꯤ., ꯑꯃꯁꯨꯡ ꯒꯤꯟꯁꯕꯔꯒ, ꯖꯤ.ꯑꯦꯁ.(꯲꯰꯱꯷)꯫"
+of youth treated for an anxiety disorder: A critical review. Clinical Child,ꯑꯣꯐ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔ ꯑꯃꯥ ꯂꯥꯌꯦꯡꯂꯤꯕꯥ ꯅꯍꯥꯁꯤꯡꯒꯤ: ꯃꯔꯨꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯥ꯫
+"and Family Psychology Review, 20(2), 201–225. https://doi.org/10.1007/","ꯑꯃꯁꯨꯡ ꯐꯦꯃꯤꯂꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ ꯔꯤꯚꯤꯌꯨ, ꯲꯰(꯲), ꯲꯰꯱–꯲꯲꯵."
+s10567-017-0222-9,ꯑꯦꯁ꯱꯰꯵꯶꯷-꯰꯱꯷-꯰꯲꯲꯲-꯹ꯗꯥ ꯊꯥꯕꯤꯔꯀꯎ꯫
+"Hammerness, P., Harpold, T., Petty, C., Menard, C., Zar-Kessler, C., & Bieder-","ꯍ꯭ꯌꯥꯃꯥꯔꯅꯦꯁ, ꯄꯤ., ꯍꯥꯔꯄꯣꯜꯗ, ꯇꯤ., ꯄꯦꯇꯤ, ꯁꯤ., ꯃꯦꯅꯥꯔꯗ, ꯁꯤ., ꯖꯥꯔ-ꯀꯦꯁꯂꯔ, ꯁꯤ., ꯑꯃꯁꯨꯡ ꯕꯤꯌꯦꯗꯔ-"
+"man, J. (2008). Characterizing non-OCD anxiety disorders in psychiat-","ꯃꯤꯑꯣꯏꯕꯥ, ꯖꯦ.(꯲꯰꯰꯸) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"rically referred children and adolescents. Journal of Affective Disorders,",ꯔꯤꯐꯔ ꯇꯧꯔꯕꯥ ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡ꯫
+"105(1–3), 213–219. https://doi.org/10.1016/j.jad.2007.05.012","꯱꯰꯵(꯱–꯳), ꯲꯱꯳–꯲꯱꯹ꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫"
+"Higa-McMillan, C. K., Francis, S. E., Rith-Najarian, L., & Chorpita, B. F","ꯍꯤꯒꯥ-ꯃꯦꯀꯃꯤꯂꯟ, ꯁꯤ.ꯀꯦ., ꯐ꯭ꯔꯥꯟꯁꯤꯁ, ꯑꯦꯁ.ꯏ., ꯔꯤꯊ-ꯅꯥꯖꯥꯔꯤꯌꯥꯟ, ꯑꯦꯜ., ꯑꯃꯁꯨꯡ ꯆꯣꯔꯄꯤꯇꯥ, ꯕꯤ."
+(2016). Evidence base update: 50 years of research on treatment for child,(꯲꯰꯱꯶) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"and adolescent anxiety. Journal of Clinical Child & Adolescent Psychology,",ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯑꯦꯟꯁꯤꯇꯤ ꯂꯩꯕꯥ꯫
+"45(2), 91–113. https://doi.org/10.1080/15374416.2015.1046177","꯴꯵(꯲), ꯹꯱–꯱꯱꯳ ꯂꯩꯈꯤ꯫"
+"James, A. C., James, G., Cowdrey, F. A., Soler, A., & Choke, A. (2013). Cognitive","ꯖꯦꯃꯁ, ꯑꯦ.ꯁꯤ., ꯖꯦꯃꯁ, ꯖꯤ., ꯀꯥꯎꯗ꯭ꯔꯤ, ꯑꯦꯐ.ꯑꯦ., ꯁꯣꯂꯔ, ꯑꯦ., ꯑꯃꯁꯨꯡ ꯆꯣꯛ, ꯑꯦ.(꯲꯰꯱꯳)꯫"
+behavioural therapy for anxiety disorders in children and adolescents. In,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯕꯤꯍꯦꯕꯤꯌꯔ ꯊꯦꯔꯥꯄꯤ꯫
+"A. C. James (Ed.), Cochrane Database of Systematic Reviews. John Wiley &","ꯑꯦ.ꯁꯤ.ꯖꯦꯃꯁ (ꯑꯦꯗ.), ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯔꯤꯚꯤꯌꯨꯁꯤꯡꯒꯤ ꯀꯣꯛꯔꯦꯟ ꯗꯦꯇꯥꯕꯦꯖ꯫"
+"Sons, Ltd. https://doi.org/10.1002/14651858.CD004690.pub3","ꯁꯅꯁ, ꯂꯤꯃꯤꯇꯦꯗ ꯑꯁꯤ https://doi.org/10.1002/14651858.cd004690.pub3."
+"James, A. C., James, G., Cowdrey, F. A., Soler, A., & Choke, A. (2015)","ꯖꯦꯃꯁ, ꯑꯦ.ꯁꯤ., ꯖꯦꯃꯁ, ꯖꯤ., ꯀꯥꯎꯗ꯭ꯔꯤ, ꯑꯦꯐ.ꯑꯦ., ꯁꯣꯂꯔ, ꯑꯦ., ꯑꯃꯁꯨꯡ ꯆꯣꯛ, ꯑꯦ.(꯲꯰꯱꯵)"
+Cognitive behavioural therapy for anxiety disorders in children and,ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯋꯥꯈꯜ ꯆꯔꯥꯡꯅꯕꯥ ꯑꯃꯁꯨꯡ ꯋꯥꯈꯜ ꯆꯔꯥꯡꯅꯕꯥ ꯊꯣꯀꯍꯅꯕꯥ ꯀꯣꯒꯅꯤꯇꯤꯚ ꯕꯤꯍꯦꯕꯤꯌꯔꯜ ꯊꯦꯔꯥꯄꯤ
+"adolescents. Cochrane Database of Systematic Reviews, 2. https://doi",ꯑꯦꯗꯣꯂꯁꯦꯟꯇꯁꯤꯡ꯫
+org/10.1002/14651858.CD004690.pub4,ꯑꯣ.ꯑꯥꯔ.ꯖꯤ./꯱꯰.꯱꯰꯰꯲/꯱꯴꯶꯵꯱꯸꯵꯸.ꯁꯤ.ꯗꯤ.꯰꯰꯴꯶꯹꯰.ꯄꯤ.ꯌꯨ.ꯕꯤ.꯴.
+"Kaufman, J., Birmaher, B., Brent, D., Rao, U., Flynn, C., MORECI, P., Wil-","ꯀꯥꯎꯐꯝꯌꯥꯟ, ꯖꯦ., ꯕꯤꯔꯃꯥꯍꯦꯔ, ꯕꯤ., ꯕ꯭ꯔꯦꯟꯇ, ꯗꯤ., ꯔꯥꯑꯣ, ꯌꯨ., ꯐ꯭ꯂꯤꯟ, ꯁꯤ., ꯃꯣꯔꯦꯁꯤ, ꯄꯤ., ꯋꯤꯜ-"
+"liamson, D., & Ryan, N. (1997). Schedule for Affective Disorders and","ꯂꯤꯌꯥꯝꯁꯟ, ꯗꯤ., ꯑꯃꯁꯨꯡ ꯔꯥꯌꯟ, ꯑꯦꯟ.(꯱꯹꯹꯷)꯫"
+Schizophrenia for School-Age Children-Present and Lifetime Version,ꯁ꯭ꯀꯨꯂꯒꯤ ꯆꯍꯤ ꯅꯧꯔꯤꯕꯥ ꯑꯉꯥꯡꯁꯤꯡ-ꯍꯧꯖꯤꯛ ꯑꯃꯁꯨꯡ ꯂꯥꯏꯐꯝ ꯚꯔꯁꯅꯒꯤ ꯁ꯭ꯀꯤꯖꯣꯐ꯭ꯔꯦꯅꯤꯌꯥ
+(K-SADS-PL): Initial reliability and validity data. Journal of the American,(ꯀꯦ-ꯑꯦꯁ.ꯑꯦ.ꯗꯤ.ꯑꯦꯁ.-ꯄꯤ.ꯑꯦꯜ.): ꯑꯍꯥꯅꯕꯥ ꯊꯥꯖꯕꯥ ꯌꯥꯕꯥ ꯑꯃꯁꯨꯡ ꯚꯦꯂꯤꯗꯤꯇꯤ ꯗꯦꯇꯥ꯫
+"Academy of Child & Adolescent Psychiatry, 36(7), 980–988. https://doi","ꯑꯦꯀꯥꯗꯦꯃꯤ ꯑꯣꯐ ꯆꯥꯏꯜꯗ ꯑꯦꯟꯗ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, 36(7), 980–988."
+"Kessler, R. C., Berglund, P., Demler, O., Jin, R., Merikangas, K. R., & Walters, E","ꯀꯦꯁꯂꯔ, ꯑꯥꯔ.ꯁꯤ., ꯕꯦꯔꯒꯂꯨꯟꯗ, ꯄꯤ., ꯗꯦꯃꯂꯔ, ꯑꯣ., ꯖꯤꯟ, ꯑꯥꯔ., ꯃꯦꯔꯤꯀꯥꯡꯒꯥꯁ, ꯀꯦ.ꯑꯥꯔ., ꯑꯃꯁꯨꯡ ꯋꯥꯂꯇꯔꯁ, ꯏ."
+E. (2005). Lifetime prevalence and age-of-onset distributions of DSM-IV,ꯏ.(꯲꯰꯰꯵) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+disorders in the national comorbidity survey replication. Archives of,ꯅꯦꯁꯅꯦꯜ ꯀꯣꯃꯣꯔꯕꯤꯗꯤꯇꯤ ꯁꯔꯚꯦ ꯔꯤꯞꯂꯤꯀꯦꯁꯅꯗꯥ ꯂꯩꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ꯫
+"General Psychiatry, 62(6), 593. https://doi.org/10.1001/archpsyc.62.6.593","ꯖꯦꯅꯦꯔꯦꯜ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, ꯶꯲(꯶), ꯵꯹꯳.https://doi.org/10.1001/archpsyc.62.6.593"
+"Lewis, K. M., Rafihi-Ferreira, R. El, Freitag, G. F., Coffman, M., & Ollendick,","ꯂꯨꯏꯁ, ꯀꯦ.ꯑꯦꯝ., ꯔꯐꯤꯍꯤ-ꯐꯦꯔꯦꯏꯔꯥ, ꯑꯥꯔ.ꯑꯦꯜ., ꯐ꯭ꯔꯦꯏꯇꯥꯒ, ꯖꯤ.ꯑꯦꯐ., ꯀꯣꯐꯃꯦꯟ, ꯑꯦꯝ., ꯑꯃꯁꯨꯡ ꯑꯣꯂꯦꯟꯟꯗꯤꯛ,"
+"T. H. (2021). A 25-year review of nighttime fears in children: Past, present,",ꯇꯤ.ꯑꯩꯆ.(꯲꯰꯲꯱) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+"and future. Clinical Child and Family Psychology Review, 24(3), 391–413",ꯑꯃꯁꯨꯡ ꯇꯨꯡꯒꯤ ꯑꯣꯏꯕꯥ ꯋꯥꯐꯃꯁꯤꯡ ꯌꯥꯑꯣꯔꯤ꯫
+https://doi.org/10.1007/s10567-021-00354-4,https://doi.org/10.1007/S10567-021-00354-4ꯗꯥ ꯊꯥꯕꯤꯔꯀꯎ꯫
+"Lundy, S. M., Silva, G. E., Kaemingk, K. L., Goodwin, J. L., & Quan,","ꯂꯨꯟꯗꯤ, ꯑꯦꯁ.ꯑꯦꯝ., ꯁꯤꯂꯚꯥ, ꯖꯤ.ꯏ., ꯀꯥꯏꯃꯤꯡꯛ, ꯀꯦ.ꯑꯦꯜ., ꯒꯨꯗꯋꯤꯟ, ꯖꯦ.ꯑꯦꯜ., ꯑꯃꯁꯨꯡ ꯀ꯭ꯕꯥꯟ,"
+S. F. (2010). Cognitive functioning and academic performance in,ꯑꯦꯁ.ꯑꯦꯐ.(꯲꯰꯱꯰) ꯑꯃꯁꯨꯡ ꯑꯦꯝ.
+elementary school children with anxious/depressed and withdrawn,ꯏꯂꯤꯃꯦꯟꯇꯔꯤ ꯁ꯭ꯀꯨꯂꯒꯤ ꯑꯉꯥꯡꯁꯤꯡꯅꯥ ꯋꯥꯈꯜ ꯋꯥꯕꯥ/ ꯋꯥꯈꯜ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ ꯑꯃꯁꯨꯡ ꯋꯥꯈꯜ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ
+"symptoms. The Open Pediatric Medicine Journal, 4(1), 1–9. https://doi",ꯂꯥꯏꯑꯣꯡ.
+"Maldonado, L., Huang, Y., Chen, R., Kasen, S., Cohen, P., & Chen, H. (2013)","ꯃꯥꯂꯗꯣꯅꯥꯗꯣ, ꯑꯦꯜ., ꯍꯨꯋꯥꯡ, ꯋꯥꯏ., ꯆꯦꯟ, ꯑꯥꯔ., ꯀꯥꯁꯦꯟ, ꯑꯦꯁ., ꯀꯣꯍꯦꯟ, ꯄꯤ., ꯑꯃꯁꯨꯡ ꯆꯦꯟ, ꯑꯩꯆ.(꯲꯰꯱꯳)"
+Impact of early adolescent anxiety disorders on self-esteem development,ꯁꯦꯂꯐ-ꯏꯁ꯭ꯇꯤꯝ ꯗꯤꯚꯦꯂꯄꯃꯦꯟꯇꯗꯥ ꯉꯟꯅꯥ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯥ ꯋꯥꯈꯜ ꯆꯔꯥꯡꯅꯕꯥ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯏꯝꯄꯦꯛꯇ
+"from adolescence to young adulthood. Journal of Adolescent Health, 53(2),",ꯏꯅꯈꯠꯂꯀꯄꯥ ꯃꯇꯃꯗꯒꯤ ꯍꯧꯔꯒꯥ ꯅꯍꯥ ꯑꯣꯏꯔꯤꯕꯥ ꯑꯍꯜ ꯑꯣꯏꯔꯀꯄꯗꯥ꯫
+287–292. https://doi.org/10.1016/j.jadohealth.2013.02.025,꯲꯸꯷–꯲꯹꯲ꯗꯥ ꯌꯥꯑꯣꯔꯤ꯫
+"March, J. S., Parker, J. D. A., Sullivan, K., Stallings, P., & Conners, C. K. (1997)","ꯃꯥꯔꯆ, ꯖꯦ.ꯑꯦꯁ., ꯄꯥꯔꯀꯔ, ꯖꯦ.ꯗꯤ.ꯑꯦ., ꯁꯨꯂꯤꯚꯟ, ꯀꯦ., ꯁ꯭ꯇꯦꯂꯤꯡꯁ, ꯄꯤ., ꯑꯃꯁꯨꯡ ꯀꯟꯅꯔꯁ, ꯁꯤ.ꯀꯦ.(꯱꯹꯹꯷)"
+The Multidimensional Anxiety Scale for Children (MASC): Factor struc-,ꯑꯉꯥꯡꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯃꯜꯇꯤꯗꯥꯏꯃꯦꯟꯁꯅꯦꯜ ꯑꯦꯟꯁꯤꯇꯤ ꯁ꯭ꯀꯦꯜ (MASC): ꯐꯦꯛꯇꯔ ꯁ꯭ꯠꯔꯀꯆꯔ-
+"ture, reliability, and validity. Journal of the American Academy of Child &","ꯇꯨꯔꯦ, ꯔꯤꯂꯤꯑꯦꯕꯤꯂꯤꯇꯤ, ꯑꯃꯁꯨꯡ ꯚꯦꯂꯤꯗꯤꯇꯤ꯫"
+"Adolescent Psychiatry, 36(4), 554–565. https://doi.org/10.1097/00004583-","ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, 36(4), 554–565."
+199704000-00019,꯱꯹꯹꯷꯰꯴꯰꯰꯰-꯰꯰꯰꯱꯹ꯗꯥ ꯌꯨ.ꯑꯦꯁ.
+"Oldham-Cooper, R., & Loades, M. (2017). Disorder-specific versus generic","ꯑꯣꯂꯙꯥꯝ-ꯀꯨꯄꯥꯔ, ꯑꯥꯔ., ꯑꯃꯁꯨꯡ ꯂꯣꯗꯁ, ꯑꯦꯝ.(꯲꯰꯱꯷)꯫"
+cognitive-behavioral treatment of anxiety disorders in children and young,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯅꯍꯥ ꯑꯣꯏꯔꯤꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡꯗꯥ ꯋꯥꯈꯜ ꯆꯔꯥꯡꯅꯕꯥ ꯂꯥꯌꯅꯥꯁꯤꯡꯒꯤ ꯀꯣꯒꯅꯤꯇꯤꯚ-ꯕꯤꯍꯦꯕꯤꯌꯔ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇ
+people: A systematic narrative review of evidence for the effectiveness of,ꯃꯤꯑꯣꯏꯁꯤꯡ: ꯲꯰꯲꯰ꯒꯤ ꯏꯐꯦꯛꯇꯤꯕꯅꯦꯁꯀꯤꯗꯃꯛ ꯏꯕꯤꯗꯦꯟꯁꯀꯤ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯅꯦꯔꯦꯇꯤꯕ ꯔꯤꯚꯤꯌꯨ ꯑꯃꯥ꯫
+"disorder-specific CBT compared with the disorder-generic treatment,",ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯖꯦꯅꯦꯔꯦꯜ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇꯒꯥ ꯆꯥꯡꯗꯝꯅꯕꯗꯥ ꯗꯤꯁꯑꯣꯔꯗꯔ-ꯁ꯭ꯄꯦꯁꯤꯐꯤꯛ ꯁꯤ.ꯕꯤ.ꯇꯤ.
+"Coping Cat. Journal of Child and Adolescent Psychiatric Nursing, 30(1),",ꯀꯣꯄꯤꯡ ꯀꯦꯠ꯫
+6–17. https://doi.org/10.1111/jcap.12165,꯶–꯱꯷ꯗꯥ ꯂꯩꯈꯤ꯫
+"Ollendick, T. H. (1983). Reliability and validity of the Revised Fear Survey","ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯇꯤ.ꯑꯩꯆ.(꯱꯹꯸꯳) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"Schedule for Children (FSSC-R). Behaviour Research and Therapy, 21(6),",ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯁꯦꯗ꯭ꯌꯨꯜ (ꯑꯦꯐ.ꯑꯦꯁ.ꯑꯦꯁ.ꯁꯤ.-ꯑꯥꯔ.)꯫
+685–692. https://doi.org/10.1016/0005-7967(83)90087-6,꯶꯸꯵–꯶꯹꯲ ꯑꯣꯏꯈꯤ꯫
+"Ollendick, T. H., & Byrd, D. A. (2001). Anxiety Disorders. In Advanced Abnor-","ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯇꯤ.ꯑꯩꯆ., ꯑꯃꯁꯨꯡ ꯕꯥꯏꯔꯗ, ꯗꯤ.ꯑꯦ.(꯲꯰꯰꯱)꯫"
+mal Psychology (pp. 223–242). Springer US. https://doi.org/10.1007/978-,ꯃꯥꯜ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ (ꯄꯦꯖ ꯲꯲꯳–꯲꯴꯲)꯫
+1-4419-8497-5_11,꯱-꯴꯴꯱꯹-꯸꯴꯹꯷-꯵_꯱꯱ꯗꯥ ꯐꯣꯟ ꯇꯧꯕꯤꯌꯨ꯫
+"Orgilés, M., Méndez, X., Espada, J. P., Carballo, J. L., & Piqueras, J. A. (2012)","ꯑꯣꯔꯒꯤꯂꯦꯁ, ꯑꯦꯝ., ꯃꯦꯟꯗꯦꯖ, ꯑꯦꯛꯁ., ꯑꯦꯁ꯭ꯄꯥꯗꯥ, ꯖꯦ.ꯄꯤ., ꯀꯥꯔꯕꯥꯂꯣ, ꯖꯦ.ꯑꯦꯜ., ꯑꯃꯁꯨꯡ ꯄꯤꯀꯦꯔꯥꯁ, ꯖꯦ.ꯑꯦ.(꯲꯰꯱꯲)"
+Anxiety disorder symptoms in children and adolescents: Differences by,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯗꯥ ꯑꯦꯅꯖꯥꯏꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯒꯤ ꯂꯥꯏꯑꯣꯡꯁꯤꯡ:
+age and gender in a community sample. Revista de Psiquiatría y Salud,ꯀꯝꯌꯨꯅꯤꯇꯤꯒꯤ ꯁꯦꯝꯄꯜ ꯑꯃꯗꯥ ꯆꯍꯤ ꯑꯃꯁꯨꯡ ꯖꯦꯟꯗꯔ꯫
+"Mental (English Edition), 5(2), 115–120. https://doi.org/10.1016/j.rps-","ꯃꯦꯟꯇꯦꯜ (ꯏꯪꯂꯤꯁ ꯑꯦꯗꯤꯁꯟ), ꯵(꯲), ꯱꯱꯵–꯱꯲꯰."
+men.2012.01.005,ꯅꯨꯄꯥꯁꯤꯡ.꯲꯰꯱꯲.꯰꯱.꯰꯰꯵
+41,꯴꯱ ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+"Teresa Galán-Luque, Marina Serrano-Ortiz, & Mireia Orgilés","ꯇꯦꯔꯦꯁꯥ ꯒꯥꯂꯥꯟ-ꯂꯨꯛ, ꯃꯔꯤꯅꯥ ꯁꯦꯔꯥꯅꯣ-ꯑꯣꯔꯇꯤꯖ, & ꯃꯤꯔꯦꯏꯌꯥ ꯑꯣꯔꯖꯤꯂꯦꯁ"
+"Öst, L.-G., & Ollendick, T. H. (2017). Brief, intensive and concentrated cogni-","ꯑꯣꯁ꯭ꯠ, ꯑꯦꯜ.-ꯖꯤ., ꯑꯃꯁꯨꯡ ꯑꯣꯂꯦꯟꯗꯤꯛ, ꯇꯤ.ꯑꯩꯆ.(꯲꯰꯱꯷)꯫"
+tive behavioral treatments for anxiety disorders in children: A systematic,ꯑꯉꯥꯡꯁꯤꯡꯗꯥ ꯑꯦꯟꯁꯤꯇꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡꯒꯤ ꯇꯤꯚ ꯕꯤꯍꯦꯕꯤꯌꯔ ꯇ꯭ꯔꯤꯇꯃꯦꯟꯇꯁꯤꯡ: ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯊꯧꯑꯣꯡ ꯑꯃꯥ
+"review and meta-analysis. Behaviour Research and Therapy, 97, 134–145",ꯔꯤꯚꯤꯌꯨ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥ-ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯇꯧꯕꯥ꯫
+https://doi.org/10.1016/j.brat.2017.07.008,https://doi.org/10.1016/j.brat.2017.07.008ꯗꯥ ꯊꯥꯕꯤꯔꯀꯎ꯫
+"Reynolds, C. R., & Richmond, B. O. (1985). Revised Children’s Manifest Anxiety","ꯔꯦꯅꯜꯗꯁ, ꯁꯤ.ꯑꯥꯔ., ꯑꯃꯁꯨꯡ ꯔꯤꯆꯃꯟꯗ, ꯕꯤ.ꯑꯣ.(꯱꯹꯸꯵)꯫"
+Scales (RCMAS). Western Psychological Services,ꯁ꯭ꯀꯦꯂꯁꯤꯡ (ꯑꯥꯔ.ꯁꯤ.ꯑꯦꯝ.ꯑꯦ.ꯁꯤꯡ)꯫
+"Romero Acosta, K., Canals, J., Hernández-Martínez, C., Jané Balladriga, M","ꯔꯣꯃꯦꯔꯣ ꯑꯦꯀꯣꯁ꯭ꯇꯥ, ꯀꯦ., ꯀꯦꯅꯥꯂꯁ, ꯖꯦ., ꯍꯔꯅꯥꯟꯗꯦꯖ-ꯃꯥꯔꯇꯤꯅꯦꯖ, ꯁꯤ., ꯖꯦꯟ ꯕꯥꯂꯥꯗ꯭ꯔꯤꯒꯥ, ꯑꯦꯝ."
+"C., Viñas, F., & Domènech-Llaberia, E. (2010). Comorbidity between","ꯁꯤ., ꯚꯤꯅꯥꯁ, ꯑꯦꯐ., ꯑꯃꯁꯨꯡ ꯗꯣꯃꯦꯅꯦꯆ-ꯂꯥꯕꯦꯔꯤꯌꯥ, ꯏ.(꯲꯰꯱꯰)꯫"
+SCARED anxiety factors and depressive symptomatology in 8- to 12-year-,ꯆꯍꯤ 8ꯗꯒꯤ 12 ꯐꯥꯎꯕꯒꯤ ꯃꯅꯨꯡꯗꯥ-ꯑꯦꯛꯕꯦꯟꯇ ꯑꯣꯏꯕꯥ ꯋꯥꯈꯜ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ ꯐꯦꯛꯇꯔꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯗꯤꯞꯔꯦꯁꯅꯒꯤ ꯁꯤꯝꯄꯇꯃꯁꯤꯡ-
+"old children. Psicothema, 22(4), 613–618",ꯑꯍꯜ ꯑꯣꯏꯔꯕꯥ ꯑꯉꯥꯡꯁꯤꯡ꯫
+"Santacruz, I., Orgilés, M., Rosa-Alcázar, A., Sanchez-Meca, J., Méndez, F., &","ꯁꯥꯟꯇꯥꯛꯔꯨꯖ, ꯑꯥꯏ., ꯑꯣꯔꯒꯤꯂꯦꯁ, ꯑꯦꯝ., ꯔꯣꯁꯥ-ꯑꯂꯀꯥꯖꯥꯔ, ꯑꯦ., ꯁꯥꯅꯆꯦꯖ-ꯃꯦꯀꯥ, ꯖꯦ., ꯃꯦꯟꯗꯦꯖ, ꯑꯦꯐ., ꯑꯃꯁꯨꯡ"
+"Rodríguez, J. (2002). Ansiedad generalizada, ansiedad por separación y","ꯔꯣꯗ꯭ꯔꯤꯒꯦꯖ, ꯖꯦ.(꯲꯰꯰꯲) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+fobia escolar: El predominio de la terapia cognitivo-conductual. Behavio-,ꯐꯣꯕꯤꯌꯥ ꯑꯦꯁ꯭ꯀꯣꯂꯥꯔ: ꯑꯦꯜ ꯄ꯭ꯔꯦꯗꯣꯃꯤꯅꯤꯑꯣ ꯗꯦ ꯂꯥ ꯇꯦꯔꯥꯄꯤꯌꯥ ꯀꯣꯒꯅꯤꯇꯤꯚꯣ-ꯀꯟꯗꯨꯛꯇꯜ꯫
+"ral Psychology/Psicologia Conductual, 10, 503521","ꯑꯥꯔ.ꯑꯦꯜ.ꯒꯤ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ/ꯄꯤ.ꯑꯦꯁ.ꯑꯥꯏ.ꯁꯤ.ꯑꯣ.ꯑꯦꯜ.ꯑꯣ.ꯒꯤ ꯀꯟꯗꯥꯛꯇꯜ, ꯱꯰, ꯵꯰꯳꯵꯲꯱"
+"Shaffer, D., Fisher, P., Lucas, C. P., Dulcan, M. K., & Schwab-Stone, M. E. (2000)","ꯁꯥꯐꯔ, ꯗꯤ., ꯐꯤꯁꯥꯔ, ꯄꯤ., ꯂꯨꯀꯥꯁ, ꯁꯤ.ꯄꯤ., ꯗꯨꯂꯀꯥꯟ, ꯑꯦꯝ.ꯀꯦ., ꯑꯃꯁꯨꯡ ꯁ꯭ꯕꯥꯕ-ꯁ꯭ꯇꯣꯟ, ꯑꯦꯝ.ꯏ.(꯲꯰꯰꯰)"
+NIMH Diagnostic Interview Schedule for Children Version IV (NIMH,ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯑꯣꯏꯅꯥ NIMH ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁ꯭ꯇꯤꯛ ꯏꯟꯇꯔꯚꯤꯎ ꯁꯦꯗ꯭ꯌꯨꯜ ꯚꯔꯁꯟ IV (NIMH
+"DISC-IV): Description, differences from previous versions, and reliability","ꯗꯤꯁ꯭ꯛ-IV: ꯃꯁꯛ ꯈꯪꯗꯣꯀꯄꯥ, ꯃꯃꯥꯡꯒꯤ ꯚꯔꯖꯅꯁꯤꯡꯗꯒꯤ ꯈꯦꯠꯅꯕꯥ, ꯑꯃꯁꯨꯡ ꯊꯥꯖꯕꯥ ꯌꯥꯕꯥ"
+of some common diagnoses. Journal of the American Academy of Child,ꯀꯃꯟ ꯑꯣꯏꯕꯥ ꯗꯥꯏꯑꯦꯒ꯭ꯅꯣꯁꯤꯁ ꯈꯔꯒꯤ ꯃꯇꯥꯡꯗꯥ꯫
+"& Adolescent Psychiatry, 39(1), 28–38. https://doi.org/10.1097/00004583-","& ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, 39(1), 28–38."
+200001000-00014,꯲꯰꯰꯰꯰꯰꯱꯰꯰꯰-꯰꯰꯰꯱꯴
+"Shea, B. J., Reeves, B. C., Wells, G., Thuku, M., Hamel, C., Moran, J., Moher, D.,","ꯁꯤꯌꯥ, ꯕꯤ.ꯖꯦ., ꯔꯤꯚꯁ, ꯕꯤ.ꯁꯤ., ꯋꯦꯂꯁ, ꯖꯤ., ꯊꯨꯀꯨ, ꯑꯦꯝ., ꯍꯥꯃꯦꯜ, ꯁꯤ., ꯃꯣꯔꯥꯟ, ꯖꯦ., ꯃꯣꯍꯦꯔ, ꯗꯤ.,"
+"Tugwell, P., Welch, V., Kristjansson, E., & Henry, D. A. (2017). AMSTAR 2:","ꯇꯨꯒꯋꯦꯜ, ꯄꯤ., ꯋꯦꯂꯆ, ꯚꯤ., ꯀ꯭ꯔꯤꯁ꯭ꯇꯖꯥꯅꯁꯟ, ꯏ., ꯑꯃꯁꯨꯡ ꯍꯦꯅꯔꯤ, ꯗꯤ.ꯑꯦ.(꯲꯰꯱꯷)꯫"
+A critical appraisal tool for systematic reviews that include randomised or,ꯔꯦꯟꯗꯝ ꯑꯣꯏꯕꯥ ꯅꯠꯠꯔꯒꯥ ꯌꯥꯑꯣꯕꯥ ꯁꯤꯁ꯭ꯇꯦꯃꯦꯇꯤꯛ ꯑꯣꯏꯕꯥ ꯔꯤꯚꯤꯌꯨꯁꯤꯡꯒꯤꯗꯃꯛ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯑꯦꯞꯔꯦꯏꯖꯜ ꯇꯨꯜ ꯑꯃꯥ
+"non-randomised studies of healthcare interventions, or both. BMJ, j4008","ꯍꯦꯂꯊꯀꯦꯌꯔ ꯏꯟꯇꯔꯚꯦꯟꯁꯅꯁꯤꯡꯒꯤ ꯅꯟ-ꯔꯦꯟꯗꯣꯃꯥꯏꯖ ꯁ꯭ꯇꯗꯤꯁꯤꯡ, ꯅꯠꯠꯔꯒꯥ ꯑꯅꯤꯃꯛ꯫"
+https://doi.org/10.1136/bmj.j4008,https://doi.org/10.1136/bmj.j4008ꯗꯥ ꯊꯥꯕꯤꯔꯀꯎ꯫
+"Silverman, W. K., & Albano, A. M. (1996). Anxiety disorders interview schedule","ꯁꯤꯂꯚꯥꯔꯃꯦꯟ, ꯗꯕ꯭ꯂꯤꯎ.ꯀꯦ., ꯑꯃꯁꯨꯡ ꯑꯂꯕꯥꯅꯣ, ꯑꯦ.ꯑꯦꯝ.(꯱꯹꯹꯶)꯫"
+for DSM-IV. Child Version. The Psychological Corporation,ꯗꯤ.ꯑꯦꯁ.ꯑꯦꯝ.-ꯑꯥꯏ.ꯚꯤ.
+"Society of Clinical Child & Adolescent Psychology. (2020). Fear, Worry, & Anx-",ꯁꯣꯁꯥꯏꯇꯤ ꯑꯣꯐ ꯀ꯭ꯂꯤꯅꯤꯀꯦꯜ ꯆꯥꯏꯜꯗ ꯑꯃꯁꯨꯡ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯣꯂꯣꯖꯤ꯫
+iety Disorders. Effective Child Therapy - Evidence-based mental health,ꯏꯇꯤꯒꯤ ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ꯫
+treatment for children and adolescents. https://effectivechildtherapy.org/,ꯑꯉꯥꯡꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯏꯅꯈꯠꯂꯛꯂꯤꯕꯁꯤꯡꯒꯤ ꯂꯥꯏꯌꯦꯡ꯫
+concerns-symptoms-disorders/disorders/fear-worry-and-anxiety/#effec-,ꯀꯟꯁꯦꯟꯠꯔꯦꯁꯅꯁꯤꯡ-ꯁꯤꯝꯄꯇꯝ-ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ/ꯗꯤꯁꯑꯣꯔꯗꯔꯁꯤꯡ/ꯐꯤꯌꯥꯔ-ꯋꯥꯔꯤ-ꯑꯦꯟꯗ-ꯑꯦꯅꯁꯤꯇꯤ/#effec-
+tive-treatments,ꯇꯤ.ꯑꯥꯏ.ꯚꯤ.-ꯇ꯭ꯔꯤꯠꯃꯦꯟꯇꯁꯤꯡ .
+"Spence, S. H. (1998). A measure of anxiety symptoms among children","ꯁ꯭ꯄꯦꯟꯁ, ꯑꯦꯁ.ꯑꯩꯆ.(꯱꯹꯹꯸) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+"Behaviour Research and Therapy, 36(5), 545–566. https://doi.org/10.1016/","ꯕꯤꯍꯦꯕꯤꯌꯔ ꯔꯤꯁꯔꯆ ꯑꯃꯁꯨꯡ ꯊꯦꯔꯥꯄꯤ, ꯳꯶(꯵), ꯵꯴꯵–꯵꯶꯶."
+S0005-7967(98)00034-5,ꯑꯦꯁ꯰꯰꯰꯵-꯷꯹꯶꯷(꯹꯸)꯰꯰꯰꯳꯴-꯵
+"Spielberger, C. (1973). Manual for the State-Trait Anxiety Inventory for Chil-","ꯁ꯭ꯄꯤꯂꯕꯔꯒꯔ, ꯁꯤ.(꯱꯹꯷꯳) ꯑꯃꯁꯨꯡ ꯑꯦꯝ."
+dren. Consulting Psychologist Press,ꯗ꯭ꯔꯦꯟ ꯇꯧꯕꯥ꯫
+"Woodward, L. J., & Fergusson, D. M. (2001). Life course outcomes of young","ꯋꯨꯗꯋꯥꯔꯗ, ꯑꯦꯜ.ꯖꯦ., ꯑꯃꯁꯨꯡ ꯐꯔꯒꯨꯁꯟ, ꯗꯤ.ꯑꯦꯝ.(꯲꯰꯰꯱)꯫"
+people with anxiety disorders in adolescence. Journal of the American,ꯏꯅꯈꯠꯂꯀꯄꯥ ꯃꯇꯃꯗꯥ ꯋꯥꯈꯜ ꯆꯔꯥꯡꯅꯕꯥ ꯂꯩꯕꯥ ꯃꯤꯑꯣꯏꯁꯤꯡ꯫
+"Academy of Child & Adolescent Psychiatry, 40(9), 1086–1093. https://doi","ꯑꯦꯀꯥꯗꯦꯃꯤ ꯑꯣꯐ ꯆꯥꯏꯜꯗ ꯑꯦꯟꯗ ꯑꯦꯗꯣꯂꯁꯦꯟꯇ ꯁꯥꯏꯀꯤꯌꯥꯠꯔꯤ, 40(9), 1086–1093."
+--- 12. Personality (Article) Author Dr. Priya.pdf ---,--- ꯱꯲.ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ (ꯑꯥꯔꯇꯤꯀꯜ) ꯑꯏꯕꯥ ꯗꯥꯛꯇꯔ ꯄ꯭ꯔꯤꯌꯥ.ꯄꯤ.ꯗꯤ.ꯑꯦꯐ. ---
+"Prepared by: Dr. Priya, Assistant Professor,","ꯁꯦꯃꯈꯤꯕꯥ: ꯗꯥꯛꯇꯔ ꯄ꯭ꯔꯤꯌꯥ, ꯑꯦꯁꯤꯁ꯭ꯇꯦꯟꯇ ꯄ꯭ꯔꯣꯐꯦꯁꯔ,"
+"IMS, University of Lucknow","ꯑꯥꯏ.ꯑꯦꯝ.ꯑꯦꯁ., ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤ ꯑꯣꯐ ꯂꯈꯅꯧ"
+1,꯱.
+PERSONALITY,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯃꯇꯤꯛ ꯃꯒꯨꯟ
+Introduction,ꯁꯛꯇꯥꯛꯄ
+People tend to have a general notion that personality refers to a personal appearance with,ꯃꯤꯌꯥꯝꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯍꯥꯌꯕꯁꯤꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯍꯥꯌꯕꯁꯤꯅꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯥ ꯂꯣꯌꯅꯔꯤꯕꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯕꯨ ꯈꯪꯍꯜꯂꯤ ꯍꯥꯌꯕꯒꯤ ꯖꯦꯅꯦꯔꯦꯜ ꯅꯣꯇꯤꯁ ꯑꯃꯥ ꯂꯩ꯫
+"charming smile, or outlook. But psychologists view the concept as dynamic in nature concerned","ꯆꯥꯔꯃꯤꯡ ꯁ꯭ꯃꯥꯏꯜ, ꯅꯠꯔꯒꯥ ꯑꯥꯎꯠꯂꯨꯛ꯫"
+with growth and development of a person’s whole psychological system,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯑꯄꯨꯅꯕꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯁꯤꯁ꯭ꯇꯦꯝ ꯑꯗꯨ ꯒ꯭ꯔꯣꯊ ꯑꯃꯁꯨꯡ ꯗꯤꯚꯦꯂꯄꯃꯦꯟꯇꯒꯥ ꯂꯣꯌꯅꯅꯥ
+Personality can be defined as the consistent psychological patterns within an individual that,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯑꯁꯤ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ ꯂꯦꯞꯄꯥ ꯂꯩꯇꯕꯥ ꯁꯥꯏꯀꯣꯂꯣꯖꯤꯀꯦꯜ ꯄꯦꯇꯔꯅꯁꯤꯡꯅꯤ ꯍꯥꯌꯅꯥ ꯐꯣꯡꯗꯣꯀꯄꯥ ꯌꯥꯏ ꯃꯗꯨꯗꯤ .
+affect the way they interact with others and the situations they encounter. Personality is defined,ꯃꯈꯣꯌꯅꯥ ꯑꯇꯣꯞꯄꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯋꯥꯔꯤ ꯁꯥꯅꯕꯒꯤ ꯃꯑꯣꯡ ꯑꯃꯁꯨꯡ ꯃꯈꯣꯌꯅꯥ ꯊꯦꯡꯅꯔꯤꯕꯥ ꯐꯤꯚꯃꯁꯤꯡꯗꯥ ꯑꯀꯥꯌꯕꯥ ꯄꯤꯌꯨ꯫
+"as relatively stable and enduring characteristics that determine our thoughts, feelings and","ꯑꯩꯈꯣꯌꯒꯤ ꯋꯥꯈꯜꯂꯣꯟ, ꯐꯤꯜꯂꯤꯡ ꯑꯃꯁꯨꯡ ꯲꯰꯲꯰ꯒꯤ ꯃꯇꯥꯡꯗꯥ ꯂꯦꯞꯄꯥ ꯂꯩꯇꯅꯥ ꯂꯦꯡꯗꯕꯥ ꯑꯃꯁꯨꯡ ꯂꯦꯡꯗꯕꯥ ꯃꯑꯣꯡ ꯃꯇꯧ ꯑꯣꯏꯅꯥ ."
+behavior. Personality is a complex phenomenon and there are various perspectives of personality,ꯂꯤꯆꯠ ꯁꯥꯖꯠ.
+construct. One common and simple definition of Personality is: It is the consistent psychological,ꯀꯟꯁꯠꯔꯛꯁꯟ ꯇꯧꯕꯥ꯫
+patterns within an individual that affect the way they interact with others and the situations they,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ ꯄꯦꯇꯔꯅꯁꯤꯡ ꯃꯈꯣꯌꯅꯥ ꯑꯇꯣꯞꯄꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯋꯥꯔꯤ ꯁꯥꯅꯕꯒꯤ ꯃꯑꯣꯡ ꯑꯃꯁꯨꯡ ꯃꯈꯣꯌꯅꯥ ꯊꯦꯡꯅꯔꯤꯕꯥ ꯐꯤꯚꯃꯁꯤꯡꯗꯥ ꯁꯣꯀꯍꯜꯂꯤ꯫
+encounter,ꯊꯦꯡꯅꯕ
+"""Personality is the dynamic organization within the individual of those psychophysical systems","""ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯍꯥꯌꯕꯁꯤ ꯁꯥꯏꯀꯣꯐꯤꯁꯤꯀꯦꯜ ꯁꯤꯁ꯭ꯇꯦꯃꯁꯤꯡ ꯑꯗꯨꯒꯤ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯃꯅꯨꯡꯗꯥ ꯂꯩꯕꯥ ꯗꯥꯏꯅꯥꯃꯤꯛ ꯑꯣꯔꯒꯅꯥꯏꯖꯦꯁꯟ ꯑꯗꯨꯅꯤ꯫"
+"that determine his characteristics behaviour and thought"" (Allport, 1961, p. 28)","ꯃꯍꯥꯛꯀꯤ ꯃꯒꯨꯅꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠ ꯑꯃꯁꯨꯡ ꯋꯥꯈꯜꯂꯣꯟ ꯑꯗꯨ ꯂꯦꯄꯊꯣꯛꯂꯤꯕꯥ"" (ꯑꯂꯄꯣꯔꯠ, ꯱꯹꯶꯱, ꯄ꯭ꯔ꯭ꯏ. ꯲꯸)"
+"“The characteristics or blend of characteristics that make a person unique” (Weinberg & Gould,","“ꯃꯤꯑꯣꯏ ꯑꯃꯕꯨ ꯑꯈꯟꯅꯕꯥ ꯑꯣꯏꯍꯜꯂꯤꯕꯥ ꯃꯒꯨꯅꯁꯤꯡꯒꯤ ꯃꯒꯨꯅꯁꯤꯡ ꯅꯠꯠꯔꯒꯥ ꯕ꯭ꯂꯦꯟꯗ” (ꯋꯦꯏꯅꯕꯔꯒ & ꯒꯧꯂꯗ,"
+1999),꯱꯹꯹꯹) ꯑꯃꯁꯨꯡ ꯑꯦꯟ.
+Personality Determinants,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯗꯤꯇꯔꯃꯤꯅꯦꯟꯇꯁꯤꯡ .
+There are several factors that determine the formation or shaping of our personality. Among,ꯑꯩꯈꯣꯌꯒꯤ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯁꯦꯝꯕꯥ ꯅꯠꯠꯔꯒꯥ ꯃꯑꯣꯡ ꯁꯦꯝꯕꯥ ꯂꯦꯄꯊꯣꯀꯄꯥ ꯐꯦꯛꯇꯔ ꯀꯌꯥ ꯂꯩ꯫
+them the three major factors are:,ꯃꯈꯣꯌꯁꯤꯡ ꯑꯁꯤ ꯑꯆꯧꯕꯥ ꯋꯥꯐꯝ ꯑꯍꯨꯝ ꯑꯁꯤꯅꯤ:
+i),ꯑꯩ)
+Heredity: The genetic components inherited from our parents at the time of,ꯍꯦꯔꯤꯗꯤꯇꯤ: ꯑꯩꯈꯣꯌꯒꯤ ꯏꯃꯥ-ꯏꯄꯥꯗꯒꯤ ꯂꯧꯈꯤꯕꯥ ꯖꯤꯅꯦꯇꯤꯛ ꯀꯝꯄꯣꯅꯦꯟꯇꯁꯤꯡ ꯑꯗꯨ .
+conception determine strongly the personality characteristics of an individual. The,ꯋꯥꯈꯜꯂꯣꯟ ꯑꯁꯤꯅꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ-ꯃꯇꯧ ꯑꯗꯨ ꯀꯟꯅꯥ ꯂꯦꯄꯊꯣꯀꯏ꯫
+"color, height, physical statutory, facial attractiveness, gender, temperament, muscle","ꯃꯆꯨ, ꯑꯋꯥꯡꯕꯥ, ꯐꯤꯖꯤꯀꯦꯜ ꯁ꯭ꯇꯦꯠꯌꯨꯇꯔꯤ, ꯐꯦꯁꯤꯑꯦꯜ ꯑꯦꯠꯔꯦꯛꯇꯅꯦꯁ, ꯖꯦꯟꯗꯔ, ꯇꯦꯝꯄꯦꯔꯦꯆꯔ, ꯃꯁꯜ"
+"composition, inheritable diseases etc are considered to be inherited from our parents","ꯀꯝꯄꯣꯖꯤꯁꯟ, ꯏꯅꯍꯦꯔꯤꯇꯦꯕꯜ ꯗꯤꯖꯤꯖꯁꯤꯡ ꯑꯁꯤꯅꯆꯤꯡꯕꯥ ꯑꯁꯤ ꯑꯩꯈꯣꯌꯒꯤ ꯃꯃꯥ-ꯃꯄꯥꯁꯤꯡꯗꯒꯤ ꯏꯅꯍꯦꯔꯤ ꯇꯧꯕꯥ ꯌꯥꯏ ꯍꯥꯌꯅꯥ ꯂꯧꯅꯩ꯫"
+Environment: The culture in which people are brought up in their lives and they type,ꯑꯀꯣꯌꯔꯣꯟ: ꯃꯤꯌꯥꯝꯅꯥ ꯃꯈꯣꯌꯒꯤ ꯄꯨꯟꯁꯤꯗꯥ ꯄꯣꯀꯄꯥ ꯑꯃꯁꯨꯡ ꯃꯈꯣꯌꯅꯥ ꯇꯥꯏꯞ ꯇꯧꯕꯥ ꯀꯂꯆꯔ
+"of socialization process such as family’s child rearing practices, socio economic","ꯏꯃꯨꯡ ꯃꯅꯨꯡꯒꯤ ꯑꯉꯥꯡ ꯄꯣꯀꯄꯒꯤ ꯊꯧꯑꯣꯡꯁꯤꯡꯒꯨꯝꯕꯥ ꯁꯣꯁꯤꯑꯦꯂꯥꯏꯖꯦꯁꯅꯒꯤ ꯊꯧꯑꯣꯡ, ꯁꯣꯁꯤꯑꯣ ꯏꯀꯣꯅꯣꯃꯤꯛ"
+"status of the family, number of children in a family, birth order, education of the","ꯏꯃꯨꯡꯒꯤ ꯐꯤꯚꯝ, ꯏꯃꯨꯡ ꯑꯃꯗꯥ ꯂꯩꯕꯥ ꯑꯉꯥꯡꯁꯤꯡꯒꯤ ꯃꯁꯤꯡ, ꯄꯣꯀꯄꯒꯤ ꯑꯣꯔꯗꯔ, ꯃꯍꯩ-ꯃꯁꯤꯡ ꯇꯝꯕꯒꯤ ꯃꯇꯥꯡꯗꯥ ."
+"parents, friends and peer group pressures, religious practices, the type of schooling","ꯃꯃꯥ-ꯃꯄꯥꯁꯤꯡ, ꯃꯔꯨꯄꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯄꯤꯌꯔ ꯒ꯭ꯔꯨꯄꯀꯤ ꯄ꯭ꯔꯦꯁꯔꯁꯤꯡ, ꯙꯔꯃꯒꯤ ꯑꯣꯏꯕꯥ ꯊꯧꯑꯣꯡꯁꯤꯡ, ꯁ꯭ꯀꯨꯂꯒꯤ ꯃꯈꯜ ꯑꯗꯨ"
+"and recreational activities, pastime behavior etc play a critical role in shaping our","ꯑꯃꯁꯨꯡ ꯔꯤꯛꯔꯤꯌꯦꯁꯅꯦꯜ ꯑꯦꯛꯇꯤꯕꯤꯇꯤꯁꯤꯡ, ꯄꯥꯁ꯭ꯇꯤꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠ ꯑꯁꯤꯅꯆꯤꯡꯕꯥ ꯑꯩꯈꯣꯌꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧ ꯁꯦꯝꯕꯗꯥ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯊꯧꯗꯥꯡ ꯂꯧꯔꯤ"
+personalities,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯁꯤꯡ
+i),ꯑꯩ)
+Situation: The type of specific situation which a person encounters also equally,ꯐꯤꯚꯝ: ꯃꯤꯑꯣꯏ ꯑꯃꯅꯥ ꯊꯦꯡꯅꯔꯤꯕꯥ ꯑꯀꯛꯅꯕꯥ ꯐꯤꯚꯃꯒꯤ ꯃꯈꯜ ꯑꯗꯨꯁꯨ ꯆꯞ ꯃꯥꯟꯅꯅꯥ .
+"shapes the type of personality characteristics. For example, an individual’s exposure",ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ-ꯃꯇꯧꯒꯤ ꯃꯈꯜ ꯑꯗꯨ ꯃꯑꯣꯡ ꯁꯦꯝꯃꯤ꯫
+to a job interview and the type of experiences encountered during that time will shape,ꯊꯕꯛꯀꯤ ꯏꯟꯇꯔꯚ꯭ꯌꯨ ꯑꯃꯗꯥ ꯑꯃꯁꯨꯡ ꯃꯇꯝ ꯑꯗꯨꯗꯥ ꯊꯦꯡꯅꯈꯤꯕꯥ ꯑꯦꯛꯁꯄꯔꯤꯌꯦꯟꯁꯀꯤ ꯃꯈꯜ ꯑꯗꯨ ꯁꯦꯃꯒꯠꯀꯅꯤ
+"certain personality characteristics. Similarly, going for a picnic with friends and",ꯑꯀꯛꯅꯕꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ-ꯃꯇꯧꯁꯤꯡ꯫
+encountering the type of experiences whether pleasant and unpleasant will shape the,ꯅꯨꯡꯉꯥꯏꯕꯥ ꯑꯃꯁꯨꯡ ꯅꯨꯡꯉꯥꯏꯇꯕꯥ ꯋꯥꯐꯝ ꯑꯃꯥ ꯍꯦꯛꯇꯥ ꯁꯦꯃꯒꯅꯤ ꯍꯥꯌꯅꯥ ꯑꯦꯛꯁꯄꯔꯤꯌꯦꯟꯁꯀꯤ ꯃꯈꯜ ꯑꯗꯨ ꯊꯦꯡꯅꯕꯗꯥ .
+personality characteristics of individuals,ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧꯁꯤꯡ
+"Prepared by: Dr. Priya, Assistant Professor,","ꯁꯦꯃꯈꯤꯕꯥ: ꯗꯥꯛꯇꯔ ꯄ꯭ꯔꯤꯌꯥ, ꯑꯦꯁꯤꯁ꯭ꯇꯦꯟꯇ ꯄ꯭ꯔꯣꯐꯦꯁꯔ,"
+"IMS, University of Lucknow","ꯑꯥꯏ.ꯑꯦꯝ.ꯑꯦꯁ., ꯌꯨꯅꯤꯚꯔꯁꯤꯇꯤ ꯑꯣꯐ ꯂꯈꯅꯧ"
+2,꯲ ꯑꯃꯁꯨꯡ ꯲.
+Personality Traits,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤꯒꯤ ꯃꯑꯣꯡ ꯃꯇꯧꯁꯤꯡ .
+"Popular characteristics including shy, aggressive, submissive, lazy, ambitious, loyal and","ꯂꯃꯆꯠ-ꯁꯥꯖꯠ, ꯑꯦꯒ꯭ꯔꯦꯁꯤꯚ, ꯁꯕꯃꯤꯁꯤꯚ, ꯂꯦꯖꯤꯁ꯭ꯂꯦꯇꯤꯚ, ꯑꯦꯝꯕꯤꯁꯤꯌꯁ, ꯂꯣꯌꯅꯕꯤ ꯑꯃꯁꯨꯡ ꯂꯣꯌꯅꯕꯤ ꯑꯃꯁꯨꯡ ꯂꯣꯌꯅꯕꯤ ꯌꯥꯎꯕꯥ ꯃꯤꯌꯥꯝꯅꯥ ꯄꯥꯝꯅꯕꯥ ꯃꯑꯣꯡ-ꯃꯇꯧꯁꯤꯡ꯫"
+"timid. Those characteristics, when they exhibited in large number of situations, are called",ꯀꯤꯒꯟꯕ.
+personality traits or enduring characteristics that describe on individual’s behavior,ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯇ꯭ꯔꯦꯇꯁꯤꯡ ꯅꯠꯠꯔꯒꯥ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯇꯥ ꯃꯁꯛ ꯇꯥꯀꯄꯥ ꯂꯦꯡꯗꯕꯥ ꯃꯑꯣꯡ-ꯃꯇꯧꯁꯤꯡ
+Primary Traits,ꯄ꯭ꯔꯥꯏꯃꯥꯔꯤ ꯇ꯭ꯔꯦꯠꯁꯤꯡ .
+Cattel (1973) identified 16 source traits/Primary Traits. These traits were found to be generally steady and,ꯀꯦꯇꯦꯜ (꯱꯹꯷꯳)ꯅꯥ ꯁꯣꯔꯁ ꯇ꯭ꯔꯦꯠ/ꯄ꯭ꯔꯥꯏꯃꯔꯤ ꯇ꯭ꯔꯦꯠ ꯱꯶ ꯃꯁꯛ ꯈꯉꯗꯣꯀꯈꯤ꯫
+constant sources of behaviour. But there was found to be no scientific relevance,ꯂꯃꯆꯠ-ꯁꯥꯖꯠꯀꯤ ꯂꯦꯞꯄꯥ ꯂꯩꯇꯕꯥ ꯁꯣꯔꯁꯁꯤꯡ꯫
+Sixteen Source Traits,ꯁꯣꯔꯁ ꯇ꯭ꯔꯦꯠ ꯇꯔꯥꯅꯤꯊꯣꯏ .
+1,꯱.
+Reserved - Outgoing,ꯔꯤꯖꯔꯚ ꯇꯧꯕꯥ - ꯊꯣꯀꯄꯥ ꯌꯥꯕꯥ .
+2,꯲ ꯑꯃꯁꯨꯡ ꯲.
+Less intelligent - More intelligent,ꯂꯦꯁ ꯏꯟꯇꯦꯂꯤꯖꯦꯟꯇ - ꯍꯦꯟꯅꯥ ꯏꯟꯇꯦꯂꯤꯖꯦꯟꯇ ꯑꯣꯏꯕꯥ
+3,꯳ ꯑꯃꯁꯨꯡ ꯳.
+Affected by feelings - Emotionally stable,ꯐꯤꯜꯂꯤꯡꯁꯤꯡꯅꯥ ꯁꯣꯀꯍꯜꯂꯕꯥ - ꯏꯃꯣꯁꯅꯦꯜ ꯑꯣꯏꯅꯥ ꯁ꯭ꯇꯦꯕꯜ ꯑꯣꯏꯕꯥ .
+4,꯴ ꯑꯃꯁꯨꯡ ꯴.
+Submissive - Dominant,ꯁꯕꯃꯤꯁꯟ - ꯗꯣꯃꯤꯅꯦꯟꯇ ꯑꯣꯏꯕꯥ .
+5,꯵ ꯑꯃꯁꯨꯡ ꯵.
+Serious - Happy go Lucky,ꯁꯤꯔꯤꯌꯁ - ꯍꯦꯞꯄꯤ ꯒꯣ ꯂꯀꯤ
+6,꯶ ꯑꯃꯁꯨꯡ ꯶.
+Expedient - Conscientious,ꯑꯦꯛꯁꯄꯤꯗꯤꯌꯦꯟꯇ - ꯀꯟꯁꯤꯌꯦꯟꯇ ꯑꯣꯏꯕꯥ .
+7,꯷ ꯑꯃꯁꯨꯡ ꯷.
+Timid - Venturesome,ꯇꯤꯃꯤꯗ - ꯚꯦꯟꯆꯔ ꯑꯣꯏꯕꯥ
+8,꯸ ꯑꯃꯁꯨꯡ ꯸.
+Tough minded - Sensitive,ꯑꯀꯅꯕꯥ ꯋꯥꯈꯜ ꯂꯩꯕꯥ - ꯁꯦꯟꯁꯤꯇꯤꯕ ꯑꯣꯏꯕꯥ .
+9,꯹ ꯑꯃꯁꯨꯡ ꯹.
+Trusting - Suspicious,ꯊꯥꯖꯕꯥ ꯌꯥꯕꯥ - ꯆꯤꯡꯅꯕꯥ ꯂꯩꯕꯥ .
+10,꯱꯰ ꯑꯃꯁꯨꯡ ꯱꯰.
+Practical - Imaginative,ꯄ꯭ꯔꯦꯛꯇꯤꯀꯦꯜ - ꯏꯃꯥꯖꯤꯅꯦꯇꯤꯕ ꯑꯣꯏꯕꯥ .
+11,꯱꯱ ꯑꯃꯁꯨꯡ ꯱꯱꯫
+Forthright - Shrewd,ꯐꯣꯔꯊꯔꯥꯏꯠ - ꯁ꯭ꯔꯤꯎ.
+12,꯱꯲ ꯑꯃꯁꯨꯡ ꯱꯲.
+Self-Assured - Apprehensive,ꯁꯦꯜꯐ-ꯑꯦꯁꯨꯔ ꯇꯧꯕꯥ - ꯋꯥꯈꯜ ꯋꯥꯕꯥ
+13,꯱꯳ ꯑꯃꯁꯨꯡ ꯱꯳꯫
+Conservative - Experimenting,ꯀꯅꯖꯥꯔꯕꯇꯤꯕ - ꯑꯦꯛꯁꯄꯔꯤꯃꯦꯟꯇ ꯇꯧꯕꯥ .
+14,꯱꯴ ꯑꯃꯁꯨꯡ ꯱꯴.
+Group-dependent - Self-sufficient,ꯀꯥꯡꯂꯨꯄꯀꯤ ꯃꯈꯥ ꯄꯣꯅꯕꯥ - ꯃꯁꯥꯅꯥ ꯃꯁꯥꯕꯨ ꯊꯥꯖꯕꯥ ꯊꯝꯕꯥ
+15,꯱꯵ ꯑꯃꯁꯨꯡ ꯱꯵.
+Uncontrolled - Controlled,ꯀꯟꯠꯔꯣꯜ ꯇꯧꯗꯕꯥ - ꯀꯟꯠꯔꯣꯜ ꯇꯧꯕꯥ
+16,꯱꯶ ꯑꯃꯁꯨꯡ ꯱꯶.
+Relaxed - Tense,ꯔꯤꯂꯥꯛꯁ ꯇꯧꯕꯥ - ꯇꯦꯟꯁꯟ ꯂꯩꯕꯥ
+"In the type approach, several behaviours are seen as cluster characterising individuals with high degree of","ꯇꯥꯏꯞ ꯑꯦꯞꯔꯣꯆꯇꯥ, ꯂꯃꯆꯠ-ꯁꯥꯖꯠ ꯀꯌꯥ ꯑꯁꯤ ꯑꯋꯥꯡꯕꯥ ꯗꯤꯒ꯭ꯔꯤꯒꯤ ꯃꯤꯑꯣꯏ ꯑꯃꯒꯤ ꯃꯁꯛ ꯇꯥꯀꯄꯥ ꯀ꯭ꯂꯁ꯭ꯇꯔ ꯑꯣꯏꯅꯥ ꯎꯕꯥ ꯐꯪꯏ꯫"
+stability,ꯇꯪꯗꯨ ꯂꯩꯇꯥꯕꯥ .
+The Myers-Briggs Type Indicator (MBTI),ꯃꯥꯏꯌꯔꯁ-ꯕ꯭ꯔꯤꯒꯁ ꯇꯥꯏꯞ ꯏꯟꯗꯤꯀꯦꯇꯔ (ꯑꯦꯝ.ꯕꯤ.ꯇꯤ.ꯑꯥꯏ.) ꯑꯁꯤ ꯌꯥꯑꯣꯔꯤ꯫
+MBTI describes four dimensions of Personality Types:,ꯑꯦꯝ.ꯕꯤ.ꯇꯤ.ꯑꯥꯏ.ꯅꯥ ꯄꯔꯁꯣꯅꯦꯂꯤꯇꯤ ꯃꯈꯂꯁꯤꯡꯒꯤ ꯗꯥꯏꯃꯦꯟꯁꯟ ꯃꯔꯤ ꯐꯣꯡꯗꯣꯛꯂꯤ:
+(a) Extroversion versus Introversion: (The ways in which people relate to the world),(ꯀ) ꯑꯦꯛꯁꯠꯔꯣꯕꯔꯁꯟ ꯚꯦꯔꯁꯦꯁ ꯏꯟꯠꯔꯣꯕꯔꯁꯟ: (ꯃꯤꯁꯤꯡꯅꯥ ꯃꯥꯂꯦꯃꯒꯥ ꯃꯔꯤ ꯂꯩꯅꯕꯥ ꯃꯑꯣꯡꯁꯤꯡ)
